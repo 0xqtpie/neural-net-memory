@@ -8,6 +8,7 @@ import unittest
 from generate import graph, node, synthetic
 from search import baseline_candidates, certificate, exact, optimize
 from verifier import Invalid, digest, load, simulate, validate_graph, verify
+from run_suite import budget_bound, local_bound
 
 
 class VerifierTests(unittest.TestCase):
@@ -128,6 +129,14 @@ class VerifierTests(unittest.TestCase):
     def test_seed_reproducibility(self):
         self.assertEqual(optimize(self.g, [0, 1, 3], 42, 40),
                          optimize(self.g, [0, 1, 3], 42, 40))
+
+    def test_budget_bound_against_exact_optima(self):
+        self.assertEqual(budget_bound(self.g, 0), 10)
+        self.assertEqual(budget_bound(self.g, 1), 8)
+        self.assertEqual(budget_bound(self.g, 1, max_states=1), local_bound(self.g))
+        for g in synthetic():
+            for budget in (0, 1, 3, 6):
+                self.assertLessEqual(budget_bound(g, budget), exact(g, budget)["claims"]["peak_bytes"])
 
     def test_multiple_sinks_required_at_loss(self):
         g = graph("fork", [node("a", ["x"], 3), node("b", ["x"], 4)], 2, "synthetic", {})

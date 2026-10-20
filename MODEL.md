@@ -115,3 +115,15 @@ fixed inputs plus an operation's distinct input/output tensors, or fixed inputs
 plus a backward's required values, or fixed inputs plus all sinks. Matching this
 bound proves optimality in the model. Otherwise the row remains open; a gap can
 reflect a weak bound rather than an attainable improvement.
+
+The implementation also uses a budget-sensitive loss-barrier bound. Let `R` be all
+values required by any backward, and `F` the external inputs and sinks that must
+be live at loss. A value in `R-F` absent at loss must be recomputed at least once
+after loss, spending at least its own forward cost. Non-recomputable values cannot
+be absent. Relaxing away dependency/replay constraints, solve a 0/1 knapsack that
+maximizes discarded bytes subject to summed cost at most B. Then
+`bytes(F union R) - maximum_discarded_bytes` is a valid lower bound on loss memory.
+The reported larger-case bound is the maximum of this bound and the local bound.
+At B=0 it counts every backward-required value at loss. The exact knapsack DP maps
+saved bytes to minimum cost; if it exceeds 100,000 states, it returns only the local
+bound. This fallback weakens a bound and never claims a truncated knapsack optimum.

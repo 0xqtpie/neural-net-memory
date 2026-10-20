@@ -34,6 +34,37 @@ def local_bound(g):
     return max(sum(sizes[x] for x in s) for s in sets)
 
 
+def budget_bound(g, budget, max_states=100_000):
+    """Loss-barrier retention bound via a relaxed 0/1 knapsack.
+
+    Each backward-required value absent at loss must be recomputed at least once.
+    Ignoring dependencies only enlarges the possible discarded sets. Maximizing
+    their bytes subject to sum(cost)<=budget bounds savings from above.
+    A state cap falls back to the weaker, always valid local bound.
+    """
+    bound = local_bound(g)
+    nodes = {n["id"]: n for n in g["nodes"]}
+    sizes = {n["id"]: n["bytes"] for n in g["inputs"] + g["nodes"]}
+    fixed = {n["id"] for n in g["inputs"]} | set(g["outputs"])
+    required = {r for n in g["nodes"] for r in n["backward_requires"]} - fixed
+    # saved bytes -> minimum recomputation cost for a subset of required values
+    dp = {0: 0}
+    for name in sorted(required):
+        node = nodes[name]
+        if not node["recomputable"]:
+            continue
+        updated = dict(dp)
+        for saving, cost in dp.items():
+            if cost + node["cost"] <= budget:
+                target = saving + node["bytes"]
+                updated[target] = min(updated.get(target, budget + 1), cost + node["cost"])
+        dp = updated
+        if len(dp) > max_states:
+            return bound
+    retained = sum(sizes[x] for x in fixed | required) - max(dp)
+    return max(bound, retained)
+
+
 def build(iterations, seeds):
     suite = load(ROOT / "benchmarks/suite.json")
     rows, baselines, experiments, timings = [], [], [], []
@@ -72,7 +103,7 @@ def build(iterations, seeds):
                 found[budget]["claims"]["peak_bytes"] for found in search_runs[:3]))
             best = min([base_c, search_c], key=lambda c: (
                 c["claims"]["peak_bytes"], c["claims"]["recompute_cost"]))
-            bound = local_bound(g)
+            bound = budget_bound(g, budget)
             exact_seconds = None
             if entry["exact"]:
                 t = time.perf_counter()
@@ -94,7 +125,7 @@ def build(iterations, seeds):
             row = {"graph": g["id"], "family": entry["family"], "budget": budget,
                    "peak_bytes": best["claims"]["peak_bytes"],
                    "recompute_cost": best["claims"]["recompute_cost"], "lower_bound": bound,
-                   "bound_method": "exact-minimax" if entry["exact"] else "mandatory-local-allocation",
+                   "bound_method": "exact-minimax" if entry["exact"] else "local-and-loss-knapsack",
                    "optimal": best["claims"]["peak_bytes"] == bound,
                    "object": rel, "sha256": filehash(rel), "method": best["method"],
                    "baseline_peak": base["peak_bytes"], "baseline_method": base["method"],
@@ -197,7 +228,7 @@ def check(graph=None, budget=None, prove=False):
                 optimum = exact(g, r["budget"])["claims"]["peak_bytes"]
                 require(optimum == r["lower_bound"] == r["peak_bytes"], "incorrect exact optimum")
         else:
-            require(r["lower_bound"] == local_bound(g), "incorrect local lower bound")
+            require(r["lower_bound"] == budget_bound(g, r["budget"]), "incorrect lower bound")
         # Check every seed certificate and the recorded heuristic comparison.
         found = list((ROOT / f"certificates/search/{r['graph']}").glob(f"seed*-b{r['budget']}.json"))
         require(bool(found), "missing search certificates")

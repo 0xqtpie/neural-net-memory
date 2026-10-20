@@ -4,10 +4,11 @@ PASS: square-root segmentation on lengths 16, 64, 256
 PASS: discovery-yield summary and exhaustive segment-width baseline coverage
 PASS: 8 primary-source index entries; this checks metadata, not literature conclusions
 PASS: all 8 catalogue first_step positive controls
-PASS: complete offline pilot verification in 8.773s
+PASS: complete offline pilot verification in 6.618s
 test_all_baselines_legal (test_verifier.VerifierTests.test_all_baselines_legal) ... ok
 test_backward_order (test_verifier.VerifierTests.test_backward_order) ... ok
 test_bad_graphs (test_verifier.VerifierTests.test_bad_graphs) ... ok
+test_budget_bound_against_exact_optima (test_verifier.VerifierTests.test_budget_bound_against_exact_optima) ... ok
 test_claim_peak_and_cost (test_verifier.VerifierTests.test_claim_peak_and_cost) ... ok
 test_duplicate_keys (test_verifier.VerifierTests.test_duplicate_keys) ... ok
 test_exact_hand_optimum (test_verifier.VerifierTests.test_exact_hand_optimum) ... ok
@@ -26,6 +27,6 @@ test_seed_reproducibility (test_verifier.VerifierTests.test_seed_reproducibility
 test_simultaneous_input_output (test_verifier.VerifierTests.test_simultaneous_input_output) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.196s
+Ran 20 tests in 0.191s
 
 OK

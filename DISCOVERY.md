@@ -7,7 +7,7 @@ certificate is a valid model result even if no neural network is trained.
 The authoritative record is discover/frontier.json and its graph/budget table,
 records/frontiers.json. There are 12 fixed graphs and 60
 challenges: 25 tiny exact cases and 35 workload-derived cases. Exact enumeration
-establishes the tiny optima; larger records are witnesses plus mandatory-allocation
+establishes the tiny optima; larger records are witnesses plus local-allocation and loss-knapsack
 lower bounds. The current records are author-checked, not maintainer-accepted.
 Read research/initial/REPORT.md for yields and limitations.
 

@@ -1,6 +1,6 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Under activation-memory/v1, 60 graph/budget rows have exact verified schedule scores; 25 tiny optima are established by exhaustive minimax search, and 4 workload rows meet a mandatory-allocation lower bound. 17/35 workload rows improve the included tuned baseline families; no external SOTA or GPU claim.",
+  "statement": "Under activation-memory/v1, 60 graph/budget rows have exact verified schedule scores; 25 tiny optima are established by exhaustive minimax search, and 6 workload rows meet a certified allocation lower bound. 17/35 workload rows improve the included tuned baseline families; no external SOTA or GPU claim.",
   "status": "Local proposal; author-checked; not maintainer accepted; public launch paused",
   "evidence_level": [
     "author-checked"
@@ -71,7 +71,7 @@
     },
     {
       "path": "records/frontiers.json",
-      "sha256": "535d2bd65a6501b5448431704bfb9e728834282e24a9516573a3eb48e6e97161",
+      "sha256": "02fe6b6eed802febc2e59d8361bf4735cf41d01e8242ecc00498d5b3a1819d71",
       "role": "per-instance records"
     },
     {
@@ -81,11 +81,8 @@
     },
     {
       "path": "MODEL.md",
-      "sha256": "3da4647927324a8c4407cc237acb01c7e090edcf8514bd32f6dac255fc8edc8d",
+      "sha256": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e",
       "role": "normative allocation model"
     }
-  ],
-  "pinned_heads": {
-    "implementation_and_initial_records": "e2a855381429f495ec669c97ff14e552a348845e"
-  }
+  ]
 }

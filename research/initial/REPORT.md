@@ -20,10 +20,10 @@ reproducible with `python3 generate.py --check`.
 `verifier.py` uses no optimizer imports, training framework, floating point memory
 arithmetic, model weights or data. It checks loss and gradient prerequisites, every
 allocation/deallocation, forbidden recomputation, fixed budget, graph hash and four
-metric claims. Nineteen tests cover positive controls, malicious/malformed candidates,
+metric claims. Twenty tests cover positive controls, malicious/malformed candidates,
 transient input/output memory, seeded repeatability, multiple sinks, random tiny DAGs
 and state-limit behavior. Independently written transition logic in the minimax
-solver establishes the 25 tiny optima. This is separation of implementations inside
+solver establishes the 25 tiny optima. The budget-sensitive lower bound is also cross-checked against tiny exact optima. This is separation of implementations inside
 one authoring session, **not independent author review or formal verification**.
 
 The 418 baseline certificates cover eager saved values,
@@ -55,8 +55,13 @@ independent discoveries. The five budgets for one graph are correlated.
 | Workload graph families/instances with at least one improvement | 3 families / 7 instances |
 | Additional workload cells improved by seeds 4–6 after seeds 1–3 plus baselines | 2/35 |
 | Largest workload reduction against tuned baselines | 42.86% |
-| Workload rows still above a certified lower bound | 31/35 |
-| Workload rows meeting the local allocation bound | 4/35 |
+| Workload rows still above a certified lower bound | 29/35 |
+| Workload rows meeting a local/knapsack allocation bound | 6/35 |
+
+A final lower-bound audit adds a loss-barrier knapsack relaxation to the mandatory
+local allocation bound. It tightens 12 workload-row bounds and certifies the two
+zero-budget MLP rows, in addition to the four already closed convolution rows.
+This does not change any schedule score or discovery-yield count. See MODEL.md.
 
 The final comparison tunes **every** segment width. A preliminary, less thoroughly
 tuned baseline sweep overstated headroom; it is not used for the final record.
@@ -96,11 +101,11 @@ The largest baseline-relative gain is resnet-b4-c32 at budget 605,552,640:
 
 A separate local measurement, after the search/PyTorch runs, checked each frontier
 certificate seven times (420 samples), including certificate read/parse and the
-simulator, with graph objects already loaded. Median 0.558 ms,
-95th percentile 3.218 ms, maximum 11.704 ms.
-The entire `python3 verify_all.py` subprocess, including 19 tests, 418 baseline and
+simulator, with graph objects already loaded. Median 0.517 ms,
+95th percentile 2.607 ms, maximum 9.270 ms.
+The entire `python3 verify_all.py` subprocess, including 20 tests, 418 baseline and
 360 search certificates, all 60 frontier witnesses, 25 exact optimum reruns and all
-8 task first steps, took 8.89 seconds on this run.
+8 task first steps, took 6.70 seconds on this run.
 The frontier certificates total 290,472 bytes; the largest
 has 529 actions. These are descriptive local measurements,
 not timing guarantees or comparisons between computers.
@@ -110,7 +115,11 @@ Details and every sample are in `verification-cost.json`; stdout/stderr is in
 `validation.log`. Campaign `measurements.json` records search counts and elapsed
 seconds, but part of that campaign overlapped the PyTorch CPU probe, so its timings
 must not be used for performance comparisons. Other machine load was unmonitored.
-Fresh-clone and protocol validation evidence is recorded separately when complete.
+A fresh local clone rebuilt all 838 certificates byte-identically under Python 3.12
+after their original generation under Python 3.14. The then-current record tables
+also matched byte-for-byte. The subsequent stronger bounds changed no certificates;
+final clean-clone checking covers those bounds. See reproducibility.json and the
+archived clean-clone logs. Protocol validation reports conformance, not a pilot stage.
 
 Reproduce all theoretical records with `python3 verify_all.py`. To regenerate
 search use `python3 run_suite.py build` in a scratch checkout; certificate results
@@ -142,9 +151,9 @@ ported; no claim of beating them is supported.
 There are **enough open, checkable tasks for a small local incubation**, but sustained
 novel scheduling yield on realistic production graphs is not established. Seventeen
 improved workload cells and two later-seed improvements demonstrate some remaining
-headroom relative to tuned elementary strategies. Thirty-one bound gaps are useful
+headroom relative to tuned elementary strategies. Twenty-nine bound gaps are useful
 research targets, but may reflect loose lower bounds rather than achievable gains.
-Four workload rows are already settled in this model, and all 25 tiny controls are
+Six workload rows are already settled in this model, and all 25 tiny controls are
 settled at their listed budgets.
 
 The suite is small (largest graph 56 macro-ops), cost proxies are unprofiled and
@@ -196,38 +205,38 @@ how many contributions the project can safely accept.
 | stateful4 | 2 | 9 | 2 | 9 | 9 | yes |
 | stateful4 | 4 | 9 | 3 | 9 | 9 | yes |
 | stateful4 | 8 | 9 | 3 | 9 | 9 | yes |
-| transformer-b1-t32 | 0 | 622592 | 0 | 294912 | 622592 | no |
+| transformer-b1-t32 | 0 | 622592 | 0 | 589824 | 622592 | no |
 | transformer-b1-t32 | 6653952 | 425984 | 5144576 | 294912 | 491520 | no |
 | transformer-b1-t32 | 13307904 | 360448 | 7725056 | 294912 | 360448 | no |
 | transformer-b1-t32 | 26615808 | 360448 | 7725056 | 294912 | 360448 | no |
 | transformer-b1-t32 | 53231616 | 327680 | 27271168 | 294912 | 360448 | no |
-| transformer-b2-t64 | 0 | 2490368 | 0 | 589824 | 2490368 | no |
-| transformer-b2-t64 | 27705344 | 1441792 | 27344896 | 589824 | 1835008 | no |
+| transformer-b2-t64 | 0 | 2490368 | 0 | 2424832 | 2490368 | no |
+| transformer-b2-t64 | 27705344 | 1441792 | 27344896 | 720896 | 1835008 | no |
 | transformer-b2-t64 | 55410688 | 1114112 | 47169536 | 589824 | 1114112 | no |
 | transformer-b2-t64 | 110821376 | 917504 | 73039872 | 589824 | 917504 | no |
 | transformer-b2-t64 | 221642752 | 786432 | 133251072 | 589824 | 917504 | no |
-| transformer-b4-t128 | 0 | 10747904 | 0 | 1179648 | 10747904 | no |
-| transformer-b4-t128 | 119537664 | 5505024 | 119177216 | 1179648 | 8126464 | no |
+| transformer-b4-t128 | 0 | 10747904 | 0 | 10616832 | 10747904 | no |
+| transformer-b4-t128 | 119537664 | 5505024 | 119177216 | 2752512 | 8126464 | no |
 | transformer-b4-t128 | 239075328 | 4587520 | 228327424 | 1179648 | 4718592 | no |
 | transformer-b4-t128 | 478150656 | 2359296 | 310247424 | 1179648 | 2359296 | no |
 | transformer-b4-t128 | 956301312 | 2097152 | 852295680 | 1179648 | 2359296 | no |
-| resnet-b2-c32 | 0 | 1572864 | 0 | 1048576 | 1572864 | no |
+| resnet-b2-c32 | 0 | 1572864 | 0 | 1310720 | 1572864 | no |
 | resnet-b2-c32 | 37847040 | 1310720 | 37814272 | 1048576 | 1310720 | no |
 | resnet-b2-c32 | 75694080 | 1048576 | 75628544 | 1048576 | 1310720 | yes |
 | resnet-b2-c32 | 151388160 | 1048576 | 75628544 | 1048576 | 1310720 | yes |
 | resnet-b2-c32 | 302776320 | 1048576 | 75628544 | 1048576 | 1048576 | yes |
-| resnet-b4-c32 | 0 | 2621440 | 0 | 1048576 | 2621440 | no |
+| resnet-b4-c32 | 0 | 2621440 | 0 | 2359296 | 2621440 | no |
 | resnet-b4-c32 | 75694080 | 2097152 | 75628544 | 1048576 | 2359296 | no |
 | resnet-b4-c32 | 151388160 | 1572864 | 151257088 | 1048576 | 2359296 | no |
 | resnet-b4-c32 | 302776320 | 1310720 | 302645248 | 1048576 | 1835008 | no |
 | resnet-b4-c32 | 605552640 | 1048576 | 605421568 | 1048576 | 1835008 | yes |
-| mlp-b4 | 0 | 151552 | 0 | 36864 | 151552 | no |
-| mlp-b4 | 2129920 | 98304 | 1146880 | 36864 | 102400 | no |
+| mlp-b4 | 0 | 151552 | 0 | 151552 | 151552 | yes |
+| mlp-b4 | 2129920 | 98304 | 1146880 | 69632 | 102400 | no |
 | mlp-b4 | 4259840 | 53248 | 3244032 | 36864 | 53248 | no |
 | mlp-b4 | 8519680 | 49152 | 4325376 | 36864 | 49152 | no |
 | mlp-b4 | 17039360 | 45056 | 11698176 | 36864 | 49152 | no |
-| mlp-b8 | 0 | 299008 | 0 | 36864 | 299008 | no |
-| mlp-b8 | 4259840 | 167936 | 3342336 | 36864 | 184320 | no |
-| mlp-b8 | 8519680 | 69632 | 7569408 | 36864 | 69632 | no |
+| mlp-b8 | 0 | 299008 | 0 | 299008 | 299008 | yes |
+| mlp-b8 | 4259840 | 167936 | 3342336 | 118784 | 184320 | no |
+| mlp-b8 | 8519680 | 69632 | 7569408 | 53248 | 69632 | no |
 | mlp-b8 | 17039360 | 65536 | 8650752 | 36864 | 65536 | no |
 | mlp-b8 | 34078720 | 61440 | 22347776 | 36864 | 65536 | no |

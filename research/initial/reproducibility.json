@@ -1,0 +1,15 @@
+{
+  "source_commit_rebuilt": "d86d50c15fd9852aa1abc087b8e80f5c51e611b2",
+  "original_python": "3.14.6",
+  "fresh_clone_rebuild_python": "3.12.8",
+  "commands": [
+    "python3.12 verify_all.py",
+    "python3.12 run_suite.py build",
+    "git diff --exit-code -- certificates records",
+    "python3.12 verify_all.py"
+  ],
+  "result": "PASS; no certificate or record byte differences at the rebuilt source revision",
+  "certificate_count": 838,
+  "certificate_tree_sha256": "2e95a32e0a3e40aaffccca1321a91cba2841087f9b725851b3ee49dbdf516f5d",
+  "final_scope_note": "After this rebuild, a budget-sensitive lower bound tightened 12 rows and closed two; no certificates or search scores changed. Final bounds are rechecked in the final clean clone."
+}
