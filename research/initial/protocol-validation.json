@@ -1,0 +1,20 @@
+{
+  "source": "start-neural-net-memory",
+  "conformant": true,
+  "problems": [],
+  "conventions": {
+    "catalog": true,
+    "priority_log": true,
+    "coordination": "manifest has no `coordination` channel",
+    "reproduce": true,
+    "ledger": true,
+    "packages": true
+  },
+  "warnings": [],
+  "manifest_origin": "discover.json",
+  "table": {
+    "rows": 60,
+    "open": 31
+  },
+  "license": "LICENSE"
+}
