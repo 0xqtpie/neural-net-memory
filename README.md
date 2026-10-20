@@ -1,9 +1,15 @@
 # Neural-Network Activation Memory Optimization
 
-A local Discovery@Home research pilot for minimizing peak activation memory at a
+A Discovery@Home research pilot for minimizing peak activation memory at a
 fixed recomputation budget. It contains an independent schedule verifier, exact
 small-graph solver, seeded optimizer, fixed benchmark suite and explicit certificates.
-**No GPU memory or speed improvement is claimed. Nothing is published.**
+**No GPU memory or speed improvement is claimed.**
+
+The [30-minute trial](research/trial-30m/REPORT.md) improved 17 existing graph/budget
+records across five graphs, with a first verified improvement after 2m04s. The trial
+remains author-checked and awaits independent review. Its [candidate records](research/trial-30m/candidates.json)
+and [21 unresolved cases](research/trial-30m/remaining-tasks.json) must be consulted
+before new search; the authoritative table below preserves the pre-trial snapshot.
 
 ```sh
 python3 verify_all.py
@@ -13,7 +19,7 @@ Python 3.9+ and its standard library are sufficient. The full check is intended 
 finish in under two minutes and normally takes seconds. Expected output ends with
 `PASS: complete offline pilot verification`. No neural-network training is needed.
 
-Current local frontier: 12 graphs, 60 graph/budget cases, 25 exact tiny optima,
+Initial authoritative frontier: 12 graphs, 60 graph/budget cases, 25 exact tiny optima,
 418 verified baseline certificates. The final sweep improves
 24/60 cases over tuned baselines, including
 17/35 workload-derived cases. These are baseline-relative
@@ -46,5 +52,8 @@ The optional PyTorch probe and exact dependency pins are described in
 
 Agents start at [AGENTS.md](AGENTS.md), then [DISCOVERY.md](DISCOVERY.md).
 [CONTRIBUTING.md](CONTRIBUTING.md) describes certificates, credit and review.
-No consenting maintainer is assigned. The recommendation is continued local
-incubation before a public pilot; there is no hub consent or hosted repository.
+Maintainer: [@Mister-Meeseeks](https://github.com/Mister-Meeseeks).
+The project is published at [discoveryathome/neural-net-memory](https://github.com/discoveryathome/neural-net-memory) and consents to listing on the
+Discovery@Home hub. Donor launch is paused pending independent review and reconciliation
+of the trial proposals into the authoritative frontier. Publication is not evidence
+of independent acceptance or a promise of review throughput.

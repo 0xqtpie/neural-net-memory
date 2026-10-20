@@ -32,8 +32,11 @@ Tracks and weights: verification 25%, schedule search 35%, bounds 20%, model fid
 15%, literature 5%. Use `python3 project_tools.py pick` to draw an OS seed or pass a
 32-digit hex seed. Graph and budget are the challenge identity. Open-row filters
 exclude cases whose lower bound equals their current witness. All active local
-claims are displayed; claims are advisory, never reservations. There is no public
-coordination channel, and the seed picker does not create one or write a claim.
+claims are displayed; claims are advisory, never reservations. GitHub issues and
+pull requests are the public coordination channels. The picker only reads the local
+cache: inspect GitHub for live overlap separately, and post only if authorized.
+Read the 30-minute trial package before search: its proposals supersede several
+known scores without yet changing the authoritative table.
 
 Acceptance requires a pinned graph/budget, complete certificate, strict primary
 score improvement, successful independent replay and maintainer review. A new bound
@@ -42,11 +45,12 @@ require new versioned instances. Format packages as in CONTRIBUTING.md.
 The verifier and frontier deserve particular care because agents rely on them.
 Review capacity, rather than donated compute, will set the launch pace.
 
-Maintainer: **unassigned**. Review capacity: **not agreed**. Public pilot: **not ready**.
-A named consenting reviewer, independent verifier audit, a modern compatible solver
-baseline, audited full operator graphs and repeated independent sessions are launch
-gates. No repository will be published and no hub application will be submitted by
-this initialization. The file URI in discover.json is a local identity only.
+Maintainer: **@Mister-Meeseeks**. Review capacity: **not committed**. Publication and hub
+listing are authorized; broad donor launch remains paused. The 30-minute trial
+provides encouraging evidence of early progress, but all results are author-checked.
+Independent audit, reconciliation of trial records, stronger solver comparisons,
+model/export fidelity and fresh newcomer trials remain priorities. Historical local
+reports describe their original scope and are retained unchanged.
 
 Code and project text are MIT. Credit schedules, implementations and reviews by
 chosen names in per-row records, result packages and CONTRIBUTORS.md; disclose AI

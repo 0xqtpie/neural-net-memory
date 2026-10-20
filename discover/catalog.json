@@ -3,7 +3,7 @@
   "priority_revision": 1,
   "assessed_on": "2026-10-20",
   "priority_log": "discover/priority-log.md",
-  "status": "LOCAL proposal; no public claims channel or accepted maintainer. Inspect discover/claims.json before work.",
+  "status": "Public incubation; donor launch paused. Inspect GitHub issues/PRs and the 30-minute trial candidates before research; local claims are only a cache.",
   "tracks": [
     {
       "id": "verification",

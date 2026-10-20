@@ -1,7 +1,7 @@
 {
   "schema": "discover-frontier/v0",
   "statement": "Under activation-memory/v1, 60 graph/budget rows have exact verified schedule scores; 25 tiny optima are established by exhaustive minimax search, and 6 workload rows meet a certified allocation lower bound. 17/35 workload rows improve the included tuned baseline families; no external SOTA or GPU claim.",
-  "status": "Local proposal; author-checked; not maintainer accepted; public launch paused",
+  "status": "Published initial snapshot; author-checked. Trial proposals are in research/trial-30m; independent review and reconciliation pending; donor launch paused.",
   "evidence_level": [
     "author-checked"
   ],

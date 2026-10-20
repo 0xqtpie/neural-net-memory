@@ -1,10 +1,13 @@
-# Contributing locally
+# Contributing
 
 Read `DISCOVERY.md`, `MODEL.md`, then the applicable row in
 `records/frontiers.json`. Run `python3 verify_all.py` before research.
 Use `python3 project_tools.py pick --seed HEX32` (or omit the seed to draw it from
 the OS) to distribute open-ended work. Record the returned seed, graph and budget.
-The local claims file is advisory; there is no hosted coordination channel.
+Check [open issues](https://github.com/discoveryathome/neural-net-memory/issues) and [pull requests](https://github.com/discoveryathome/neural-net-memory/pulls) for overlap.
+The local claims file is only a historical advisory cache; the picker does not fetch
+GitHub claims. Read research/trial-30m/REPORT.md, candidates.json and remaining-tasks.json
+before attempting an improvement on the older authoritative records.
 
 Produce `research/<name>/README.md`, `TASK.json`, `SOURCES.json`, `VERIFY.json`
 and the schedule certificate. Pin the base commit, graph hash, budget, search
@@ -25,7 +28,9 @@ an existing row improve. Add versioned cases separately and explain their proven
 
 Do not overwrite the authoritative frontier without a maintainer's review.
 Initialization is user-authorized; future contribution sessions submit result
-packages for review. No maintainer has agreed to serve yet and review is paused.
+packages for review by @Mister-Meeseeks. Broad donor intake remains paused pending
+independent audit and reconciliation of the trial candidates. No response-time
+commitment has been established.
 The verifier checks legality/value; another person or independently authored
 implementation must supply independent review. Re-running one's own checker is
 still `author-checked`, even if it runs in a fresh clone.
@@ -44,5 +49,6 @@ An improvement in a model must never be relabelled as a GPU saving.
 
 Discovery@Home handoffs/findings/done messages end with the protocol's fenced
 `discover` JSON block. Templates are in `discover/local-handoff.md`. Leave messages
-locally; the current user instruction prohibits publishing repositories or applying
-to a hub, and gives no authorization to message other people.
+locally unless the session user authorizes posting. With authorization, submit result
+packages as pull requests and use GitHub issues for claims and review questions.
+Never infer permission to contact people from the availability of credentials.

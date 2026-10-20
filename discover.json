@@ -9,10 +9,11 @@
   ],
   "maintainers": [
     {
-      "name": "UNASSIGNED \u2014 schema placeholder, no consenting maintainer"
+      "name": "Doug Colkitt",
+      "github": "Mister-Meeseeks"
     }
   ],
-  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/neural-net-memory/start-neural-net-memory",
+  "canonical_repo": "https://github.com/discoveryathome/neural-net-memory",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
@@ -31,8 +32,8 @@
     "verify_fraction": 0.25
   },
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
       "merge",
       "change-frontier",
@@ -44,7 +45,7 @@
   "license": "MIT",
   "review": {
     "paused": true,
-    "note": "Local proposal. No maintainer or review capacity has been agreed."
+    "note": "Public incubation; independent audit and trial-frontier reconciliation pending. No review-throughput commitment yet."
   },
   "credit": {
     "policy": "Credit accepted schedules, code and reviews in per-row records, result packages and CONTRIBUTORS.md; disclose AI assistance. No promise of future paper authorship.",
@@ -69,5 +70,16 @@
       "{seed}"
     ]
   },
-  "process_changed_on": "2026-10-20"
+  "process_changed_on": "2026-10-20",
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
+  "coordination": {
+    "transport": "github-issues",
+    "claim_ttl_minutes": 120
+  }
 }
