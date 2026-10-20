@@ -1,0 +1,32 @@
+{
+  "card": "none",
+  "catalog_revision": 1,
+  "scope": "User-authorized LOCAL pilot initialization: verifier, exact cases, workload suite, baselines, search, records, catalogue and feasibility assessment.",
+  "scope_status": "unchanged",
+  "outcome": "tooling",
+  "evidence_level": "author-checked",
+  "not_checked": [
+    "Independent review",
+    "Checkmate/Moccasin superiority",
+    "Real GPU execution of optimized schedules",
+    "Full production-model exports"
+  ],
+  "credit": [
+    "Codex; user research specification"
+  ],
+  "ai_assistance": "Project and experiments authored by Codex; no independent reviewer.",
+  "next_questions": [
+    {
+      "question": "Can a compatible MILP/CP solver close the larger gaps?",
+      "why_it_matters": "Distinguishes useful search headroom from weak baselines and lower bounds.",
+      "first_step": "Match all diamond5 budgets with an independent formulation.",
+      "blocked_by": "No solver adapter implemented."
+    },
+    {
+      "question": "Do fully exported operator graphs retain the measured discovery yield?",
+      "why_it_matters": "Current macro graphs omit implementation allocations.",
+      "first_step": "Audit LayerNorm and attention saved tensors using torch_probe.py.",
+      "blocked_by": "Independent exporter/model audit pending."
+    }
+  ]
+}

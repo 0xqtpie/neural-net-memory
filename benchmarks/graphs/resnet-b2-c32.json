@@ -1,0 +1,167 @@
+{
+  "model": "activation-memory/v1",
+  "id": "resnet-b2-c32",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 262144
+    }
+  ],
+  "nodes": [
+    {
+      "id": "b0_conv1",
+      "deps": [
+        "x"
+      ],
+      "bytes": 262144,
+      "cost": 37748736,
+      "backward_cost": 75497472,
+      "backward_requires": [
+        "x"
+      ],
+      "recomputable": true,
+      "kind": "conv"
+    },
+    {
+      "id": "b0_relu1",
+      "deps": [
+        "b0_conv1"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [
+        "b0_relu1"
+      ],
+      "recomputable": true,
+      "kind": "relu"
+    },
+    {
+      "id": "b0_conv2",
+      "deps": [
+        "b0_relu1"
+      ],
+      "bytes": 262144,
+      "cost": 37748736,
+      "backward_cost": 75497472,
+      "backward_requires": [
+        "b0_relu1"
+      ],
+      "recomputable": true,
+      "kind": "conv"
+    },
+    {
+      "id": "b0_add",
+      "deps": [
+        "x",
+        "b0_conv2"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b0_relu2",
+      "deps": [
+        "b0_add"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [
+        "b0_relu2"
+      ],
+      "recomputable": true,
+      "kind": "relu"
+    },
+    {
+      "id": "b1_conv1",
+      "deps": [
+        "b0_relu2"
+      ],
+      "bytes": 262144,
+      "cost": 37748736,
+      "backward_cost": 75497472,
+      "backward_requires": [
+        "b0_relu2"
+      ],
+      "recomputable": true,
+      "kind": "conv"
+    },
+    {
+      "id": "b1_relu1",
+      "deps": [
+        "b1_conv1"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [
+        "b1_relu1"
+      ],
+      "recomputable": true,
+      "kind": "relu"
+    },
+    {
+      "id": "b1_conv2",
+      "deps": [
+        "b1_relu1"
+      ],
+      "bytes": 262144,
+      "cost": 37748736,
+      "backward_cost": 75497472,
+      "backward_requires": [
+        "b1_relu1"
+      ],
+      "recomputable": true,
+      "kind": "conv"
+    },
+    {
+      "id": "b1_add",
+      "deps": [
+        "b0_relu2",
+        "b1_conv2"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b1_relu2",
+      "deps": [
+        "b1_add"
+      ],
+      "bytes": 262144,
+      "cost": 65536,
+      "backward_cost": 131072,
+      "backward_requires": [
+        "b1_relu2"
+      ],
+      "recomputable": true,
+      "kind": "relu"
+    }
+  ],
+  "outputs": [
+    "b1_relu2"
+  ],
+  "family": "convolution",
+  "provenance": {
+    "source": "https://arxiv.org/abs/1512.03385",
+    "derivation": "hand-derived residual conv/ReLU block, stride one, padding one; batch norm omitted",
+    "batch": 2,
+    "channels": 32,
+    "height": 32,
+    "width": 32,
+    "kernel": 3,
+    "dtype_bytes": 4,
+    "blocks": 2,
+    "limitations": "Not a traced full ResNet; convolution workspace and parameter/gradient allocations excluded."
+  },
+  "cost_unit": "integer abstract forward work; not elapsed time"
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Under activation-memory/v1, 60 graph/budget rows have exact verified schedule scores; 25 tiny optima are established by exhaustive minimax search, and 4 workload rows meet a mandatory-allocation lower bound. 17/35 workload rows improve the included tuned baseline families; no external SOTA or GPU claim.",
+  "status": "Local proposal; author-checked; not maintainer accepted; public launch paused",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "claim_kind": [
+    "exact",
+    "model"
+  ],
+  "scope": "Frozen benchmarks/suite.json; integer forward-recomputation budgets and declared activation allocations only. Full model in MODEL.md.",
+  "assumptions": [
+    {
+      "id": "model-fidelity",
+      "statement": "Workload graphs are analytic macro-op abstractions; faithfulness to full production autograd allocations remains unaudited.",
+      "status": "open",
+      "link": "MODEL.md"
+    },
+    {
+      "id": "independent-review",
+      "statement": "No independently authored verifier audit or consenting maintainer review has occurred.",
+      "status": "open",
+      "link": "discover/ledger.md"
+    }
+  ],
+  "review": "discover/ledger.md",
+  "updated_on": "2026-10-20",
+  "reproduce": "python3 verify_all.py",
+  "reproduce_full": "python3 run_suite.py build && python3 verify_all.py",
+  "reproduce_minutes": 2,
+  "prerequisites": [
+    "Python 3.9+; standard library only; no GPU, weights or training data"
+  ],
+  "table": {
+    "path": "records/frontiers.json",
+    "key": [
+      "graph",
+      "budget"
+    ],
+    "value": "peak_bytes",
+    "direction": "lower-is-better",
+    "bound": "lower_bound",
+    "object": "object",
+    "check_row": [
+      "python3",
+      "run_suite.py",
+      "check",
+      "--graph",
+      "{graph}",
+      "--budget",
+      "{budget}",
+      "--exact"
+    ],
+    "check_row_minutes": 1,
+    "by": "by",
+    "source": "source",
+    "updated": "updated"
+  },
+  "sources": [
+    "https://arxiv.org/abs/1604.06174",
+    "https://arxiv.org/abs/1910.02653v3",
+    "https://arxiv.org/abs/2006.09616v4",
+    "https://proceedings.mlr.press/v202/bartan23a.html"
+  ],
+  "artifacts": [
+    {
+      "path": "benchmarks/suite.json",
+      "sha256": "73fa032b5b07f872fc976490322f9d712cb2e3f664c70748d265151d6cb68296",
+      "role": "fixed instances"
+    },
+    {
+      "path": "records/frontiers.json",
+      "sha256": "535d2bd65a6501b5448431704bfb9e728834282e24a9516573a3eb48e6e97161",
+      "role": "per-instance records"
+    },
+    {
+      "path": "records/baselines.json",
+      "sha256": "2e26aad67c1d3cae517ea7ef43ccd151d6b4839e3d3650b9bbbccb76bfd27a89",
+      "role": "baseline certificate index"
+    },
+    {
+      "path": "MODEL.md",
+      "sha256": "3da4647927324a8c4407cc237acb01c7e090edcf8514bd32f6dac255fc8edc8d",
+      "role": "normative allocation model"
+    }
+  ]
+}

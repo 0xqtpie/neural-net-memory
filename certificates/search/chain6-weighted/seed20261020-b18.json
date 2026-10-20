@@ -1,0 +1,134 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "chain6-weighted",
+  "graph_sha256": "5805f932ee0501060a8c1f89b032663af460d0a37e07a2fc0d381ccae840c78b",
+  "budget": 18,
+  "method": "seeded-checkpoint-search",
+  "metadata": {
+    "seed": 20261020,
+    "iterations": 600,
+    "evaluated": 64,
+    "over_max_budget": 4,
+    "checkpoints": [
+      "n2",
+      "n4",
+      "n5"
+    ],
+    "optimal": false
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "drop",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n4"
+    },
+    {
+      "op": "drop",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n5"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "n5"
+    },
+    {
+      "op": "backward",
+      "node": "n5"
+    },
+    {
+      "op": "drop",
+      "node": "n4"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "backward",
+      "node": "n4"
+    },
+    {
+      "op": "drop",
+      "node": "n3"
+    },
+    {
+      "op": "backward",
+      "node": "n3"
+    },
+    {
+      "op": "drop",
+      "node": "n2"
+    },
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "backward",
+      "node": "n2"
+    },
+    {
+      "op": "drop",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "backward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "backward",
+      "node": "n0"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 12,
+    "recompute_cost": 7,
+    "forward_cost": 16,
+    "backward_cost": 18
+  }
+}

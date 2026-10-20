@@ -1,0 +1,85 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "stateful4",
+  "graph_sha256": "3442e6f43be3aa28e057a99bc5d672bd98f16af5fe5602b7432d50f8c3becfe1",
+  "budget": 4,
+  "method": "seeded-checkpoint-search",
+  "metadata": {
+    "seed": 20261025,
+    "iterations": 600,
+    "evaluated": 16,
+    "over_max_budget": 0,
+    "checkpoints": [
+      "a",
+      "c"
+    ],
+    "optimal": false
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "d"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "d"
+    },
+    {
+      "op": "backward",
+      "node": "d"
+    },
+    {
+      "op": "drop",
+      "node": "c"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "backward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "backward",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "backward",
+      "node": "a"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 9,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "diamond5",
+  "graph_sha256": "3ccf9b8123823bcbecf72acf5f61903cc1f0bafa7ee65a6402aefa939d5f7c32",
+  "budget": 7,
+  "method": "seeded-checkpoint-search",
+  "metadata": {
+    "seed": 20261020,
+    "iterations": 600,
+    "evaluated": 32,
+    "over_max_budget": 0,
+    "checkpoints": [
+      "b",
+      "d",
+      "e"
+    ],
+    "optimal": false
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "d"
+    },
+    {
+      "op": "drop",
+      "node": "c"
+    },
+    {
+      "op": "forward",
+      "node": "e"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "e"
+    },
+    {
+      "op": "backward",
+      "node": "e"
+    },
+    {
+      "op": "drop",
+      "node": "d"
+    },
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "backward",
+      "node": "d"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "c"
+    },
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "backward",
+      "node": "c"
+    },
+    {
+      "op": "backward",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "backward",
+      "node": "a"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 11,
+    "recompute_cost": 3,
+    "forward_cost": 10,
+    "backward_cost": 14
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "resnet-b2-c32",
+  "graph_sha256": "40fc62b0a9447a6eceb7d21a095b106b099af12c691b86ed88b7dae13d1eaa4d",
+  "budget": 0,
+  "method": "seeded-checkpoint-search",
+  "metadata": {
+    "seed": 20261025,
+    "iterations": 600,
+    "evaluated": 228,
+    "over_max_budget": 0,
+    "checkpoints": [
+      "b0_relu1",
+      "b0_relu2",
+      "b1_add",
+      "b1_relu1"
+    ],
+    "optimal": false
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "b0_conv1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_relu1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_conv1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_conv2"
+    },
+    {
+      "op": "forward",
+      "node": "b0_add"
+    },
+    {
+      "op": "drop",
+      "node": "b0_conv2"
+    },
+    {
+      "op": "forward",
+      "node": "b0_relu2"
+    },
+    {
+      "op": "drop",
+      "node": "b0_add"
+    },
+    {
+      "op": "forward",
+      "node": "b1_conv1"
+    },
+    {
+      "op": "forward",
+      "node": "b1_relu1"
+    },
+    {
+      "op": "drop",
+      "node": "b1_conv1"
+    },
+    {
+      "op": "forward",
+      "node": "b1_conv2"
+    },
+    {
+      "op": "forward",
+      "node": "b1_add"
+    },
+    {
+      "op": "drop",
+      "node": "b1_conv2"
+    },
+    {
+      "op": "forward",
+      "node": "b1_relu2"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "backward",
+      "node": "b1_relu2"
+    },
+    {
+      "op": "drop",
+      "node": "b1_add"
+    },
+    {
+      "op": "drop",
+      "node": "b1_relu2"
+    },
+    {
+      "op": "backward",
+      "node": "b1_add"
+    },
+    {
+      "op": "backward",
+      "node": "b1_conv2"
+    },
+    {
+      "op": "backward",
+      "node": "b1_relu1"
+    },
+    {
+      "op": "drop",
+      "node": "b1_relu1"
+    },
+    {
+      "op": "backward",
+      "node": "b1_conv1"
+    },
+    {
+      "op": "backward",
+      "node": "b0_relu2"
+    },
+    {
+      "op": "drop",
+      "node": "b0_relu2"
+    },
+    {
+      "op": "backward",
+      "node": "b0_add"
+    },
+    {
+      "op": "backward",
+      "node": "b0_conv2"
+    },
+    {
+      "op": "backward",
+      "node": "b0_relu1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_relu1"
+    },
+    {
+      "op": "backward",
+      "node": "b0_conv1"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 1572864,
+    "recompute_cost": 0,
+    "forward_cost": 151388160,
+    "backward_cost": 302776320
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "model": "activation-memory/v1",
+  "id": "chain6-weighted",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 1
+    }
+  ],
+  "nodes": [
+    {
+      "id": "n0",
+      "deps": [
+        "x"
+      ],
+      "bytes": 3,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "x"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "n1",
+      "deps": [
+        "n0"
+      ],
+      "bytes": 8,
+      "cost": 3,
+      "backward_cost": 6,
+      "backward_requires": [
+        "n0"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "n2",
+      "deps": [
+        "n1"
+      ],
+      "bytes": 2,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "n1"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "n3",
+      "deps": [
+        "n2"
+      ],
+      "bytes": 7,
+      "cost": 2,
+      "backward_cost": 4,
+      "backward_requires": [
+        "n2"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "n4",
+      "deps": [
+        "n3"
+      ],
+      "bytes": 2,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "n3"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "n5",
+      "deps": [
+        "n4"
+      ],
+      "bytes": 1,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "n4"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    }
+  ],
+  "outputs": [
+    "n5"
+  ],
+  "family": "synthetic",
+  "provenance": {
+    "source": "hand-defined exact test family"
+  },
+  "cost_unit": "integer abstract forward work; not elapsed time"
+}

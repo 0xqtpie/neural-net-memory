@@ -1,0 +1,58 @@
+[
+  {
+    "id": "chen2016",
+    "title": "Training Deep Nets with Sublinear Memory Cost",
+    "url": "https://arxiv.org/abs/1604.06174",
+    "status": "uniform-chain checkpoint construction reproduced",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "checkmate2020",
+    "title": "Checkmate: Breaking the Memory Wall with Optimal Tensor Rematerialization",
+    "url": "https://arxiv.org/abs/1910.02653v3",
+    "status": "primary-source claim checked; solver comparison open",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "dtr2021",
+    "title": "Dynamic Tensor Rematerialization",
+    "url": "https://arxiv.org/abs/2006.09616v4",
+    "status": "primary-source claim checked; implementation not reproduced",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "moccasin2023",
+    "title": "Moccasin: Efficient Tensor Rematerialization for Neural Networks",
+    "url": "https://proceedings.mlr.press/v202/bartan23a.html",
+    "status": "primary-source abstract checked; solver comparison open",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "torch-docs",
+    "title": "torch.utils.checkpoint",
+    "url": "https://docs.pytorch.org/docs/stable/checkpoint",
+    "status": "interfaces checked; experiment pinned separately to torch 2.10.0",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "torch-blog",
+    "title": "Current and New Activation Checkpointing Techniques in PyTorch",
+    "url": "https://pytorch.org/blog/activation-checkpointing-techniques/",
+    "status": "conceptual comparison checked; compiler experiment open",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "transformer",
+    "title": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "status": "architecture reference; analytic variants disclosed",
+    "checked_on": "2026-10-20"
+  },
+  {
+    "id": "resnet",
+    "title": "Deep Residual Learning for Image Recognition",
+    "url": "https://arxiv.org/abs/1512.03385",
+    "status": "architecture reference; partial blocks only",
+    "checked_on": "2026-10-20"
+  }
+]

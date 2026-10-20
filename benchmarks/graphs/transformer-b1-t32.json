@@ -1,0 +1,227 @@
+{
+  "model": "activation-memory/v1",
+  "id": "transformer-b1-t32",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 32768
+    }
+  ],
+  "nodes": [
+    {
+      "id": "b0_norm1",
+      "deps": [
+        "x"
+      ],
+      "bytes": 32768,
+      "cost": 40960,
+      "backward_cost": 81920,
+      "backward_requires": [
+        "x"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b0_q",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 32768,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_k",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 32768,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_v",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 32768,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_scores",
+      "deps": [
+        "b0_q",
+        "b0_k"
+      ],
+      "bytes": 32768,
+      "cost": 524288,
+      "backward_cost": 1048576,
+      "backward_requires": [
+        "b0_q",
+        "b0_k"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b0_probs",
+      "deps": [
+        "b0_scores"
+      ],
+      "bytes": 32768,
+      "cost": 40960,
+      "backward_cost": 81920,
+      "backward_requires": [
+        "b0_probs"
+      ],
+      "recomputable": true,
+      "kind": "softmax"
+    },
+    {
+      "id": "b0_context",
+      "deps": [
+        "b0_probs",
+        "b0_v"
+      ],
+      "bytes": 32768,
+      "cost": 524288,
+      "backward_cost": 1048576,
+      "backward_requires": [
+        "b0_probs",
+        "b0_v"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b0_proj",
+      "deps": [
+        "b0_context"
+      ],
+      "bytes": 32768,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_context"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_residual1",
+      "deps": [
+        "x",
+        "b0_proj"
+      ],
+      "bytes": 32768,
+      "cost": 8192,
+      "backward_cost": 16384,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b0_norm2",
+      "deps": [
+        "b0_residual1"
+      ],
+      "bytes": 32768,
+      "cost": 40960,
+      "backward_cost": 81920,
+      "backward_requires": [
+        "b0_residual1"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b0_up",
+      "deps": [
+        "b0_norm2"
+      ],
+      "bytes": 131072,
+      "cost": 8388608,
+      "backward_cost": 16777216,
+      "backward_requires": [
+        "b0_norm2"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_gelu",
+      "deps": [
+        "b0_up"
+      ],
+      "bytes": 131072,
+      "cost": 262144,
+      "backward_cost": 524288,
+      "backward_requires": [
+        "b0_up"
+      ],
+      "recomputable": true,
+      "kind": "gelu"
+    },
+    {
+      "id": "b0_down",
+      "deps": [
+        "b0_gelu"
+      ],
+      "bytes": 32768,
+      "cost": 8388608,
+      "backward_cost": 16777216,
+      "backward_requires": [
+        "b0_gelu"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_residual2",
+      "deps": [
+        "b0_residual1",
+        "b0_down"
+      ],
+      "bytes": 32768,
+      "cost": 8192,
+      "backward_cost": 16384,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    }
+  ],
+  "outputs": [
+    "b0_residual2"
+  ],
+  "family": "transformer",
+  "provenance": {
+    "source": "https://arxiv.org/abs/1706.03762",
+    "derivation": "hand-derived pre-norm residual attention/MLP block; unfused dense attention",
+    "batch": 2,
+    "tokens": 32,
+    "width": 128,
+    "heads": 4,
+    "ff": 512,
+    "dtype_bytes": 4,
+    "blocks": 1,
+    "limitations": "No dropout, masks, positional encoding, fused kernels, views, or persistent norm statistics. Macro-op scratch excluded; costs analytic proxies."
+  },
+  "cost_unit": "integer abstract forward work; not elapsed time"
+}

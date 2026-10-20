@@ -1,0 +1,425 @@
+{
+  "model": "activation-memory/v1",
+  "id": "transformer-b2-t64",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 65536
+    }
+  ],
+  "nodes": [
+    {
+      "id": "b0_norm1",
+      "deps": [
+        "x"
+      ],
+      "bytes": 65536,
+      "cost": 81920,
+      "backward_cost": 163840,
+      "backward_requires": [
+        "x"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b0_q",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_k",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_v",
+      "deps": [
+        "b0_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b0_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_scores",
+      "deps": [
+        "b0_q",
+        "b0_k"
+      ],
+      "bytes": 131072,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_q",
+        "b0_k"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b0_probs",
+      "deps": [
+        "b0_scores"
+      ],
+      "bytes": 131072,
+      "cost": 163840,
+      "backward_cost": 327680,
+      "backward_requires": [
+        "b0_probs"
+      ],
+      "recomputable": true,
+      "kind": "softmax"
+    },
+    {
+      "id": "b0_context",
+      "deps": [
+        "b0_probs",
+        "b0_v"
+      ],
+      "bytes": 65536,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b0_probs",
+        "b0_v"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b0_proj",
+      "deps": [
+        "b0_context"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b0_context"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_residual1",
+      "deps": [
+        "x",
+        "b0_proj"
+      ],
+      "bytes": 65536,
+      "cost": 16384,
+      "backward_cost": 32768,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b0_norm2",
+      "deps": [
+        "b0_residual1"
+      ],
+      "bytes": 65536,
+      "cost": 81920,
+      "backward_cost": 163840,
+      "backward_requires": [
+        "b0_residual1"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b0_up",
+      "deps": [
+        "b0_norm2"
+      ],
+      "bytes": 262144,
+      "cost": 16777216,
+      "backward_cost": 33554432,
+      "backward_requires": [
+        "b0_norm2"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_gelu",
+      "deps": [
+        "b0_up"
+      ],
+      "bytes": 262144,
+      "cost": 524288,
+      "backward_cost": 1048576,
+      "backward_requires": [
+        "b0_up"
+      ],
+      "recomputable": true,
+      "kind": "gelu"
+    },
+    {
+      "id": "b0_down",
+      "deps": [
+        "b0_gelu"
+      ],
+      "bytes": 65536,
+      "cost": 16777216,
+      "backward_cost": 33554432,
+      "backward_requires": [
+        "b0_gelu"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b0_residual2",
+      "deps": [
+        "b0_residual1",
+        "b0_down"
+      ],
+      "bytes": 65536,
+      "cost": 16384,
+      "backward_cost": 32768,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b1_norm1",
+      "deps": [
+        "b0_residual2"
+      ],
+      "bytes": 65536,
+      "cost": 81920,
+      "backward_cost": 163840,
+      "backward_requires": [
+        "b0_residual2"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b1_q",
+      "deps": [
+        "b1_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b1_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_k",
+      "deps": [
+        "b1_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b1_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_v",
+      "deps": [
+        "b1_norm1"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b1_norm1"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_scores",
+      "deps": [
+        "b1_q",
+        "b1_k"
+      ],
+      "bytes": 131072,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b1_q",
+        "b1_k"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b1_probs",
+      "deps": [
+        "b1_scores"
+      ],
+      "bytes": 131072,
+      "cost": 163840,
+      "backward_cost": 327680,
+      "backward_requires": [
+        "b1_probs"
+      ],
+      "recomputable": true,
+      "kind": "softmax"
+    },
+    {
+      "id": "b1_context",
+      "deps": [
+        "b1_probs",
+        "b1_v"
+      ],
+      "bytes": 65536,
+      "cost": 2097152,
+      "backward_cost": 4194304,
+      "backward_requires": [
+        "b1_probs",
+        "b1_v"
+      ],
+      "recomputable": true,
+      "kind": "matmul"
+    },
+    {
+      "id": "b1_proj",
+      "deps": [
+        "b1_context"
+      ],
+      "bytes": 65536,
+      "cost": 4194304,
+      "backward_cost": 8388608,
+      "backward_requires": [
+        "b1_context"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_residual1",
+      "deps": [
+        "b0_residual2",
+        "b1_proj"
+      ],
+      "bytes": 65536,
+      "cost": 16384,
+      "backward_cost": 32768,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    },
+    {
+      "id": "b1_norm2",
+      "deps": [
+        "b1_residual1"
+      ],
+      "bytes": 65536,
+      "cost": 81920,
+      "backward_cost": 163840,
+      "backward_requires": [
+        "b1_residual1"
+      ],
+      "recomputable": true,
+      "kind": "norm"
+    },
+    {
+      "id": "b1_up",
+      "deps": [
+        "b1_norm2"
+      ],
+      "bytes": 262144,
+      "cost": 16777216,
+      "backward_cost": 33554432,
+      "backward_requires": [
+        "b1_norm2"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_gelu",
+      "deps": [
+        "b1_up"
+      ],
+      "bytes": 262144,
+      "cost": 524288,
+      "backward_cost": 1048576,
+      "backward_requires": [
+        "b1_up"
+      ],
+      "recomputable": true,
+      "kind": "gelu"
+    },
+    {
+      "id": "b1_down",
+      "deps": [
+        "b1_gelu"
+      ],
+      "bytes": 65536,
+      "cost": 16777216,
+      "backward_cost": 33554432,
+      "backward_requires": [
+        "b1_gelu"
+      ],
+      "recomputable": true,
+      "kind": "linear"
+    },
+    {
+      "id": "b1_residual2",
+      "deps": [
+        "b1_residual1",
+        "b1_down"
+      ],
+      "bytes": 65536,
+      "cost": 16384,
+      "backward_cost": 32768,
+      "backward_requires": [],
+      "recomputable": true,
+      "kind": "add"
+    }
+  ],
+  "outputs": [
+    "b1_residual2"
+  ],
+  "family": "transformer",
+  "provenance": {
+    "source": "https://arxiv.org/abs/1706.03762",
+    "derivation": "hand-derived pre-norm residual attention/MLP block; unfused dense attention",
+    "batch": 2,
+    "tokens": 64,
+    "width": 128,
+    "heads": 4,
+    "ff": 512,
+    "dtype_bytes": 4,
+    "blocks": 2,
+    "limitations": "No dropout, masks, positional encoding, fused kernels, views, or persistent norm statistics. Macro-op scratch excluded; costs analytic proxies."
+  },
+  "cost_unit": "integer abstract forward work; not elapsed time"
+}

@@ -1,0 +1,143 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "chain6-weighted",
+  "graph_sha256": "5805f932ee0501060a8c1f89b032663af460d0a37e07a2fc0d381ccae840c78b",
+  "budget": 9,
+  "method": "exact-minimax",
+  "metadata": {
+    "states": 1199,
+    "expanded": 879,
+    "optimal": true
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "drop",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n4"
+    },
+    {
+      "op": "drop",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n5"
+    },
+    {
+      "op": "drop",
+      "node": "n4"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "n5"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "drop",
+      "node": "n2"
+    },
+    {
+      "op": "forward",
+      "node": "n4"
+    },
+    {
+      "op": "backward",
+      "node": "n5"
+    },
+    {
+      "op": "drop",
+      "node": "n4"
+    },
+    {
+      "op": "backward",
+      "node": "n4"
+    },
+    {
+      "op": "drop",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n3"
+    },
+    {
+      "op": "drop",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n2"
+    },
+    {
+      "op": "drop",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "backward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "backward",
+      "node": "n0"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 12,
+    "recompute_cost": 9,
+    "forward_cost": 18,
+    "backward_cost": 18
+  }
+}

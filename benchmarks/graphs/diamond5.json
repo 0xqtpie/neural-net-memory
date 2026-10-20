@@ -1,0 +1,92 @@
+{
+  "model": "activation-memory/v1",
+  "id": "diamond5",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 1
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a",
+      "deps": [
+        "x"
+      ],
+      "bytes": 2,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "x"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "b",
+      "deps": [
+        "a"
+      ],
+      "bytes": 5,
+      "cost": 2,
+      "backward_cost": 4,
+      "backward_requires": [
+        "a"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "c",
+      "deps": [
+        "a"
+      ],
+      "bytes": 3,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "a"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "d",
+      "deps": [
+        "b",
+        "c"
+      ],
+      "bytes": 2,
+      "cost": 2,
+      "backward_cost": 4,
+      "backward_requires": [
+        "b",
+        "c"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    },
+    {
+      "id": "e",
+      "deps": [
+        "d"
+      ],
+      "bytes": 1,
+      "cost": 1,
+      "backward_cost": 2,
+      "backward_requires": [
+        "d"
+      ],
+      "recomputable": true,
+      "kind": "synthetic"
+    }
+  ],
+  "outputs": [
+    "e"
+  ],
+  "family": "synthetic",
+  "provenance": {
+    "source": "fork-join exact test"
+  },
+  "cost_unit": "integer abstract forward work; not elapsed time"
+}

@@ -1,0 +1,103 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "diamond5",
+  "graph_sha256": "3ccf9b8123823bcbecf72acf5f61903cc1f0bafa7ee65a6402aefa939d5f7c32",
+  "budget": 252,
+  "method": "segment-4",
+  "metadata": {},
+  "actions": [
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "d"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "c"
+    },
+    {
+      "op": "forward",
+      "node": "e"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "e"
+    },
+    {
+      "op": "backward",
+      "node": "e"
+    },
+    {
+      "op": "drop",
+      "node": "d"
+    },
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "backward",
+      "node": "d"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "c"
+    },
+    {
+      "op": "backward",
+      "node": "c"
+    },
+    {
+      "op": "backward",
+      "node": "b"
+    },
+    {
+      "op": "drop",
+      "node": "a"
+    },
+    {
+      "op": "backward",
+      "node": "a"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 11,
+    "recompute_cost": 4,
+    "forward_cost": 11,
+    "backward_cost": 14
+  }
+}

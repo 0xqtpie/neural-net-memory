@@ -1,0 +1,364 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-20",
+  "priority_log": "discover/priority-log.md",
+  "status": "LOCAL proposal; no public claims channel or accepted maintainer. Inspect discover/claims.json before work.",
+  "tracks": [
+    {
+      "id": "verification",
+      "weight": 25,
+      "useful_outcome": "Independent verifier audit and clean reproduction",
+      "tasks": [
+        {
+          "id": "reproduce-frontier",
+          "question": "Does a clean independent replay confirm every witness and exact optimum?",
+          "starting_points": [
+            "verifier.py",
+            "records/frontiers.json",
+            "MODEL.md"
+          ],
+          "methods": [
+            "Independent replay; record environment and base hash."
+          ],
+          "acceptance_gate": "All rows reproduce; clearly state that a replay is not independent implementation.",
+          "first_step": {
+            "command": [
+              "python3",
+              "run_suite.py",
+              "check",
+              "--exact"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Replay one exact row with a separately written state enumerator.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "reproduce-frontier"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ]
+        },
+        {
+          "id": "harden-verifier",
+          "question": "Can malformed or illegal schedules be accepted?",
+          "starting_points": [
+            "verifier.py",
+            "tests/test_verifier.py"
+          ],
+          "methods": [
+            "Mutation testing, adversarial certificates, independent memory traces."
+          ],
+          "acceptance_gate": "A minimized failing input plus regression test or an audited rejection report.",
+          "first_step": {
+            "command": [
+              "python3",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests",
+              "-v"
+            ],
+            "expected": "OK",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Mutate loss barriers, dependency order and claimed costs.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "harden-verifier"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schedule-search",
+      "weight": 35,
+      "useful_outcome": "New legal certificates at fixed budgets",
+      "tasks": [
+        {
+          "id": "search-transformers",
+          "question": "Can checkpoint placement or ready-node ordering improve an open transformer row?",
+          "starting_points": [
+            "search.py",
+            "records/frontiers.json"
+          ],
+          "methods": [
+            "Seeded local search, beam search, checkpoint-set optimization."
+          ],
+          "acceptance_gate": "A smaller verified peak at exactly the drawn graph/budget; report all attempts.",
+          "first_step": {
+            "command": [
+              "python3",
+              "run_suite.py",
+              "check",
+              "--graph",
+              "transformer-b2-t64"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Use the drawn row and run a fresh seed, then add backward-order exploration.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "search-transformers"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ],
+          "rows": {
+            "open": true,
+            "where": {
+              "family": "transformer"
+            }
+          }
+        },
+        {
+          "id": "search-cnn-mlp",
+          "question": "Can weighted-cost or branch-aware policies improve MLP rows?",
+          "starting_points": [
+            "search.py",
+            "benchmarks/graphs/mlp-b8.json"
+          ],
+          "methods": [
+            "Cost-aware checkpoint sets and regional replay."
+          ],
+          "acceptance_gate": "Verified strict improvement over the frozen row and strongest baseline.",
+          "first_step": {
+            "command": [
+              "python3",
+              "run_suite.py",
+              "check",
+              "--graph",
+              "mlp-b8"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Compare checkpoint cost/size ratios with contiguous-region checkpoints.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "search-cnn-mlp"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ],
+          "rows": {
+            "open": true,
+            "where": {
+              "family": "mlp"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bounds",
+      "weight": 20,
+      "useful_outcome": "Close gaps or expose where current bounds are loose",
+      "tasks": [
+        {
+          "id": "tighten-bounds",
+          "question": "Can a CP/MILP or cut-based bound certify an open row?",
+          "starting_points": [
+            "MODEL.md",
+            "search.py",
+            "LITERATURE.md"
+          ],
+          "methods": [
+            "Adapt Checkmate/Moccasin formulations with explicit allocation constraints."
+          ],
+          "acceptance_gate": "Match all tiny optima first; certify bounds without changing the feasible set.",
+          "first_step": {
+            "command": [
+              "python3",
+              "run_suite.py",
+              "check",
+              "--graph",
+              "diamond5",
+              "--exact"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Write a second formulation for diamond5 and cross-check every budget.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "tighten-bounds"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ],
+          "rows": {
+            "open": true,
+            "where": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "model-fidelity",
+      "weight": 15,
+      "useful_outcome": "Auditable real-operator graphs and PyTorch parity",
+      "tasks": [
+        {
+          "id": "audit-workload-model",
+          "question": "Which saved tensors and operator temporaries are missing from macro graphs?",
+          "starting_points": [
+            "generate.py",
+            "torch_probe.py",
+            "empirical/torch-cpu.json",
+            "MODEL.md"
+          ],
+          "methods": [
+            "Trace operator graphs; compare saved-tensor dependencies and allocation lifetimes."
+          ],
+          "acceptance_gate": "A versioned exporter and fixtures; never merge measurements into theoretical records.",
+          "first_step": {
+            "command": [
+              "python3",
+              "generate.py",
+              "--check"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Audit one LayerNorm/attention block against saved-tensor metadata.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "audit-workload-model"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ]
+        },
+        {
+          "id": "replicate-checkpointing",
+          "question": "Do established chain constructions and PyTorch baselines reproduce?",
+          "starting_points": [
+            "baseline_replication.py",
+            "empirical/COMPARISON.md"
+          ],
+          "methods": [
+            "Replicate segmentation and optional pinned PyTorch CPU probe."
+          ],
+          "acceptance_gate": "Exact chain record equality; checkpoint gradients agree; scope memory diagnostics accurately.",
+          "first_step": {
+            "command": [
+              "python3",
+              "baseline_replication.py",
+              "--check"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Test unequal segment sizes and document the final uncheckpointed segment.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "replicate-checkpointing"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "weight": 5,
+      "useful_outcome": "Prevent rediscovery and plan a fair modern-solver comparison",
+      "tasks": [
+        {
+          "id": "audit-frontier-sources",
+          "question": "What published solver comparison would meaningfully test novelty?",
+          "starting_points": [
+            "LITERATURE.md",
+            "research/sources.json"
+          ],
+          "methods": [
+            "Primary-paper/model audit; version-pinned solver adapter design."
+          ],
+          "acceptance_gate": "Cited compatible-model comparison plan; no unsupported universal-best claims.",
+          "first_step": {
+            "command": [
+              "python3",
+              "project_tools.py",
+              "sources"
+            ],
+            "expected": "PASS:",
+            "scope": "Positive control; run before new research."
+          },
+          "first_experiment": "Compare Checkmate and Moccasin action spaces with MODEL.md.",
+          "bottleneck_link": "See DISCOVERY.md and research/initial/REPORT.md: fidelity, tight bounds and independent comparison are the launch bottlenecks.",
+          "allowed_variations": [
+            "Change the proposed algorithm or proof, not the frozen instance or scoring model."
+          ],
+          "scope_change_triggers": [
+            "Different allocations, costs or graph semantics require a new versioned challenge."
+          ],
+          "overlap_terms": [
+            "audit-frontier-sources"
+          ],
+          "claim_kind": [
+            "model",
+            "exact"
+          ]
+        }
+      ]
+    }
+  ]
+}

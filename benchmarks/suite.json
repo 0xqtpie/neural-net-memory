@@ -1,0 +1,176 @@
+{
+  "suite": "activation-memory-benchmarks/v1",
+  "model": "activation-memory/v1",
+  "seed": null,
+  "generation": "fully deterministic; no random graph draws",
+  "graphs": [
+    {
+      "id": "chain6-unit",
+      "path": "benchmarks/graphs/chain6-unit.json",
+      "sha256": "b976d36c000211b25c88df0532e8af0f44e028ba546e643fd5f388766c631363",
+      "budgets": [
+        0,
+        1,
+        3,
+        6,
+        12
+      ],
+      "exact": true,
+      "family": "synthetic"
+    },
+    {
+      "id": "chain6-weighted",
+      "path": "benchmarks/graphs/chain6-weighted.json",
+      "sha256": "5805f932ee0501060a8c1f89b032663af460d0a37e07a2fc0d381ccae840c78b",
+      "budgets": [
+        0,
+        2,
+        4,
+        9,
+        18
+      ],
+      "exact": true,
+      "family": "synthetic"
+    },
+    {
+      "id": "diamond5",
+      "path": "benchmarks/graphs/diamond5.json",
+      "sha256": "3ccf9b8123823bcbecf72acf5f61903cc1f0bafa7ee65a6402aefa939d5f7c32",
+      "budgets": [
+        0,
+        1,
+        3,
+        7,
+        14
+      ],
+      "exact": true,
+      "family": "synthetic"
+    },
+    {
+      "id": "skip6",
+      "path": "benchmarks/graphs/skip6.json",
+      "sha256": "c521733b0db24aef814a14e58dbc818ae6cb6ff6dd90c829230024b016a86c7f",
+      "budgets": [
+        0,
+        2,
+        4,
+        8,
+        16
+      ],
+      "exact": true,
+      "family": "synthetic"
+    },
+    {
+      "id": "stateful4",
+      "path": "benchmarks/graphs/stateful4.json",
+      "sha256": "3442e6f43be3aa28e057a99bc5d672bd98f16af5fe5602b7432d50f8c3becfe1",
+      "budgets": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "exact": true,
+      "family": "synthetic"
+    },
+    {
+      "id": "transformer-b1-t32",
+      "path": "benchmarks/graphs/transformer-b1-t32.json",
+      "sha256": "2d2cab8d86ee8d6397bb33c363b826908dbfa204309a64f7882ca106186068fc",
+      "budgets": [
+        0,
+        6653952,
+        13307904,
+        26615808,
+        53231616
+      ],
+      "exact": false,
+      "family": "transformer"
+    },
+    {
+      "id": "transformer-b2-t64",
+      "path": "benchmarks/graphs/transformer-b2-t64.json",
+      "sha256": "49253c00a0941d94630e5323343af6e2d19e7317f26864fc19e01bc782bc638b",
+      "budgets": [
+        0,
+        27705344,
+        55410688,
+        110821376,
+        221642752
+      ],
+      "exact": false,
+      "family": "transformer"
+    },
+    {
+      "id": "transformer-b4-t128",
+      "path": "benchmarks/graphs/transformer-b4-t128.json",
+      "sha256": "7d60aaf32c25d4d000872f9d317cdb0cbc71c929307eb69faf7e974c795d5854",
+      "budgets": [
+        0,
+        119537664,
+        239075328,
+        478150656,
+        956301312
+      ],
+      "exact": false,
+      "family": "transformer"
+    },
+    {
+      "id": "resnet-b2-c32",
+      "path": "benchmarks/graphs/resnet-b2-c32.json",
+      "sha256": "40fc62b0a9447a6eceb7d21a095b106b099af12c691b86ed88b7dae13d1eaa4d",
+      "budgets": [
+        0,
+        37847040,
+        75694080,
+        151388160,
+        302776320
+      ],
+      "exact": false,
+      "family": "convolution"
+    },
+    {
+      "id": "resnet-b4-c32",
+      "path": "benchmarks/graphs/resnet-b4-c32.json",
+      "sha256": "fe120b9dbba356bf53b6042ad7174fd2506df22906c017502008405f9c0f354f",
+      "budgets": [
+        0,
+        75694080,
+        151388160,
+        302776320,
+        605552640
+      ],
+      "exact": false,
+      "family": "convolution"
+    },
+    {
+      "id": "mlp-b4",
+      "path": "benchmarks/graphs/mlp-b4.json",
+      "sha256": "0c1be2e2d8064bef02ac125c3fca5bc6f8f8c334259a0cb326b63a7be5a8c216",
+      "budgets": [
+        0,
+        2129920,
+        4259840,
+        8519680,
+        17039360
+      ],
+      "exact": false,
+      "family": "mlp"
+    },
+    {
+      "id": "mlp-b8",
+      "path": "benchmarks/graphs/mlp-b8.json",
+      "sha256": "8b8d218fc5424929ede29d67422930cf182f80c09623fb7a9a8dcdcd8758a9db",
+      "budgets": [
+        0,
+        4259840,
+        8519680,
+        17039360,
+        34078720
+      ],
+      "exact": false,
+      "family": "mlp"
+    }
+  ]
+}

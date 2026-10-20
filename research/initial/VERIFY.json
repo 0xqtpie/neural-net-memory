@@ -1,0 +1,41 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "verify_all.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "PASS: complete offline pilot verification"
+    }
+  ],
+  "optional_commands": [
+    {
+      "argv": [
+        "python",
+        "torch_probe.py"
+      ],
+      "timeout_seconds": 120,
+      "expected": "PASS: 13 CPU configurations; all checkpoint gradients agree with eager"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "benchmarks/suite.json",
+      "sha256": "73fa032b5b07f872fc976490322f9d712cb2e3f664c70748d265151d6cb68296"
+    },
+    {
+      "path": "records/frontiers.json",
+      "sha256": "535d2bd65a6501b5448431704bfb9e728834282e24a9516573a3eb48e6e97161"
+    },
+    {
+      "path": "records/baselines.json",
+      "sha256": "2e26aad67c1d3cae517ea7ef43ccd151d6b4839e3d3650b9bbbccb76bfd27a89"
+    }
+  ],
+  "dependencies": {
+    "core": "Python >=3.9 standard library",
+    "optional": "empirical/requirements.lock"
+  },
+  "coverage": "Legality and metrics, tiny exact optima, baseline and task controls. Optional CPU gradients; no GPU peak-memory validation."
+}

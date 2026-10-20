@@ -1,0 +1,4182 @@
+[
+  {
+    "graph": "chain6-unit",
+    "method": "eager",
+    "object": "certificates/baselines/chain6-unit/eager.json",
+    "sha256": "555d8caade34ea1f388ff73780c3be347885af759450626abf9f2c4f756cea31",
+    "peak_bytes": 7,
+    "recompute_cost": 0,
+    "forward_cost": 6,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/chain6-unit/recompute-on-demand.json",
+    "sha256": "060c218db695a72aa85cf5573fae0d0f1b6b5ffa485f801c9dcec56348316bae",
+    "peak_bytes": 3,
+    "recompute_cost": 15,
+    "forward_cost": 21,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-1",
+    "object": "certificates/baselines/chain6-unit/segment-1.json",
+    "sha256": "e336c7f163f7e8a8470c6eeddf9493b85d61820837d52e478cc31985027a3012",
+    "peak_bytes": 7,
+    "recompute_cost": 0,
+    "forward_cost": 6,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-1.json",
+    "sha256": "b9c8175453aad9ab09ba28f13f843c24d076d68cd5b3b91da12fb4d3cc792ba7",
+    "peak_bytes": 7,
+    "recompute_cost": 0,
+    "forward_cost": 6,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-2",
+    "object": "certificates/baselines/chain6-unit/segment-2.json",
+    "sha256": "96afc8da9c2791486064d3a91027846bdaec38ae9c3bb09bbed7bf449e0b6025",
+    "peak_bytes": 5,
+    "recompute_cost": 3,
+    "forward_cost": 9,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-2.json",
+    "sha256": "1eade79ad4c44b1182ce201b4d32050274dd384b54515d74d65d446d3906ac65",
+    "peak_bytes": 5,
+    "recompute_cost": 2,
+    "forward_cost": 8,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-3",
+    "object": "certificates/baselines/chain6-unit/segment-3.json",
+    "sha256": "498bfc3d766cf5919c375224a60aab3c4c6ac5af053edc491f081272ebe1102a",
+    "peak_bytes": 4,
+    "recompute_cost": 4,
+    "forward_cost": 10,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-3.json",
+    "sha256": "aa73b3f11c9afc3474f84dd27f1b1767efa871060d7e186497e30f5cb8f1c6a2",
+    "peak_bytes": 5,
+    "recompute_cost": 2,
+    "forward_cost": 8,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-4",
+    "object": "certificates/baselines/chain6-unit/segment-4.json",
+    "sha256": "91860801d60d3ae3cd267eb36702d122ffd22198e7d18d0b63954e2f927fae64",
+    "peak_bytes": 4,
+    "recompute_cost": 4,
+    "forward_cost": 10,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-4.json",
+    "sha256": "3fb0cd3188d866d3064e0ee8acce81511d4d86e44fd9d528c2c0eca2df897427",
+    "peak_bytes": 4,
+    "recompute_cost": 3,
+    "forward_cost": 9,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-5",
+    "object": "certificates/baselines/chain6-unit/segment-5.json",
+    "sha256": "d420b6080eb84513e283fd5e3fdaeb647d9d8bf2ce2a2aad2636eab7d89a8961",
+    "peak_bytes": 5,
+    "recompute_cost": 4,
+    "forward_cost": 10,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-5.json",
+    "sha256": "ee714c162ee65a3211d0f9352c9438b42ea853a26f6722ca6415b20f32b25a5a",
+    "peak_bytes": 5,
+    "recompute_cost": 4,
+    "forward_cost": 10,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "segment-6",
+    "object": "certificates/baselines/chain6-unit/segment-6.json",
+    "sha256": "014497a3cabda3604d96406bfb5d358d75a76410221f71a9ad9d231533554618",
+    "peak_bytes": 6,
+    "recompute_cost": 5,
+    "forward_cost": 11,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/chain6-unit/checkpoint-sequential-6.json",
+    "sha256": "89f70dbcd41c919006cc86246859fa813b6f83d5abd14cd9856974b3a93a6dcd",
+    "peak_bytes": 7,
+    "recompute_cost": 0,
+    "forward_cost": 6,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-unit",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/chain6-unit/selective-save-expensive.json",
+    "sha256": "b9f24789355bd4d4c06c6fd5257f14c13f9e483b2959d33d4ee5bd2a2dd69d5a",
+    "peak_bytes": 3,
+    "recompute_cost": 15,
+    "forward_cost": 21,
+    "backward_cost": 12
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "eager",
+    "object": "certificates/baselines/chain6-weighted/eager.json",
+    "sha256": "59f61ebccfdfc444ae6c3e16d48faee9a4b72b0f93f424c1f6d86ef99a6578b2",
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/chain6-weighted/recompute-on-demand.json",
+    "sha256": "6d521c657c3e532f526c96c0fa8da0a5452f2c8d149439c33e0d9bf7b92be740",
+    "peak_bytes": 12,
+    "recompute_cost": 25,
+    "forward_cost": 34,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-1",
+    "object": "certificates/baselines/chain6-weighted/segment-1.json",
+    "sha256": "e7fa4072d75f9b3b07ee1ebdea153a849886595fd4b9565ed6e16f2d654e6dfe",
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-1.json",
+    "sha256": "53e9c906a7102e80f266c1aa50264897135e50c390674abbd26f3c9c7680ea54",
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-2",
+    "object": "certificates/baselines/chain6-weighted/segment-2.json",
+    "sha256": "c43cf2dca5e768df7ac681ef349a5a6ab9c7f07bc58355fac744a49c0bfe0522",
+    "peak_bytes": 19,
+    "recompute_cost": 3,
+    "forward_cost": 12,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-2.json",
+    "sha256": "609292ecc9fff754d2a8f30dce7cb01fa8a0b7818b67186ab7075d2fb1709be8",
+    "peak_bytes": 19,
+    "recompute_cost": 2,
+    "forward_cost": 11,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-3",
+    "object": "certificates/baselines/chain6-weighted/segment-3.json",
+    "sha256": "ad55d3020653d7d578a66afb56610b56deca1ca3564c3c75b9697eec5ea404fe",
+    "peak_bytes": 12,
+    "recompute_cost": 7,
+    "forward_cost": 16,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-3.json",
+    "sha256": "47854e313002edd6bdfac89623d28564c533cd17b3adcfe859865b460765cef6",
+    "peak_bytes": 13,
+    "recompute_cost": 4,
+    "forward_cost": 13,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-4",
+    "object": "certificates/baselines/chain6-weighted/segment-4.json",
+    "sha256": "5bd0b8320bcf52f7ca3bdaaf87eca869916ddeecb627e19302f22e56f8653c42",
+    "peak_bytes": 14,
+    "recompute_cost": 6,
+    "forward_cost": 15,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-4.json",
+    "sha256": "c51780432571853e1e777c6d262c2878f1f51c5f0734b9e2a51bdeb8d87dc0e9",
+    "peak_bytes": 14,
+    "recompute_cost": 5,
+    "forward_cost": 14,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-5",
+    "object": "certificates/baselines/chain6-weighted/segment-5.json",
+    "sha256": "3ae05f313f3a01853a93b97df63a157e1cb3a4495e4e1a1e59268fe7a0eb2a3b",
+    "peak_bytes": 21,
+    "recompute_cost": 7,
+    "forward_cost": 16,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-5.json",
+    "sha256": "f5c150ea3da88f26c612baebe3f9b66f1ce2a1d1f215f567ad59141f4f883074",
+    "peak_bytes": 21,
+    "recompute_cost": 7,
+    "forward_cost": 16,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "segment-6",
+    "object": "certificates/baselines/chain6-weighted/segment-6.json",
+    "sha256": "bb0eb82836a3284fac14901791f38ea884121b2d5a2beb973b57cdbbbb9e46cb",
+    "peak_bytes": 23,
+    "recompute_cost": 8,
+    "forward_cost": 17,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/chain6-weighted/checkpoint-sequential-6.json",
+    "sha256": "12465ef061d874d3afc25148c0dd780d9929f5550a6ba1fa3abb7d6fe9c11963",
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18
+  },
+  {
+    "graph": "chain6-weighted",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/chain6-weighted/selective-save-expensive.json",
+    "sha256": "d742e5127d9fb2a2fc0ee6de562f8aad20983655f9f498a08b9a553c92928c38",
+    "peak_bytes": 12,
+    "recompute_cost": 25,
+    "forward_cost": 34,
+    "backward_cost": 18
+  },
+  {
+    "graph": "diamond5",
+    "method": "eager",
+    "object": "certificates/baselines/diamond5/eager.json",
+    "sha256": "46e50089a29acd3771b3775beb18ffcbbb632d8428f89d681f5113ab506e9b15",
+    "peak_bytes": 14,
+    "recompute_cost": 0,
+    "forward_cost": 7,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/diamond5/recompute-on-demand.json",
+    "sha256": "a96e751dca034d2d62fba74a9c60edccb40a9fa8206a6eb96f4588c1bdedd996",
+    "peak_bytes": 11,
+    "recompute_cost": 13,
+    "forward_cost": 20,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "segment-1",
+    "object": "certificates/baselines/diamond5/segment-1.json",
+    "sha256": "848aadef3a0a25cd1d96bea181719a175b2ba7baf4b48ac88fabedf69c4fdb22",
+    "peak_bytes": 14,
+    "recompute_cost": 0,
+    "forward_cost": 7,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/diamond5/checkpoint-sequential-1.json",
+    "sha256": "a67ddbb9082d99862d7a8e22ce5d2058a6abdb746eb6038857f95a2f2ac2c152",
+    "peak_bytes": 14,
+    "recompute_cost": 0,
+    "forward_cost": 7,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "segment-2",
+    "object": "certificates/baselines/diamond5/segment-2.json",
+    "sha256": "bdcf566471b1274f847e057565444e177653877aceffac700fa42538360e6a72",
+    "peak_bytes": 13,
+    "recompute_cost": 1,
+    "forward_cost": 8,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/diamond5/checkpoint-sequential-2.json",
+    "sha256": "42f5534d7f5efab98f5c56a0e286ae992b979768b7278d1a68a5bf96a6085251",
+    "peak_bytes": 13,
+    "recompute_cost": 1,
+    "forward_cost": 8,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "segment-3",
+    "object": "certificates/baselines/diamond5/segment-3.json",
+    "sha256": "862ca9364e8dd811987e1cb5cd9b4d062a5261a3e4657cd20a319a1303f8614e",
+    "peak_bytes": 12,
+    "recompute_cost": 3,
+    "forward_cost": 10,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/diamond5/checkpoint-sequential-3.json",
+    "sha256": "8a536f96b884655d916965b61a965a03bbbf052dd4ae4f0d0df4b4868eb25b28",
+    "peak_bytes": 12,
+    "recompute_cost": 1,
+    "forward_cost": 8,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "segment-4",
+    "object": "certificates/baselines/diamond5/segment-4.json",
+    "sha256": "087dd81c80e552707a8d07f5767dbc8ef016ab684bee3664d4a67938d433ec35",
+    "peak_bytes": 11,
+    "recompute_cost": 4,
+    "forward_cost": 11,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/diamond5/checkpoint-sequential-4.json",
+    "sha256": "755f407ec22a221b926053dc0e1c86bb52c667c4420c5858f85fb57e8a86dbe1",
+    "peak_bytes": 11,
+    "recompute_cost": 4,
+    "forward_cost": 11,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "segment-5",
+    "object": "certificates/baselines/diamond5/segment-5.json",
+    "sha256": "de642c4e01759e9718580979c307141aa2a5325bf4ea2dc38913fa308fa23403",
+    "peak_bytes": 13,
+    "recompute_cost": 6,
+    "forward_cost": 13,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/diamond5/checkpoint-sequential-5.json",
+    "sha256": "c5d38eb9a043acb3678268f4d06c95182b5b244565f8cce3413ef96dcaf338bb",
+    "peak_bytes": 14,
+    "recompute_cost": 0,
+    "forward_cost": 7,
+    "backward_cost": 14
+  },
+  {
+    "graph": "diamond5",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/diamond5/selective-save-expensive.json",
+    "sha256": "d4dc08b5b5bc9d31c673d09f5e2e00386f81430e05975785066ec8989c5da6b7",
+    "peak_bytes": 11,
+    "recompute_cost": 13,
+    "forward_cost": 20,
+    "backward_cost": 14
+  },
+  {
+    "graph": "skip6",
+    "method": "eager",
+    "object": "certificates/baselines/skip6/eager.json",
+    "sha256": "928bcd018196926c00b20442b8e875a4cb92e57b03974c2a3d452f593a0ef73d",
+    "peak_bytes": 20,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/skip6/recompute-on-demand.json",
+    "sha256": "e6ead43bd7ba3271303c17fe28eada2a728b43cd346582661c14019175e968db",
+    "peak_bytes": 13,
+    "recompute_cost": 8,
+    "forward_cost": 16,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-1",
+    "object": "certificates/baselines/skip6/segment-1.json",
+    "sha256": "b042ddc688b2a7510ef0f2977395ebdd9ac163f415ebee97b6d775bf3d994f4f",
+    "peak_bytes": 22,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-1.json",
+    "sha256": "b39cd5785a76da30401e8f9f0a7d2f252ca97e8b325a40c9ed74722cedf3e85f",
+    "peak_bytes": 22,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-2",
+    "object": "certificates/baselines/skip6/segment-2.json",
+    "sha256": "1d28e1320fafe110ae6318782e1e8b64576e9283439823afeba16a88cc78ec90",
+    "peak_bytes": 20,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-2.json",
+    "sha256": "91065147c9bc2dc11427c40c00e662dbc9e7ea485c0c43bda577e6ee9d21a187",
+    "peak_bytes": 20,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-3",
+    "object": "certificates/baselines/skip6/segment-3.json",
+    "sha256": "b85207ac9a2211e125dc341f8d304aba5f8c281d7fc2e06c8a925680e02cd5a1",
+    "peak_bytes": 15,
+    "recompute_cost": 2,
+    "forward_cost": 10,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-3.json",
+    "sha256": "36d0e54e1b3d698fbbf4a33284e544bd4cb2609741b307534b465c73833b1baf",
+    "peak_bytes": 16,
+    "recompute_cost": 1,
+    "forward_cost": 9,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-4",
+    "object": "certificates/baselines/skip6/segment-4.json",
+    "sha256": "941956d171965175290ffdd19c27a422edbcdfbc0755f4e9c821fe483f92d226",
+    "peak_bytes": 14,
+    "recompute_cost": 1,
+    "forward_cost": 9,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-4.json",
+    "sha256": "c96de0817301cca8970e239cb57bfa57f47d48adcab25c9cdab68e655023affc",
+    "peak_bytes": 14,
+    "recompute_cost": 1,
+    "forward_cost": 9,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-5",
+    "object": "certificates/baselines/skip6/segment-5.json",
+    "sha256": "2b271bdce44e4938cf6302bd1f5134902408eb5b12b3f47dd058c85af7be8301",
+    "peak_bytes": 16,
+    "recompute_cost": 4,
+    "forward_cost": 12,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-5.json",
+    "sha256": "4cd4480e313cc02d1775a6f0dedeaf8935ac5becc4e7393097d25ee3da68957c",
+    "peak_bytes": 16,
+    "recompute_cost": 4,
+    "forward_cost": 12,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "segment-6",
+    "object": "certificates/baselines/skip6/segment-6.json",
+    "sha256": "60c5118b8cc081067dc7e888f38c87eecc6efa7b5a16a49d653cfb497a4a3040",
+    "peak_bytes": 16,
+    "recompute_cost": 5,
+    "forward_cost": 13,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/skip6/checkpoint-sequential-6.json",
+    "sha256": "8eccac37f2ac6e6da3c1e8987fa74a07049fb1b39ce24301548635c0bd96a48e",
+    "peak_bytes": 22,
+    "recompute_cost": 0,
+    "forward_cost": 8,
+    "backward_cost": 16
+  },
+  {
+    "graph": "skip6",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/skip6/selective-save-expensive.json",
+    "sha256": "977713f29516d88ab808dee9f28479035f3ba8ab96d4bf696e4b72b5795e8155",
+    "peak_bytes": 13,
+    "recompute_cost": 8,
+    "forward_cost": 16,
+    "backward_cost": 16
+  },
+  {
+    "graph": "stateful4",
+    "method": "eager",
+    "object": "certificates/baselines/stateful4/eager.json",
+    "sha256": "beaf8f9d15f8935430f95427656b1f12fff258d84699865372ceb1043d54e780",
+    "peak_bytes": 10,
+    "recompute_cost": 0,
+    "forward_cost": 4,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/stateful4/recompute-on-demand.json",
+    "sha256": "6670ecec0fcf15fc289e705f90b529e98f1163f562aa636baccc56efd2aa087c",
+    "peak_bytes": 9,
+    "recompute_cost": 3,
+    "forward_cost": 7,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "segment-1",
+    "object": "certificates/baselines/stateful4/segment-1.json",
+    "sha256": "7a54c9fff826596bd11da9951547a00fdeb4e67c132f6bbf0183d0998ff1f87a",
+    "peak_bytes": 10,
+    "recompute_cost": 0,
+    "forward_cost": 4,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/stateful4/checkpoint-sequential-1.json",
+    "sha256": "7d34390dcdb799b5afd9ffe71df5103728be0fbb8102fea03216720d40c23322",
+    "peak_bytes": 10,
+    "recompute_cost": 0,
+    "forward_cost": 4,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "segment-2",
+    "object": "certificates/baselines/stateful4/segment-2.json",
+    "sha256": "84ee7020c811435e8f28bd8aa63c126aae00fbda1845882e1cb38db3c5aa8635",
+    "peak_bytes": 10,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/stateful4/checkpoint-sequential-2.json",
+    "sha256": "187191ed1138e55174952e2ce5a5a178b4623ad629e5fba56894c33265d39e2e",
+    "peak_bytes": 10,
+    "recompute_cost": 0,
+    "forward_cost": 4,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "segment-3",
+    "object": "certificates/baselines/stateful4/segment-3.json",
+    "sha256": "7b5591ec46ea0d6c9951455c5903a87bfd85e7df13e7535780a9bc32259d6b5e",
+    "peak_bytes": 9,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/stateful4/checkpoint-sequential-3.json",
+    "sha256": "a43e750d7a1734d8b9941a7e881449c9ed1f0dfbdce146cb5b6b75645dba2b80",
+    "peak_bytes": 9,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "segment-4",
+    "object": "certificates/baselines/stateful4/segment-4.json",
+    "sha256": "b7d46181e66c369045966cf0b40a25661fb4d1c1efa70f84b600060e7282f04b",
+    "peak_bytes": 9,
+    "recompute_cost": 2,
+    "forward_cost": 6,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/stateful4/checkpoint-sequential-4.json",
+    "sha256": "0b03ed9cecd091f618caa1acbae83b10f37ce2e9f394083e7a6b2d3c19a5f54e",
+    "peak_bytes": 10,
+    "recompute_cost": 0,
+    "forward_cost": 4,
+    "backward_cost": 8
+  },
+  {
+    "graph": "stateful4",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/stateful4/selective-save-expensive.json",
+    "sha256": "159b90a97a8a36d7d3cd83d5712a155a73ff89b95dadaa32e3713d2abb2cd701",
+    "peak_bytes": 9,
+    "recompute_cost": 3,
+    "forward_cost": 7,
+    "backward_cost": 8
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "eager",
+    "object": "certificates/baselines/transformer-b1-t32/eager.json",
+    "sha256": "3e70f7e3414e28f3c663c0e21858480687c2ed3196bc6fe16cad29800109d3d3",
+    "peak_bytes": 622592,
+    "recompute_cost": 0,
+    "forward_cost": 26615808,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/transformer-b1-t32/recompute-on-demand.json",
+    "sha256": "3893a6e310a1a3973db9c1acebbfd3692e5ff74a5fb4627ca4761b337b933bf4",
+    "peak_bytes": 327680,
+    "recompute_cost": 74399744,
+    "forward_cost": 101015552,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-1",
+    "object": "certificates/baselines/transformer-b1-t32/segment-1.json",
+    "sha256": "3c5eb2cc6abfc634076b20430a0b8f4bf688c792b803dcac105270964708958b",
+    "peak_bytes": 688128,
+    "recompute_cost": 0,
+    "forward_cost": 26615808,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-1.json",
+    "sha256": "01db6da97f8ac3753b4296335adf346b8c97b45a1a55e679be75edbfa91c8e0d",
+    "peak_bytes": 688128,
+    "recompute_cost": 0,
+    "forward_cost": 26615808,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-2",
+    "object": "certificates/baselines/transformer-b1-t32/segment-2.json",
+    "sha256": "8fadfddd6264d0a4138ac9d13560ca2492004b1977826a2fcf3828bf08a68107",
+    "peak_bytes": 557056,
+    "recompute_cost": 8912896,
+    "forward_cost": 35528704,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-2.json",
+    "sha256": "39b46d7ce8f9c4bd3ca35e282f3e643dccf64255efb6f0e1978cadeac57d9ac1",
+    "peak_bytes": 557056,
+    "recompute_cost": 8912896,
+    "forward_cost": 35528704,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-3",
+    "object": "certificates/baselines/transformer-b1-t32/segment-3.json",
+    "sha256": "ab09d4eb6c4dfaca6f386290f3eb798dcaa4439038c0d1f1b25c8b7a002ccacb",
+    "peak_bytes": 491520,
+    "recompute_cost": 8953856,
+    "forward_cost": 35569664,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-3.json",
+    "sha256": "98fdfe06512c51dc7401183c31babf2e4978eb812ffe84b8764c220a663fa778",
+    "peak_bytes": 491520,
+    "recompute_cost": 8953856,
+    "forward_cost": 35569664,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-4",
+    "object": "certificates/baselines/transformer-b1-t32/segment-4.json",
+    "sha256": "e244781c527162bd7f5c1d0888949e7384edee59e258f99aef717a473b9bf1e1",
+    "peak_bytes": 458752,
+    "recompute_cost": 9560064,
+    "forward_cost": 36175872,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-4.json",
+    "sha256": "8a4d16fa6ffdbf167117a15649f164cdc0d7fa5c9c9ffa7664d27df9261ff6a2",
+    "peak_bytes": 458752,
+    "recompute_cost": 9560064,
+    "forward_cost": 36175872,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-5",
+    "object": "certificates/baselines/transformer-b1-t32/segment-5.json",
+    "sha256": "915b046480f9b35e52b667041331b47fed205aabb6eec62d3d2918c828ecff51",
+    "peak_bytes": 425984,
+    "recompute_cost": 13451264,
+    "forward_cost": 40067072,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-5.json",
+    "sha256": "af445bd1ef1722510a9291f5073d88f32b3297ffdc2953435ae936cfcfd73231",
+    "peak_bytes": 491520,
+    "recompute_cost": 4800512,
+    "forward_cost": 31416320,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-6",
+    "object": "certificates/baselines/transformer-b1-t32/segment-6.json",
+    "sha256": "981d3f153d1a9d3e4590c0661453e31c381c8e0d7028ba363b95e1dbe22b7f44",
+    "peak_bytes": 393216,
+    "recompute_cost": 13189120,
+    "forward_cost": 39804928,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-6.json",
+    "sha256": "6f1aab60524acdee2855a727f9189a6eff44eb848b1a8707314c716121aa30e7",
+    "peak_bytes": 393216,
+    "recompute_cost": 13189120,
+    "forward_cost": 39804928,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-7",
+    "object": "certificates/baselines/transformer-b1-t32/segment-7.json",
+    "sha256": "a2eec3a4b34cea5a65ac6bbd85a66a0d13b2894fa574493cee440798a693c7f1",
+    "peak_bytes": 393216,
+    "recompute_cost": 17694720,
+    "forward_cost": 44310528,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-7.json",
+    "sha256": "de211d887389fb1444619f1be59d341129ed8ec4b807aae61963f774d588a088",
+    "peak_bytes": 491520,
+    "recompute_cost": 6897664,
+    "forward_cost": 33513472,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-8",
+    "object": "certificates/baselines/transformer-b1-t32/segment-8.json",
+    "sha256": "19fadbe6d1f3db44dd20eaed732498b42aaf3714aa50b67136d4765fb6d66d7d",
+    "peak_bytes": 393216,
+    "recompute_cost": 16121856,
+    "forward_cost": 42737664,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-8.json",
+    "sha256": "3754129819e9c675fe5573df1f19a52b717566b03574f0048cd4205b2ff9d45c",
+    "peak_bytes": 458752,
+    "recompute_cost": 7421952,
+    "forward_cost": 34037760,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-9",
+    "object": "certificates/baselines/transformer-b1-t32/segment-9.json",
+    "sha256": "bf3f1b26c7f5417ef8279d8176253c9033e53a705cfa447a429e643cb96c8d68",
+    "peak_bytes": 360448,
+    "recompute_cost": 16113664,
+    "forward_cost": 42729472,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-9.json",
+    "sha256": "6ed9db6ff16c0388a658b5d774b44da124c61026795adef6cb9b57f50f1922d4",
+    "peak_bytes": 425984,
+    "recompute_cost": 7421952,
+    "forward_cost": 34037760,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-10",
+    "object": "certificates/baselines/transformer-b1-t32/segment-10.json",
+    "sha256": "8d7a9277e3b75c22c88bb168cc6d5ab7de8d3e8e2a540e038eb780e451e54fd6",
+    "peak_bytes": 360448,
+    "recompute_cost": 16072704,
+    "forward_cost": 42688512,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-10.json",
+    "sha256": "10ec643f68a470b194cd558d5506709980ebe62c7c05fdbe6978b3e0222dc24d",
+    "peak_bytes": 425984,
+    "recompute_cost": 7421952,
+    "forward_cost": 34037760,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-11",
+    "object": "certificates/baselines/transformer-b1-t32/segment-11.json",
+    "sha256": "5032494fef323025e453adf90c03f727c7263f54cc6b8ecc2e3594d1658300ac",
+    "peak_bytes": 360448,
+    "recompute_cost": 7725056,
+    "forward_cost": 34340864,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-11.json",
+    "sha256": "1c408d178be5e087773fb72e3352cde5f2db60afe505ff7f17afd9d3612d001b",
+    "peak_bytes": 393216,
+    "recompute_cost": 7462912,
+    "forward_cost": 34078720,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-12",
+    "object": "certificates/baselines/transformer-b1-t32/segment-12.json",
+    "sha256": "5e8508dfc3a0570d56806221f391c1dd1017f917ff99ab378b7381b2b24f1796",
+    "peak_bytes": 425984,
+    "recompute_cost": 15851520,
+    "forward_cost": 42467328,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-12.json",
+    "sha256": "d697763e3eec126aa58fadc695fb4d33c55c8b7274fa6e46f886c3d9014af1b1",
+    "peak_bytes": 425984,
+    "recompute_cost": 15851520,
+    "forward_cost": 42467328,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-13",
+    "object": "certificates/baselines/transformer-b1-t32/segment-13.json",
+    "sha256": "aab4e25ae1bd4290686c30a18cf043324b9be76d1b542bdac332c055a54554d1",
+    "peak_bytes": 557056,
+    "recompute_cost": 16113664,
+    "forward_cost": 42729472,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-13",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-13.json",
+    "sha256": "23545a77df3c2fd2d461fc06303560ca85ce8afb9cc28a44f357d640a305027c",
+    "peak_bytes": 557056,
+    "recompute_cost": 16113664,
+    "forward_cost": 42729472,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "segment-14",
+    "object": "certificates/baselines/transformer-b1-t32/segment-14.json",
+    "sha256": "abda1eeb63a097750e3cb84528abdcd504b784ecac822e0154f1f61990761cd0",
+    "peak_bytes": 557056,
+    "recompute_cost": 18219008,
+    "forward_cost": 44834816,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "checkpoint-sequential-14",
+    "object": "certificates/baselines/transformer-b1-t32/checkpoint-sequential-14.json",
+    "sha256": "2ed5ec1103fe54bd4aaee4e85d86255eeeb74cc983b9d22a6aba6f3a15588a69",
+    "peak_bytes": 688128,
+    "recompute_cost": 0,
+    "forward_cost": 26615808,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/transformer-b1-t32/selective-save-expensive.json",
+    "sha256": "a952491c746c7bec1ec8a181780ec8d65a8995bda185cab2c05250ae982db419",
+    "peak_bytes": 557056,
+    "recompute_cost": 401408,
+    "forward_cost": 27017216,
+    "backward_cost": 53231616
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "eager",
+    "object": "certificates/baselines/transformer-b2-t64/eager.json",
+    "sha256": "f5b86808dc0ad340b807819053287295996e3a44793cadf7899fb0e968266a5c",
+    "peak_bytes": 2490368,
+    "recompute_cost": 0,
+    "forward_cost": 110821376,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/transformer-b2-t64/recompute-on-demand.json",
+    "sha256": "2c1fb08943837ed69e5f684f2b7fa423973c8082e9cebfdd6b2c765304f28631",
+    "peak_bytes": 786432,
+    "recompute_cost": 1099694080,
+    "forward_cost": 1210515456,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-1",
+    "object": "certificates/baselines/transformer-b2-t64/segment-1.json",
+    "sha256": "3314fe18c87b2ddc15adab4502ce375fe8c898398659dc68c275f237d6081573",
+    "peak_bytes": 2949120,
+    "recompute_cost": 0,
+    "forward_cost": 110821376,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-1.json",
+    "sha256": "13f258cbb2aea4e795bd06e29d1b23f056a0c76877e4b15d8aa7b66fbaaa1a7e",
+    "peak_bytes": 2949120,
+    "recompute_cost": 0,
+    "forward_cost": 110821376,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-2",
+    "object": "certificates/baselines/transformer-b2-t64/segment-2.json",
+    "sha256": "fb8d5c375f2acf719b4b86ed762bd49140d38f99a4c2d978e57940f8f303b854",
+    "peak_bytes": 2097152,
+    "recompute_cost": 37748736,
+    "forward_cost": 148570112,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-2.json",
+    "sha256": "6c2d1bae07c79f89765c1d60f912e29d945d8e109a9e884c2f1e157a57cb85c8",
+    "peak_bytes": 2097152,
+    "recompute_cost": 37748736,
+    "forward_cost": 148570112,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-3",
+    "object": "certificates/baselines/transformer-b2-t64/segment-3.json",
+    "sha256": "151c5d4ab920f7c41118cee9b9a318bc2ce842e0182cdc32178a99dd139227f7",
+    "peak_bytes": 1835008,
+    "recompute_cost": 38518784,
+    "forward_cost": 149340160,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-3.json",
+    "sha256": "c1dff4d656e7834a83c61e31705a8fa95ed6378b1957c76608a870ffafd6bcc5",
+    "peak_bytes": 1835008,
+    "recompute_cost": 38518784,
+    "forward_cost": 149340160,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-4",
+    "object": "certificates/baselines/transformer-b2-t64/segment-4.json",
+    "sha256": "7920ad10dfbe13d69ea2383c71dc4029cf2ecd6dbce96c44a8ec5ee42c39b45f",
+    "peak_bytes": 1703936,
+    "recompute_cost": 44892160,
+    "forward_cost": 155713536,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-4.json",
+    "sha256": "3348994e766bb9a2de84ceed9764537d7dd84758bd2a34eedf505a91b9c1e257",
+    "peak_bytes": 1835008,
+    "recompute_cost": 27590656,
+    "forward_cost": 138412032,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-5",
+    "object": "certificates/baselines/transformer-b2-t64/segment-5.json",
+    "sha256": "dc88440e6df2aed53313d7bd2f2b5ac13702e87015cd04d497c31ffca5f9c612",
+    "peak_bytes": 1376256,
+    "recompute_cost": 39124992,
+    "forward_cost": 149946368,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-5.json",
+    "sha256": "27579cfcac5896922492c6147d64fbce15c34a8d3475d5a644da02f075b4cb57",
+    "peak_bytes": 1441792,
+    "recompute_cost": 38600704,
+    "forward_cost": 149422080,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-6",
+    "object": "certificates/baselines/transformer-b2-t64/segment-6.json",
+    "sha256": "c1d9e646bdcc67fc9bc991156f03160edb47d636321fa92f0a93f48a97d87ad1",
+    "peak_bytes": 1507328,
+    "recompute_cost": 49168384,
+    "forward_cost": 159989760,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-6.json",
+    "sha256": "ad09724bf49a117f7dfff391e6ffd541e76c383df139f7a5510c66a4b046a0ba",
+    "peak_bytes": 1638400,
+    "recompute_cost": 31866880,
+    "forward_cost": 142688256,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-7",
+    "object": "certificates/baselines/transformer-b2-t64/segment-7.json",
+    "sha256": "f755ad0dc5b4a144d6d9f86f1334d0399f67aad895689cafc9216adb8a2602f5",
+    "peak_bytes": 917504,
+    "recompute_cost": 73039872,
+    "forward_cost": 183861248,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-7.json",
+    "sha256": "cd1848e362212483bf35249c9e2fd054557201ea97926ff900999194eed8a226",
+    "peak_bytes": 1114112,
+    "recompute_cost": 51445760,
+    "forward_cost": 162267136,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-8",
+    "object": "certificates/baselines/transformer-b2-t64/segment-8.json",
+    "sha256": "8287dd7e2a2bed546d8beecd0cccc1d2029103c7937a47e28ea042bb65d62959",
+    "peak_bytes": 983040,
+    "recompute_cost": 64471040,
+    "forward_cost": 175292416,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-8.json",
+    "sha256": "f1c04479b39d7714ffa12056d9d2137aa8cb8c0471168d4ab19b54b6359159a9",
+    "peak_bytes": 1114112,
+    "recompute_cost": 47169536,
+    "forward_cost": 157990912,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-9",
+    "object": "certificates/baselines/transformer-b2-t64/segment-9.json",
+    "sha256": "d607f004e903b6134f7171d4f0047e966c53a0c58b2789737210ddc8fbcb72b7",
+    "peak_bytes": 1245184,
+    "recompute_cost": 56229888,
+    "forward_cost": 167051264,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-9.json",
+    "sha256": "4e80c5ab9b37e94e8c17280dd07e80ae08ce2487c17064dd7c74d47f88eca408",
+    "peak_bytes": 1245184,
+    "recompute_cost": 56229888,
+    "forward_cost": 167051264,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-10",
+    "object": "certificates/baselines/transformer-b2-t64/segment-10.json",
+    "sha256": "3e7b57ea70f7b1c811a664c375181c31d1a8ff69e9ce25dab9b77b6c477bf30b",
+    "peak_bytes": 1179648,
+    "recompute_cost": 66486272,
+    "forward_cost": 177307648,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-10.json",
+    "sha256": "6d1a89dd37166740bee0fea45b7eae7dd5129105e8f082da7022ab5d0a3f0981",
+    "peak_bytes": 1376256,
+    "recompute_cost": 42795008,
+    "forward_cost": 153616384,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-11",
+    "object": "certificates/baselines/transformer-b2-t64/segment-11.json",
+    "sha256": "0e0a2ce9177324a16f74aed0f1257e41a87c23ff63b8709123c63fe6d869bc99",
+    "peak_bytes": 1179648,
+    "recompute_cost": 52051968,
+    "forward_cost": 162873344,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-11.json",
+    "sha256": "fe38efa2cc81aea28c8c20c48d428bc3330d89fc0bc924fa985c7ab9f8c94ce2",
+    "peak_bytes": 1310720,
+    "recompute_cost": 34652160,
+    "forward_cost": 145473536,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-12",
+    "object": "certificates/baselines/transformer-b2-t64/segment-12.json",
+    "sha256": "66d5a2b45d1f865130a5a5d6cc9c7fcee06c5c56e5e9efc742c985b514c13812",
+    "peak_bytes": 1048576,
+    "recompute_cost": 85000192,
+    "forward_cost": 195821568,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-12.json",
+    "sha256": "0c17d79484bc9254a8d79d8adecfad65d2aab0f3535c5be7af2fc6ae0f580a64",
+    "peak_bytes": 1179648,
+    "recompute_cost": 67698688,
+    "forward_cost": 178520064,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-13",
+    "object": "certificates/baselines/transformer-b2-t64/segment-13.json",
+    "sha256": "8dd95423b29fec2dd636466416f84c1e0397e5ad4f09f8b706c00536f095d9eb",
+    "peak_bytes": 1179648,
+    "recompute_cost": 68304896,
+    "forward_cost": 179126272,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-13",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-13.json",
+    "sha256": "40ec30554cbea62bf84d55df19378c0c42799dce788ef248d62b3665a10b7d67",
+    "peak_bytes": 1179648,
+    "recompute_cost": 68304896,
+    "forward_cost": 179126272,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-14",
+    "object": "certificates/baselines/transformer-b2-t64/segment-14.json",
+    "sha256": "f74a94d948abea46f9fc214c0f9f96e2fb54badeaf4467347870403654c1a25c",
+    "peak_bytes": 1245184,
+    "recompute_cost": 77234176,
+    "forward_cost": 188055552,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-14",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-14.json",
+    "sha256": "fc7db6ae8ee384ed15aa7ddafe81706c919e895d8ab13bbecd0eae932c13d905",
+    "peak_bytes": 1572864,
+    "recompute_cost": 38617088,
+    "forward_cost": 149438464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-15",
+    "object": "certificates/baselines/transformer-b2-t64/segment-15.json",
+    "sha256": "c632efd5006ebe0efd44156f14fdc6fd418b991f91d98e010ff4286a37cc472b",
+    "peak_bytes": 1245184,
+    "recompute_cost": 77152256,
+    "forward_cost": 187973632,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-15",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-15.json",
+    "sha256": "8aecf6b8e7028b757814aced3966085eb8362cd65ad972ba9c300f5a4d6114da",
+    "peak_bytes": 1572864,
+    "recompute_cost": 38617088,
+    "forward_cost": 149438464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-16",
+    "object": "certificates/baselines/transformer-b2-t64/segment-16.json",
+    "sha256": "ef5c77fb3dc90150dac272fed523bf8633315de3f4ef60b965e2325b07f9f86d",
+    "peak_bytes": 1310720,
+    "recompute_cost": 72957952,
+    "forward_cost": 183779328,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-16",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-16.json",
+    "sha256": "449745edc37edbc058e5695c181c5bae9152aff1ff71c95bb2113a9917f993bd",
+    "peak_bytes": 1572864,
+    "recompute_cost": 38617088,
+    "forward_cost": 149438464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-17",
+    "object": "certificates/baselines/transformer-b2-t64/segment-17.json",
+    "sha256": "995e1937cc24ca9253b74ca1364588609de1869ee2ae843d893d94fe1be82563",
+    "peak_bytes": 1310720,
+    "recompute_cost": 68763648,
+    "forward_cost": 179585024,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-17",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-17.json",
+    "sha256": "01b8b2ed15dfadfdd3cfff9a2aed3de61771db7e814fb2c2c2d30142e4bc8dc0",
+    "peak_bytes": 1572864,
+    "recompute_cost": 38617088,
+    "forward_cost": 149438464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-18",
+    "object": "certificates/baselines/transformer-b2-t64/segment-18.json",
+    "sha256": "84d85db7cd5a2d58a6ca3e3a7b56920acf7e1c813a900cbd3550cdeffcd4c61d",
+    "peak_bytes": 1310720,
+    "recompute_cost": 64651264,
+    "forward_cost": 175472640,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-18",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-18.json",
+    "sha256": "ce68f84bc839227fcf5d8e9839355465c4cd9163250bf3a33d4b225bce41a39c",
+    "peak_bytes": 1507328,
+    "recompute_cost": 38699008,
+    "forward_cost": 149520384,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-19",
+    "object": "certificates/baselines/transformer-b2-t64/segment-19.json",
+    "sha256": "2650285e6f71f516fb5504d423af36134c6ff4801cfe209ac55dcd83282653aa",
+    "peak_bytes": 1441792,
+    "recompute_cost": 70942720,
+    "forward_cost": 181764096,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-19",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-19.json",
+    "sha256": "a6baefcc6dad5e65140c6f3ab532324904ef5ecace268033371b8a2dce1aa6e5",
+    "peak_bytes": 1441792,
+    "recompute_cost": 47087616,
+    "forward_cost": 157908992,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-20",
+    "object": "certificates/baselines/transformer-b2-t64/segment-20.json",
+    "sha256": "be0b6802884bd4c4b746acc21a5ae078e9a6af381e40e9e2bd4f2e0630c152b9",
+    "peak_bytes": 1572864,
+    "recompute_cost": 70778880,
+    "forward_cost": 181600256,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-20",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-20.json",
+    "sha256": "e9ef2653138e838ba734d3105f23949c9ffcb42d763bac8e4a553637bdb0dfe4",
+    "peak_bytes": 1572864,
+    "recompute_cost": 47087616,
+    "forward_cost": 157908992,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-21",
+    "object": "certificates/baselines/transformer-b2-t64/segment-21.json",
+    "sha256": "18db5aebc9dd55934dfba6a0ed705d66fbb9f333a5656fb57e33e60bfb85db5a",
+    "peak_bytes": 1703936,
+    "recompute_cost": 75137024,
+    "forward_cost": 185958400,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-21",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-21.json",
+    "sha256": "c0ceae78df80b7a5af35c81a98d081488646d1fdd9f61687466955d91b75d5de",
+    "peak_bytes": 1703936,
+    "recompute_cost": 53542912,
+    "forward_cost": 164364288,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-22",
+    "object": "certificates/baselines/transformer-b2-t64/segment-22.json",
+    "sha256": "b3040ed8c14deb11d3d142343330ced765b8a93f679e0c6aa38878df33bb397c",
+    "peak_bytes": 1703936,
+    "recompute_cost": 73039872,
+    "forward_cost": 183861248,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-22",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-22.json",
+    "sha256": "efe9574790422465afa3403a85ed2371085015718557131de2c10b899ece2e6e",
+    "peak_bytes": 1703936,
+    "recompute_cost": 55640064,
+    "forward_cost": 166461440,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-23",
+    "object": "certificates/baselines/transformer-b2-t64/segment-23.json",
+    "sha256": "4812350eb34497f8760c77eb5521de743fb028fff347ca2424bffd85ed422651",
+    "peak_bytes": 1703936,
+    "recompute_cost": 89817088,
+    "forward_cost": 200638464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-23",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-23.json",
+    "sha256": "8940b22b070ce69dc315852570ffbd211e0c3d196f317558d0f7d570fc11e116",
+    "peak_bytes": 1703936,
+    "recompute_cost": 72433664,
+    "forward_cost": 183255040,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-24",
+    "object": "certificates/baselines/transformer-b2-t64/segment-24.json",
+    "sha256": "60fc0d2cdc073c42adb16cb7e70313afe8d592c7582c5060e22d48eb5c761405",
+    "peak_bytes": 1769472,
+    "recompute_cost": 89735168,
+    "forward_cost": 200556544,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-24",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-24.json",
+    "sha256": "6cfba618a08bed4a862562624dbfc06a1b0b87b8177949a7cf361bd95a85877a",
+    "peak_bytes": 1769472,
+    "recompute_cost": 72433664,
+    "forward_cost": 183255040,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-25",
+    "object": "certificates/baselines/transformer-b2-t64/segment-25.json",
+    "sha256": "c2dc17e9e1dbc190249d79bf3e2b88b0ce854c2ff0030c13f97a6fc06e46307a",
+    "peak_bytes": 1835008,
+    "recompute_cost": 73039872,
+    "forward_cost": 183861248,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-25",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-25.json",
+    "sha256": "aff69f358ea9299c39bad3e08832534f98502a51afa60f11c8a48234eed76dfa",
+    "peak_bytes": 1835008,
+    "recompute_cost": 72515584,
+    "forward_cost": 183336960,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-26",
+    "object": "certificates/baselines/transformer-b2-t64/segment-26.json",
+    "sha256": "331f79cc55d1b8ead470dbc41a76b351c81412b258f6c29bec73d846feee9efe",
+    "peak_bytes": 2097152,
+    "recompute_cost": 89292800,
+    "forward_cost": 200114176,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-26",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-26.json",
+    "sha256": "cd4725083032e237fb2eb80d15e95d00a52d421f42cbf5711fe30f21de9ba3db",
+    "peak_bytes": 2097152,
+    "recompute_cost": 89292800,
+    "forward_cost": 200114176,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-27",
+    "object": "certificates/baselines/transformer-b2-t64/segment-27.json",
+    "sha256": "4129877d3f553125733f15c7ce8ff77cf5b9c6a19f2b1b09dded121a94989be3",
+    "peak_bytes": 2359296,
+    "recompute_cost": 89817088,
+    "forward_cost": 200638464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-27",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-27.json",
+    "sha256": "146086f81a02b0cdb05b647f03daf8521d3b9c51df31d3d4b5d6f148f53c14a2",
+    "peak_bytes": 2359296,
+    "recompute_cost": 89817088,
+    "forward_cost": 200638464,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "segment-28",
+    "object": "certificates/baselines/transformer-b2-t64/segment-28.json",
+    "sha256": "4f7bfc862ba9e6f4d6599f69d40e340989a25bde91bb3560ae1c5b76eb945843",
+    "peak_bytes": 2359296,
+    "recompute_cost": 94027776,
+    "forward_cost": 204849152,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "checkpoint-sequential-28",
+    "object": "certificates/baselines/transformer-b2-t64/checkpoint-sequential-28.json",
+    "sha256": "bb6ae8b06417f4605fb63c7e73a6de9f221f0d4b22c2563cbc6f82b68b6db5b6",
+    "peak_bytes": 2949120,
+    "recompute_cost": 0,
+    "forward_cost": 110821376,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b2-t64",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/transformer-b2-t64/selective-save-expensive.json",
+    "sha256": "98c9893d1920bf573bc238bcea6267b1debb5c3e729142cef87bf646d5e872e4",
+    "peak_bytes": 1966080,
+    "recompute_cost": 1900544,
+    "forward_cost": 112721920,
+    "backward_cost": 221642752
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "eager",
+    "object": "certificates/baselines/transformer-b4-t128/eager.json",
+    "sha256": "8d07986e6422a371b9b746795ec3bdb4ee766257be35eaa1f5bc1b36a24fff73",
+    "peak_bytes": 10747904,
+    "recompute_cost": 0,
+    "forward_cost": 478150656,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/transformer-b4-t128/recompute-on-demand.json",
+    "sha256": "c4eb4247d32807f29e6a2912b3c8cc473a5a43b774d6c67ee8ce5ffef15dcd49",
+    "peak_bytes": 1835008,
+    "recompute_cost": 11547705344,
+    "forward_cost": 12025856000,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-1",
+    "object": "certificates/baselines/transformer-b4-t128/segment-1.json",
+    "sha256": "bdc3d6f8b7344a17f94096b31afd6452e0b7dbe7a434a6f0a4688722bf353eb0",
+    "peak_bytes": 13762560,
+    "recompute_cost": 0,
+    "forward_cost": 478150656,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-1.json",
+    "sha256": "806b4ae0980a8848b750f2c2175711647517907605e973f180860769e76222af",
+    "peak_bytes": 13762560,
+    "recompute_cost": 0,
+    "forward_cost": 478150656,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-2",
+    "object": "certificates/baselines/transformer-b4-t128/segment-2.json",
+    "sha256": "048cfcae7180757da1084b5d399d7ac64e0d5460e7483bb86dc01b1f4887f17f",
+    "peak_bytes": 8912896,
+    "recompute_cost": 167772160,
+    "forward_cost": 645922816,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-2.json",
+    "sha256": "3c56e9b471d1d702666f610bf243e05d16c02ff8225f58e4b3832a9f6bddc5e6",
+    "peak_bytes": 8912896,
+    "recompute_cost": 167772160,
+    "forward_cost": 645922816,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-3",
+    "object": "certificates/baselines/transformer-b4-t128/segment-3.json",
+    "sha256": "94d5c2f566607591115ef6206234489ab126b5c4f9f742c445f6ebaf50dc8189",
+    "peak_bytes": 7208960,
+    "recompute_cost": 146505728,
+    "forward_cost": 624656384,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-3.json",
+    "sha256": "f2d0043f5e704601ba0992ef542c4e2d64a6fbfef00843d3770bd54347af96ff",
+    "peak_bytes": 7208960,
+    "recompute_cost": 146505728,
+    "forward_cost": 624656384,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-4",
+    "object": "certificates/baselines/transformer-b4-t128/segment-4.json",
+    "sha256": "6396ab1369593657bfab55eda22e3474289d28d337e9c7dee071521bf414e879",
+    "peak_bytes": 6291456,
+    "recompute_cost": 205389824,
+    "forward_cost": 683540480,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-4.json",
+    "sha256": "cf11f473a3c74ef23577c189a709c96697eeb87e7320bd20ea51cd1eac171746",
+    "peak_bytes": 6553600,
+    "recompute_cost": 170786816,
+    "forward_cost": 648937472,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-5",
+    "object": "certificates/baselines/transformer-b4-t128/segment-5.json",
+    "sha256": "277331f8345457520f86683f4d816ef8f02322b3ba1758ec1e62d2cb127414ba",
+    "peak_bytes": 5767168,
+    "recompute_cost": 207093760,
+    "forward_cost": 685244416,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-5.json",
+    "sha256": "4044d21d94f64e006726c42072225e24378f177b666c75a59da447d01e4bc717",
+    "peak_bytes": 5767168,
+    "recompute_cost": 207093760,
+    "forward_cost": 685244416,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-6",
+    "object": "certificates/baselines/transformer-b4-t128/segment-6.json",
+    "sha256": "c0b132337e6e7f66f41240b79cc1de08e7cb1027a0290483fa0fb2f0e48de138",
+    "peak_bytes": 4718592,
+    "recompute_cost": 239304704,
+    "forward_cost": 717455360,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-6.json",
+    "sha256": "b0618b93a6ccff20a1dcb6e6bdc1bd80674fbf7cff555bec92824960b3106b06",
+    "peak_bytes": 4718592,
+    "recompute_cost": 239304704,
+    "forward_cost": 717455360,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-7",
+    "object": "certificates/baselines/transformer-b4-t128/segment-7.json",
+    "sha256": "841090e5b344ac257fc5bd2d62a409627c2ecdee9c76c1c6881e97b94bb3d011",
+    "peak_bytes": 2359296,
+    "recompute_cost": 310247424,
+    "forward_cost": 788398080,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-7.json",
+    "sha256": "a29174bbddfcfc8e3ea2f7ab3b222cc659492b90ffd9fd6f61abc89a18d5f0b4",
+    "peak_bytes": 2752512,
+    "recompute_cost": 267059200,
+    "forward_cost": 745209856,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-8",
+    "object": "certificates/baselines/transformer-b4-t128/segment-8.json",
+    "sha256": "6285105007db4a7f4f38275d4ea3d61c3650a8db529cf0b951d54cc8f2f9a3ad",
+    "peak_bytes": 4325376,
+    "recompute_cost": 266207232,
+    "forward_cost": 744357888,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-8.json",
+    "sha256": "fd3b4cce2024321a8d5a3ff4ce1d4a9aacc456348c890e71201bf26eb4a49c77",
+    "peak_bytes": 4718592,
+    "recompute_cost": 214630400,
+    "forward_cost": 692781056,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-9",
+    "object": "certificates/baselines/transformer-b4-t128/segment-9.json",
+    "sha256": "ef8a4c6a792e9fc3aa73aed9b3b10f0a31ec39cf1a214ad9d93cae8435a759ce",
+    "peak_bytes": 3407872,
+    "recompute_cost": 266993664,
+    "forward_cost": 745144320,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-9.json",
+    "sha256": "0535af1e9df06202bc4e1e4382284866ba78acc08c1e0f4aa7b94c67b13e9e59",
+    "peak_bytes": 3407872,
+    "recompute_cost": 266993664,
+    "forward_cost": 745144320,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-10",
+    "object": "certificates/baselines/transformer-b4-t128/segment-10.json",
+    "sha256": "585d2fd102d82f026012cf2ef4006f99810776c4f70e84ce6923c5753134c446",
+    "peak_bytes": 3801088,
+    "recompute_cost": 291373056,
+    "forward_cost": 769523712,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-10.json",
+    "sha256": "18e129ee67e8d09b2fc16ea23c03f7ed5eae7ef82d726002cd18195315e931ab",
+    "peak_bytes": 4063232,
+    "recompute_cost": 256573440,
+    "forward_cost": 734724096,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-11",
+    "object": "certificates/baselines/transformer-b4-t128/segment-11.json",
+    "sha256": "f17a600a88da6f3e6f0c31416c9f7ac5fe0a3da3aa047b28c3e9d0cc2d10701e",
+    "peak_bytes": 4456448,
+    "recompute_cost": 259686400,
+    "forward_cost": 737837056,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-11.json",
+    "sha256": "e0844a342367f82546ef961cb47d4bd4e744e180296ea3b99e643030f7e3366c",
+    "peak_bytes": 4456448,
+    "recompute_cost": 259686400,
+    "forward_cost": 737837056,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-12",
+    "object": "certificates/baselines/transformer-b4-t128/segment-12.json",
+    "sha256": "11924d69942c8950dc29220933816bc0792c5560adb6a2b73e2ca4c9363692cd",
+    "peak_bytes": 3670016,
+    "recompute_cost": 333512704,
+    "forward_cost": 811663360,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-12.json",
+    "sha256": "503ffaac56d03cc67dd6ab5234b5e9ae28721e7bb03505452b22f2a89c9504e2",
+    "peak_bytes": 3932160,
+    "recompute_cost": 281935872,
+    "forward_cost": 760086528,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-13",
+    "object": "certificates/baselines/transformer-b4-t128/segment-13.json",
+    "sha256": "2be196e6e21c42d6c040c38e2b4e6c3c3638ea43a23f7586871cfda7651e0dec",
+    "peak_bytes": 3932160,
+    "recompute_cost": 342556672,
+    "forward_cost": 820707328,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-13",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-13.json",
+    "sha256": "c4e3ef44b8091e6b60de6b4c673acddad56fd90e033c999f3365c56069f1b777",
+    "peak_bytes": 3932160,
+    "recompute_cost": 307953664,
+    "forward_cost": 786104320,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-14",
+    "object": "certificates/baselines/transformer-b4-t128/segment-14.json",
+    "sha256": "cabc5fbb42116f693350fa63ec4a6d174c05309b5c23237a4979185278d22a5d",
+    "peak_bytes": 3014656,
+    "recompute_cost": 343801856,
+    "forward_cost": 821952512,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-14",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-14.json",
+    "sha256": "9c2758b3f2599877aa8bf8ce85776ba1ffe60fd4a6a336370e874a41702c8fa4",
+    "peak_bytes": 3932160,
+    "recompute_cost": 257851392,
+    "forward_cost": 736002048,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-15",
+    "object": "certificates/baselines/transformer-b4-t128/segment-15.json",
+    "sha256": "7d8097421a6f3acaeda3cd1e1d98ad7e91c7de78c8091a4e7fa1f1654affc230",
+    "peak_bytes": 3407872,
+    "recompute_cost": 318144512,
+    "forward_cost": 796295168,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-15",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-15.json",
+    "sha256": "efde752fd3a173f17dd489bc3f5a75fc986f799c73b7e0e53eaf18aa8c2b2de7",
+    "peak_bytes": 4325376,
+    "recompute_cost": 249135104,
+    "forward_cost": 727285760,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-16",
+    "object": "certificates/baselines/transformer-b4-t128/segment-16.json",
+    "sha256": "3fa20b79d0c241d7d9c04a14416f05182dbb0ac47b21d99c4e8c393991caf0c6",
+    "peak_bytes": 4063232,
+    "recompute_cost": 292651008,
+    "forward_cost": 770801664,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-16",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-16.json",
+    "sha256": "fa77684faa6bcce55c8d38eac77b5d87c7ae07b7aed5ceba6b8205ef5862b672",
+    "peak_bytes": 4063232,
+    "recompute_cost": 241074176,
+    "forward_cost": 719224832,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-17",
+    "object": "certificates/baselines/transformer-b4-t128/segment-17.json",
+    "sha256": "11e7494e300a37c16f06924d86b4605162c52520c0f62c8cd2cad20f04c2f946",
+    "peak_bytes": 4456448,
+    "recompute_cost": 334594048,
+    "forward_cost": 812744704,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-17",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-17.json",
+    "sha256": "554198655158a767ce757739a9d89704b9fed3a665c12fa7f5b182b5ffd6ae8a",
+    "peak_bytes": 4456448,
+    "recompute_cost": 299827200,
+    "forward_cost": 777977856,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-18",
+    "object": "certificates/baselines/transformer-b4-t128/segment-18.json",
+    "sha256": "e37969fd4be186b23f12832a92dbd75664b6ba8b52b31b615068b77a695e1e38",
+    "peak_bytes": 4325376,
+    "recompute_cost": 334364672,
+    "forward_cost": 812515328,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-18",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-18.json",
+    "sha256": "46c76f8afe1d8cd2be224de21565d945754f52db7b76c6370099f8061dd9d043",
+    "peak_bytes": 4325376,
+    "recompute_cost": 334364672,
+    "forward_cost": 812515328,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-19",
+    "object": "certificates/baselines/transformer-b4-t128/segment-19.json",
+    "sha256": "2fa4b1639db8b2ef26fc4a6b613d613d7c3054c3daf74f11bab64633668f23fc",
+    "peak_bytes": 4849664,
+    "recompute_cost": 385613824,
+    "forward_cost": 863764480,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-19",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-19.json",
+    "sha256": "eb7199a1ecae201cde0259fc50d7089373f5d2706b242732eebf9095bb5bd0c7",
+    "peak_bytes": 5898240,
+    "recompute_cost": 231473152,
+    "forward_cost": 709623808,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-20",
+    "object": "certificates/baselines/transformer-b4-t128/segment-20.json",
+    "sha256": "7f6dd0bf2bcb0c4f3c322777bee7d203f002accc3c302fd797af0308d9ba3ddb",
+    "peak_bytes": 4456448,
+    "recompute_cost": 384073728,
+    "forward_cost": 862224384,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-20",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-20.json",
+    "sha256": "c24fc6bfb586daf2c20c096f896af9e1db838a88fe2e08ec1fd38ed3244105e4",
+    "peak_bytes": 5242880,
+    "recompute_cost": 264536064,
+    "forward_cost": 742686720,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-21",
+    "object": "certificates/baselines/transformer-b4-t128/segment-21.json",
+    "sha256": "4204d66eb70416a4dc12e4b7aac37ef6e0889bc7757eb93a1879f105cb9f635f",
+    "peak_bytes": 4325376,
+    "recompute_cost": 369000448,
+    "forward_cost": 847151104,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-21",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-21.json",
+    "sha256": "1fe0f658cc4c08870a1042a7bd3f5cf81c3dbc9e3bf8d3b8caefb87484543559",
+    "peak_bytes": 4325376,
+    "recompute_cost": 283049984,
+    "forward_cost": 761200640,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-22",
+    "object": "certificates/baselines/transformer-b4-t128/segment-22.json",
+    "sha256": "2b5498d082e9e7875ca343009b5e3f34f82bc8b71dac0361e4a7f387b3ce212f",
+    "peak_bytes": 4587520,
+    "recompute_cost": 360448000,
+    "forward_cost": 838598656,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-22",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-22.json",
+    "sha256": "eed1ffa09a4d88d95ab7cf3c81e2552a39d8218d4a69f4cb0efebf34d3e547f9",
+    "peak_bytes": 4587520,
+    "recompute_cost": 283049984,
+    "forward_cost": 761200640,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-23",
+    "object": "certificates/baselines/transformer-b4-t128/segment-23.json",
+    "sha256": "23e531bcd8de7c723eee785c330fe4302b7ab9b4676fe68446da43b18bd0c9c6",
+    "peak_bytes": 4325376,
+    "recompute_cost": 377389056,
+    "forward_cost": 855539712,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-23",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-23.json",
+    "sha256": "32932a432c17a6e6a77cd1f0c43ac30296db5b4f1e36a455714221d938d1abbc",
+    "peak_bytes": 4325376,
+    "recompute_cost": 316768256,
+    "forward_cost": 794918912,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-24",
+    "object": "certificates/baselines/transformer-b4-t128/segment-24.json",
+    "sha256": "f3ece4216771df09dc632020c52395c04b91b964268f9786b611ebc75f283f6c",
+    "peak_bytes": 5111808,
+    "recompute_cost": 384958464,
+    "forward_cost": 863109120,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-24",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-24.json",
+    "sha256": "f37c12781c598c860bf13d645313cfcde0f8d1d4aa5d841b4a1f804de659223b",
+    "peak_bytes": 5111808,
+    "recompute_cost": 333381632,
+    "forward_cost": 811532288,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-25",
+    "object": "certificates/baselines/transformer-b4-t128/segment-25.json",
+    "sha256": "5571dec17c5d1a675028a6c6db785029fae8f5d726a717e2e59a9ac4fed922d1",
+    "peak_bytes": 5505024,
+    "recompute_cost": 360611840,
+    "forward_cost": 838762496,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-25",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-25.json",
+    "sha256": "c99a218238a4a00b08f2d107eabcd2b9c83ff242e09835a5f6d83a031b7ad429",
+    "peak_bytes": 5505024,
+    "recompute_cost": 325812224,
+    "forward_cost": 803962880,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-26",
+    "object": "certificates/baselines/transformer-b4-t128/segment-26.json",
+    "sha256": "d0393ce0f89c44ddbe3f026959c00ca99b128407d41c03fb4dccd76adef59ba8",
+    "peak_bytes": 5111808,
+    "recompute_cost": 426508288,
+    "forward_cost": 904658944,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-26",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-26.json",
+    "sha256": "354d19a4d065fb379877fe159c748e1e9bfbc32c5814dad498575a42c1652153",
+    "peak_bytes": 5111808,
+    "recompute_cost": 391905280,
+    "forward_cost": 870055936,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-27",
+    "object": "certificates/baselines/transformer-b4-t128/segment-27.json",
+    "sha256": "853cb42bb396759339b346ee877473bc91c063a4cf038efc440908f35ae2a04d",
+    "peak_bytes": 5242880,
+    "recompute_cost": 393117696,
+    "forward_cost": 871268352,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-27",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-27.json",
+    "sha256": "5119ef7cde2b62f5dfdfae9b421ea2b8655d440a3eabd38bf0c3c7e447b9e6db",
+    "peak_bytes": 5242880,
+    "recompute_cost": 393117696,
+    "forward_cost": 871268352,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-28",
+    "object": "certificates/baselines/transformer-b4-t128/segment-28.json",
+    "sha256": "ddc8cf60777a60b098b0fd2a0e02359a031390754ea8c61fef42aadcf1fd7250",
+    "peak_bytes": 5373952,
+    "recompute_cost": 410976256,
+    "forward_cost": 889126912,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-28",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-28.json",
+    "sha256": "c1d883bc6fb78c8748f5a62c78e965472c508ef15137cbf14aea9a194ce8dce4",
+    "peak_bytes": 7077888,
+    "recompute_cost": 205488128,
+    "forward_cost": 683638784,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-29",
+    "object": "certificates/baselines/transformer-b4-t128/segment-29.json",
+    "sha256": "1cc1ce7afd792c37a9a6c7d8f145f1254c340b982cfea862dccd5709db63c03c",
+    "peak_bytes": 5373952,
+    "recompute_cost": 410812416,
+    "forward_cost": 888963072,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-29",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-29.json",
+    "sha256": "443bd6d4d69a649b41b359fdfb94b3a6229d472dcbe25bd5d9d8db6f1a2e264a",
+    "peak_bytes": 7077888,
+    "recompute_cost": 205488128,
+    "forward_cost": 683638784,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-30",
+    "object": "certificates/baselines/transformer-b4-t128/segment-30.json",
+    "sha256": "e5eba30df26d871e8d983e67cc7be36c7a9fa583deb56af7a1c1890538394db5",
+    "peak_bytes": 5505024,
+    "recompute_cost": 402423808,
+    "forward_cost": 880574464,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-30",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-30.json",
+    "sha256": "f3756c25091c8e2e599f436209fc2481b8f3cd98e6b55a819f6bb61ce1293033",
+    "peak_bytes": 7077888,
+    "recompute_cost": 205488128,
+    "forward_cost": 683638784,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-31",
+    "object": "certificates/baselines/transformer-b4-t128/segment-31.json",
+    "sha256": "0e0c4ad8f75d20edf51e1eab27c71cef047940543eb09a678cf522dd342750db",
+    "peak_bytes": 5505024,
+    "recompute_cost": 394035200,
+    "forward_cost": 872185856,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-31",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-31.json",
+    "sha256": "7f24d0741b10b03a1520d106a3f2330423bf253e18507ab0eb475060f28defe2",
+    "peak_bytes": 7077888,
+    "recompute_cost": 205488128,
+    "forward_cost": 683638784,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-32",
+    "object": "certificates/baselines/transformer-b4-t128/segment-32.json",
+    "sha256": "b79a0af5e4a91590d4cb24b876fe69127524854fec96dcab8964468828ec2f74",
+    "peak_bytes": 5505024,
+    "recompute_cost": 385810432,
+    "forward_cost": 863961088,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-32",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-32.json",
+    "sha256": "472809b74915d33e7d83c50545dc3610a1cbcb78a6c6d3d2248b88adce609dad",
+    "peak_bytes": 6946816,
+    "recompute_cost": 205651968,
+    "forward_cost": 683802624,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-33",
+    "object": "certificates/baselines/transformer-b4-t128/segment-33.json",
+    "sha256": "f700ea58b31e79bf266035615f40b18c583e98631b52ad01a1b8e56a6c94e431",
+    "peak_bytes": 5767168,
+    "recompute_cost": 394199040,
+    "forward_cost": 872349696,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-33",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-33.json",
+    "sha256": "73853e735b10d52d42262d98e2a235bedfd0bbc9c2e0aa6ceb58734f3eb0a97f",
+    "peak_bytes": 6684672,
+    "recompute_cost": 222429184,
+    "forward_cost": 700579840,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-34",
+    "object": "certificates/baselines/transformer-b4-t128/segment-34.json",
+    "sha256": "2140e6bec8b0329e9a6a7eb7edf2281f82ba15161700bec9e840470833bf5ba9",
+    "peak_bytes": 6291456,
+    "recompute_cost": 393543680,
+    "forward_cost": 871694336,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-34",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-34.json",
+    "sha256": "70fc3eaa96d009ccbdd63b6063762fd47154ef213166146500424d62333f4cc7",
+    "peak_bytes": 6291456,
+    "recompute_cost": 222429184,
+    "forward_cost": 700579840,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-35",
+    "object": "certificates/baselines/transformer-b4-t128/segment-35.json",
+    "sha256": "f9c292ca58c27dbf92446d7d0c982ff558d0793f49277f2312c51c9e8856f7a6",
+    "peak_bytes": 6815744,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-35",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-35.json",
+    "sha256": "415d6efacc082792285b19470297b769d81ce8833941b1fbe68538b537ddf26d",
+    "peak_bytes": 6815744,
+    "recompute_cost": 239861760,
+    "forward_cost": 718012416,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-36",
+    "object": "certificates/baselines/transformer-b4-t128/segment-36.json",
+    "sha256": "40eb16b0ae21f09eb8209ca99abd82e7806500b58d47b7a85a2e5530b95903b9",
+    "peak_bytes": 6815744,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-36",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-36.json",
+    "sha256": "c6a4f0f2f70ed239ae9f0b560357af85c25a6452e0db71b327f9a586cb3764ab",
+    "peak_bytes": 6815744,
+    "recompute_cost": 248250368,
+    "forward_cost": 726401024,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-37",
+    "object": "certificates/baselines/transformer-b4-t128/segment-37.json",
+    "sha256": "2f50ff5a80d3cf1e9a0267b853c7798a97c59ad49232d04286d6136a7e031996",
+    "peak_bytes": 6815744,
+    "recompute_cost": 436142080,
+    "forward_cost": 914292736,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-37",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-37.json",
+    "sha256": "5f3cffb1e6839ffc4fde017c10a37b4b08c885cfe4a3808f1927eb9ffb8ad520",
+    "peak_bytes": 6815744,
+    "recompute_cost": 281837568,
+    "forward_cost": 759988224,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-38",
+    "object": "certificates/baselines/transformer-b4-t128/segment-38.json",
+    "sha256": "28346f6897d68e60b962e5461f56b59aadc5b449d5d7ee0996b67f7e6ae61152",
+    "peak_bytes": 6946816,
+    "recompute_cost": 435978240,
+    "forward_cost": 914128896,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-38",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-38.json",
+    "sha256": "610a73d3a4e866e71be746265d609aaa15ab70a239ee72d2d99fb8304aaa7324",
+    "peak_bytes": 6946816,
+    "recompute_cost": 281837568,
+    "forward_cost": 759988224,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-39",
+    "object": "certificates/baselines/transformer-b4-t128/segment-39.json",
+    "sha256": "be81494d2ac177faf4593a8026e30249af0bbce6c4a3880ee0a26e5d810d8aa8",
+    "peak_bytes": 6946816,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-39",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-39.json",
+    "sha256": "96b9855f4ffe148d31ba9a65148743360537bde569ab86f9665c412c2accdc25",
+    "peak_bytes": 6946816,
+    "recompute_cost": 282001408,
+    "forward_cost": 760152064,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-40",
+    "object": "certificates/baselines/transformer-b4-t128/segment-40.json",
+    "sha256": "605db6b3aff502ea8b55f9052a31e0eeb7599224fef8676b00e2031a72e2596e",
+    "peak_bytes": 7340032,
+    "recompute_cost": 435093504,
+    "forward_cost": 913244160,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-40",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-40.json",
+    "sha256": "6a7382f3c9916efcb4e3a781b74ff080bebe01fede8c6fad520dcd7929ed6d15",
+    "peak_bytes": 7340032,
+    "recompute_cost": 315555840,
+    "forward_cost": 793706496,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-41",
+    "object": "certificates/baselines/transformer-b4-t128/segment-41.json",
+    "sha256": "c3b87a8e0d4afaf79e5511dc8d2d2888320bf710313815454c761c78ea572861",
+    "peak_bytes": 7864320,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-41",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-41.json",
+    "sha256": "59fae52f17a66c11b7e36a5234ec3685da2700b576f930663bbd8ba60be1fca6",
+    "peak_bytes": 7864320,
+    "recompute_cost": 316604416,
+    "forward_cost": 794755072,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-42",
+    "object": "certificates/baselines/transformer-b4-t128/segment-42.json",
+    "sha256": "37465bbad46260164abdece0f274b42adaf1d963b7783f8f958c788ceb3dab3e",
+    "peak_bytes": 7864320,
+    "recompute_cost": 410976256,
+    "forward_cost": 889126912,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-42",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-42.json",
+    "sha256": "24f40e2bbf4529b2bc55baf6ca1c295754fbcb5b8e8aafef1a5599d8b409eb5c",
+    "peak_bytes": 7864320,
+    "recompute_cost": 325025792,
+    "forward_cost": 803176448,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-43",
+    "object": "certificates/baselines/transformer-b4-t128/segment-43.json",
+    "sha256": "1b7a4cf2432a8ed56228e63e35339dcf48ed83c472e6b4c87ac38d9f4b4f873a",
+    "peak_bytes": 7995392,
+    "recompute_cost": 410812416,
+    "forward_cost": 888963072,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-43",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-43.json",
+    "sha256": "43674ed6dc9187e012ae0620bb6b035b5c41469d3ea67f5ff6a7fc9642562a84",
+    "peak_bytes": 7995392,
+    "recompute_cost": 325025792,
+    "forward_cost": 803176448,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-44",
+    "object": "certificates/baselines/transformer-b4-t128/segment-44.json",
+    "sha256": "28f6418e9c33308fbfac07171dd7725da68b51327a7dd945ca1cc2e12ff01648",
+    "peak_bytes": 8126464,
+    "recompute_cost": 402423808,
+    "forward_cost": 880574464,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-44",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-44.json",
+    "sha256": "1b6caa30e669f6c78ce19467f291e05e6e421c887a93f6027f30bb2f4cfc4dc7",
+    "peak_bytes": 8126464,
+    "recompute_cost": 325025792,
+    "forward_cost": 803176448,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-45",
+    "object": "certificates/baselines/transformer-b4-t128/segment-45.json",
+    "sha256": "f1649b2798ecfea4efd965f4788b49a77f536895aed8ea398b95be90ee88afc8",
+    "peak_bytes": 8126464,
+    "recompute_cost": 394035200,
+    "forward_cost": 872185856,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-45",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-45.json",
+    "sha256": "242ee5a453325f2a85331a1baffdf03f8ebe0257e9ed4811f822c96df56ceb8e",
+    "peak_bytes": 8126464,
+    "recompute_cost": 325025792,
+    "forward_cost": 803176448,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-46",
+    "object": "certificates/baselines/transformer-b4-t128/segment-46.json",
+    "sha256": "0093188417bcc353837c03866ff85a403afac3713aa3e556806fc45eaeb9fc4b",
+    "peak_bytes": 8126464,
+    "recompute_cost": 385810432,
+    "forward_cost": 863961088,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-46",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-46.json",
+    "sha256": "2bc8f3dad844c56393173891b7f27587246ac02ac1cb46c71b961f394c8262f4",
+    "peak_bytes": 8126464,
+    "recompute_cost": 325189632,
+    "forward_cost": 803340288,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-47",
+    "object": "certificates/baselines/transformer-b4-t128/segment-47.json",
+    "sha256": "6319210e7d377fbe2c7114ecb79a4888d9cfed49193a0db04c7e9e1513e26ebc",
+    "peak_bytes": 8388608,
+    "recompute_cost": 394199040,
+    "forward_cost": 872349696,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-47",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-47.json",
+    "sha256": "0805dc44ef4151b08791d0ce07638ef4f0ded85fe488ff78a67ecd088fc43d5b",
+    "peak_bytes": 8388608,
+    "recompute_cost": 341966848,
+    "forward_cost": 820117504,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-48",
+    "object": "certificates/baselines/transformer-b4-t128/segment-48.json",
+    "sha256": "ce43364b79e0c4057158f33cd9ac3e9ffc1cafc33e21beb95947016b511021ea",
+    "peak_bytes": 8912896,
+    "recompute_cost": 393543680,
+    "forward_cost": 871694336,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-48",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-48.json",
+    "sha256": "1aaf4fcf4ac4e5c77833bcdc4717590a27a91a3afaddfde833dfa39736744e9b",
+    "peak_bytes": 8912896,
+    "recompute_cost": 341966848,
+    "forward_cost": 820117504,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-49",
+    "object": "certificates/baselines/transformer-b4-t128/segment-49.json",
+    "sha256": "9bf0ee0cc038457d319b3d8e39ca7ddf202e9484e10c8e98a084b61213a05815",
+    "peak_bytes": 9437184,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-49",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-49.json",
+    "sha256": "0094345e132619a12af53212a068961e501ab4cfc0258e87844ff426253fb001",
+    "peak_bytes": 9437184,
+    "recompute_cost": 359399424,
+    "forward_cost": 837550080,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-50",
+    "object": "certificates/baselines/transformer-b4-t128/segment-50.json",
+    "sha256": "261d6855986f540f6122b06cd8f93cbde0da9a26eacee66bbdb14d8685e598c4",
+    "peak_bytes": 9437184,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-50",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-50.json",
+    "sha256": "2875af2b341c4aa7278e664cf5b4e07b7bdd8a6a8ff5d67e07c4ac1701666d23",
+    "peak_bytes": 9437184,
+    "recompute_cost": 367788032,
+    "forward_cost": 845938688,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-51",
+    "object": "certificates/baselines/transformer-b4-t128/segment-51.json",
+    "sha256": "a4168e00b93ac95c3f636571ee92cb42e05352a677dc144b22ddf6bcc05d76d5",
+    "peak_bytes": 9437184,
+    "recompute_cost": 436142080,
+    "forward_cost": 914292736,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-51",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-51.json",
+    "sha256": "5f56e2f21267ddd4137405a262caf0653cc14d810471822b009b53e47ad30f04",
+    "peak_bytes": 9437184,
+    "recompute_cost": 401375232,
+    "forward_cost": 879525888,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-52",
+    "object": "certificates/baselines/transformer-b4-t128/segment-52.json",
+    "sha256": "024def019203aaebcd4b2f1eec71933bcfa75018adf9e84b1436cbf67094d0ed",
+    "peak_bytes": 9568256,
+    "recompute_cost": 435978240,
+    "forward_cost": 914128896,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-52",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-52.json",
+    "sha256": "5265deb1ee598a293a15a45c1da7885807baa2855bb343c6ac465f635d996cdf",
+    "peak_bytes": 9568256,
+    "recompute_cost": 401375232,
+    "forward_cost": 879525888,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-53",
+    "object": "certificates/baselines/transformer-b4-t128/segment-53.json",
+    "sha256": "313b3000c06dff9d20ce484a155118b8a7ab5a98afc79a893cb0ca7ea9188842",
+    "peak_bytes": 9568256,
+    "recompute_cost": 402587648,
+    "forward_cost": 880738304,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-53",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-53.json",
+    "sha256": "b2b86066177f524cd998c35fbc9526f149195dcfbf9365beec62a12914217f8f",
+    "peak_bytes": 9568256,
+    "recompute_cost": 401539072,
+    "forward_cost": 879689728,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-54",
+    "object": "certificates/baselines/transformer-b4-t128/segment-54.json",
+    "sha256": "b334c7dd27baf326dfa78a617922feb25490b8f1cfaa29a3db39400bf57836f6",
+    "peak_bytes": 9961472,
+    "recompute_cost": 435093504,
+    "forward_cost": 913244160,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-54",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-54.json",
+    "sha256": "14a1b8970be7b0dd6db4ffba32d69d185f41b33b8f4df9976aaf1407c9be5d31",
+    "peak_bytes": 9961472,
+    "recompute_cost": 435093504,
+    "forward_cost": 913244160,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-55",
+    "object": "certificates/baselines/transformer-b4-t128/segment-55.json",
+    "sha256": "470cdfed6266657794de6ff1887b0a43d484e4043f9d3dc2184099dd4ba3218b",
+    "peak_bytes": 10485760,
+    "recompute_cost": 436142080,
+    "forward_cost": 914292736,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-55",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-55.json",
+    "sha256": "bac96f043b0704ba13066aebe42107801d0b94b223c8e22c814e67571ec99fa2",
+    "peak_bytes": 10485760,
+    "recompute_cost": 436142080,
+    "forward_cost": 914292736,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "segment-56",
+    "object": "certificates/baselines/transformer-b4-t128/segment-56.json",
+    "sha256": "3b91e5dd53b90d5abf0d280592020a5322eeb474abb0767e92085f9c0ffd969f",
+    "peak_bytes": 10485760,
+    "recompute_cost": 444563456,
+    "forward_cost": 922714112,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "checkpoint-sequential-56",
+    "object": "certificates/baselines/transformer-b4-t128/checkpoint-sequential-56.json",
+    "sha256": "d137f4629ea99d6257c59fb09723cd4e4110aa0a34fd59c4409970c5165bacc8",
+    "peak_bytes": 13762560,
+    "recompute_cost": 0,
+    "forward_cost": 478150656,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "transformer-b4-t128",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/transformer-b4-t128/selective-save-expensive.json",
+    "sha256": "ed9d0a0786a88d513fcea6d68975624b45efb1b1974ca1b2296bb05dac8a674f",
+    "peak_bytes": 8126464,
+    "recompute_cost": 9961472,
+    "forward_cost": 488112128,
+    "backward_cost": 956301312
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "eager",
+    "object": "certificates/baselines/resnet-b2-c32/eager.json",
+    "sha256": "70bdfc7aec0747053cee666666743f0f17dea063b7f00d8b77942f21a0bb838e",
+    "peak_bytes": 1572864,
+    "recompute_cost": 0,
+    "forward_cost": 151388160,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/resnet-b2-c32/recompute-on-demand.json",
+    "sha256": "52bd9dab389d2ff6db22e605b7182bf3f72ece6d677a4550846b21f008fe9e78",
+    "peak_bytes": 1048576,
+    "recompute_cost": 227016704,
+    "forward_cost": 378404864,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-1",
+    "object": "certificates/baselines/resnet-b2-c32/segment-1.json",
+    "sha256": "fc4da19197bb22ea948d8280b57a83715c0a1974b13defd3ebec64d632efd0db",
+    "peak_bytes": 2883584,
+    "recompute_cost": 0,
+    "forward_cost": 151388160,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-1.json",
+    "sha256": "a2f7c6ba5fc1bcf2bf63d1a8cc6df019093edfa547a827e11c143509e2f8016b",
+    "peak_bytes": 2883584,
+    "recompute_cost": 0,
+    "forward_cost": 151388160,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-2",
+    "object": "certificates/baselines/resnet-b2-c32/segment-2.json",
+    "sha256": "fa0503389ae956205537abe9e61febc736b981df31dbb31c0f6150aa8a17d4af",
+    "peak_bytes": 2097152,
+    "recompute_cost": 65536,
+    "forward_cost": 151453696,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-2.json",
+    "sha256": "b64d94bc3c737c8b783dfab851b736e83257055a96ef1965c035e2afcc05688f",
+    "peak_bytes": 2097152,
+    "recompute_cost": 65536,
+    "forward_cost": 151453696,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-3",
+    "object": "certificates/baselines/resnet-b2-c32/segment-3.json",
+    "sha256": "5de9191b8f7c0cbd6dcd37a7966a0aec7cb821e17b8ee052bce27cd5cda99ee2",
+    "peak_bytes": 1572864,
+    "recompute_cost": 37879808,
+    "forward_cost": 189267968,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-3.json",
+    "sha256": "a95244d00cc8cf844b98249e936dee023f6667f770123665e1a8165c6b65d22e",
+    "peak_bytes": 1572864,
+    "recompute_cost": 37879808,
+    "forward_cost": 189267968,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-4",
+    "object": "certificates/baselines/resnet-b2-c32/segment-4.json",
+    "sha256": "9e91194ee13c94e6bae518d3f632e76a58cdc7715128a68aacd538bdae6f1bb2",
+    "peak_bytes": 1572864,
+    "recompute_cost": 75628544,
+    "forward_cost": 227016704,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-4.json",
+    "sha256": "3bcc59f05f076fea2ff017b184c8e5908fc717b762852f5cf7da67ab7ccf8947",
+    "peak_bytes": 1572864,
+    "recompute_cost": 75628544,
+    "forward_cost": 227016704,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-5",
+    "object": "certificates/baselines/resnet-b2-c32/segment-5.json",
+    "sha256": "633f986b2a6d7a95c666b0da6f4b3258f8851e67ef826c2f9470194c01e2ac32",
+    "peak_bytes": 1310720,
+    "recompute_cost": 113508352,
+    "forward_cost": 264896512,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-5.json",
+    "sha256": "ec98928e84eccecf66555a954268bf5d900491a6900111688f14559ef6fa48a5",
+    "peak_bytes": 1835008,
+    "recompute_cost": 37814272,
+    "forward_cost": 189202432,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-6",
+    "object": "certificates/baselines/resnet-b2-c32/segment-6.json",
+    "sha256": "4356979a7df5cfa0834ac25e92ffd25b2dd2981f07af6d615b1e402710603544",
+    "peak_bytes": 1572864,
+    "recompute_cost": 75759616,
+    "forward_cost": 227147776,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-6.json",
+    "sha256": "48e28f25768fffd9762bc010726b92cb9875aba6fe68401f8372702c887979bf",
+    "peak_bytes": 1835008,
+    "recompute_cost": 37814272,
+    "forward_cost": 189202432,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-7",
+    "object": "certificates/baselines/resnet-b2-c32/segment-7.json",
+    "sha256": "954bcf74a48c488309bd3fd152887ac0e458e5c6ed48ef3fcb256a4fcec458d7",
+    "peak_bytes": 1310720,
+    "recompute_cost": 37814272,
+    "forward_cost": 189202432,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-7.json",
+    "sha256": "7bc9726b327d8e456681b0d2c60f5ec034874e402d516cf712450bd725af6474",
+    "peak_bytes": 1572864,
+    "recompute_cost": 37814272,
+    "forward_cost": 189202432,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-8",
+    "object": "certificates/baselines/resnet-b2-c32/segment-8.json",
+    "sha256": "f34c36b711a470a79909ca138e6ec1b51929261ae451f4e6e25218fe42e0b800",
+    "peak_bytes": 1310720,
+    "recompute_cost": 75628544,
+    "forward_cost": 227016704,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-8.json",
+    "sha256": "156787dbfbfbaf87a93c28afb4368aad160e05e0c7a2d216c565e781927f5cdf",
+    "peak_bytes": 1310720,
+    "recompute_cost": 75628544,
+    "forward_cost": 227016704,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-9",
+    "object": "certificates/baselines/resnet-b2-c32/segment-9.json",
+    "sha256": "4fc8334fb093206232cc543bcb3a2249427b1cacc270f98b674420b4a8cfa928",
+    "peak_bytes": 1310720,
+    "recompute_cost": 113508352,
+    "forward_cost": 264896512,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-9.json",
+    "sha256": "9dafecb1fe2608abaa94cd820c8ab44d8f068045347f3ecca37211e5a3beda94",
+    "peak_bytes": 1310720,
+    "recompute_cost": 113508352,
+    "forward_cost": 264896512,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "segment-10",
+    "object": "certificates/baselines/resnet-b2-c32/segment-10.json",
+    "sha256": "d766c0916b493072145ef615d143393dc2dfd60a4683e537b80f055b63c42599",
+    "peak_bytes": 1572864,
+    "recompute_cost": 151388160,
+    "forward_cost": 302776320,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/resnet-b2-c32/checkpoint-sequential-10.json",
+    "sha256": "01d60e1f82fa727a30e876356b5c905ffa173aaaaf5ab09e8a277537a0baa686",
+    "peak_bytes": 2883584,
+    "recompute_cost": 0,
+    "forward_cost": 151388160,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/resnet-b2-c32/selective-save-expensive.json",
+    "sha256": "a38a7a3e0ddbdbcecce5fd1b6809e73c7c797fcd2cba28327255edde42e82ffa",
+    "peak_bytes": 1835008,
+    "recompute_cost": 262144,
+    "forward_cost": 151650304,
+    "backward_cost": 302776320
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "eager",
+    "object": "certificates/baselines/resnet-b4-c32/eager.json",
+    "sha256": "c133340ee5c0a981efa5cb7e612a7b4a71b098b09d7c9a3290c63521df74bf37",
+    "peak_bytes": 2621440,
+    "recompute_cost": 0,
+    "forward_cost": 302776320,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/resnet-b4-c32/recompute-on-demand.json",
+    "sha256": "913e079794629e87e86005dc7a06d8855d7be997ec26ff8f63deac74c4eb0d2a",
+    "peak_bytes": 1048576,
+    "recompute_cost": 1059586048,
+    "forward_cost": 1362362368,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-1",
+    "object": "certificates/baselines/resnet-b4-c32/segment-1.json",
+    "sha256": "d8884cebcecb68d49208e5de134239b5c25975761cb368f292387f8e00356b38",
+    "peak_bytes": 5505024,
+    "recompute_cost": 0,
+    "forward_cost": 302776320,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-1.json",
+    "sha256": "a69906d15d6e87f2a2cc053068f615f4d651120951df1f5ebc2ed3284d8b279b",
+    "peak_bytes": 5505024,
+    "recompute_cost": 0,
+    "forward_cost": 302776320,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-2",
+    "object": "certificates/baselines/resnet-b4-c32/segment-2.json",
+    "sha256": "f17f9e4d85988a81cf31de4a776a2d47e36081928d5ffcda20ab6847595dafe0",
+    "peak_bytes": 3670016,
+    "recompute_cost": 131072,
+    "forward_cost": 302907392,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-2.json",
+    "sha256": "acb6fd8b6cf75f4c53002eb64f94b7cf4483e9969885991ac79a698db44d5c5f",
+    "peak_bytes": 3670016,
+    "recompute_cost": 131072,
+    "forward_cost": 302907392,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-3",
+    "object": "certificates/baselines/resnet-b4-c32/segment-3.json",
+    "sha256": "afee42cffa289431bd98b908c58c0271487e02157e858130f6f183adda9059af",
+    "peak_bytes": 2883584,
+    "recompute_cost": 75694080,
+    "forward_cost": 378470400,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-3.json",
+    "sha256": "690277cc219db26ced8d34696c487fc056f4f59eeedad71a3add5ba9e1bdcf5e",
+    "peak_bytes": 2883584,
+    "recompute_cost": 75694080,
+    "forward_cost": 378470400,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-4",
+    "object": "certificates/baselines/resnet-b4-c32/segment-4.json",
+    "sha256": "f16430a8b0f4d2d486e7dcc454272c1c0eb02955a5fe3e74a3113684443ae989",
+    "peak_bytes": 2883584,
+    "recompute_cost": 113573888,
+    "forward_cost": 416350208,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-4.json",
+    "sha256": "64503bc36eb52aa02dc607f871e6d4a92cdd7ce8cde9bbf7a7741712092a4cfc",
+    "peak_bytes": 3145728,
+    "recompute_cost": 75628544,
+    "forward_cost": 378404864,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-5",
+    "object": "certificates/baselines/resnet-b4-c32/segment-5.json",
+    "sha256": "2cd9d208e9cda3bc11877bfc7eedb35ee4a748cb6b33bb9f783acf816a3737f7",
+    "peak_bytes": 1835008,
+    "recompute_cost": 189136896,
+    "forward_cost": 491913216,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-5.json",
+    "sha256": "5b93dc7d38c1fe0a78dbfba36f426fd00c528b312e9ac34eadd8170b8b4f4b1b",
+    "peak_bytes": 2359296,
+    "recompute_cost": 113442816,
+    "forward_cost": 416219136,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-6",
+    "object": "certificates/baselines/resnet-b4-c32/segment-6.json",
+    "sha256": "e22f3d982f145e32c8dd76e319acde1c9f35f62486477cf06334e4763c00cb56",
+    "peak_bytes": 2359296,
+    "recompute_cost": 75694080,
+    "forward_cost": 378470400,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-6.json",
+    "sha256": "18ebad03a63035c078c45d808842992dffda6e873b2547e9c7d8f6dc9c437188",
+    "peak_bytes": 2359296,
+    "recompute_cost": 75694080,
+    "forward_cost": 378470400,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-7",
+    "object": "certificates/baselines/resnet-b4-c32/segment-7.json",
+    "sha256": "3c6ad5d9d2d3c94039f1d6731a5cd4fcfddd9c4c684dd404da502eb26cd1d3be",
+    "peak_bytes": 2097152,
+    "recompute_cost": 189267968,
+    "forward_cost": 492044288,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-7.json",
+    "sha256": "f2cb5d4b7f6cad55ee9b40f43f431e7854c17728b8aebc7c365f56d86cf6ae9b",
+    "peak_bytes": 2621440,
+    "recompute_cost": 113508352,
+    "forward_cost": 416284672,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-8",
+    "object": "certificates/baselines/resnet-b4-c32/segment-8.json",
+    "sha256": "761b54360c211e6b7ad7737813501da51e7191d367418e3863fbaa7debe433de",
+    "peak_bytes": 2097152,
+    "recompute_cost": 151519232,
+    "forward_cost": 454295552,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-8.json",
+    "sha256": "d2bad1552affb90b915db397e436bfb7c5d5587d4fb37523b19865ee092c9fc6",
+    "peak_bytes": 2359296,
+    "recompute_cost": 113573888,
+    "forward_cost": 416350208,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-9",
+    "object": "certificates/baselines/resnet-b4-c32/segment-9.json",
+    "sha256": "fc4182129ce46329761fae018224f530cd48e01df725c585ae65c8b201cea040",
+    "peak_bytes": 1835008,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-9.json",
+    "sha256": "3b3252082b425502417f8ea462321e1e0f70f3805e212fcb2e516f85e0f3c399",
+    "peak_bytes": 1835008,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-10",
+    "object": "certificates/baselines/resnet-b4-c32/segment-10.json",
+    "sha256": "b4ef769a5896b3fe16459e2e36d991a6febb5547a4da06b1d4fe2fda80494b0b",
+    "peak_bytes": 1835008,
+    "recompute_cost": 264896512,
+    "forward_cost": 567672832,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-10.json",
+    "sha256": "0cde5212dd9b3dbb3f922a75ad77ed0bf0b3e87cc69730e7664e66cd315401bf",
+    "peak_bytes": 3145728,
+    "recompute_cost": 113508352,
+    "forward_cost": 416284672,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-11",
+    "object": "certificates/baselines/resnet-b4-c32/segment-11.json",
+    "sha256": "d7c1e6ad6a8237a4874141367badb700dfaf8953d1d37d8a0232c43872f243aa",
+    "peak_bytes": 2097152,
+    "recompute_cost": 227147776,
+    "forward_cost": 529924096,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-11.json",
+    "sha256": "96b030354dde2524492fb60df3767af3778cf04324665c866b9d4255eccdbf94",
+    "peak_bytes": 3145728,
+    "recompute_cost": 113508352,
+    "forward_cost": 416284672,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-12",
+    "object": "certificates/baselines/resnet-b4-c32/segment-12.json",
+    "sha256": "36ea6c0fe7d4642d2f112eb45614e8f5ebb3bd8f2b108b995718f8dcb17c168f",
+    "peak_bytes": 1835008,
+    "recompute_cost": 227082240,
+    "forward_cost": 529858560,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-12.json",
+    "sha256": "5cbae3c0fe661b2fc4a0777a1e34de4812b1bf6bc5d5804dfb0560cdbaa45b46",
+    "peak_bytes": 2883584,
+    "recompute_cost": 113508352,
+    "forward_cost": 416284672,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-13",
+    "object": "certificates/baselines/resnet-b4-c32/segment-13.json",
+    "sha256": "b692e3b70eccc13c25433ff306579fb5f12241a236f11bba33b297bef04f2100",
+    "peak_bytes": 1835008,
+    "recompute_cost": 227147776,
+    "forward_cost": 529924096,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-13",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-13.json",
+    "sha256": "14b2b37444af3eb650548db33b07944cddb1c56030e7148e9e8b6dfb3d5c4dc4",
+    "peak_bytes": 2621440,
+    "recompute_cost": 151322624,
+    "forward_cost": 454098944,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-14",
+    "object": "certificates/baselines/resnet-b4-c32/segment-14.json",
+    "sha256": "e70afd54c2976f87053cb3f0285019bed154e65078f7736a22b41d8972f90ef1",
+    "peak_bytes": 1835008,
+    "recompute_cost": 264962048,
+    "forward_cost": 567738368,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-14",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-14.json",
+    "sha256": "45621daed0651e5094568f35c326c6ee62422cbed63c227e2c15b70f508c36ac",
+    "peak_bytes": 2097152,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-15",
+    "object": "certificates/baselines/resnet-b4-c32/segment-15.json",
+    "sha256": "a5b7c74972f7bf33ac44d69248871299a436203d464a362df5ea5d022d86208d",
+    "peak_bytes": 2097152,
+    "recompute_cost": 264896512,
+    "forward_cost": 567672832,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-15",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-15.json",
+    "sha256": "2a95be5f68338028a59d6d4d78f3e3e8dc8116c66422cdd8040a67191be8ece7",
+    "peak_bytes": 2097152,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-16",
+    "object": "certificates/baselines/resnet-b4-c32/segment-16.json",
+    "sha256": "70c64b2dde21eda09442dde257a12f9edebc5f3d3a7945a11bf3848eb5af075e",
+    "peak_bytes": 2097152,
+    "recompute_cost": 227147776,
+    "forward_cost": 529924096,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-16",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-16.json",
+    "sha256": "0ef8443e7d2dada105e232efda28541003f43285a12eefee8378195c69f5fe40",
+    "peak_bytes": 2097152,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-17",
+    "object": "certificates/baselines/resnet-b4-c32/segment-17.json",
+    "sha256": "f30231ed525df717e3d4f95f2f7a5038982ca15b6b435d748df4d92c08e26870",
+    "peak_bytes": 2359296,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-17",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-17.json",
+    "sha256": "44a93ea081fa36a782410e4feed65b85a87aa13f92b13e66e5de6979dd62d9d2",
+    "peak_bytes": 2359296,
+    "recompute_cost": 189202432,
+    "forward_cost": 491978752,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-18",
+    "object": "certificates/baselines/resnet-b4-c32/segment-18.json",
+    "sha256": "1ce8eb88b8be82f756385a8537a2c499a00b6e32d747ed2a24f10f61f3fcee74",
+    "peak_bytes": 2359296,
+    "recompute_cost": 227016704,
+    "forward_cost": 529793024,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-18",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-18.json",
+    "sha256": "9889f56de13c874c63429939c8c870ffd817bd4266cf8b216d6821ad8295e610",
+    "peak_bytes": 2359296,
+    "recompute_cost": 227016704,
+    "forward_cost": 529793024,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-19",
+    "object": "certificates/baselines/resnet-b4-c32/segment-19.json",
+    "sha256": "b4d3c05ce896aa53d060e6eac4adb12c04b389fb61351220d3019bcf4ab53918",
+    "peak_bytes": 2359296,
+    "recompute_cost": 264896512,
+    "forward_cost": 567672832,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-19",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-19.json",
+    "sha256": "fdbae96e418505ed55e135c2363e3249a18a23d0b0abf4ed5df735e25e5e6492",
+    "peak_bytes": 2359296,
+    "recompute_cost": 264896512,
+    "forward_cost": 567672832,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "segment-20",
+    "object": "certificates/baselines/resnet-b4-c32/segment-20.json",
+    "sha256": "a0bceb2828cc32b973298fa2b746103cb54bae323325f7fc52ad90c413a1a8b4",
+    "peak_bytes": 2621440,
+    "recompute_cost": 302776320,
+    "forward_cost": 605552640,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "checkpoint-sequential-20",
+    "object": "certificates/baselines/resnet-b4-c32/checkpoint-sequential-20.json",
+    "sha256": "507161952be25d962bb64600072bd3cc431764a1b42a0e8af90d3e6d102793f6",
+    "peak_bytes": 5505024,
+    "recompute_cost": 0,
+    "forward_cost": 302776320,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "resnet-b4-c32",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/resnet-b4-c32/selective-save-expensive.json",
+    "sha256": "1d06ffa0d1d5e84767a7c3c488f74c0073e157ee146c624a15ac817db9bf641f",
+    "peak_bytes": 2883584,
+    "recompute_cost": 1048576,
+    "forward_cost": 303824896,
+    "backward_cost": 605552640
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "eager",
+    "object": "certificates/baselines/mlp-b4/eager.json",
+    "sha256": "94c9251a73044cf641c0dbe063b657bba3aa5794cee1039f88e2515ef5fc52e0",
+    "peak_bytes": 151552,
+    "recompute_cost": 0,
+    "forward_cost": 8519680,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/mlp-b4/recompute-on-demand.json",
+    "sha256": "7c712e3f4eafb2199256a7968f2211fc12daa67f36621b59afcec5cc5999d3c1",
+    "peak_bytes": 36864,
+    "recompute_cost": 46858240,
+    "forward_cost": 55377920,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-1",
+    "object": "certificates/baselines/mlp-b4/segment-1.json",
+    "sha256": "79bdc1a9c6bd0e6fc2af5c55af9adca4181402cdadc30ede013da42b62e8b391",
+    "peak_bytes": 151552,
+    "recompute_cost": 0,
+    "forward_cost": 8519680,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-1.json",
+    "sha256": "aa73b666ab329d16736bebe55307f5679afae4b88e1e6192ba1904c07c977fbf",
+    "peak_bytes": 151552,
+    "recompute_cost": 0,
+    "forward_cost": 8519680,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-2",
+    "object": "certificates/baselines/mlp-b4/segment-2.json",
+    "sha256": "8b3476296d3dc8d29fbb208a978594d2980af56d4c22f92f62685758bc5ae441",
+    "peak_bytes": 94208,
+    "recompute_cost": 4259840,
+    "forward_cost": 12779520,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-2.json",
+    "sha256": "45818165c904e4284c7a08026586a2a5bb5b0cd23232a67d91b39848c48e979f",
+    "peak_bytes": 94208,
+    "recompute_cost": 4227072,
+    "forward_cost": 12746752,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-3",
+    "object": "certificates/baselines/mlp-b4/segment-3.json",
+    "sha256": "50deb28f4cef6d39be5bc1f842c44bb97329a85ed425eb964dcb9faf67d47f5a",
+    "peak_bytes": 49152,
+    "recompute_cost": 4325376,
+    "forward_cost": 12845056,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-3.json",
+    "sha256": "6d280cbad509641885ce810e31ff24f9f5f90f734001054bd884cf24986fdf26",
+    "peak_bytes": 53248,
+    "recompute_cost": 3244032,
+    "forward_cost": 11763712,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-4",
+    "object": "certificates/baselines/mlp-b4/segment-4.json",
+    "sha256": "58b7de58b27ec7171b9807580f610f26a10f86cccf5cd37492702ab76bd5920c",
+    "peak_bytes": 73728,
+    "recompute_cost": 6389760,
+    "forward_cost": 14909440,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-4.json",
+    "sha256": "cc40766fd8a86bf320397bd36550eba57ff0c815f466e3569da7ba0b7947a343",
+    "peak_bytes": 77824,
+    "recompute_cost": 4259840,
+    "forward_cost": 12779520,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-5",
+    "object": "certificates/baselines/mlp-b4/segment-5.json",
+    "sha256": "a8dd1628822b69068f755460f9ac79e1d52fe6ef313d3b1bfab28336302f09c5",
+    "peak_bytes": 61440,
+    "recompute_cost": 6389760,
+    "forward_cost": 14909440,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-5.json",
+    "sha256": "7b64fdf439eae0037413626f58a54be909f925bdce2e77ce927f2b0c7bbb41f4",
+    "peak_bytes": 61440,
+    "recompute_cost": 6356992,
+    "forward_cost": 14876672,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-6",
+    "object": "certificates/baselines/mlp-b4/segment-6.json",
+    "sha256": "7b132597399e5bc02158759b7d89248ba4e9d6c29afb16f42f0b3332a47d3ff5",
+    "peak_bytes": 77824,
+    "recompute_cost": 6422528,
+    "forward_cost": 14942208,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-6.json",
+    "sha256": "c13ced67fd014709227b5f156926acfc88c17ab51a586f3339d37b0a14250a4f",
+    "peak_bytes": 81920,
+    "recompute_cost": 3211264,
+    "forward_cost": 11730944,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-7",
+    "object": "certificates/baselines/mlp-b4/segment-7.json",
+    "sha256": "23c6df13ef83c271dcd849937e10b5008ad10c58b76b9e84d975ff3196ec1df7",
+    "peak_bytes": 77824,
+    "recompute_cost": 6422528,
+    "forward_cost": 14942208,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-7.json",
+    "sha256": "f002606f0c7cc1e250bab1d8d3efde73b716385316e5dcbcfc18285290364d47",
+    "peak_bytes": 77824,
+    "recompute_cost": 4259840,
+    "forward_cost": 12779520,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-8",
+    "object": "certificates/baselines/mlp-b4/segment-8.json",
+    "sha256": "8a19a0eff5f05f16aad365d98de4f1b5b20de8e5b4b0b0612afcae3fa918b6d5",
+    "peak_bytes": 94208,
+    "recompute_cost": 7438336,
+    "forward_cost": 15958016,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-8.json",
+    "sha256": "aa324189c85d753a2391876f1d10f03a233f6594825ee76a084b8ab45b5ed885",
+    "peak_bytes": 94208,
+    "recompute_cost": 5308416,
+    "forward_cost": 13828096,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-9",
+    "object": "certificates/baselines/mlp-b4/segment-9.json",
+    "sha256": "156fc9c8d979ae2b3c5e0b4d1effa20bc1c6fc180d469b1cf0dd7741a7a9748f",
+    "peak_bytes": 110592,
+    "recompute_cost": 6422528,
+    "forward_cost": 14942208,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-9.json",
+    "sha256": "c1672ce3c50ce0ed86233bfacf63dd569540128fe64eb7e13263cc4d626b7def",
+    "peak_bytes": 110592,
+    "recompute_cost": 5341184,
+    "forward_cost": 13860864,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-10",
+    "object": "certificates/baselines/mlp-b4/segment-10.json",
+    "sha256": "8df647c188eea0a57d82aa6b7b23f062352dfd2c2212ee849b97b191876c21f7",
+    "peak_bytes": 114688,
+    "recompute_cost": 6422528,
+    "forward_cost": 14942208,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-10.json",
+    "sha256": "50425a7577f54b24ba2696a342138257403617f77338ef950ac81ce8b810638c",
+    "peak_bytes": 114688,
+    "recompute_cost": 6389760,
+    "forward_cost": 14909440,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-11",
+    "object": "certificates/baselines/mlp-b4/segment-11.json",
+    "sha256": "ff0f689a6abf47b755cc3f8bc033c23ed5dbe145381f2b562c8ae50a2c8ac0f4",
+    "peak_bytes": 131072,
+    "recompute_cost": 7438336,
+    "forward_cost": 15958016,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-11.json",
+    "sha256": "5bbe10e2e2d4d5a7e93aa6825f6b06aa924e2e319042e5d148324f6072c79714",
+    "peak_bytes": 131072,
+    "recompute_cost": 7438336,
+    "forward_cost": 15958016,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "segment-12",
+    "object": "certificates/baselines/mlp-b4/segment-12.json",
+    "sha256": "3cf5fbb6360d2ec61917c8cb65a518fc78f7bb96cd86bca29fb6be03823e3520",
+    "peak_bytes": 147456,
+    "recompute_cost": 7471104,
+    "forward_cost": 15990784,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/mlp-b4/checkpoint-sequential-12.json",
+    "sha256": "f3fe505da99d806740372531f26267c5b957cb7d6eb9fbfe5716a080e2fbbc70",
+    "peak_bytes": 151552,
+    "recompute_cost": 0,
+    "forward_cost": 8519680,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b4",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/mlp-b4/selective-save-expensive.json",
+    "sha256": "942b120bc6ad1c2f4a97687f3774a7c8d3426aae0fa2cb89f8472d9b9b676881",
+    "peak_bytes": 102400,
+    "recompute_cost": 131072,
+    "forward_cost": 8650752,
+    "backward_cost": 17039360
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "eager",
+    "object": "certificates/baselines/mlp-b8/eager.json",
+    "sha256": "24411928519184a2bb6a2304799d43740bfca48a4f7d0d1714e80eb232b53a5b",
+    "peak_bytes": 299008,
+    "recompute_cost": 0,
+    "forward_cost": 17039360,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "recompute-on-demand",
+    "object": "certificates/baselines/mlp-b8/recompute-on-demand.json",
+    "sha256": "bdee9d4830cab7e870dc347048f627996d6088c28843572950ff360db0fd09df",
+    "peak_bytes": 36864,
+    "recompute_cost": 195952640,
+    "forward_cost": 212992000,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-1",
+    "object": "certificates/baselines/mlp-b8/segment-1.json",
+    "sha256": "4b7124f00ced9922649e851381637d36ad4ee53a5fdd73a12c83480ee6a1ba85",
+    "peak_bytes": 299008,
+    "recompute_cost": 0,
+    "forward_cost": 17039360,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-1",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-1.json",
+    "sha256": "7f7eced1e670befbd0c22832b43bfdb38075a44b977b9ea37e38c4e4c805ca87",
+    "peak_bytes": 299008,
+    "recompute_cost": 0,
+    "forward_cost": 17039360,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-2",
+    "object": "certificates/baselines/mlp-b8/segment-2.json",
+    "sha256": "0e5b7e4c838011d60700c6b729ad8b9a92be1c2f7600c46a18bd01090020100f",
+    "peak_bytes": 167936,
+    "recompute_cost": 8519680,
+    "forward_cost": 25559040,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-2",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-2.json",
+    "sha256": "8c8463e9d7c6090084252e0e38a733d898f7b4102a086354492a47668e2a7326",
+    "peak_bytes": 167936,
+    "recompute_cost": 8486912,
+    "forward_cost": 25526272,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-3",
+    "object": "certificates/baselines/mlp-b8/segment-3.json",
+    "sha256": "2760f60ead97f07ba49233d7eb3510881143b6acb7039b872b4d65ca0276e80f",
+    "peak_bytes": 65536,
+    "recompute_cost": 8650752,
+    "forward_cost": 25690112,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-3",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-3.json",
+    "sha256": "0612dfdce695da968bba98b3c089d90d28d02f8a02768949b82fbb90bc533f94",
+    "peak_bytes": 69632,
+    "recompute_cost": 7569408,
+    "forward_cost": 24608768,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-4",
+    "object": "certificates/baselines/mlp-b8/segment-4.json",
+    "sha256": "da75339eecfa1c6523aadfcf1fc75a875bd267510b3992af0c29beae2a49f576",
+    "peak_bytes": 110592,
+    "recompute_cost": 12779520,
+    "forward_cost": 29818880,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-4",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-4.json",
+    "sha256": "dcd983300a6256157348609e26117d274b9ccdb0dac58616e11a4606d58b342c",
+    "peak_bytes": 114688,
+    "recompute_cost": 10649600,
+    "forward_cost": 27688960,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-5",
+    "object": "certificates/baselines/mlp-b8/segment-5.json",
+    "sha256": "4e051ae865fb6dcff3a3579c83441af82f7a4f7f18cd028207ca3ce9dd2e9e42",
+    "peak_bytes": 94208,
+    "recompute_cost": 13828096,
+    "forward_cost": 30867456,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-5",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-5.json",
+    "sha256": "70e0426c22e8639d16f0c6c7f4bf91cf8f832595e7a623afa7e9f8bfb26a9e39",
+    "peak_bytes": 98304,
+    "recompute_cost": 11698176,
+    "forward_cost": 28737536,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-6",
+    "object": "certificates/baselines/mlp-b8/segment-6.json",
+    "sha256": "ffeeb175e39bdeac2b617356cccec5714c8543941bf5f08ae2ad0956edd80219",
+    "peak_bytes": 86016,
+    "recompute_cost": 12845056,
+    "forward_cost": 29884416,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-6",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-6.json",
+    "sha256": "16f830ddca52e2862eb25d4e976434d5c1ddc794007f2626d0237a34a9200287",
+    "peak_bytes": 90112,
+    "recompute_cost": 9633792,
+    "forward_cost": 26673152,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-7",
+    "object": "certificates/baselines/mlp-b8/segment-7.json",
+    "sha256": "1c1e498be6c2b55394d3bc75b6318aa2ed79515ffabdfece14bc8bbfb66fe022",
+    "peak_bytes": 110592,
+    "recompute_cost": 13860864,
+    "forward_cost": 30900224,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-7",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-7.json",
+    "sha256": "9185e018cacf87f1877b9ea0b0bb8325cd84ea44f34a0250a5cc288713c8abf4",
+    "peak_bytes": 110592,
+    "recompute_cost": 12779520,
+    "forward_cost": 29818880,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-8",
+    "object": "certificates/baselines/mlp-b8/segment-8.json",
+    "sha256": "8de7ad11ffec9b893a9bc044baabb0caaaff9e7cc58a9280600f53e72e0ad509",
+    "peak_bytes": 126976,
+    "recompute_cost": 14909440,
+    "forward_cost": 31948800,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-8",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-8.json",
+    "sha256": "75b727a02bc29721cee805797be2d89b273a0036a63ad751d657c8f1ddd6bb54",
+    "peak_bytes": 131072,
+    "recompute_cost": 10616832,
+    "forward_cost": 27656192,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-9",
+    "object": "certificates/baselines/mlp-b8/segment-9.json",
+    "sha256": "424238f9f8b70c8998769450ecfb88297ac5d9eb9f4aedbb5c662e431231e044",
+    "peak_bytes": 114688,
+    "recompute_cost": 13893632,
+    "forward_cost": 30932992,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-9",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-9.json",
+    "sha256": "7b1e07ae9bd61c0a2868f79e55ab06d4f199bda28f05bb79f8151a81c130ed41",
+    "peak_bytes": 114688,
+    "recompute_cost": 10682368,
+    "forward_cost": 27721728,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-10",
+    "object": "certificates/baselines/mlp-b8/segment-10.json",
+    "sha256": "9923e8be3eda9aaac803026f304384e97fd4041e2363e5d378d6c727b1f6f5f0",
+    "peak_bytes": 131072,
+    "recompute_cost": 14909440,
+    "forward_cost": 31948800,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-10",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-10.json",
+    "sha256": "87212e372fca46d6689a7c876eee217cb92c0283d7d7e824347b7c020d35eeb0",
+    "peak_bytes": 131072,
+    "recompute_cost": 12779520,
+    "forward_cost": 29818880,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-11",
+    "object": "certificates/baselines/mlp-b8/segment-11.json",
+    "sha256": "2984edc2aede19ff8d5287cba407c6b97b24595f0a8a2ca7aa71c1f94e2c532d",
+    "peak_bytes": 135168,
+    "recompute_cost": 14909440,
+    "forward_cost": 31948800,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-11",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-11.json",
+    "sha256": "a361b00200ffe98a94509c3ffa8d53b86b50d075645e05dbe10417495a6c32a3",
+    "peak_bytes": 135168,
+    "recompute_cost": 14876672,
+    "forward_cost": 31916032,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-12",
+    "object": "certificates/baselines/mlp-b8/segment-12.json",
+    "sha256": "31cc56400ed7c42d802502c7b4a7d1ba7afcd8aa4b948da1bf7cf2ab7e2866b0",
+    "peak_bytes": 151552,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-12",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-12.json",
+    "sha256": "1c628bcdd87994e9dee09f5539e0e3f2cae1518227a8447ea021f35ac982c1c9",
+    "peak_bytes": 155648,
+    "recompute_cost": 7471104,
+    "forward_cost": 24510464,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-13",
+    "object": "certificates/baselines/mlp-b8/segment-13.json",
+    "sha256": "2ae3e2d02376e5d35b2064930a50172405b7d5e00541da765dceb96f6ded57c9",
+    "peak_bytes": 151552,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-13",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-13.json",
+    "sha256": "8e1bc18f82e1dda8f0d58d60cf44f56e218b59955af26490168e0b9d5300bc24",
+    "peak_bytes": 151552,
+    "recompute_cost": 8519680,
+    "forward_cost": 25559040,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-14",
+    "object": "certificates/baselines/mlp-b8/segment-14.json",
+    "sha256": "ddc335ec6fc577e4a0fa7fded61c53c61a0a13cebf39c2b04bf6846e30298ef0",
+    "peak_bytes": 167936,
+    "recompute_cost": 15958016,
+    "forward_cost": 32997376,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-14",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-14.json",
+    "sha256": "558c2357fe35b4cb31925a85bfbbe0f24fe9e8f4bff6d85a3f20f864c95785de",
+    "peak_bytes": 167936,
+    "recompute_cost": 9568256,
+    "forward_cost": 26607616,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-15",
+    "object": "certificates/baselines/mlp-b8/segment-15.json",
+    "sha256": "53a69486fd7cf78b47deecb84318507de24fc21664cc7f085fe5977e6ebce32e",
+    "peak_bytes": 184320,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-15",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-15.json",
+    "sha256": "b23751f7e2a4cd8735cffce94fcc5aefb2655e41bb89ccb0170f63a70260465e",
+    "peak_bytes": 184320,
+    "recompute_cost": 9601024,
+    "forward_cost": 26640384,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-16",
+    "object": "certificates/baselines/mlp-b8/segment-16.json",
+    "sha256": "bbdae7704b1c6407ab0c91d9f79d09cfb619f1661b6e3c4034405ac1737762c8",
+    "peak_bytes": 188416,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-16",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-16.json",
+    "sha256": "6ad010787af2d03efb4a667ebde087ec6861cc34f4a77fc7c345fd43277092df",
+    "peak_bytes": 188416,
+    "recompute_cost": 10649600,
+    "forward_cost": 27688960,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-17",
+    "object": "certificates/baselines/mlp-b8/segment-17.json",
+    "sha256": "8180ad81164731bf0d5b7ff066e7cec645107c344bf8bbd59a80ecce3c66b587",
+    "peak_bytes": 204800,
+    "recompute_cost": 15958016,
+    "forward_cost": 32997376,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-17",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-17.json",
+    "sha256": "d2a144bb7dd102860a10abea9413b78193cc8fc84495acc36cd69745f7a5e60b",
+    "peak_bytes": 204800,
+    "recompute_cost": 11698176,
+    "forward_cost": 28737536,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-18",
+    "object": "certificates/baselines/mlp-b8/segment-18.json",
+    "sha256": "4f6b59cf4ef4f025125843cb13a8f9d090a1ecd680acd5a0254f07fbcd5dece6",
+    "peak_bytes": 221184,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-18",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-18.json",
+    "sha256": "9e74b862f22c0f8a1beb5b439bb667e762b02bbd643d2870af639ecf7d775a40",
+    "peak_bytes": 221184,
+    "recompute_cost": 11730944,
+    "forward_cost": 28770304,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-19",
+    "object": "certificates/baselines/mlp-b8/segment-19.json",
+    "sha256": "2fe317d70600b7c7496468710eb8e1897d4681df462cb61bf6274a7425e2b057",
+    "peak_bytes": 225280,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-19",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-19.json",
+    "sha256": "2cffcbfaba580c89bdab051bc7cb3905c667926d46a95b2c734f57b76ffc2084",
+    "peak_bytes": 225280,
+    "recompute_cost": 12779520,
+    "forward_cost": 29818880,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-20",
+    "object": "certificates/baselines/mlp-b8/segment-20.json",
+    "sha256": "a140cff2f3ab992c87ca63ca3d50c0daf7e933fefa35e01fc5b94247339a5fba",
+    "peak_bytes": 241664,
+    "recompute_cost": 15958016,
+    "forward_cost": 32997376,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-20",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-20.json",
+    "sha256": "a0623eba4b22ac961a2db2c48ee9c81223c9d3a4245ac7779e2206c00d8e7f60",
+    "peak_bytes": 241664,
+    "recompute_cost": 13828096,
+    "forward_cost": 30867456,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-21",
+    "object": "certificates/baselines/mlp-b8/segment-21.json",
+    "sha256": "9ce727426e707e3666ffd185d7a559940652d0a17fe106c3c5894ec7275cf7ae",
+    "peak_bytes": 258048,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-21",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-21.json",
+    "sha256": "5ca2401ae180a5a3c6f8ce3aec04629216c5b68ac19924fbbdd3b2750bf2c3cc",
+    "peak_bytes": 258048,
+    "recompute_cost": 13860864,
+    "forward_cost": 30900224,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-22",
+    "object": "certificates/baselines/mlp-b8/segment-22.json",
+    "sha256": "0b41c27a5b2d8f10d79bdd9c2e1fa946eb464b65116a7557a99ffa3815ea8912",
+    "peak_bytes": 262144,
+    "recompute_cost": 14942208,
+    "forward_cost": 31981568,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-22",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-22.json",
+    "sha256": "5585e84b32a286ec73fe4e4c77716aee1bf90eb702a50761b4e95b4c77cdd77a",
+    "peak_bytes": 262144,
+    "recompute_cost": 14909440,
+    "forward_cost": 31948800,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-23",
+    "object": "certificates/baselines/mlp-b8/segment-23.json",
+    "sha256": "6a183623b973fee7d9dbb76cffe1080d924b6cff8db7e1e29b844ffc6e399dad",
+    "peak_bytes": 278528,
+    "recompute_cost": 15958016,
+    "forward_cost": 32997376,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-23",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-23.json",
+    "sha256": "4d8db0144614a19167f1f83b307bc2d30dd9d9566fffeffe6e14e98d8bef78a0",
+    "peak_bytes": 278528,
+    "recompute_cost": 15958016,
+    "forward_cost": 32997376,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "segment-24",
+    "object": "certificates/baselines/mlp-b8/segment-24.json",
+    "sha256": "57251ebcf24b60c81b48b08b9c21496dde99af4ad1e984d03fc07e0fb32ee914",
+    "peak_bytes": 294912,
+    "recompute_cost": 15990784,
+    "forward_cost": 33030144,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "checkpoint-sequential-24",
+    "object": "certificates/baselines/mlp-b8/checkpoint-sequential-24.json",
+    "sha256": "77044f4e1f4609a1fecb016b5ea6cc8751ef75973c7d09d3c1becb35bc467d83",
+    "peak_bytes": 299008,
+    "recompute_cost": 0,
+    "forward_cost": 17039360,
+    "backward_cost": 34078720
+  },
+  {
+    "graph": "mlp-b8",
+    "method": "selective-save-expensive",
+    "object": "certificates/baselines/mlp-b8/selective-save-expensive.json",
+    "sha256": "a05986940a4c3eec0fc333d76c1dfd3323ebad348c8ba3add41117490f207494",
+    "peak_bytes": 184320,
+    "recompute_cost": 262144,
+    "forward_cost": 17301504,
+    "backward_cost": 34078720
+  }
+]

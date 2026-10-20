@@ -1,0 +1,33 @@
+{
+  "source": "https://arxiv.org/abs/1604.06174",
+  "scope": "uniform-chain segment construction in activation-memory/v1; not the paper's hardware experiments",
+  "rows": [
+    {
+      "length": 16,
+      "width": 4,
+      "peak_bytes": 7,
+      "recompute_cost": 12,
+      "forward_cost": 28,
+      "backward_cost": 32,
+      "eager_peak_bytes": 17
+    },
+    {
+      "length": 64,
+      "width": 8,
+      "peak_bytes": 15,
+      "recompute_cost": 56,
+      "forward_cost": 120,
+      "backward_cost": 128,
+      "eager_peak_bytes": 65
+    },
+    {
+      "length": 256,
+      "width": 16,
+      "peak_bytes": 31,
+      "recompute_cost": 240,
+      "forward_cost": 496,
+      "backward_cost": 512,
+      "eager_peak_bytes": 257
+    }
+  ]
+}

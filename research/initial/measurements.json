@@ -1,0 +1,4051 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm64",
+    "gpu_used": false
+  },
+  "timing_note": "PyTorch CPU probe overlapped part of campaign; timings are unreliable for performance comparisons. Other system load unmonitored. Use separate verification-cost.json for follow-up verification costs.",
+  "summary": {
+    "graphs": 12,
+    "challenges": 60,
+    "baseline_certificates": 418,
+    "exact_challenges": 25,
+    "seeds": [
+      20261020,
+      20261021,
+      20261022,
+      20261023,
+      20261024,
+      20261025
+    ],
+    "iterations_per_graph_seed": 600,
+    "search_evaluations": 18289,
+    "search_seconds": 81.46312596113421,
+    "improved_challenges": 24,
+    "heuristic_improved_challenges": 20,
+    "realistic_challenges": 35,
+    "realistic_improved_challenges": 17,
+    "realistic_graphs_improved": 7,
+    "realistic_later_seed_improvements": 2,
+    "realistic_unclosed_gaps": 31,
+    "max_realistic_reduction_percent": 42.85714285714286,
+    "verification_median_ms": 0.472354,
+    "verification_max_sample_ms": 50.649792,
+    "certificate_total_bytes": 290472,
+    "max_certificate_actions": 529,
+    "interpretation": "Best of 6 seeds against all segment widths plus included baselines; not SOTA or independent-agent yield."
+  },
+  "search_runs": [
+    {
+      "graph": "chain6-unit",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.01252254203427583,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-unit",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 64,
+      "seconds": 0.013134707929566503,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-unit",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.012210207991302013,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-unit",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.012827333994209766,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-unit",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.013578874990344048,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-unit",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.013758250046521425,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 7,
+          "recompute_cost": 0,
+          "forward_cost": 6,
+          "backward_cost": 12
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 6,
+          "recompute_cost": 1,
+          "forward_cost": 7,
+          "backward_cost": 12
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 5,
+          "recompute_cost": 2,
+          "forward_cost": 8,
+          "backward_cost": 12
+        },
+        {
+          "budget": 6,
+          "peak_bytes": 4,
+          "recompute_cost": 4,
+          "forward_cost": 10,
+          "backward_cost": 12
+        },
+        {
+          "budget": 12,
+          "peak_bytes": 3,
+          "recompute_cost": 10,
+          "forward_cost": 16,
+          "backward_cost": 12
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 64,
+      "seconds": 0.01605916698463261,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.01426800002809614,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 64,
+      "seconds": 0.01319166598841548,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.014926041010767221,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.014471833943389356,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "chain6-weighted",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.014668249990791082,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 24,
+          "recompute_cost": 0,
+          "forward_cost": 9,
+          "backward_cost": 18
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 19,
+          "recompute_cost": 2,
+          "forward_cost": 11,
+          "backward_cost": 18
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 16,
+          "recompute_cost": 3,
+          "forward_cost": 12,
+          "backward_cost": 18
+        },
+        {
+          "budget": 9,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        },
+        {
+          "budget": 18,
+          "peak_bytes": 12,
+          "recompute_cost": 7,
+          "forward_cost": 16,
+          "backward_cost": 18
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.008002790971659124,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.006719707977026701,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.007356083020567894,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.006632375065237284,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.006398207973688841,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "diamond5",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 32,
+      "seconds": 0.013002082938328385,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 14,
+          "recompute_cost": 0,
+          "forward_cost": 7,
+          "backward_cost": 14
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 12,
+          "recompute_cost": 1,
+          "forward_cost": 8,
+          "backward_cost": 14
+        },
+        {
+          "budget": 3,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 7,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        },
+        {
+          "budget": 14,
+          "peak_bytes": 11,
+          "recompute_cost": 3,
+          "forward_cost": 10,
+          "backward_cost": 14
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.012443916988559067,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.016042166971601546,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 63,
+      "seconds": 0.012397208018228412,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 61,
+      "seconds": 0.013090291991829872,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.011854834039695561,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "skip6",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 62,
+      "seconds": 0.012886625016108155,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 20,
+          "recompute_cost": 0,
+          "forward_cost": 8,
+          "backward_cost": 16
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 14,
+          "recompute_cost": 1,
+          "forward_cost": 9,
+          "backward_cost": 16
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        },
+        {
+          "budget": 16,
+          "peak_bytes": 13,
+          "recompute_cost": 5,
+          "forward_cost": 13,
+          "backward_cost": 16
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.003778874990530312,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.005088207894004881,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.004948750021867454,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.004499792004935443,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.005395832937210798,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "stateful4",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 16,
+      "seconds": 0.004868458956480026,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10,
+          "recompute_cost": 0,
+          "forward_cost": 4,
+          "backward_cost": 8
+        },
+        {
+          "budget": 1,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 2,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 4,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        },
+        {
+          "budget": 8,
+          "peak_bytes": 9,
+          "recompute_cost": 1,
+          "forward_cost": 5,
+          "backward_cost": 8
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 352,
+      "seconds": 0.20939133304636925,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 622592,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5144576,
+          "forward_cost": 31760384,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9420800,
+          "forward_cost": 36036608,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 318,
+      "seconds": 0.2005870830034837,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 655360,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5226496,
+          "forward_cost": 31842304,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9502720,
+          "forward_cost": 36118528,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 368,
+      "seconds": 0.21886899997480214,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 622592,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5226496,
+          "forward_cost": 31842304,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9420800,
+          "forward_cost": 36036608,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 350,
+      "seconds": 0.22635775001253933,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 622592,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5144576,
+          "forward_cost": 31760384,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9420800,
+          "forward_cost": 36036608,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 377,
+      "seconds": 0.24808204208966345,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 622592,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5144576,
+          "forward_cost": 31760384,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9420800,
+          "forward_cost": 36036608,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 364,
+      "seconds": 0.291415625018999,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 622592,
+          "recompute_cost": 0,
+          "forward_cost": 26615808,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 6653952,
+          "peak_bytes": 425984,
+          "recompute_cost": 5144576,
+          "forward_cost": 31760384,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 13307904,
+          "peak_bytes": 393216,
+          "recompute_cost": 9420800,
+          "forward_cost": 36036608,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 26615808,
+          "peak_bytes": 360448,
+          "recompute_cost": 17588224,
+          "forward_cost": 44204032,
+          "backward_cost": 53231616
+        },
+        {
+          "budget": 53231616,
+          "peak_bytes": 327680,
+          "recompute_cost": 27271168,
+          "forward_cost": 53886976,
+          "backward_cost": 53231616
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 498,
+      "seconds": 1.208974500070326,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2555904,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1441792,
+          "recompute_cost": 27492352,
+          "forward_cost": 138313728,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1310720,
+          "recompute_cost": 54624256,
+          "forward_cost": 165445632,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 1048576,
+          "recompute_cost": 98713600,
+          "forward_cost": 209534976,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 851968,
+          "recompute_cost": 174522368,
+          "forward_cost": 285343744,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 488,
+      "seconds": 1.231496624997817,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2490368,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1441792,
+          "recompute_cost": 27344896,
+          "forward_cost": 138166272,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1245184,
+          "recompute_cost": 53133312,
+          "forward_cost": 163954688,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 917504,
+          "recompute_cost": 99680256,
+          "forward_cost": 210501632,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 786432,
+          "recompute_cost": 150634496,
+          "forward_cost": 261455872,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 490,
+      "seconds": 1.321156374993734,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2621440,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1441792,
+          "recompute_cost": 27361280,
+          "forward_cost": 138182656,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1245184,
+          "recompute_cost": 53133312,
+          "forward_cost": 163954688,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 917504,
+          "recompute_cost": 99729408,
+          "forward_cost": 210550784,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 786432,
+          "recompute_cost": 133251072,
+          "forward_cost": 244072448,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 486,
+      "seconds": 1.4001389170298353,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2490368,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1638400,
+          "recompute_cost": 25018368,
+          "forward_cost": 135839744,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1376256,
+          "recompute_cost": 54542336,
+          "forward_cost": 165363712,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 983040,
+          "recompute_cost": 107036672,
+          "forward_cost": 217858048,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 786432,
+          "recompute_cost": 175013888,
+          "forward_cost": 285835264,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 480,
+      "seconds": 1.4132480840198696,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2490368,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1507328,
+          "recompute_cost": 27443200,
+          "forward_cost": 138264576,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1310720,
+          "recompute_cost": 44646400,
+          "forward_cost": 155467776,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 917504,
+          "recompute_cost": 99729408,
+          "forward_cost": 210550784,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 851968,
+          "recompute_cost": 158679040,
+          "forward_cost": 269500416,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 491,
+      "seconds": 2.322594084078446,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2555904,
+          "recompute_cost": 0,
+          "forward_cost": 110821376,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 27705344,
+          "peak_bytes": 1507328,
+          "recompute_cost": 27148288,
+          "forward_cost": 137969664,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 55410688,
+          "peak_bytes": 1245184,
+          "recompute_cost": 53051392,
+          "forward_cost": 163872768,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 110821376,
+          "peak_bytes": 917504,
+          "recompute_cost": 103579648,
+          "forward_cost": 214401024,
+          "backward_cost": 221642752
+        },
+        {
+          "budget": 221642752,
+          "peak_bytes": 786432,
+          "recompute_cost": 166608896,
+          "forward_cost": 277430272,
+          "backward_cost": 221642752
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 543,
+      "seconds": 22.84276937507093,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 11272192,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 6160384,
+          "recompute_cost": 119308288,
+          "forward_cost": 597458944,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 4980736,
+          "recompute_cost": 235536384,
+          "forward_cost": 713687040,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3145728,
+          "recompute_cost": 475332608,
+          "forward_cost": 953483264,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2359296,
+          "recompute_cost": 636846080,
+          "forward_cost": 1114996736,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 556,
+      "seconds": 9.713352582999505,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 12320768,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 6291456,
+          "recompute_cost": 119537664,
+          "forward_cost": 597688320,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 4849664,
+          "recompute_cost": 230195200,
+          "forward_cost": 708345856,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3014656,
+          "recompute_cost": 433979392,
+          "forward_cost": 912130048,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2097152,
+          "recompute_cost": 852295680,
+          "forward_cost": 1330446336,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 551,
+      "seconds": 4.555665374966338,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 12189696,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 6946816,
+          "recompute_cost": 118489088,
+          "forward_cost": 596639744,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 5111808,
+          "recompute_cost": 229572608,
+          "forward_cost": 707723264,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3014656,
+          "recompute_cost": 475693056,
+          "forward_cost": 953843712,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2228224,
+          "recompute_cost": 734265344,
+          "forward_cost": 1212416000,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 555,
+      "seconds": 5.419291874975897,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 11010048,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 6422528,
+          "recompute_cost": 118292480,
+          "forward_cost": 596443136,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 5111808,
+          "recompute_cost": 236421120,
+          "forward_cost": 714571776,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3014656,
+          "recompute_cost": 465666048,
+          "forward_cost": 943816704,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2359296,
+          "recompute_cost": 575176704,
+          "forward_cost": 1053327360,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 557,
+      "seconds": 4.688548000063747,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 10747904,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 6684672,
+          "recompute_cost": 111214592,
+          "forward_cost": 589365248,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 4980736,
+          "recompute_cost": 238649344,
+          "forward_cost": 716800000,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3801088,
+          "recompute_cost": 466747392,
+          "forward_cost": 944898048,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2621440,
+          "recompute_cost": 894009344,
+          "forward_cost": 1372160000,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 549,
+      "seconds": 8.801942166057415,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 11665408,
+          "recompute_cost": 0,
+          "forward_cost": 478150656,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 119537664,
+          "peak_bytes": 5505024,
+          "recompute_cost": 119177216,
+          "forward_cost": 597327872,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 239075328,
+          "peak_bytes": 4587520,
+          "recompute_cost": 228327424,
+          "forward_cost": 706478080,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 478150656,
+          "peak_bytes": 3407872,
+          "recompute_cost": 459341824,
+          "forward_cost": 937492480,
+          "backward_cost": 956301312
+        },
+        {
+          "budget": 956301312,
+          "peak_bytes": 2228224,
+          "recompute_cost": 848756736,
+          "forward_cost": 1326907392,
+          "backward_cost": 956301312
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 218,
+      "seconds": 0.28939074999652803,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 211,
+      "seconds": 0.2949691250687465,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 233,
+      "seconds": 0.39351687498856336,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 213,
+      "seconds": 0.29285900003742427,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 238,
+      "seconds": 0.4579003748949617,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 228,
+      "seconds": 0.39055033400654793,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 1572864,
+          "recompute_cost": 0,
+          "forward_cost": 151388160,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 37847040,
+          "peak_bytes": 1310720,
+          "recompute_cost": 37814272,
+          "forward_cost": 189202432,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1048576,
+          "recompute_cost": 75628544,
+          "forward_cost": 227016704,
+          "backward_cost": 302776320
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 417,
+      "seconds": 1.4265339589910582,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2621440,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75628544,
+          "forward_cost": 378404864,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151257088,
+          "forward_cost": 454033408,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 419,
+      "seconds": 0.7973004999803379,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2883584,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75694080,
+          "forward_cost": 378470400,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151257088,
+          "forward_cost": 454033408,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 405,
+      "seconds": 0.9428736249683425,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2621440,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75694080,
+          "forward_cost": 378470400,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151388160,
+          "forward_cost": 454164480,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 410,
+      "seconds": 0.8380542919039726,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2883584,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75628544,
+          "forward_cost": 378404864,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151257088,
+          "forward_cost": 454033408,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 448,
+      "seconds": 0.8337646670406684,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2621440,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75628544,
+          "forward_cost": 378404864,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151257088,
+          "forward_cost": 454033408,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 416,
+      "seconds": 1.02648175007198,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 2621440,
+          "recompute_cost": 0,
+          "forward_cost": 302776320,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 75694080,
+          "peak_bytes": 2097152,
+          "recompute_cost": 75628544,
+          "forward_cost": 378404864,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 151388160,
+          "peak_bytes": 1572864,
+          "recompute_cost": 151257088,
+          "forward_cost": 454033408,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 302776320,
+          "peak_bytes": 1310720,
+          "recompute_cost": 302645248,
+          "forward_cost": 605421568,
+          "backward_cost": 605552640
+        },
+        {
+          "budget": 605552640,
+          "peak_bytes": 1048576,
+          "recompute_cost": 605421568,
+          "forward_cost": 908197888,
+          "backward_cost": 605552640
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 351,
+      "seconds": 0.4638881250284612,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1179648,
+          "forward_cost": 9699328,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3276800,
+          "forward_cost": 11796480,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 307,
+      "seconds": 0.2700537919299677,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1146880,
+          "forward_cost": 9666560,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3244032,
+          "forward_cost": 11763712,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 308,
+      "seconds": 0.27961349999532104,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1179648,
+          "forward_cost": 9699328,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3276800,
+          "forward_cost": 11796480,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 335,
+      "seconds": 0.31593629205599427,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1146880,
+          "forward_cost": 9666560,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3244032,
+          "forward_cost": 11763712,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 322,
+      "seconds": 0.31729208293836564,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1179648,
+          "forward_cost": 9699328,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3244032,
+          "forward_cost": 11763712,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b4",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 307,
+      "seconds": 0.22508379200007766,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 151552,
+          "recompute_cost": 0,
+          "forward_cost": 8519680,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 2129920,
+          "peak_bytes": 98304,
+          "recompute_cost": 1146880,
+          "forward_cost": 9666560,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 81920,
+          "recompute_cost": 3244032,
+          "forward_cost": 11763712,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 49152,
+          "recompute_cost": 7438336,
+          "forward_cost": 15958016,
+          "backward_cost": 17039360
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 45056,
+          "recompute_cost": 11698176,
+          "forward_cost": 20217856,
+          "backward_cost": 17039360
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261020,
+      "iterations": 600,
+      "evaluated": 470,
+      "seconds": 0.9374917920213193,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 180224,
+          "recompute_cost": 3342336,
+          "forward_cost": 20381696,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 147456,
+          "recompute_cost": 7536640,
+          "forward_cost": 24576000,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 114688,
+          "recompute_cost": 16023552,
+          "forward_cost": 33062912,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 81920,
+          "recompute_cost": 33193984,
+          "forward_cost": 50233344,
+          "backward_cost": 34078720
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261021,
+      "iterations": 600,
+      "evaluated": 469,
+      "seconds": 0.8525227920617908,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 196608,
+          "recompute_cost": 3276800,
+          "forward_cost": 20316160,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 151552,
+          "recompute_cost": 8519680,
+          "forward_cost": 25559040,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 81920,
+          "recompute_cost": 14876672,
+          "forward_cost": 31916032,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 65536,
+          "recompute_cost": 34013184,
+          "forward_cost": 51052544,
+          "backward_cost": 34078720
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261022,
+      "iterations": 600,
+      "evaluated": 443,
+      "seconds": 0.7555140419863164,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 167936,
+          "recompute_cost": 3342336,
+          "forward_cost": 20381696,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 131072,
+          "recompute_cost": 7569408,
+          "forward_cost": 24608768,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 77824,
+          "recompute_cost": 15990784,
+          "forward_cost": 33030144,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 61440,
+          "recompute_cost": 22347776,
+          "forward_cost": 39387136,
+          "backward_cost": 34078720
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261023,
+      "iterations": 600,
+      "evaluated": 448,
+      "seconds": 0.8021323750726879,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 176128,
+          "recompute_cost": 3407872,
+          "forward_cost": 20447232,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 151552,
+          "recompute_cost": 7602176,
+          "forward_cost": 24641536,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 114688,
+          "recompute_cost": 16154624,
+          "forward_cost": 33193984,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 77824,
+          "recompute_cost": 32997376,
+          "forward_cost": 50036736,
+          "backward_cost": 34078720
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261024,
+      "iterations": 600,
+      "evaluated": 445,
+      "seconds": 0.7890117079950869,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 176128,
+          "recompute_cost": 3375104,
+          "forward_cost": 20414464,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 143360,
+          "recompute_cost": 7602176,
+          "forward_cost": 24641536,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 106496,
+          "recompute_cost": 16056320,
+          "forward_cost": 33095680,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 77824,
+          "recompute_cost": 32997376,
+          "forward_cost": 50036736,
+          "backward_cost": 34078720
+        }
+      ]
+    },
+    {
+      "graph": "mlp-b8",
+      "seed": 20261025,
+      "iterations": 600,
+      "evaluated": 439,
+      "seconds": 0.8354865409201011,
+      "points": [
+        {
+          "budget": 0,
+          "peak_bytes": 299008,
+          "recompute_cost": 0,
+          "forward_cost": 17039360,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 4259840,
+          "peak_bytes": 176128,
+          "recompute_cost": 3375104,
+          "forward_cost": 20414464,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 8519680,
+          "peak_bytes": 151552,
+          "recompute_cost": 7634944,
+          "forward_cost": 24674304,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 17039360,
+          "peak_bytes": 102400,
+          "recompute_cost": 16089088,
+          "forward_cost": 33128448,
+          "backward_cost": 34078720
+        },
+        {
+          "budget": 34078720,
+          "peak_bytes": 77824,
+          "recompute_cost": 32997376,
+          "forward_cost": 50036736,
+          "backward_cost": 34078720
+        }
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "graph": "chain6-unit",
+      "budget": 0,
+      "certificate_bytes": 1419,
+      "actions": 19,
+      "verify_ms_samples": [
+        0.254,
+        0.207166,
+        0.194917,
+        0.196375,
+        0.184375
+      ],
+      "exact_seconds": 0.0018240000354126096
+    },
+    {
+      "graph": "chain6-unit",
+      "budget": 1,
+      "certificate_bytes": 1526,
+      "actions": 21,
+      "verify_ms_samples": [
+        0.480416,
+        0.35525,
+        0.27825,
+        0.221792,
+        0.202292
+      ],
+      "exact_seconds": 0.006209583021700382
+    },
+    {
+      "graph": "chain6-unit",
+      "budget": 3,
+      "certificate_bytes": 1740,
+      "actions": 25,
+      "verify_ms_samples": [
+        0.257625,
+        0.210791,
+        0.200916,
+        0.201417,
+        0.200125
+      ],
+      "exact_seconds": 0.0026158749824389815
+    },
+    {
+      "graph": "chain6-unit",
+      "budget": 6,
+      "certificate_bytes": 2062,
+      "actions": 31,
+      "verify_ms_samples": [
+        0.277834,
+        0.219625,
+        0.217084,
+        0.212667,
+        0.213292
+      ],
+      "exact_seconds": 0.001974583021365106
+    },
+    {
+      "graph": "chain6-unit",
+      "budget": 12,
+      "certificate_bytes": 2707,
+      "actions": 43,
+      "verify_ms_samples": [
+        0.280459,
+        0.262333,
+        0.255958,
+        0.253375,
+        0.2515
+      ],
+      "exact_seconds": 0.0036928330082446337
+    },
+    {
+      "graph": "chain6-weighted",
+      "budget": 0,
+      "certificate_bytes": 1424,
+      "actions": 19,
+      "verify_ms_samples": [
+        0.355541,
+        0.286875,
+        0.25875,
+        0.249542,
+        0.246292
+      ],
+      "exact_seconds": 0.0021359999664127827
+    },
+    {
+      "graph": "chain6-weighted",
+      "budget": 2,
+      "certificate_bytes": 1639,
+      "actions": 23,
+      "verify_ms_samples": [
+        0.399459,
+        0.312916,
+        1.266375,
+        0.423292,
+        0.453541
+      ],
+      "exact_seconds": 0.004265125025995076
+    },
+    {
+      "graph": "chain6-weighted",
+      "budget": 4,
+      "certificate_bytes": 1639,
+      "actions": 23,
+      "verify_ms_samples": [
+        0.374584,
+        0.298666,
+        0.277042,
+        0.301167,
+        0.282166
+      ],
+      "exact_seconds": 0.005167542025446892
+    },
+    {
+      "graph": "chain6-weighted",
+      "budget": 9,
+      "certificate_bytes": 2068,
+      "actions": 31,
+      "verify_ms_samples": [
+        0.379791,
+        0.343083,
+        0.357709,
+        0.384875,
+        0.54275
+      ],
+      "exact_seconds": 0.0047926249681040645
+    },
+    {
+      "graph": "chain6-weighted",
+      "budget": 18,
+      "certificate_bytes": 2606,
+      "actions": 41,
+      "verify_ms_samples": [
+        0.424208,
+        0.390166,
+        0.355041,
+        0.360583,
+        0.34275
+      ],
+      "exact_seconds": 0.008424874977208674
+    },
+    {
+      "graph": "diamond5",
+      "budget": 0,
+      "certificate_bytes": 1239,
+      "actions": 16,
+      "verify_ms_samples": [
+        1.132791,
+        0.360625,
+        0.3935,
+        0.290084,
+        0.345333
+      ],
+      "exact_seconds": 0.0012517920695245266
+    },
+    {
+      "graph": "diamond5",
+      "budget": 1,
+      "certificate_bytes": 1344,
+      "actions": 18,
+      "verify_ms_samples": [
+        0.260292,
+        0.241083,
+        0.205167,
+        0.187958,
+        0.184833
+      ],
+      "exact_seconds": 0.0029560839757323265
+    },
+    {
+      "graph": "diamond5",
+      "budget": 3,
+      "certificate_bytes": 1555,
+      "actions": 22,
+      "verify_ms_samples": [
+        0.218917,
+        0.193459,
+        0.190709,
+        0.203125,
+        0.189833
+      ],
+      "exact_seconds": 0.0014522909186780453
+    },
+    {
+      "graph": "diamond5",
+      "budget": 7,
+      "certificate_bytes": 1765,
+      "actions": 26,
+      "verify_ms_samples": [
+        1.626,
+        0.402084,
+        0.308667,
+        0.240792,
+        0.217916
+      ],
+      "exact_seconds": 0.0030301669612526894
+    },
+    {
+      "graph": "diamond5",
+      "budget": 14,
+      "certificate_bytes": 2083,
+      "actions": 32,
+      "verify_ms_samples": [
+        0.351417,
+        0.300583,
+        0.287792,
+        0.287208,
+        0.304583
+      ],
+      "exact_seconds": 0.004736833041533828
+    },
+    {
+      "graph": "skip6",
+      "budget": 0,
+      "certificate_bytes": 1396,
+      "actions": 19,
+      "verify_ms_samples": [
+        0.246416,
+        0.209709,
+        0.2005,
+        0.189917,
+        0.188833
+      ],
+      "exact_seconds": 0.0012610000558197498
+    },
+    {
+      "graph": "skip6",
+      "budget": 2,
+      "certificate_bytes": 1607,
+      "actions": 23,
+      "verify_ms_samples": [
+        0.440541,
+        0.314125,
+        0.2915,
+        0.318708,
+        0.369792
+      ],
+      "exact_seconds": 0.0016948750708252192
+    },
+    {
+      "graph": "skip6",
+      "budget": 4,
+      "certificate_bytes": 1817,
+      "actions": 27,
+      "verify_ms_samples": [
+        0.406667,
+        0.418625,
+        0.484167,
+        0.31175,
+        0.244167
+      ],
+      "exact_seconds": 0.002506124903447926
+    },
+    {
+      "graph": "skip6",
+      "budget": 8,
+      "certificate_bytes": 2132,
+      "actions": 33,
+      "verify_ms_samples": [
+        0.370292,
+        0.326584,
+        0.307625,
+        0.298,
+        0.293458
+      ],
+      "exact_seconds": 0.0028123329393565655
+    },
+    {
+      "graph": "skip6",
+      "budget": 16,
+      "certificate_bytes": 2450,
+      "actions": 39,
+      "verify_ms_samples": [
+        0.367167,
+        0.542375,
+        0.3465,
+        0.291166,
+        0.265917
+      ],
+      "exact_seconds": 0.00560670904815197
+    },
+    {
+      "graph": "stateful4",
+      "budget": 0,
+      "certificate_bytes": 1077,
+      "actions": 13,
+      "verify_ms_samples": [
+        0.231875,
+        0.167542,
+        0.161042,
+        0.15425,
+        0.15475
+      ],
+      "exact_seconds": 0.00040791695937514305
+    },
+    {
+      "graph": "stateful4",
+      "budget": 1,
+      "certificate_bytes": 1181,
+      "actions": 15,
+      "verify_ms_samples": [
+        0.171333,
+        0.163625,
+        0.166,
+        0.168333,
+        0.15425
+      ],
+      "exact_seconds": 0.00043770798947662115
+    },
+    {
+      "graph": "stateful4",
+      "budget": 2,
+      "certificate_bytes": 1287,
+      "actions": 17,
+      "verify_ms_samples": [
+        0.692958,
+        0.291208,
+        0.336875,
+        0.6885,
+        0.226333
+      ],
+      "exact_seconds": 0.0004666249733418226
+    },
+    {
+      "graph": "stateful4",
+      "budget": 4,
+      "certificate_bytes": 1393,
+      "actions": 19,
+      "verify_ms_samples": [
+        1.166583,
+        0.257875,
+        0.186,
+        0.174917,
+        0.172708
+      ],
+      "exact_seconds": 0.0006890420336276293
+    },
+    {
+      "graph": "stateful4",
+      "budget": 8,
+      "certificate_bytes": 1393,
+      "actions": 19,
+      "verify_ms_samples": [
+        0.317167,
+        0.333083,
+        0.689166,
+        0.286333,
+        0.219417
+      ],
+      "exact_seconds": 0.0016891249688342214
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 0,
+      "certificate_bytes": 2908,
+      "actions": 43,
+      "verify_ms_samples": [
+        0.754458,
+        0.6505,
+        0.551375,
+        0.550875,
+        0.499959
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 6653952,
+      "certificate_bytes": 4107,
+      "actions": 59,
+      "verify_ms_samples": [
+        0.600333,
+        0.732,
+        0.650042,
+        0.566458,
+        0.527459
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 13307904,
+      "certificate_bytes": 3977,
+      "actions": 61,
+      "verify_ms_samples": [
+        0.572666,
+        0.622417,
+        0.575958,
+        0.551833,
+        0.690708
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 26615808,
+      "certificate_bytes": 3977,
+      "actions": 61,
+      "verify_ms_samples": [
+        0.905209,
+        0.772709,
+        0.673833,
+        0.6225,
+        0.589459
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 53231616,
+      "certificate_bytes": 6054,
+      "actions": 93,
+      "verify_ms_samples": [
+        0.774917,
+        0.753167,
+        0.880834,
+        0.894459,
+        0.786
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 0,
+      "certificate_bytes": 5424,
+      "actions": 85,
+      "verify_ms_samples": [
+        1.338084,
+        0.981916,
+        0.86625,
+        0.857875,
+        0.95225
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 27705344,
+      "certificate_bytes": 8662,
+      "actions": 133,
+      "verify_ms_samples": [
+        1.057125,
+        1.088708,
+        1.282792,
+        2.570917,
+        6.14525
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 55410688,
+      "certificate_bytes": 7332,
+      "actions": 117,
+      "verify_ms_samples": [
+        1.052917,
+        0.982167,
+        0.957,
+        0.935667,
+        0.94375
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 110821376,
+      "certificate_bytes": 8012,
+      "actions": 129,
+      "verify_ms_samples": [
+        1.286667,
+        1.113458,
+        2.143667,
+        1.126125,
+        1.485375
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 221642752,
+      "certificate_bytes": 13126,
+      "actions": 211,
+      "verify_ms_samples": [
+        2.961834,
+        2.458708,
+        1.965459,
+        1.691584,
+        1.470875
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 0,
+      "certificate_bytes": 10452,
+      "actions": 169,
+      "verify_ms_samples": [
+        2.286541,
+        2.111167,
+        2.265042,
+        1.915875,
+        2.142458
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 119537664,
+      "certificate_bytes": 16977,
+      "actions": 269,
+      "verify_ms_samples": [
+        10.392459,
+        18.08425,
+        19.662708,
+        25.523,
+        4.40675
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 239075328,
+      "certificate_bytes": 18157,
+      "actions": 289,
+      "verify_ms_samples": [
+        2.990375,
+        24.148,
+        24.263125,
+        7.444167,
+        4.124708
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 478150656,
+      "certificate_bytes": 15611,
+      "actions": 257,
+      "verify_ms_samples": [
+        6.111125,
+        2.122334,
+        12.687959,
+        33.039042,
+        2.36425
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 956301312,
+      "certificate_bytes": 32086,
+      "actions": 529,
+      "verify_ms_samples": [
+        3.8125,
+        3.725917,
+        3.967167,
+        3.759584,
+        50.649792
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 0,
+      "certificate_bytes": 2191,
+      "actions": 31,
+      "verify_ms_samples": [
+        0.466125,
+        0.380792,
+        0.359875,
+        0.351791,
+        0.338833
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 37847040,
+      "certificate_bytes": 2447,
+      "actions": 35,
+      "verify_ms_samples": [
+        0.38475,
+        0.357542,
+        0.350375,
+        0.350792,
+        0.345541
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 75694080,
+      "certificate_bytes": 2878,
+      "actions": 39,
+      "verify_ms_samples": [
+        0.446083,
+        1.0855,
+        0.664875,
+        0.476583,
+        0.428375
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 151388160,
+      "certificate_bytes": 2879,
+      "actions": 39,
+      "verify_ms_samples": [
+        0.674666,
+        0.475166,
+        0.433042,
+        0.448875,
+        0.395
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 302776320,
+      "certificate_bytes": 2879,
+      "actions": 39,
+      "verify_ms_samples": [
+        0.5385,
+        0.408167,
+        0.390833,
+        0.389708,
+        0.384542
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 0,
+      "certificate_bytes": 3989,
+      "actions": 61,
+      "verify_ms_samples": [
+        0.882708,
+        0.777209,
+        0.695125,
+        0.648916,
+        0.640125
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 75694080,
+      "certificate_bytes": 4748,
+      "actions": 69,
+      "verify_ms_samples": [
+        0.70075,
+        0.671208,
+        0.664625,
+        0.673333,
+        0.654709
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 151388160,
+      "certificate_bytes": 5174,
+      "actions": 77,
+      "verify_ms_samples": [
+        0.889583,
+        0.827792,
+        0.745833,
+        0.709625,
+        0.692917
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 302776320,
+      "certificate_bytes": 6338,
+      "actions": 97,
+      "verify_ms_samples": [
+        0.81525,
+        0.808875,
+        0.804,
+        0.790667,
+        0.775625
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 605552640,
+      "certificate_bytes": 8684,
+      "actions": 137,
+      "verify_ms_samples": [
+        1.109458,
+        0.96375,
+        0.921458,
+        0.911458,
+        9.917917
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b4",
+      "budget": 0,
+      "certificate_bytes": 2512,
+      "actions": 37,
+      "verify_ms_samples": [
+        0.811416,
+        0.618667,
+        0.553708,
+        0.458709,
+        0.444875
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b4",
+      "budget": 2129920,
+      "certificate_bytes": 3263,
+      "actions": 45,
+      "verify_ms_samples": [
+        0.511417,
+        0.490459,
+        0.4595,
+        0.463375,
+        0.468125
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b4",
+      "budget": 4259840,
+      "certificate_bytes": 3214,
+      "actions": 49,
+      "verify_ms_samples": [
+        0.601291,
+        0.581666,
+        0.517458,
+        0.507291,
+        1.478417
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b4",
+      "budget": 8519680,
+      "certificate_bytes": 3430,
+      "actions": 53,
+      "verify_ms_samples": [
+        0.60725,
+        0.513959,
+        0.492542,
+        0.4865,
+        0.482584
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b4",
+      "budget": 17039360,
+      "certificate_bytes": 4559,
+      "actions": 69,
+      "verify_ms_samples": [
+        0.589084,
+        0.575333,
+        0.567208,
+        0.638166,
+        0.71525
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b8",
+      "budget": 0,
+      "certificate_bytes": 4625,
+      "actions": 73,
+      "verify_ms_samples": [
+        1.094666,
+        0.878625,
+        1.110792,
+        0.992042,
+        0.947375
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b8",
+      "budget": 4259840,
+      "certificate_bytes": 6084,
+      "actions": 91,
+      "verify_ms_samples": [
+        0.95025,
+        0.848125,
+        0.850375,
+        0.815042,
+        1.999167
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b8",
+      "budget": 8519680,
+      "certificate_bytes": 6246,
+      "actions": 101,
+      "verify_ms_samples": [
+        0.888417,
+        1.25575,
+        0.961291,
+        1.0245,
+        0.856084
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b8",
+      "budget": 17039360,
+      "certificate_bytes": 6463,
+      "actions": 105,
+      "verify_ms_samples": [
+        1.190709,
+        1.1795,
+        1.03275,
+        0.903292,
+        0.864708
+      ],
+      "exact_seconds": null
+    },
+    {
+      "graph": "mlp-b8",
+      "budget": 34078720,
+      "certificate_bytes": 8458,
+      "actions": 135,
+      "verify_ms_samples": [
+        1.040542,
+        1.045,
+        0.945166,
+        1.012041,
+        0.991791
+      ],
+      "exact_seconds": null
+    }
+  ]
+}

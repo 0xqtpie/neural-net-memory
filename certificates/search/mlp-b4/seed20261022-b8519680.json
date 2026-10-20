@@ -1,0 +1,256 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "mlp-b4",
+  "graph_sha256": "0c1be2e2d8064bef02ac125c3fca5bc6f8f8c334259a0cb326b63a7be5a8c216",
+  "budget": 8519680,
+  "method": "seeded-checkpoint-search",
+  "metadata": {
+    "seed": 20261022,
+    "iterations": 600,
+    "evaluated": 308,
+    "over_max_budget": 27,
+    "checkpoints": [
+      "b0_down",
+      "b1_down",
+      "b2_down",
+      "b3_down",
+      "b3_gelu"
+    ],
+    "optimal": false
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_down"
+    },
+    {
+      "op": "drop",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b2_up"
+    },
+    {
+      "op": "forward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b2_up"
+    },
+    {
+      "op": "forward",
+      "node": "b2_down"
+    },
+    {
+      "op": "drop",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_down"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "b3_down"
+    },
+    {
+      "op": "backward",
+      "node": "b3_down"
+    },
+    {
+      "op": "drop",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b3_up"
+    },
+    {
+      "op": "backward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b3_up"
+    },
+    {
+      "op": "backward",
+      "node": "b3_up"
+    },
+    {
+      "op": "drop",
+      "node": "b2_down"
+    },
+    {
+      "op": "forward",
+      "node": "b2_up"
+    },
+    {
+      "op": "forward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b2_up"
+    },
+    {
+      "op": "backward",
+      "node": "b2_down"
+    },
+    {
+      "op": "drop",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b2_up"
+    },
+    {
+      "op": "backward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b2_up"
+    },
+    {
+      "op": "backward",
+      "node": "b2_up"
+    },
+    {
+      "op": "drop",
+      "node": "b1_down"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "backward",
+      "node": "b1_down"
+    },
+    {
+      "op": "drop",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "backward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "backward",
+      "node": "b1_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_down"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_up"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 49152,
+    "recompute_cost": 7438336,
+    "forward_cost": 15958016,
+    "backward_cost": 17039360
+  }
+}

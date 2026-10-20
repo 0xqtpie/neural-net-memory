@@ -1,0 +1,360 @@
+{
+  "kind": "empirical CPU behavior and gradient validation; no GPU peak-memory claim",
+  "environment": {
+    "torch": "2.10.0",
+    "python": "3.12.8",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "device": "cpu",
+    "threads": 1,
+    "seed": 20261020,
+    "dtype": "float32"
+  },
+  "limitations": [
+    "Saved-tensor hooks omit SAC caches and other allocations; these bytes are not total or peak memory.",
+    "Replay counts are macro-op attempts, not weighted model costs or complete ATen execution counts.",
+    "ATen dispatch counts cover calls inside graph forward/replay macros; backward gradient kernels are excluded.",
+    "Model graphs omit views, normalization statistics, gradient buffers and scratch.",
+    "Single diagnostic timings are not controlled speed benchmarks.",
+    "torch.compile/min-cut/budget APIs documented but not measured here.",
+    "No optimized certificate was executed as a custom PyTorch autograd schedule."
+  ],
+  "results": [
+    {
+      "graph": "mlp-b4",
+      "mode": "eager",
+      "loss": 0.01313861459493637,
+      "forward_macro_invocations": 12,
+      "backward_replay_macro_attempts": 0,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 147456,
+      "forward_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.mm.default": 8,
+        "aten.gelu.default": 4
+      },
+      "replay_macro_aten_dispatch": {},
+      "seconds_diagnostic_only": 0.11717966699507087,
+      "gradient_check": "reference"
+    },
+    {
+      "graph": "mlp-b4",
+      "mode": "checkpoint-whole",
+      "loss": 0.01313861459493637,
+      "forward_macro_invocations": 12,
+      "backward_replay_macro_attempts": 12,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 4096,
+      "forward_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.mm.default": 8,
+        "aten.gelu.default": 4
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.detach.default": 20,
+        "aten.mm.default": 7,
+        "aten.gelu.default": 4
+      },
+      "seconds_diagnostic_only": 1.681951625039801,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "mlp-b4",
+      "mode": "checkpoint-blocks",
+      "loss": 0.01313861459493637,
+      "forward_macro_invocations": 12,
+      "backward_replay_macro_attempts": 12,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 16384,
+      "forward_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.mm.default": 8,
+        "aten.gelu.default": 4
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.detach.default": 20,
+        "aten.mm.default": 4,
+        "aten.gelu.default": 4
+      },
+      "seconds_diagnostic_only": 0.00684124999679625,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "mlp-b4",
+      "mode": "selective",
+      "loss": 0.01313861459493637,
+      "forward_macro_invocations": 12,
+      "backward_replay_macro_attempts": 12,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 4096,
+      "forward_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.mm.default": 8,
+        "aten.detach.default": 8,
+        "aten.gelu.default": 4
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.detach.default": 20,
+        "aten.gelu.default": 4
+      },
+      "seconds_diagnostic_only": 0.0073766669956967235,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "mlp-b4",
+      "mode": "checkpoint-sequential",
+      "loss": 0.01313861459493637,
+      "forward_macro_invocations": 12,
+      "backward_replay_macro_attempts": 9,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 49152,
+      "forward_macro_aten_dispatch": {
+        "aten.t.default": 8,
+        "aten.mm.default": 8,
+        "aten.gelu.default": 4
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.t.default": 6,
+        "aten.detach.default": 15,
+        "aten.mm.default": 3,
+        "aten.gelu.default": 3
+      },
+      "seconds_diagnostic_only": 0.006133208982646465,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "mode": "eager",
+      "loss": 2.0322489738464355,
+      "forward_macro_invocations": 28,
+      "backward_replay_macro_attempts": 0,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 2363392,
+      "forward_macro_aten_dispatch": {
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 12,
+        "aten._unsafe_view.default": 22,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 4,
+        "aten.gelu.default": 2
+      },
+      "replay_macro_aten_dispatch": {},
+      "seconds_diagnostic_only": 0.013036582968197763,
+      "gradient_check": "reference"
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "mode": "checkpoint-whole",
+      "loss": 2.0322489738464355,
+      "forward_macro_invocations": 28,
+      "backward_replay_macro_attempts": 27,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 65536,
+      "forward_macro_aten_dispatch": {
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 12,
+        "aten._unsafe_view.default": 22,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 4,
+        "aten.gelu.default": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 40,
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 11,
+        "aten._unsafe_view.default": 21,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 3,
+        "aten.gelu.default": 2
+      },
+      "seconds_diagnostic_only": 0.016743291984312236,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "mode": "checkpoint-blocks",
+      "loss": 2.0322489738464355,
+      "forward_macro_invocations": 28,
+      "backward_replay_macro_attempts": 26,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 131072,
+      "forward_macro_aten_dispatch": {
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 12,
+        "aten._unsafe_view.default": 22,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 4,
+        "aten.gelu.default": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 40,
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 10,
+        "aten._unsafe_view.default": 20,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 2,
+        "aten.gelu.default": 2
+      },
+      "seconds_diagnostic_only": 0.02023374999407679,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "mode": "selective",
+      "loss": 2.0322489738464355,
+      "forward_macro_invocations": 28,
+      "backward_replay_macro_attempts": 27,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 65536,
+      "forward_macro_aten_dispatch": {
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten.mm.default": 12,
+        "aten.detach.default": 16,
+        "aten._unsafe_view.default": 22,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.bmm.default": 4,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 4,
+        "aten.gelu.default": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 40,
+        "aten.native_layer_norm.default": 4,
+        "aten.t.default": 12,
+        "aten.view.default": 22,
+        "aten._unsafe_view.default": 21,
+        "aten.transpose.int": 10,
+        "aten.expand.default": 8,
+        "aten.clone.default": 8,
+        "aten.div.Tensor": 2,
+        "aten._softmax.default": 2,
+        "aten.add.Tensor": 3,
+        "aten.gelu.default": 2
+      },
+      "seconds_diagnostic_only": 0.0254315419588238,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "mode": "eager",
+      "loss": 0.8447501063346863,
+      "forward_macro_invocations": 10,
+      "backward_replay_macro_attempts": 0,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 1310720,
+      "forward_macro_aten_dispatch": {
+        "aten.convolution.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "replay_macro_aten_dispatch": {},
+      "seconds_diagnostic_only": 0.021745541016571224,
+      "gradient_check": "reference"
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "mode": "checkpoint-whole",
+      "loss": 0.8447501063346863,
+      "forward_macro_invocations": 10,
+      "backward_replay_macro_attempts": 10,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 262144,
+      "forward_macro_aten_dispatch": {
+        "aten.convolution.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 12,
+        "aten.convolution.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "seconds_diagnostic_only": 0.020830541965551674,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "mode": "checkpoint-blocks",
+      "loss": 0.8447501063346863,
+      "forward_macro_invocations": 10,
+      "backward_replay_macro_attempts": 10,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 524288,
+      "forward_macro_aten_dispatch": {
+        "aten.convolution.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 12,
+        "aten.convolution.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "seconds_diagnostic_only": 0.03808962507173419,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "mode": "selective",
+      "loss": 0.8447501063346863,
+      "forward_macro_invocations": 10,
+      "backward_replay_macro_attempts": 10,
+      "hook_visible_nonparameter_unique_storage_bytes_forward": 262144,
+      "forward_macro_aten_dispatch": {
+        "aten.convolution.default": 4,
+        "aten.detach.default": 4,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "replay_macro_aten_dispatch": {
+        "aten.detach.default": 12,
+        "aten.relu.default": 4,
+        "aten.add.Tensor": 2
+      },
+      "seconds_diagnostic_only": 0.08031295798718929,
+      "gradient_check": "PASS",
+      "max_absolute_gradient_difference": 0.0
+    }
+  ]
+}
