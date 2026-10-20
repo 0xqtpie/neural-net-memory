@@ -1,0 +1,20 @@
+[
+  {
+    "graph": "resnet-b2-c32",
+    "budget": 0,
+    "status": "optimum",
+    "peak_bytes": 1572864,
+    "object": "research/trial-30m/bounds/resnet-b2-c32-b0-exact.json",
+    "seconds": 0.01450816704891622,
+    "states": 1640,
+    "expanded": 1570,
+    "optimal": true
+  },
+  {
+    "graph": "resnet-b2-c32",
+    "budget": 37847040,
+    "status": "resource_limit",
+    "message": "exact state limit 300000 reached; NO optimality claim",
+    "seconds": 9.647931792074814
+  }
+]

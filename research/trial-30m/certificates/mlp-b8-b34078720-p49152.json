@@ -1,0 +1,569 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "mlp-b8",
+  "graph_sha256": "8b8d218fc5424929ede29d67422930cf182f80c09623fb7a9a8dcdcd8758a9db",
+  "budget": 34078720,
+  "method": "trial-adaptive-cache",
+  "metadata": {
+    "cap": 49152,
+    "budget": 34078720,
+    "alpha": 1.0,
+    "beta": 0.0,
+    "bonus": 4.0,
+    "keepers": [
+      "b1_up",
+      "b2_down",
+      "b3_down",
+      "b3_up",
+      "b4_down",
+      "b5_down",
+      "b5_gelu",
+      "b6_down",
+      "b7_down",
+      "b7_gelu"
+    ],
+    "order": [
+      "b0_up",
+      "b0_gelu",
+      "b0_down",
+      "b1_up",
+      "b1_gelu",
+      "b1_down",
+      "b2_up",
+      "b2_gelu",
+      "b2_down",
+      "b3_up",
+      "b3_gelu",
+      "b3_down",
+      "b4_up",
+      "b4_gelu",
+      "b4_down",
+      "b5_up",
+      "b5_gelu",
+      "b5_down",
+      "b6_up",
+      "b6_gelu",
+      "b6_down",
+      "b7_up",
+      "b7_gelu",
+      "b7_down"
+    ],
+    "seed": 219824726,
+    "iteration": 5
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_down"
+    },
+    {
+      "op": "drop",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b2_up"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b2_down"
+    },
+    {
+      "op": "drop",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b3_up"
+    },
+    {
+      "op": "drop",
+      "node": "b2_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_down"
+    },
+    {
+      "op": "drop",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b4_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_down"
+    },
+    {
+      "op": "forward",
+      "node": "b4_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b4_up"
+    },
+    {
+      "op": "forward",
+      "node": "b4_down"
+    },
+    {
+      "op": "drop",
+      "node": "b4_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b5_up"
+    },
+    {
+      "op": "drop",
+      "node": "b1_down"
+    },
+    {
+      "op": "forward",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b5_up"
+    },
+    {
+      "op": "forward",
+      "node": "b5_down"
+    },
+    {
+      "op": "drop",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b6_up"
+    },
+    {
+      "op": "drop",
+      "node": "b3_down"
+    },
+    {
+      "op": "forward",
+      "node": "b6_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b6_up"
+    },
+    {
+      "op": "forward",
+      "node": "b6_down"
+    },
+    {
+      "op": "drop",
+      "node": "b6_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b7_up"
+    },
+    {
+      "op": "drop",
+      "node": "b5_down"
+    },
+    {
+      "op": "forward",
+      "node": "b7_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b7_up"
+    },
+    {
+      "op": "forward",
+      "node": "b7_down"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "b7_down"
+    },
+    {
+      "op": "backward",
+      "node": "b7_down"
+    },
+    {
+      "op": "drop",
+      "node": "b7_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b7_up"
+    },
+    {
+      "op": "backward",
+      "node": "b7_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b7_up"
+    },
+    {
+      "op": "backward",
+      "node": "b7_up"
+    },
+    {
+      "op": "drop",
+      "node": "b6_down"
+    },
+    {
+      "op": "forward",
+      "node": "b5_up"
+    },
+    {
+      "op": "forward",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b5_down"
+    },
+    {
+      "op": "drop",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b6_up"
+    },
+    {
+      "op": "drop",
+      "node": "b5_up"
+    },
+    {
+      "op": "forward",
+      "node": "b6_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b6_down"
+    },
+    {
+      "op": "drop",
+      "node": "b6_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b6_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b6_up"
+    },
+    {
+      "op": "backward",
+      "node": "b6_up"
+    },
+    {
+      "op": "drop",
+      "node": "b5_down"
+    },
+    {
+      "op": "forward",
+      "node": "b5_up"
+    },
+    {
+      "op": "forward",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b5_down"
+    },
+    {
+      "op": "drop",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b5_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b5_up"
+    },
+    {
+      "op": "backward",
+      "node": "b5_up"
+    },
+    {
+      "op": "drop",
+      "node": "b4_down"
+    },
+    {
+      "op": "forward",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b3_down"
+    },
+    {
+      "op": "drop",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b4_up"
+    },
+    {
+      "op": "drop",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b4_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b4_down"
+    },
+    {
+      "op": "drop",
+      "node": "b4_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b4_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b4_up"
+    },
+    {
+      "op": "backward",
+      "node": "b4_up"
+    },
+    {
+      "op": "drop",
+      "node": "b3_down"
+    },
+    {
+      "op": "forward",
+      "node": "b3_up"
+    },
+    {
+      "op": "forward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b3_down"
+    },
+    {
+      "op": "drop",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b3_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b3_up"
+    },
+    {
+      "op": "backward",
+      "node": "b3_up"
+    },
+    {
+      "op": "drop",
+      "node": "b2_down"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b1_down"
+    },
+    {
+      "op": "drop",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b2_up"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b2_down"
+    },
+    {
+      "op": "drop",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b2_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b2_up"
+    },
+    {
+      "op": "backward",
+      "node": "b2_up"
+    },
+    {
+      "op": "drop",
+      "node": "b1_down"
+    },
+    {
+      "op": "forward",
+      "node": "b1_up"
+    },
+    {
+      "op": "forward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b1_down"
+    },
+    {
+      "op": "drop",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b1_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b1_up"
+    },
+    {
+      "op": "backward",
+      "node": "b1_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_down"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "backward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_up"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 49152,
+    "recompute_cost": 17137664,
+    "forward_cost": 34177024,
+    "backward_cost": 34078720
+  }
+}

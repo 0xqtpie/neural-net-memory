@@ -1,0 +1,212 @@
+[
+  {
+    "id": "transformer-b1-t32-b6653952",
+    "graph": "transformer-b1-t32",
+    "budget": 6653952,
+    "peak_bytes": 393216,
+    "lower_bound": 294912,
+    "gap_bytes": 98304,
+    "certificate": "research/trial-30m/certificates/transformer-b1-t32-b6653952-p393216.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b1-t32-b13307904",
+    "graph": "transformer-b1-t32",
+    "budget": 13307904,
+    "peak_bytes": 360448,
+    "lower_bound": 294912,
+    "gap_bytes": 65536,
+    "certificate": "certificates/frontier/transformer-b1-t32-b13307904.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b2-t64-b27705344",
+    "graph": "transformer-b2-t64",
+    "budget": 27705344,
+    "peak_bytes": 1310720,
+    "lower_bound": 720896,
+    "gap_bytes": 589824,
+    "certificate": "research/trial-30m/certificates/transformer-b2-t64-b27705344-p1310720.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b2-t64-b55410688",
+    "graph": "transformer-b2-t64",
+    "budget": 55410688,
+    "peak_bytes": 851968,
+    "lower_bound": 589824,
+    "gap_bytes": 262144,
+    "certificate": "research/trial-30m/certificates/transformer-b2-t64-b55410688-p851968.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b2-t64-b110821376",
+    "graph": "transformer-b2-t64",
+    "budget": 110821376,
+    "peak_bytes": 720896,
+    "lower_bound": 589824,
+    "gap_bytes": 131072,
+    "certificate": "research/trial-30m/certificates/transformer-b2-t64-b110821376-p720896.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b2-t64-b221642752",
+    "graph": "transformer-b2-t64",
+    "budget": 221642752,
+    "peak_bytes": 655360,
+    "lower_bound": 589824,
+    "gap_bytes": 65536,
+    "certificate": "research/trial-30m/certificates/transformer-b2-t64-b221642752-p655360.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b4-t128-b119537664",
+    "graph": "transformer-b4-t128",
+    "budget": 119537664,
+    "peak_bytes": 4718592,
+    "lower_bound": 2752512,
+    "gap_bytes": 1966080,
+    "certificate": "research/trial-30m/certificates/transformer-b4-t128-b119537664-p4718592.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b4-t128-b239075328",
+    "graph": "transformer-b4-t128",
+    "budget": 239075328,
+    "peak_bytes": 2883584,
+    "lower_bound": 1179648,
+    "gap_bytes": 1703936,
+    "certificate": "research/trial-30m/certificates/transformer-b4-t128-b239075328-p2883584.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b4-t128-b478150656",
+    "graph": "transformer-b4-t128",
+    "budget": 478150656,
+    "peak_bytes": 1835008,
+    "lower_bound": 1179648,
+    "gap_bytes": 655360,
+    "certificate": "research/trial-30m/certificates/transformer-b4-t128-b478150656-p1835008.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "transformer-b4-t128-b956301312",
+    "graph": "transformer-b4-t128",
+    "budget": 956301312,
+    "peak_bytes": 1441792,
+    "lower_bound": 1179648,
+    "gap_bytes": 262144,
+    "certificate": "research/trial-30m/certificates/transformer-b4-t128-b956301312-p1441792.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "resnet-b4-c32-b75694080",
+    "graph": "resnet-b4-c32",
+    "budget": 75694080,
+    "peak_bytes": 2097152,
+    "lower_bound": 1048576,
+    "gap_bytes": 1048576,
+    "certificate": "certificates/frontier/resnet-b4-c32-b75694080.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "resnet-b4-c32-b151388160",
+    "graph": "resnet-b4-c32",
+    "budget": 151388160,
+    "peak_bytes": 1572864,
+    "lower_bound": 1048576,
+    "gap_bytes": 524288,
+    "certificate": "certificates/frontier/resnet-b4-c32-b151388160.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "resnet-b4-c32-b302776320",
+    "graph": "resnet-b4-c32",
+    "budget": 302776320,
+    "peak_bytes": 1310720,
+    "lower_bound": 1048576,
+    "gap_bytes": 262144,
+    "certificate": "certificates/frontier/resnet-b4-c32-b302776320.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b4-b2129920",
+    "graph": "mlp-b4",
+    "budget": 2129920,
+    "peak_bytes": 86016,
+    "lower_bound": 69632,
+    "gap_bytes": 16384,
+    "certificate": "research/trial-30m/certificates/mlp-b4-b2129920-p86016.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b4-b4259840",
+    "graph": "mlp-b4",
+    "budget": 4259840,
+    "peak_bytes": 53248,
+    "lower_bound": 36864,
+    "gap_bytes": 16384,
+    "certificate": "certificates/frontier/mlp-b4-b4259840.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b4-b8519680",
+    "graph": "mlp-b4",
+    "budget": 8519680,
+    "peak_bytes": 45056,
+    "lower_bound": 36864,
+    "gap_bytes": 8192,
+    "certificate": "research/trial-30m/certificates/mlp-b4-b8519680-p45056.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b4-b17039360",
+    "graph": "mlp-b4",
+    "budget": 17039360,
+    "peak_bytes": 40960,
+    "lower_bound": 36864,
+    "gap_bytes": 4096,
+    "certificate": "research/trial-30m/certificates/mlp-b4-b17039360-p40960.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b8-b4259840",
+    "graph": "mlp-b8",
+    "budget": 4259840,
+    "peak_bytes": 135168,
+    "lower_bound": 118784,
+    "gap_bytes": 16384,
+    "certificate": "research/trial-30m/certificates/mlp-b8-b4259840-p135168.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b8-b8519680",
+    "graph": "mlp-b8",
+    "budget": 8519680,
+    "peak_bytes": 69632,
+    "lower_bound": 53248,
+    "gap_bytes": 16384,
+    "certificate": "certificates/frontier/mlp-b8-b8519680.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b8-b17039360",
+    "graph": "mlp-b8",
+    "budget": 17039360,
+    "peak_bytes": 53248,
+    "lower_bound": 36864,
+    "gap_bytes": 16384,
+    "certificate": "research/trial-30m/certificates/mlp-b8-b17039360-p53248.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  },
+  {
+    "id": "mlp-b8-b34078720",
+    "graph": "mlp-b8",
+    "budget": 34078720,
+    "peak_bytes": 45056,
+    "lower_bound": 36864,
+    "gap_bytes": 8192,
+    "certificate": "research/trial-30m/certificates/mlp-b8-b34078720-p45056.json",
+    "first_step": "Replay certificate, then improve scheduling or prove a stronger lower bound. A positive bound gap is not evidence that an improvement exists."
+  }
+]

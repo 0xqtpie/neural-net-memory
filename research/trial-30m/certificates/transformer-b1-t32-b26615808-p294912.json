@@ -1,0 +1,352 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "transformer-b1-t32",
+  "graph_sha256": "2d2cab8d86ee8d6397bb33c363b826908dbfa204309a64f7882ca106186068fc",
+  "budget": 26615808,
+  "method": "trial-adaptive-cache",
+  "metadata": {
+    "cap": 294912,
+    "budget": 26615808,
+    "alpha": 1.5,
+    "beta": 0.5,
+    "bonus": 2.0,
+    "keepers": [
+      "b0_probs",
+      "b0_residual1",
+      "b0_up"
+    ],
+    "order": [
+      "b0_norm1",
+      "b0_q",
+      "b0_k",
+      "b0_v",
+      "b0_scores",
+      "b0_probs",
+      "b0_context",
+      "b0_proj",
+      "b0_residual1",
+      "b0_norm2",
+      "b0_up",
+      "b0_gelu",
+      "b0_down",
+      "b0_residual2"
+    ],
+    "seed": 219824731,
+    "iteration": 6
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_q"
+    },
+    {
+      "op": "forward",
+      "node": "b0_k"
+    },
+    {
+      "op": "forward",
+      "node": "b0_v"
+    },
+    {
+      "op": "forward",
+      "node": "b0_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b0_probs"
+    },
+    {
+      "op": "forward",
+      "node": "b0_context"
+    },
+    {
+      "op": "forward",
+      "node": "b0_proj"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_probs"
+    },
+    {
+      "op": "forward",
+      "node": "b0_norm2"
+    },
+    {
+      "op": "drop",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_scores"
+    },
+    {
+      "op": "drop",
+      "node": "b0_context"
+    },
+    {
+      "op": "drop",
+      "node": "b0_k"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm2"
+    },
+    {
+      "op": "drop",
+      "node": "b0_q"
+    },
+    {
+      "op": "drop",
+      "node": "b0_v"
+    },
+    {
+      "op": "drop",
+      "node": "b0_proj"
+    },
+    {
+      "op": "forward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "forward",
+      "node": "b0_down"
+    },
+    {
+      "op": "forward",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_q"
+    },
+    {
+      "op": "forward",
+      "node": "b0_k"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_scores"
+    },
+    {
+      "op": "drop",
+      "node": "b0_k"
+    },
+    {
+      "op": "forward",
+      "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_q"
+    },
+    {
+      "op": "forward",
+      "node": "b0_v"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_context"
+    },
+    {
+      "op": "drop",
+      "node": "b0_v"
+    },
+    {
+      "op": "forward",
+      "node": "b0_proj"
+    },
+    {
+      "op": "drop",
+      "node": "b0_context"
+    },
+    {
+      "op": "forward",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_proj"
+    },
+    {
+      "op": "forward",
+      "node": "b0_residual2"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_residual2"
+    },
+    {
+      "op": "backward",
+      "node": "b0_residual2"
+    },
+    {
+      "op": "backward",
+      "node": "b0_down"
+    },
+    {
+      "op": "drop",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "forward",
+      "node": "b0_norm2"
+    },
+    {
+      "op": "forward",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_gelu"
+    },
+    {
+      "op": "drop",
+      "node": "b0_up"
+    },
+    {
+      "op": "backward",
+      "node": "b0_up"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm2"
+    },
+    {
+      "op": "backward",
+      "node": "b0_norm2"
+    },
+    {
+      "op": "drop",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "backward",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b0_v"
+    },
+    {
+      "op": "forward",
+      "node": "b0_context"
+    },
+    {
+      "op": "backward",
+      "node": "b0_proj"
+    },
+    {
+      "op": "drop",
+      "node": "b0_context"
+    },
+    {
+      "op": "backward",
+      "node": "b0_context"
+    },
+    {
+      "op": "drop",
+      "node": "b0_v"
+    },
+    {
+      "op": "backward",
+      "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_probs"
+    },
+    {
+      "op": "forward",
+      "node": "b0_k"
+    },
+    {
+      "op": "forward",
+      "node": "b0_q"
+    },
+    {
+      "op": "backward",
+      "node": "b0_scores"
+    },
+    {
+      "op": "drop",
+      "node": "b0_q"
+    },
+    {
+      "op": "drop",
+      "node": "b0_k"
+    },
+    {
+      "op": "backward",
+      "node": "b0_v"
+    },
+    {
+      "op": "backward",
+      "node": "b0_k"
+    },
+    {
+      "op": "backward",
+      "node": "b0_q"
+    },
+    {
+      "op": "drop",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "backward",
+      "node": "b0_norm1"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 294912,
+    "recompute_cost": 24854528,
+    "forward_cost": 51470336,
+    "backward_cost": 53231616
+  }
+}

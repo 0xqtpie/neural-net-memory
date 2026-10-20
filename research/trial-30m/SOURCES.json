@@ -1,0 +1,43 @@
+{
+  "base_commit": "a1c0374dd15dbef0b81cbe6010088e2c6802f4c9",
+  "git_blob_ids": {
+    "verifier.py": "807e6de6bdcc2eeff76293fa3af2d721fcedcde6",
+    "search.py": "e6b47f93cdc61d14eaf8dbfc7b8ded52deaafaaf",
+    "MODEL.md": "c34e9870fcf926f09d7482a6990c9efa002e1a5e",
+    "records/frontiers.json": "b937225ea6c0570598d9286a6bb9011986989a68"
+  },
+  "core_sha256": {
+    "verifier.py": "104e5e63d1cdb95355153144666292125d64806ee7bf149d0af714b2a47e1015",
+    "search.py": "7e321741e941d239392d2cf0e646c7ea05823a8f81dd2b4379300775c660ad63",
+    "MODEL.md": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e",
+    "records/frontiers.json": "02fe6b6eed802febc2e59d8361bf4735cf41d01e8242ecc00498d5b3a1819d71"
+  },
+  "trial_sources_sha256": {
+    "cache_search.py": "2c2f66be7b49fe05e7a84864e32f91d2310a7acca30dbf0b8fd669bf1be2e58e",
+    "cache_transfer.py": "b58102d921eda9703b7cbe8af84f922433f453ed34696a1f9611950f5029f16a",
+    "check_bounds.py": "acc61b67c3f36d0cc99d02a7142e03885deb5869e43dcfda05d39815370b9534",
+    "dominance_exact.py": "b4790c07735cbc09fbfabadb061c845a9353559c59e0c045bcdb7e63edbb1235",
+    "exact_cnn.py": "d4ba3ca948dab89f8f9b3cffc3209e6ebb62c601cad5fa64c58a6eb7a7598c99",
+    "focused_cache.py": "509285d4be7de6792ff5a0f94204f011098a8cb6588b031a32e8b2d1858a153a",
+    "lifetimes.py": "10538ab33c6859b57ddb299dd28230cb6a5c7d379329a7a8492542dba68db897",
+    "package_results.py": "596043161c3ac75ff14c600c96375ba0ce5d7fc07fdb64ff50cbe285b3d35b4d",
+    "test_trial.py": "bbf796dccb41e10e7832cb2300c9e3162935dc91d47c7a7d1d444d69aac02601",
+    "transfer.py": "155ed225727ad8ae73f9acb6147c4983b2d2f396f4230807f779ef9988071a4f",
+    "trial_search.py": "d41d2fcdf57a985bb2eb4fb62469ed36b05497b9e0719278b5b3fd27a41d6ba5",
+    "verify_trial.py": "194c9acc5d5e564e8743e9156432d3ca08c3d6ff7ca86a2b9a004e8e4251bc3d"
+  },
+  "frozen_graphs_sha256": {
+    "chain6-unit.json": "c2f063aea1002714556075059680d24905d124c8f120af5f19f5400631240ec7",
+    "chain6-weighted.json": "de9bdda2b63eaa4568e7b98a72a530253e976cfac5c2e90efcf378f160b91391",
+    "diamond5.json": "d5dc847c38bc13001a4e324200d9ee2a18605f650f6c3c2a3db28548c0d726f2",
+    "mlp-b4.json": "a79ef876bcf903d9fadf5c6847cf265f923d344876a212065e42cba5d58865a5",
+    "mlp-b8.json": "1e8cfa7109c20ca446365c6f72f12a8b7acd303da24c0ddd3a83ce922b5b5f08",
+    "resnet-b2-c32.json": "0247cc90815488e762b79d131eec3779b0cdf022962c553e449dbfacc1d65ec8",
+    "resnet-b4-c32.json": "35ada9172d58fb658934fca69b41ffaabf55da896901f3f9ed1dcb732b3e8984",
+    "skip6.json": "73d1aaa0fda4b415a5f29063606ba3e63cb609bee37bf5cc20174760a813a377",
+    "stateful4.json": "21a26e0e1f3480294c632625e78142d8836fc6acb017d9ebc3aa280c7b510994",
+    "transformer-b1-t32.json": "6ef3a2c0b40d9f83f6ccb822043ffe162781569dd3333958c7f1e7a2ecba43e6",
+    "transformer-b2-t64.json": "9a22f91c618e7728f160a1d22f2aef717be80a15d4ba08b17c0965d14e716565",
+    "transformer-b4-t128.json": "a1b3a93b491b729515b4deb53b90b4aa8179b218500d88ad5d4eaa2dafa7b455"
+  }
+}

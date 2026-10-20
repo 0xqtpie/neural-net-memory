@@ -1,0 +1,34 @@
+{
+  "card": "none",
+  "catalog_revision": 1,
+  "scope": "30-minute LOCAL donor-yield trial against frozen graph/budget records; random initial cell, checkpoint and adaptive cache search, transfer, bounds and replay",
+  "scope_status": "unchanged",
+  "budget_minutes": 30,
+  "outcome": "positive",
+  "evidence_level": "author-checked",
+  "not_checked": [
+    "Independent reviewer acceptance",
+    "Blind newcomer yield",
+    "GPU execution",
+    "Sustained yield across unrelated workloads",
+    "Comparison against imported modern optimal solver schedules"
+  ],
+  "next_questions": [
+    {
+      "question": "Do independent newcomers improve the updated frontier?",
+      "why_it_matters": "Author familiarity and consumed easy wins limit this trial.",
+      "first_step": "Freeze the proposed updated records and assign three independent 30-minute trials on remaining-tasks.json.",
+      "blocked_by": "Independent contributors and review of this candidate package"
+    },
+    {
+      "question": "Does yield persist on more varied realistic graphs?",
+      "why_it_matters": "Five successful graphs come from only two template families.",
+      "first_step": "Add versioned graph exports with varied shapes, mixed branches and explicit operator semantics, and modern-solver baselines.",
+      "blocked_by": "Model/export fidelity review"
+    }
+  ],
+  "credit": [
+    "Codex local trial"
+  ],
+  "ai_assistance": "Single continuing author agent; no subagents."
+}

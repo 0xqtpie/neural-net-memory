@@ -1,0 +1,2 @@
+PASS: dominance solver matches all 25 tiny exact optima and fails safely at a state limit
+{"budget": 0, "dominance_pruned": 8731, "elapsed_seconds": 1085.653, "event": "dominance_bound", "expanded": 1349, "graph": "resnet-b4-c32", "labels_created": 1562, "logical_states": 1562, "mandatory_regeneration_pruning": true, "object": "research/trial-30m/bounds/resnet-b4-c32-b0-dominance.json", "optimal": true, "peak_bytes": 2621440, "seconds": 0.5018800419056788, "status": "optimum", "upper_bound": 2621440, "utc": "2026-10-20T06:53:51.653345+00:00"}

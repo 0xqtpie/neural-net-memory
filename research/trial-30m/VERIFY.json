@@ -1,0 +1,38 @@
+{
+  "cwd": "repository root",
+  "commands": [
+    [
+      "python3",
+      "research/trial-30m/verify_trial.py",
+      "--reconstruct"
+    ],
+    [
+      "python3",
+      "research/trial-30m/test_trial.py"
+    ],
+    [
+      "python3",
+      "research/trial-30m/check_bounds.py"
+    ],
+    [
+      "python3",
+      "verify_all.py"
+    ]
+  ],
+  "timeout_seconds_per_command": 120,
+  "dependencies": {
+    "python": ">=3.9; tested 3.12.8 and 3.14.6",
+    "external_packages": []
+  },
+  "inputs": [
+    "SOURCES.json",
+    "TRIAL.json",
+    "starting-frontier.json",
+    "candidates.json",
+    "certificates/",
+    "events.jsonl"
+  ],
+  "expected": "All PASS; candidate actions reconstruct exactly; all 25 tiny exact optima match; official frontier unchanged.",
+  "bound_warning": "The schedule checker verifies feasibility, not lower bounds. check_bounds.py recomputes the proposed proof claims.",
+  "no_training_required": true
+}

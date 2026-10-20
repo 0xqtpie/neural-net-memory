@@ -1,0 +1,1 @@
+{"budget": 75694080, "elapsed_seconds": 1097.367, "event": "dominance_bound", "graph": "resnet-b4-c32", "reason": "label limit 500000; NO optimality claim", "seconds": 11.58362449996639, "status": "resource_limit", "utc": "2026-10-20T06:54:03.366751+00:00"}

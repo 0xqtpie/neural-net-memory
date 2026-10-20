@@ -1,0 +1,78 @@
+{
+  "base_commit": "a1c0374dd15dbef0b81cbe6010088e2c6802f4c9",
+  "started_at": "2026-10-20T06:35:46Z",
+  "deadline": "2026-10-20T07:05:46Z",
+  "wall_budget_seconds": 1800,
+  "generated_at": "2026-10-20T07:03:45.603013+00:00",
+  "workload_cells": 35,
+  "initial_open_workload_cells": 29,
+  "improved_cells": 17,
+  "improved_graphs": 5,
+  "historical_verified_improvements": 55,
+  "first_any_improvement_seconds": 123.84354209899902,
+  "first_selected_improvement_seconds": 200.05522894859314,
+  "last_improvement_seconds": 785.3586628437042,
+  "selected_start_peak": 2097152,
+  "selected_final_peak": 1441792,
+  "max_peak_reduction_percent": 37.142857142857146,
+  "checkpoint_policies_evaluated": 56302,
+  "adaptive_policies_attempted": 11113,
+  "adaptive_policies_legal": 22,
+  "newly_closed_cells": [
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 0,
+      "peak_bytes": 622592,
+      "type": "stronger-bound"
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 26615808,
+      "peak_bytes": 294912,
+      "type": "improved-schedule-matches-bound"
+    },
+    {
+      "graph": "transformer-b1-t32",
+      "budget": 53231616,
+      "peak_bytes": 294912,
+      "type": "improved-schedule-matches-bound"
+    },
+    {
+      "graph": "transformer-b2-t64",
+      "budget": 0,
+      "peak_bytes": 2490368,
+      "type": "stronger-bound"
+    },
+    {
+      "graph": "transformer-b4-t128",
+      "budget": 0,
+      "peak_bytes": 10747904,
+      "type": "stronger-bound"
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 0,
+      "peak_bytes": 1572864,
+      "type": "stronger-bound"
+    },
+    {
+      "graph": "resnet-b2-c32",
+      "budget": 37847040,
+      "peak_bytes": 1310720,
+      "type": "stronger-bound"
+    },
+    {
+      "graph": "resnet-b4-c32",
+      "budget": 0,
+      "peak_bytes": 2621440,
+      "type": "stronger-bound"
+    }
+  ],
+  "remaining_open_cells": 21,
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "evidence_level": "author-checked",
+  "fresh_verifier_process_on_every_improvement": true,
+  "blind_newcomer_trial": false,
+  "gpu_validation": false
+}
