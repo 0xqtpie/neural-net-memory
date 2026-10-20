@@ -84,5 +84,8 @@
       "sha256": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e",
       "role": "normative allocation model"
     }
-  ]
+  ],
+  "pinned_heads": {
+    "implementation_and_records": "bda6d744096c1d2c420bb804e46fb61b246991d0"
+  }
 }

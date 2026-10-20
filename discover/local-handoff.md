@@ -12,7 +12,7 @@ comparison. No maintainer has consented. See research/initial/REPORT.md.
   "kind": "handoff",
   "task": "tighten-bounds",
   "scope": "LOCAL pilot follow-up: compatible solver comparison and independent verifier audit",
-  "base": "e2a855381429f495ec669c97ff14e552a348845e",
+  "base": "bda6d744096c1d2c420bb804e46fb61b246991d0",
   "posted_at": "2026-10-20T06:24:37Z",
   "evidence_level": "local-only",
   "request": {
