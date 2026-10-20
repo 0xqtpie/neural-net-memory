@@ -1,0 +1,30 @@
+{
+  "checked_commit": "38a72b036cc1cd31457c1b4814c964b693c3c5b8",
+  "python": "3.12.8",
+  "fresh_clone": true,
+  "source_pins": "PASS",
+  "full_verification": "PASS",
+  "protocol_validation": {
+    "source": "setup/final-check",
+    "conformant": true,
+    "problems": [],
+    "conventions": {
+      "catalog": true,
+      "priority_log": true,
+      "coordination": "manifest has no `coordination` channel",
+      "reproduce": true,
+      "ledger": true,
+      "packages": true
+    },
+    "warnings": [],
+    "manifest_origin": "discover.json",
+    "table": {
+      "rows": 60,
+      "open": 29
+    },
+    "license": "LICENSE"
+  },
+  "independent": false,
+  "evidence_level": "author-checked",
+  "note": "Final source, stronger allocation bounds and task controls replayed locally; this does not establish independent review."
+}
