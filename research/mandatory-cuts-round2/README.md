@@ -1,21 +1,37 @@
 # Exact minimum work from mandatory event cuts
 
-For the unchanged `transformer-b2-t64` graph, every legal trace with peak at
-most 1,245,184 bytes requires at least 26,869,760 additional forward work. The
-included legal schedule attains both numbers. This is an exact secondary-work
-optimum at a fixed peak, not a strict peak-frontier improvement.
+For the unchanged `transformer-b2-t64` graph, a new schedule at **851,968
+bytes** reduces additional forward work from **54,198,272 to 52,035,584
+(3.99%)**. It retains block0's residual1 while training block1, then reuses
+that checkpoint for block0 backward. The full certificate passes the unchanged
+verifier at the original 55,410,688 budget.
 
-The result includes arbitrary recomputation before loss and arbitrary backward
-orders. It strengthens a separately explored restriction to first passes without
-recomputation. It does not alter the graph, cost model, verifier, historical
-records, working frontier, or accepted data.
+Both this schedule and the previous 1,245,184-byte construction have matching
+minimum-recomputation bounds:
 
-The optional solver is OR-Tools 9.15.6755, one worker, random seed 20261021, 30s per
-solve and a 300MB solver memory limit. No solver is required by the existing core.
-The session used an external 350MiB RSS guard; both boundary runs finished in
-about 3s at about 137MiB. No incomplete optimization bound is claimed. The lower
-bound follows from integer `INFEASIBLE` at budget 26,869,759; a matching
-`OPTIMAL` relaxation and unchanged verifier-accepted trace are positive controls.
+| Peak bytes | Exact minimum extra work | Excluded work budget | Schedule source |
+|---:|---:|---:|---|
+|1,245,184|26,869,760|26,869,759|PR10 regional construction|
+|851,968|52,035,584|52,035,583|new retained-residual1 construction|
+
+These are exact secondary-work optima at fixed peaks. The new result improves
+recomputation; it adds no peak reduction. The construction was priced against
+the necessary event relaxation first, then 111 feasible cache sets were scored
+using exact local pattern costs. The winning full trace matches the global
+relaxation. Its regional method comes from PR10; the certificate is
+self-contained and no other PR is required for replay.
+
+The results include arbitrary recomputation before loss and arbitrary backward
+orders. Frozen graphs, model, verifier, and accepted/working records are unchanged.
+Evidence is author-checked within one AI-assisted author team; outside scientific
+review and acceptance are pending.
+
+The optional solver is OR-Tools 9.15.6755, one worker, random seed 20261021,
+30 seconds and 300MB per solve. The original session used an external 350MiB
+RSS guard. Exact integer INFEASIBLE statuses one work unit below each
+construction supply the exclusions; matching OPTIMAL relaxations, full
+verifier replay, and actual-trace mappings are positive controls. No incomplete
+optimization bound is used as an exclusion.
 
 ## Necessary relaxation and proof
 
@@ -86,7 +102,7 @@ memory or elapsed-training speedup is asserted.
 ## Credit and status
 
 Discovery@Home and the problem formulation: Doug Colkitt / @Mister-Meeseeks.
-The positive trace comes from the parallel transformer-regions round2 research,
+The 1,245,184-byte positive trace comes from PR10 transformer-regions round2 research,
 using the trial's certificate/verifier conventions and the prior PR6 regional
 exact solver. The present necessary-event/persistence formulation and correction
 were developed in this round; the tiny chain fixture generator is adapted from
@@ -94,5 +110,4 @@ the parallel ResNet package. Codex AI authored this package and the author team
 checked it. Same-team code/mapping checks are not independent scientific review,
 maintainer acceptance, or accepted frontier records.
 
-Open question: can compact necessary cuts prove other secondary optima without
-large temporal searches? No unresolved larger-graph claim is included here.
+The new 851,968-byte trace was constructed by the parent Codex agent using the same regional machinery, with block0 residual1 retained. Credit PR11 for the local backward-pattern implementation used during cache pricing. Open next question: can similarly compact cuts settle the remaining transformer recomputation optima? No unresolved larger-graph claim is included here.

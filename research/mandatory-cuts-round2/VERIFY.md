@@ -26,3 +26,5 @@ not evidence that persistence is necessary or that the relaxed target is feasibl
 The prefetch test intentionally confirms a rejected naive formulation. It
 demonstrates why the corrected descendant test is needed. Broader unfinished
 large-graph research was excluded from this focused package.
+
+The later middle-peak extension prices a new 851,968-byte schedule at52,035,584 work against the same necessary relaxation. Its one-unit-below exclusion is INFEASIBLE; a matching legal schedule and exact positive optimization are replayed alongside the original case. The extension adds no solver/model change. See replay-two-points.log and RESULTS.json for final portable boundary statuses.

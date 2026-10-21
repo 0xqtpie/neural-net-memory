@@ -2,19 +2,26 @@
   "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
   "sha256": {
     "benchmarks/graphs/transformer-b2-t64.json": "9a22f91c618e7728f160a1d22f2aef717be80a15d4ba08b17c0965d14e716565",
-    "research/mandatory-cuts-round2/README.md": "304e3e04fe975babebb3f0c3b041457c07dbe8d892745a16a6357a45e55a68f5",
-    "research/mandatory-cuts-round2/RESULTS.json": "731300858ea3dae10d085ae57ada6b70f07a785e8a0875d7f94f9c3adf14a0eb",
-    "research/mandatory-cuts-round2/TASK.json": "ab9150b84555b904de5823aef6c8bb8d5b3b518c840ec9e46439a21af559042f",
-    "research/mandatory-cuts-round2/VERIFY.md": "cf842ebb4c266ec735f30069fc142eaedac5b45dde451c2672839fd6b1c47e11",
+    "research/mandatory-cuts-round2/README.md": "ff9a72319dcee94adc2505301f312664a2ba9b6ff7c5ad2450a78d145f8cd58d",
+    "research/mandatory-cuts-round2/RESULTS.json": "381251705fe8b72dbeef158a927ea81778af0e891c13f991da9ea7c01d808dcd",
+    "research/mandatory-cuts-round2/TASK.json": "cff4f751531f55e503917662d49ba6cd0913eb9235ff5cec6e462891d43b9424",
+    "research/mandatory-cuts-round2/VERIFY.md": "b049af5d9ef069886faffbf486a17816840f3aec3e6142f2d5df9b5da6465449",
+    "research/mandatory-cuts-round2/compose_schedule.py": "c1fab376ee723d8f4fae35c600634705275da22e06fcb77183e6873b7f0cd839",
     "research/mandatory-cuts-round2/interval_relaxation.py": "e701bafc8ea1df342ccef17c39bfb26672b8127037ec7ade479ff03acbb495c0",
+    "research/mandatory-cuts-round2/middle-author-review.json": "0f62e3309f57bcf1a2a40c6cfed8207c7b0c011ebc316de117c41625f38a3256",
+    "research/mandatory-cuts-round2/middle-witness.json": "9cba104e24fe4a051ddd25a380c4b23f2622c1caa6ac12ade9b9a69bc2ccb76e",
     "research/mandatory-cuts-round2/positive-witness.json": "1b7840bf50c26e3ac7ebffafe61d1c334cfa68565ebad45a372b3fa482d5dc60",
     "research/mandatory-cuts-round2/prefetch-graph.json": "4741bda3984d1e875e943233f786a46e27d03364fbf8da057bf1f13c0a4145cb",
     "research/mandatory-cuts-round2/prefetch-witness.json": "7a38c8425cc414945de3a5d372a85770c4b65a05ae1b33431360af07c7145993",
-    "research/mandatory-cuts-round2/replay.py": "8b4f6292287aca7c877617a1baf6eadf52452cead769b6435d8a9057a3d60e13",
+    "research/mandatory-cuts-round2/regional_exact.py": "0a6848a76242b0ad06ecda812984413fe9244f80db6456f708f3be8b7dc88109",
+    "research/mandatory-cuts-round2/replay-two-points.log": "f19a3c898002ee0d183168e9c340821020ae0e0a7c04cc60a18fcc95dfeb1a4b",
+    "research/mandatory-cuts-round2/replay.py": "a33325436fd25664b517dda40d63b71700b8e8ed62f643c98d76fcca90e1df5c",
     "research/mandatory-cuts-round2/requirements-optional.txt": "672c02ea3f723bea4a8e39643caab8c57c513418c812767096ebed55224240cf",
     "research/mandatory-cuts-round2/test_interval_relaxation.py": "bafba171b67f6d3ce72c27b1b4bca6422700da5259b00f39316f3da6f0c4facf",
+    "research/mandatory-cuts-round2/tests-two-points.log": "162d7e9042654835c665422be687684119139286a4ff038afb398ea49a04f015",
     "research/mandatory-cuts-round2/tests.log": "c9b7f84141086f2354e2933cb0171f3e66f2ac8a5931b2167f4fb658d14fa90d",
     "search.py": "7e321741e941d239392d2cf0e646c7ea05823a8f81dd2b4379300775c660ad63",
     "verifier.py": "104e5e63d1cdb95355153144666292125d64806ee7bf149d0af714b2a47e1015"
-  }
+  },
+  "copied_construction_source": "PR10 head8708acf9a31aef369330974e99f7ff78004297b4; regional_exact.py and compose_schedule.py unchanged, by same author team"
 }
