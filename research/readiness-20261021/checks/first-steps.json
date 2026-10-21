@@ -1,0 +1,110 @@
+[
+  {
+    "task": "reproduce-frontier",
+    "command": [
+      "python3",
+      "run_suite.py",
+      "check",
+      "--exact"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 1.333172082901001,
+    "output": "PASS: 60 frontier rows; 418 baseline certificates; exact optimality recomputed\n"
+  },
+  {
+    "task": "harden-verifier",
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 1.4130538329482079,
+    "output": "erifier.VerifierTests.test_hand_accounting) ... ok\ntest_hash_binding_and_budget_binding (test_verifier.VerifierTests.test_hash_binding_and_budget_binding) ... ok\ntest_invalid_actions (test_verifier.VerifierTests.test_invalid_actions) ... ok\ntest_missing_backward_dependency (test_verifier.VerifierTests.test_missing_backward_dependency) ... ok\ntest_missing_forward_dependency (test_verifier.VerifierTests.test_missing_forward_dependency) ... ok\ntest_multiple_sinks_required_at_loss (test_verifier.VerifierTests.test_multiple_sinks_required_at_loss) ... ok\ntest_no_bool_metric_or_budget (test_verifier.VerifierTests.test_no_bool_metric_or_budget) ... ok\ntest_random_small_dags_exact_vs_certificates (test_verifier.VerifierTests.test_random_small_dags_exact_vs_certificates) ... ok\ntest_recompute_budget_and_cost (test_verifier.VerifierTests.test_recompute_budget_and_cost) ... ok\ntest_seed_reproducibility (test_verifier.VerifierTests.test_seed_reproducibility) ... ok\ntest_simultaneous_input_output (test_verifier.VerifierTests.test_simultaneous_input_output) ... ok\ntest_bound_contradicting_witness_is_rejected (test_working_frontier.WorkingFrontierTests.test_bound_contradicting_witness_is_rejected) ... ok\ntest_incorrect_proposal_metrics_are_rejected (test_working_frontier.WorkingFrontierTests.test_incorrect_proposal_metrics_are_rejected) ... ok\ntest_known_results_and_solved_rows_are_inherited (test_working_frontier.WorkingFrontierTests.test_known_results_and_solved_rows_are_inherited) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 1.204s\n\nOK\n"
+  },
+  {
+    "task": "search-transformers",
+    "command": [
+      "python3",
+      "run_suite.py",
+      "check",
+      "--graph",
+      "transformer-b2-t64"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.27207970805466175,
+    "output": "PASS: 5 frontier rows; 59 baseline certificates; exact optimality not rerun (witness check only)\n"
+  },
+  {
+    "task": "search-cnn-mlp",
+    "command": [
+      "python3",
+      "run_suite.py",
+      "check",
+      "--graph",
+      "mlp-b8"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.25940433400683105,
+    "output": "PASS: 5 frontier rows; 51 baseline certificates; exact optimality not rerun (witness check only)\n"
+  },
+  {
+    "task": "tighten-bounds",
+    "command": [
+      "python3",
+      "run_suite.py",
+      "check",
+      "--graph",
+      "diamond5",
+      "--exact"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.17160191596485674,
+    "output": "PASS: 5 frontier rows; 13 baseline certificates; exact optimality recomputed\n"
+  },
+  {
+    "task": "audit-workload-model",
+    "command": [
+      "python3",
+      "generate.py",
+      "--check"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.13837266701739281,
+    "output": "PASS: 12 deterministic graphs; 60 challenges\n"
+  },
+  {
+    "task": "replicate-checkpointing",
+    "command": [
+      "python3",
+      "baseline_replication.py",
+      "--check"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.1879060830688104,
+    "output": "PASS: square-root segmentation on lengths 16, 64, 256\n"
+  },
+  {
+    "task": "audit-frontier-sources",
+    "command": [
+      "python3",
+      "project_tools.py",
+      "sources"
+    ],
+    "interpreter_substitution": false,
+    "returncode": 0,
+    "seconds": 0.1491952909855172,
+    "output": "PASS: 8 primary-source index entries; this checks metadata, not literature conclusions\n"
+  }
+]

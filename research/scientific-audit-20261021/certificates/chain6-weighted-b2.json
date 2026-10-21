@@ -1,0 +1,116 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "chain6-weighted",
+  "graph_sha256": "5805f932ee0501060a8c1f89b032663af460d0a37e07a2fc0d381ccae840c78b",
+  "budget": 2,
+  "method": "CP-SAT time-indexed v1",
+  "metadata": {
+    "status": "OPTIMAL",
+    "horizon": 23,
+    "seconds": 0.15291487495414913,
+    "limit_seconds": 15.0,
+    "workers": 1,
+    "seed": 20261021,
+    "best_bound_bytes": 19,
+    "peak_bytes": 19,
+    "recompute_cost": 2,
+    "forward_cost": 11,
+    "backward_cost": 18,
+    "graph": "chain6-weighted",
+    "budget": 2,
+    "baseline_peak_bytes": 19,
+    "baseline_method": "checkpoint-sequential-2",
+    "reference_exact_peak_bytes": 19
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "drop",
+      "node": "n2"
+    },
+    {
+      "op": "forward",
+      "node": "n4"
+    },
+    {
+      "op": "forward",
+      "node": "n5"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "backward",
+      "node": "n5"
+    },
+    {
+      "op": "drop",
+      "node": "n4"
+    },
+    {
+      "op": "backward",
+      "node": "n4"
+    },
+    {
+      "op": "drop",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n3"
+    },
+    {
+      "op": "backward",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n1"
+    },
+    {
+      "op": "drop",
+      "node": "n0"
+    },
+    {
+      "op": "drop",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n0"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 19,
+    "recompute_cost": 2,
+    "forward_cost": 11,
+    "backward_cost": 18
+  }
+}

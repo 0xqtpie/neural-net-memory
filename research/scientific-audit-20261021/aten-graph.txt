@@ -1,0 +1,10 @@
+graph():
+    %p_up_weight : [num_users=1] = placeholder[target=p_up_weight]
+    %p_down_weight : [num_users=1] = placeholder[target=p_down_weight]
+    %x : [num_users=2] = placeholder[target=x]
+    %linear : [num_users=1] = call_function[target=torch.ops.aten.linear.default](args = (%x, %p_up_weight), kwargs = {})
+    %relu : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%linear,), kwargs = {})
+    %linear_1 : [num_users=1] = call_function[target=torch.ops.aten.linear.default](args = (%relu, %p_down_weight), kwargs = {})
+    %add : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%linear_1, %x), kwargs = {})
+    %relu_1 : [num_users=1] = call_function[target=torch.ops.aten.relu.default](args = (%add,), kwargs = {})
+    return (relu_1,)

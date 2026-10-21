@@ -1,0 +1,97 @@
+{
+  "model": "activation-memory/v1",
+  "id": "exported-residual-mlp-8x64x256-v1",
+  "inputs": [
+    {
+      "id": "x",
+      "bytes": 2048
+    }
+  ],
+  "nodes": [
+    {
+      "id": "up",
+      "deps": [
+        "x"
+      ],
+      "bytes": 8192,
+      "cost": 1,
+      "backward_cost": 1,
+      "recomputable": true,
+      "backward_requires": [
+        "x"
+      ],
+      "kind": "up"
+    },
+    {
+      "id": "relu",
+      "deps": [
+        "up"
+      ],
+      "bytes": 8192,
+      "cost": 1,
+      "backward_cost": 1,
+      "recomputable": true,
+      "backward_requires": [
+        "relu"
+      ],
+      "kind": "relu"
+    },
+    {
+      "id": "down",
+      "deps": [
+        "relu"
+      ],
+      "bytes": 2048,
+      "cost": 1,
+      "backward_cost": 1,
+      "recomputable": true,
+      "backward_requires": [
+        "relu"
+      ],
+      "kind": "down"
+    },
+    {
+      "id": "add",
+      "deps": [
+        "down",
+        "x"
+      ],
+      "bytes": 2048,
+      "cost": 1,
+      "backward_cost": 1,
+      "recomputable": true,
+      "backward_requires": [],
+      "kind": "<built-in function add>"
+    },
+    {
+      "id": "out",
+      "deps": [
+        "add"
+      ],
+      "bytes": 2048,
+      "cost": 1,
+      "backward_cost": 1,
+      "recomputable": true,
+      "backward_requires": [
+        "out"
+      ],
+      "kind": "out"
+    }
+  ],
+  "outputs": [
+    "out"
+  ],
+  "provenance": {
+    "source": "Executed ResidualMLP in export_workload.py",
+    "seed": 20261021,
+    "torch": "2.10.0",
+    "shape": [
+      8,
+      64
+    ],
+    "hidden_width": 256,
+    "dtype": "float32",
+    "cost_unit": "one forward operator invocation; not FLOPs or elapsed time",
+    "scope": "Distinct logical operator outputs and saved activation dependencies. Excludes parameters, gradients, backward temporaries, allocator/workspaces; not hardware peak memory."
+  }
+}

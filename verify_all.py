@@ -14,6 +14,7 @@ def main():
         ["run_suite.py", "check", "--exact"],
         ["baseline_replication.py", "--check"],
         ["project_tools.py", "summary"],
+        ["current_frontier.py", "--bounds"],
         ["project_tools.py", "sources"],
         ["project_tools.py", "controls"],
     ]

@@ -1,7 +1,7 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Under activation-memory/v1, 60 graph/budget rows have exact verified schedule scores; 25 tiny optima are established by exhaustive minimax search, and 6 workload rows meet a certified allocation lower bound. 17/35 workload rows improve the included tuned baseline families; no external SOTA or GPU claim.",
-  "status": "Published initial snapshot; author-checked. Trial proposals are in research/trial-30m; independent review and reconciliation pending; donor launch paused.",
+  "statement": "Under activation-memory/v1, 60 fixed graph/budget rows include the 17 trial schedule improvements and eight newly closed cases: 39 settled model cases and 21 open cases. Known author-checked results, pending independent review; no GPU or external SOTA claim.",
+  "status": "Open to donated sessions; reconciled working targets include known proposals without claiming independent scientific acceptance.",
   "evidence_level": [
     "author-checked"
   ],
@@ -25,15 +25,15 @@
     }
   ],
   "review": "discover/ledger.md",
-  "updated_on": "2026-10-20",
+  "updated_on": "2026-10-21",
   "reproduce": "python3 verify_all.py",
-  "reproduce_full": "python3 run_suite.py build && python3 verify_all.py",
+  "reproduce_full": "python3 verify_all.py && python3 research/trial-30m/verify_trial.py --reconstruct",
   "reproduce_minutes": 2,
   "prerequisites": [
     "Python 3.9+; standard library only; no GPU, weights or training data"
   ],
   "table": {
-    "path": "records/frontiers.json",
+    "path": "records/working-frontiers.json",
     "key": [
       "graph",
       "budget"
@@ -44,13 +44,11 @@
     "object": "object",
     "check_row": [
       "python3",
-      "run_suite.py",
-      "check",
+      "current_frontier.py",
       "--graph",
       "{graph}",
       "--budget",
-      "{budget}",
-      "--exact"
+      "{budget}"
     ],
     "check_row_minutes": 1,
     "by": "by",
@@ -83,6 +81,11 @@
       "path": "MODEL.md",
       "sha256": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e",
       "role": "normative allocation model"
+    },
+    {
+      "path": "records/working-frontiers.json",
+      "sha256": "88cb5c9edd9c9905ae4b24b79ce6affdac8495c7babd7c13d2ea8a83a6292cb8",
+      "role": "reconciled working targets; original experimental records remain frozen"
     }
   ],
   "pinned_heads": {

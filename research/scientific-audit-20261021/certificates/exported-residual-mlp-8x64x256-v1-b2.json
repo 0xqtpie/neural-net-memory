@@ -1,0 +1,80 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "exported-residual-mlp-8x64x256-v1",
+  "graph_sha256": "6e4c0e719f5baaec5f6ddb1e5a37391a2aa6008b2c72b60ffe33ed696cce083b",
+  "budget": 2,
+  "method": "CP-SAT time-indexed v1",
+  "metadata": {
+    "status": "OPTIMAL",
+    "horizon": 20,
+    "seconds": 0.04069649998564273,
+    "limit_seconds": 15.0,
+    "workers": 1,
+    "seed": 20261021,
+    "best_bound_bytes": 18432,
+    "peak_bytes": 18432,
+    "recompute_cost": 0,
+    "forward_cost": 5,
+    "backward_cost": 5,
+    "graph": "exported-residual-mlp-8x64x256-v1",
+    "budget": 2,
+    "baseline_peak_bytes": 18432,
+    "baseline_method": "checkpoint-sequential-2",
+    "reference_exact_peak_bytes": 18432
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "up"
+    },
+    {
+      "op": "forward",
+      "node": "relu"
+    },
+    {
+      "op": "drop",
+      "node": "up"
+    },
+    {
+      "op": "forward",
+      "node": "down"
+    },
+    {
+      "op": "forward",
+      "node": "add"
+    },
+    {
+      "op": "forward",
+      "node": "out"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "backward",
+      "node": "out"
+    },
+    {
+      "op": "backward",
+      "node": "add"
+    },
+    {
+      "op": "backward",
+      "node": "down"
+    },
+    {
+      "op": "backward",
+      "node": "relu"
+    },
+    {
+      "op": "backward",
+      "node": "up"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 18432,
+    "recompute_cost": 0,
+    "forward_cost": 5,
+    "backward_cost": 5
+  }
+}

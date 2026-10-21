@@ -1,0 +1,25 @@
+{
+  "project": "neural-net-memory",
+  "date": "2026-10-21",
+  "base_commit": "dbf39e36f020a6b68f64c11a586bf6eea3a60428",
+  "remote_main_at_fetch": "8d475bf7c9c88d05bc14bb8533266d067b4ce002",
+  "base_includes_open_launch_pr": "https://github.com/discoveryathome/neural-net-memory/pull/1",
+  "assessment_scope": "Coordinator code/document review and executed local checks; not an independent cold contributor study or external scientific signoff",
+  "recommendation": "Monitored computational-model beta; benchmark fidelity remains central",
+  "finding": "The picker drew from the original experiment table, advertising weaker scores and cases closed by the trial. Replacing that table directly would invalidate the frozen trial and initial-yield calculations.",
+  "changes": [
+    "Added a reproducible working table incorporating all 17 schedule improvements and eight newly closed cases: 39 settled model cases, 21 open.",
+    "The picker and frontier descriptor use the working table. The original records, certificate histories and scientific evidence labels remain intact.",
+    "Added working-table validation, regression tests for inherited scores/closed-case exclusion, and a read-only replay of the trial bound proofs to the full verification path.",
+    "Specified bounded operator-fidelity and compatible-solver comparison tasks before expanding the workload collection."
+  ],
+  "validation": "Complete offline suite passed; all 55 historical improvement certificates and 17 winning schedules replayed; recorded bounds recomputed; all 21 eligible bound-track rows exercised; incorrect metrics and contradictory bounds rejected; schema validation passed.",
+  "next_step": "Independent model/bound review, one audited operator-level training graph export and a compatible modern-solver comparison. Fresh agents should then work from the reconciled table.",
+  "external_acceptance_test": "Audit the precise allocation/recomputation model, reconcile one actual workload export with a hand-checked fixture, and compare a modern solver under identical semantics. Report modeled activation results separately from hardware memory.",
+  "remote_writes": false,
+  "active_task_first_steps": {
+    "checked": 8,
+    "passed": 8,
+    "note": "Asteroid commands used an existing pinned environment instead of a cold install; see command receipts."
+  }
+}

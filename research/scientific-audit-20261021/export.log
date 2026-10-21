@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "evidence_level": "author-checked; independent review pending",
+  "torch": "2.10.0",
+  "python": "3.12.8",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "seed": 20261021,
+  "threads": 1,
+  "graph_sha256": "6e4c0e719f5baaec5f6ddb1e5a37391a2aa6008b2c72b60ffe33ed696cce083b",
+  "distinct_contiguous_activation_storages": true,
+  "hooked_vs_unhooked_gradients_exact": true,
+  "direct_matrix_calculus_gradients_match": true,
+  "hand_checked_backward_requirements": {
+    "up": [
+      "x"
+    ],
+    "relu": [
+      "relu"
+    ],
+    "down": [
+      "relu"
+    ],
+    "add": [],
+    "out": [
+      "out"
+    ]
+  },
+  "activations": {
+    "x": {
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    },
+    "up": {
+      "shape": [
+        8,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 8192,
+      "storage_bytes": 8192,
+      "contiguous": true,
+      "offset": 0
+    },
+    "relu": {
+      "shape": [
+        8,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 8192,
+      "storage_bytes": 8192,
+      "contiguous": true,
+      "offset": 0
+    },
+    "down": {
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    },
+    "add": {
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    },
+    "out": {
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    }
+  },
+  "saved_tensors": [
+    {
+      "owner": "up",
+      "class": "parameter",
+      "name": "up.weight",
+      "shape": [
+        64,
+        256
+      ],
+      "stride": [
+        1,
+        64
+      ],
+      "bytes": 65536,
+      "storage_bytes": 65536,
+      "contiguous": false,
+      "offset": 0
+    },
+    {
+      "owner": "up",
+      "class": "activation",
+      "name": "x",
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    },
+    {
+      "owner": "relu",
+      "class": "activation",
+      "name": "relu",
+      "shape": [
+        8,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 8192,
+      "storage_bytes": 8192,
+      "contiguous": true,
+      "offset": 0
+    },
+    {
+      "owner": "down",
+      "class": "parameter",
+      "name": "down.weight",
+      "shape": [
+        256,
+        64
+      ],
+      "stride": [
+        1,
+        256
+      ],
+      "bytes": 65536,
+      "storage_bytes": 65536,
+      "contiguous": false,
+      "offset": 0
+    },
+    {
+      "owner": "down",
+      "class": "activation",
+      "name": "relu",
+      "shape": [
+        8,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 8192,
+      "storage_bytes": 8192,
+      "contiguous": true,
+      "offset": 0
+    },
+    {
+      "owner": "out",
+      "class": "activation",
+      "name": "out",
+      "shape": [
+        8,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "bytes": 2048,
+      "storage_bytes": 2048,
+      "contiguous": true,
+      "offset": 0
+    }
+  ],
+  "parameter_bytes_excluded": 131072,
+  "limitations": [
+    "One bias-free residual feed-forward block, not a production model suite.",
+    "FX operator-level trace includes Linear as one operator; ATen export is also retained.",
+    "No claim that an optimized abstract schedule is executed by autograd.",
+    "No GPU or total training peak measurement; backward and intra-operator temporaries excluded."
+  ]
+}
