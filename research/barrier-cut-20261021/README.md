@@ -1,134 +1,99 @@
-# A stronger memory floor for transformer-b4-t128
+# Proposed budget bounds for transformer-b4-t128
 
-**Author-checked bound proposal:** every legal schedule for the unchanged
-`transformer-b4-t128` graph needs at least **1,310,720 activation bytes**, at every
-recomputation budget. This raises three working lower bounds from 1,179,648.
-It does not improve any fixed-budget schedule or settle the selected row.
-The selected budget 956,301,312 now has the proposed interval
-**[1,310,720, 1,441,792]**, halving the previous 262,144-byte gap.
-Existing graphs, model semantics, certificates and records are unchanged.
+An author-checked mathematical proposal raises three working memory bounds from
+1179648 to **1441792 bytes** at their fixed work budgets. At budget 956301312,
+that matches Doug Colkitt's existing 11-chunk witness and proposes optimality.
+The global charging argument still needs independent mathematical review.
+`budget_cut.py` checks its finite structural lemma and arithmetic, and
+`BUDGET-PROOF.md` gives the complete argument and its review obligations.
 
-| Additional-forward budget | Working lower bound | Proposed bound | Existing witness |
+| Extra-forward budget | Working bound | Proposed bound | Existing witness |
 |---:|---:|---:|---:|
-| 239,075,328 | 1,179,648 | 1,310,720 | 2,883,584 |
-| 478,150,656 | 1,179,648 | 1,310,720 | 1,835,008 |
-| 956,301,312 (selected) | 1,179,648 | 1,310,720 | 1,441,792 |
+| 239075328 |1179648 |1441792 |2883584 |
+| 478150656 |1179648 |1441792 |1835008 |
+| 956301312 (selected) |1179648 |1441792 |1441792 |
 
-The bound is weaker than the existing bounds at budgets 0 and 119,537,664;
-those rows have no proposed change. This package proposes results for review;
-it does not update the project's record of accepted results.
+The related `../retention-transfer-20261021` package improves the actual 478150656
+schedule to 1703936 bytes and 421494784 extra work. This bound package credits the
+predecessor's unchanged high-budget witness. Neither package edits accepted or
+working records, graph hashes, model semantics, or the core verifier.
 
-## Proof
+## Universal floor and budget-sensitive extension
 
-Let `u = 131,072` bytes. The immutable input `x` occupies `u`.
-In the first block, `scores`, `probs`, `up`, and `gelu` each occupy `4u`.
-Forward outputs allocate before any input can be dropped (MODEL.md).
-Consequently, under a hypothetical peak cap `9u`, executing either `probs`
-or `gelu` forces the **entire** live set to be exactly:
+Let `u =131072` bytes. Allocating probabilities holds scores(4u), probabilities(4u)
+and immutable x(u). Allocating GELU similarly holds UP(4u), GELU(4u), and x(u).
+At a 9u cap either event fills memory. Take the last such event before block 0's
+residual join. One necessary join input cannot be reached without another event
+from that set. This proves the universal floor 10u =1310720 bytes, even with
+unlimited recomputation. `reset_cut.py` reconstructs this last-barrier cut;
+`cut.json` records its forced states and unrestricted forward closures.
 
-- `probs`: `{x, b0_scores, b0_probs}`;
-- `gelu`: `{x, b0_up, b0_gelu}`.
+At 10u, one extra unit tensor can survive a barrier. Enumerating all 820 relaxed
+cases shows that every later block's output production has a last GELU allocation
+whose only extra survivor is that block's residual1. Every earlier block tensor
+is absent there. The charging proof uses three nested prefix replays and additional
+attention/UP operations. With `F =119537664` and `C =8388608`, it proposes:
 
-Both events are strict ancestors of the mandatory `b0_residual2` forward.
-Consider the **last** of these two events before `b0_residual2` first executes.
-There must be such an event, regardless of execution ordering or replay count.
+```
+minimum extra work at peak <=10u: 6F +32C =985661440
+```
 
-If it is `probs`, no GELU output is live. Without another GELU execution,
-`b0_down` cannot be produced. If it is `gelu`, no attention result is live.
-Without another `probs` execution, `b0_context`, `b0_proj`, and
-`b0_residual1` cannot be produced. In either case `b0_residual2` cannot acquire
-both of its inputs. This contradicts the choice of the last event.
-
-Thus peak `9u` is impossible, even with unlimited recomputation. Every allocation
-is an integer multiple of `u`, so the next possible peak is `10u = 1,310,720`.
-Backward or budget constraints cannot weaken this forward-only obstruction.
-
-`reset_cut.py` generalizes the argument: find mandatory ancestor events whose
-local input/output allocation saturates a candidate cap. For each possible last
-event, compute the unrestricted forward closure of its forced live set while
-forbidding all events in the set. Failure to reach a mandatory target for **every**
-last event certifies the cut. The closure relaxes all other memory, work and
-non-recomputability constraints, so it over-approximates legal continuations.
-`cut.json` records the exact live sets, closures, graph hash and allocation quantum.
-The checker validates these premises; it does not trust a stored bound alone.
-This is a mathematical argument with executable checks, not a machine-checked proof
-or independently reviewed result.
+Every fixed budget in the table is below that threshold. Whole-chunk allocations
+then give a lower bound of 11u =1441792. The checker recomputes the survivor cases,
+verifies the frozen graph and costs, and checks the arithmetic. The temporal
+charging argument is author-reviewed mathematics, not proof-assistant validation.
+Read `BUDGET-PROOF.md`, particularly its treatment of prefetch and disjoint charges,
+before accepting the optimum proposal.
 
 ## Replay
 
-From the repository root, using Python 3.9+ and the standard library:
+From repository root, Python 3.9+ and standard library only:
 
 ```sh
 python3 research/barrier-cut-20261021/verify_result.py
 python3 -m unittest discover -s research/barrier-cut-20261021 -p 'test_*.py' -v
-python3 research/barrier-cut-20261021/reset_cut.py benchmarks/graphs/transformer-b4-t128.json --check research/barrier-cut-20261021/cut.json
+python3 research/barrier-cut-20261021/budget_cut.py benchmarks/graphs/transformer-b4-t128.json --check research/barrier-cut-20261021/budget-cut.json
 python3 verify_all.py
 ```
 
-Controls include the 25 fixed tiny rows; an exact six-node residual example
-with optimum 10 and a no-join example with optimum 9; invalid-bound, missing-barrier,
-nonancestor, stale-hash and boolean-cap rejection; and 146 small forward-only
-DAG cases checked by a separately written exhaustive minimax enumerator.
-The cut applies in 26 of those 146 cases and never exceeds their forward optima.
-That enumerator relaxes backward and work budgets and is stronger validation of a
-forward-only obstruction than comparison solely to backward-constrained optima.
-All checks remain author checks, including the separately written enumerator.
+Checks include wrong bound/count/survivor/hash/boolean rejection; the 820 survivor
+cases; existing fixed-budget witnesses; the auxiliary 10u witness; and an exact
+14-node regional control whose 10u minimum extra work is 85032960. The original
+9u cut has 25 tiny-row controls and 146 small forward-pebbling differential cases,
+26 of which admit the cut. These are all author checks.
 
-## Construction attempts and favorable pricing
+## Construction attempts and pricing
 
-Before search, the favorable fully charged relaxation included all first-forward
-work (478,150,656), fixed backward work (956,301,312, outside the extra-forward
-budget), immutable input, loss sink and output-before-input-free transients.
-At a 10u loss cap, retaining the most own-forward work in the remaining bytes
-still forces at least 209,682,432 extra work units after loss. This favorable
-floor relaxes dependency and repeated replays; it did not rule out the target.
-It was never a construction or a guarantee of attainable cost.
+The initial favorable loss relaxation priced mandatory first forwards, immutable
+input, the sink, allocation transients, and at least each absent backward-required
+value's own replay cost. At 10u it gave 209682432 extra work, which left the target
+plausible. It relaxed dependencies and repeated evictions and was never a schedule.
+Bounded forward/reverse beam searches and finite-slot integer repairs did not
+produce a10u fixed-budget witness. Their limits did not establish impossibility.
+The budget charging argument is separate evidence.
 
-An offline beam prototype branched over retained-value states, dependency order
-and minimal sufficient eviction sets, with a fixed topological first-forward
-order and reverse backward order. At cap 10u and the drawn budget, widths
-128/16 and 1024/64 both exhausted retained labels during block-2 backward.
-These truncated searches do **not** prove infeasibility. A cap-11u control with
-widths 128/16 hit its 45-second limit despite an already known legal witness;
-this is an explicit limitation of the prototype, which is not shipped as a solver.
-The existing 11u witness itself was successfully replayed with the project verifier.
-Search limits are wall-time safeguards, not controlled performance comparisons.
-
-**Auxiliary challenge outside the fixed suite:** relaxing the budget for a diagnostic
-run produced a 10u witness costing **1,258,192,896** extra work units. It is stored
-in `certificates/auxiliary-budget.json` with its actual cost as its declared budget.
-It misses the selected budget by **301,891,584** and is **not an improvement on any
-fixed suite row**. It does demonstrate that the memory floor can be attained with
-more compute. Replaying its explicit actions, rather than reconstructing the
-heuristic's trajectory, is this auxiliary witness's reproduction contract.
-The failed-search prototype and raw session logs remain in the donor's local
-session evidence; `TASK.json` records parameters and outcomes.
+The auxiliary certificate uses 10u at its actual extra-work budget 1258192896,
+exceeding the selected budget by 301891584. It demonstrates the universal floor
+can be attained with more work and is consistent with the 985661440 lower bound.
+It is not a schedule improvement on a fixed suite row. Original beam parameters
+and outcomes remain in `TASK.json`; raw unsuccessful trajectories are local
+session evidence. No solver-speed or hardware-memory comparison is claimed.
 
 ## Open next questions
 
-- Can a 10u schedule reduce the auxiliary extra cost by 301,891,584 to meet the
-  selected 956,301,312 budget? Start with the auxiliary action trace and identify
-  repeated prefix regenerations; preserve the exact graph and allocation rules.
-- Alternatively, can a budget-sensitive cut prove that 10u is impossible at the
-  selected budget, matching the existing 11u witness? Truncated beam failure is
-  insufficient; a complete relaxation or auditable exact argument is required.
-- Independently review the last-event argument and the closure check before
-  promoting the proposed bounds.
-
-## Provenance and credit
+Independently review the finite separator lemma and the global charging proof.
+A legal 10u schedule below 985661440 extra work would refute the proposed bound.
+For an actual schedule improvement, the remaining useful target is 12u at budget
+478150656; the current new witness uses 13u. Global minimum work at 10u above the
+threshold, formal proof translation, autograd saved-state fidelity, and native
+Checkmate/DTR/Moccasin comparisons remain open.
 
 Base: `a95cc1588fc57a07cfcf5a350206825e6f5b4b52`.
-Seed: `dafc4be0863b7654352ffb2ba4a4d2df`.
-The original project picker drew model fidelity; after the donor clarified the
-numerical-frontier priority, a documented restriction to the two numerical tracks
-selected this graph/budget with the same seed. This is an explicit scope change,
-not an output of the unmodified picker. Details are in `TASK.json`.
-
-Work by the donor's Codex AI agent for @0xqtpie. Credit Doug Colkitt
-(@Mister-Meeseeks), the project's model and standalone verifier, the trial's stronger
-working schedules and local/knapsack/zero-budget bounds, and its 4,000-attempt
-failed focused cache campaign. The trial's 11u witness supplies the upper bound
-used here. `SOURCES.json` pins these predecessors. Pebbling and rematerialization
-have extensive prior art, including Checkmate and Moccasin; this package claims a
-new checked result for this project's graph, not a new optimization problem or
-general state of the art. No GPU, total training-memory, or runtime-saving claim.
+Seed: `dafc4be0863b7654352ffb2ba4a4d2df`. The original fidelity draw was released;
+a documented numerical-track projection selected this graph/budget with the same
+seed. The user later explicitly assigned the related fixed-budget schedule work.
+`TASK.json` preserves that history. Codex AI agent for @0xqtpie authored this
+package. Credit @Mister-Meeseeks for the model/verifier, trial schedules and prior
+bounds, especially the 11u upper-bound witness. `SOURCES.json` pins predecessors.
+This is a new result proposal for this graph, with extensive pebbling and
+rematerialization prior art; it makes no external SOTA or total-training-memory claim.

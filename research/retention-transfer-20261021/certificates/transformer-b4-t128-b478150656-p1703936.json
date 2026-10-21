@@ -3,25 +3,41 @@
   "graph_id": "transformer-b4-t128",
   "graph_sha256": "7d60aaf32c25d4d000872f9d317cdb0cbc71c929307eb69faf7e974c795d5854",
   "budget": 478150656,
-  "method": "optional-slot-rematerialization",
+  "method": "exact-region-composition",
   "metadata": {
-    "status": "OPTIMAL",
-    "seconds": 0.12126566597726196,
-    "slots": 229,
-    "forward_slots": 172,
-    "cap": 1703936,
-    "budget": 478150656,
-    "workers": 1,
-    "seed": 20261021,
-    "solver": "OR-Tools 9.15.6755",
     "global_optimal": false,
-    "scope": "supplied finite forward slots; fixed backward order",
-    "best_bound_forward_cost": 899842048.0,
-    "peak_bytes": 1703936,
-    "recompute_cost": 421691392,
-    "forward_cost": 899842048,
-    "backward_cost": 956301312,
-    "expansion": "none"
+    "scope": "fixed block order; all block-entry checkpoints retained; exact one-block regions",
+    "regions": [
+      {
+        "block": 3,
+        "kind": "full-training",
+        "local_cap": 1310720,
+        "recompute_cost": 85032960,
+        "states": 38555
+      },
+      {
+        "block": 2,
+        "kind": "backward-tail",
+        "local_cap": 1441792,
+        "recompute_cost": 120651776,
+        "states": 21559
+      },
+      {
+        "block": 1,
+        "kind": "backward-tail",
+        "local_cap": 1572864,
+        "recompute_cost": 112099328,
+        "states": 20773
+      },
+      {
+        "block": 0,
+        "kind": "backward-tail",
+        "local_cap": 1703936,
+        "recompute_cost": 103710720,
+        "states": 29319
+      }
+    ],
+    "seconds": 0.4077616250142455
   },
   "actions": [
     {
@@ -41,8 +57,20 @@
       "node": "b0_scores"
     },
     {
+      "op": "drop",
+      "node": "b0_k"
+    },
+    {
+      "op": "drop",
+      "node": "b0_q"
+    },
+    {
       "op": "forward",
       "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_scores"
     },
     {
       "op": "forward",
@@ -50,7 +78,7 @@
     },
     {
       "op": "drop",
-      "node": "b0_scores"
+      "node": "b0_norm1"
     },
     {
       "op": "forward",
@@ -59,6 +87,10 @@
     {
       "op": "drop",
       "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_v"
     },
     {
       "op": "forward",
@@ -73,20 +105,12 @@
       "node": "b0_residual1"
     },
     {
+      "op": "drop",
+      "node": "b0_proj"
+    },
+    {
       "op": "forward",
       "node": "b0_norm2"
-    },
-    {
-      "op": "drop",
-      "node": "b0_k"
-    },
-    {
-      "op": "drop",
-      "node": "b0_norm1"
-    },
-    {
-      "op": "drop",
-      "node": "b0_q"
     },
     {
       "op": "forward",
@@ -95,14 +119,6 @@
     {
       "op": "drop",
       "node": "b0_norm2"
-    },
-    {
-      "op": "drop",
-      "node": "b0_proj"
-    },
-    {
-      "op": "drop",
-      "node": "b0_v"
     },
     {
       "op": "forward",
@@ -362,26 +378,6 @@
     },
     {
       "op": "forward",
-      "node": "b3_scores"
-    },
-    {
-      "op": "drop",
-      "node": "b3_k"
-    },
-    {
-      "op": "drop",
-      "node": "b3_q"
-    },
-    {
-      "op": "forward",
-      "node": "b3_probs"
-    },
-    {
-      "op": "drop",
-      "node": "b3_scores"
-    },
-    {
-      "op": "forward",
       "node": "b3_v"
     },
     {
@@ -390,15 +386,35 @@
     },
     {
       "op": "forward",
-      "node": "b3_context"
+      "node": "b3_scores"
     },
     {
       "op": "drop",
+      "node": "b3_q"
+    },
+    {
+      "op": "drop",
+      "node": "b3_k"
+    },
+    {
+      "op": "forward",
       "node": "b3_probs"
     },
     {
       "op": "drop",
+      "node": "b3_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b3_context"
+    },
+    {
+      "op": "drop",
       "node": "b3_v"
+    },
+    {
+      "op": "drop",
+      "node": "b3_probs"
     },
     {
       "op": "forward",
@@ -443,16 +459,16 @@
     {
       "op": "forward",
       "node": "b3_residual2"
-    },
-    {
-      "op": "drop",
-      "node": "b3_down"
     },
     {
       "op": "loss"
     },
     {
       "op": "drop",
+      "node": "b3_down"
+    },
+    {
+      "op": "drop",
       "node": "b3_residual2"
     },
     {
@@ -525,7 +541,7 @@
     },
     {
       "op": "drop",
-      "node": "b3_k"
+      "node": "b3_q"
     },
     {
       "op": "forward",
@@ -552,16 +568,8 @@
       "node": "b3_proj"
     },
     {
-      "op": "drop",
-      "node": "b3_context"
-    },
-    {
       "op": "backward",
       "node": "b3_context"
-    },
-    {
-      "op": "drop",
-      "node": "b3_v"
     },
     {
       "op": "backward",
@@ -569,26 +577,18 @@
     },
     {
       "op": "backward",
-      "node": "b3_probs"
-    },
-    {
-      "op": "drop",
       "node": "b3_probs"
     },
     {
       "op": "forward",
-      "node": "b3_k"
+      "node": "b3_q"
     },
     {
       "op": "backward",
       "node": "b3_scores"
     },
     {
-      "op": "drop",
-      "node": "b3_k"
-    },
-    {
-      "op": "drop",
+      "op": "backward",
       "node": "b3_q"
     },
     {
@@ -597,15 +597,31 @@
     },
     {
       "op": "backward",
-      "node": "b3_q"
+      "node": "b3_norm1"
+    },
+    {
+      "op": "drop",
+      "node": "b3_context"
+    },
+    {
+      "op": "drop",
+      "node": "b3_k"
     },
     {
       "op": "drop",
       "node": "b3_norm1"
     },
     {
-      "op": "backward",
-      "node": "b3_norm1"
+      "op": "drop",
+      "node": "b3_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b3_q"
+    },
+    {
+      "op": "drop",
+      "node": "b3_v"
     },
     {
       "op": "drop",
@@ -628,12 +644,16 @@
       "node": "b2_k"
     },
     {
-      "op": "drop",
-      "node": "b2_norm1"
-    },
-    {
       "op": "forward",
       "node": "b2_scores"
+    },
+    {
+      "op": "drop",
+      "node": "b2_q"
+    },
+    {
+      "op": "drop",
+      "node": "b2_k"
     },
     {
       "op": "forward",
@@ -642,10 +662,6 @@
     {
       "op": "drop",
       "node": "b2_scores"
-    },
-    {
-      "op": "forward",
-      "node": "b2_norm1"
     },
     {
       "op": "forward",
@@ -661,19 +677,15 @@
     },
     {
       "op": "drop",
-      "node": "b2_probs"
+      "node": "b2_v"
     },
     {
       "op": "drop",
-      "node": "b2_v"
+      "node": "b2_probs"
     },
     {
       "op": "forward",
       "node": "b2_proj"
-    },
-    {
-      "op": "drop",
-      "node": "b2_context"
     },
     {
       "op": "forward",
@@ -686,10 +698,6 @@
     {
       "op": "forward",
       "node": "b2_norm2"
-    },
-    {
-      "op": "drop",
-      "node": "b2_residual1"
     },
     {
       "op": "forward",
@@ -721,46 +729,6 @@
     },
     {
       "op": "forward",
-      "node": "b2_scores"
-    },
-    {
-      "op": "forward",
-      "node": "b2_probs"
-    },
-    {
-      "op": "drop",
-      "node": "b2_scores"
-    },
-    {
-      "op": "forward",
-      "node": "b2_norm1"
-    },
-    {
-      "op": "forward",
-      "node": "b2_v"
-    },
-    {
-      "op": "drop",
-      "node": "b2_norm1"
-    },
-    {
-      "op": "forward",
-      "node": "b2_context"
-    },
-    {
-      "op": "forward",
-      "node": "b2_proj"
-    },
-    {
-      "op": "forward",
-      "node": "b2_residual1"
-    },
-    {
-      "op": "drop",
-      "node": "b2_proj"
-    },
-    {
-      "op": "forward",
       "node": "b2_norm2"
     },
     {
@@ -792,27 +760,51 @@
       "node": "b2_context"
     },
     {
-      "op": "backward",
-      "node": "b2_context"
+      "op": "forward",
+      "node": "b2_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b2_q"
+    },
+    {
+      "op": "forward",
+      "node": "b2_k"
     },
     {
       "op": "drop",
-      "node": "b2_v"
+      "node": "b2_norm1"
+    },
+    {
+      "op": "forward",
+      "node": "b2_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b2_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b2_scores"
     },
     {
       "op": "forward",
       "node": "b2_norm1"
     },
     {
+      "op": "forward",
+      "node": "b2_v"
+    },
+    {
+      "op": "backward",
+      "node": "b2_context"
+    },
+    {
       "op": "backward",
       "node": "b2_v"
     },
     {
       "op": "backward",
-      "node": "b2_probs"
-    },
-    {
-      "op": "drop",
       "node": "b2_probs"
     },
     {
@@ -820,11 +812,7 @@
       "node": "b2_scores"
     },
     {
-      "op": "drop",
-      "node": "b2_k"
-    },
-    {
-      "op": "drop",
+      "op": "backward",
       "node": "b2_q"
     },
     {
@@ -833,15 +821,27 @@
     },
     {
       "op": "backward",
-      "node": "b2_q"
+      "node": "b2_norm1"
+    },
+    {
+      "op": "drop",
+      "node": "b2_k"
     },
     {
       "op": "drop",
       "node": "b2_norm1"
     },
     {
-      "op": "backward",
-      "node": "b2_norm1"
+      "op": "drop",
+      "node": "b2_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b2_q"
+    },
+    {
+      "op": "drop",
+      "node": "b2_v"
     },
     {
       "op": "drop",
@@ -893,11 +893,11 @@
     },
     {
       "op": "drop",
-      "node": "b1_probs"
+      "node": "b1_v"
     },
     {
       "op": "drop",
-      "node": "b1_v"
+      "node": "b1_probs"
     },
     {
       "op": "forward",
@@ -1004,19 +1004,11 @@
       "node": "b1_context"
     },
     {
-      "op": "drop",
-      "node": "b1_v"
-    },
-    {
       "op": "backward",
       "node": "b1_v"
     },
     {
       "op": "backward",
-      "node": "b1_probs"
-    },
-    {
-      "op": "drop",
       "node": "b1_probs"
     },
     {
@@ -1024,11 +1016,7 @@
       "node": "b1_scores"
     },
     {
-      "op": "drop",
-      "node": "b1_k"
-    },
-    {
-      "op": "drop",
+      "op": "backward",
       "node": "b1_q"
     },
     {
@@ -1037,15 +1025,27 @@
     },
     {
       "op": "backward",
-      "node": "b1_q"
+      "node": "b1_norm1"
+    },
+    {
+      "op": "drop",
+      "node": "b1_k"
     },
     {
       "op": "drop",
       "node": "b1_norm1"
     },
     {
-      "op": "backward",
-      "node": "b1_norm1"
+      "op": "drop",
+      "node": "b1_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b1_q"
+    },
+    {
+      "op": "drop",
+      "node": "b1_v"
     },
     {
       "op": "drop",
@@ -1096,12 +1096,12 @@
       "node": "b0_probs"
     },
     {
-      "op": "drop",
-      "node": "b0_v"
-    },
-    {
       "op": "forward",
       "node": "b0_proj"
+    },
+    {
+      "op": "drop",
+      "node": "b0_context"
     },
     {
       "op": "forward",
@@ -1160,31 +1160,39 @@
       "node": "b0_norm2"
     },
     {
-      "op": "drop",
+      "op": "backward",
       "node": "b0_residual1"
     },
     {
-      "op": "backward",
-      "node": "b0_residual1"
+      "op": "forward",
+      "node": "b0_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_scores"
+    },
+    {
+      "op": "forward",
+      "node": "b0_context"
     },
     {
       "op": "backward",
       "node": "b0_proj"
     },
     {
-      "op": "drop",
+      "op": "backward",
       "node": "b0_context"
     },
     {
-      "op": "forward",
-      "node": "b0_scores"
-    },
-    {
-      "op": "forward",
+      "op": "backward",
       "node": "b0_probs"
     },
     {
-      "op": "drop",
+      "op": "backward",
       "node": "b0_scores"
     },
     {
@@ -1192,39 +1200,7 @@
       "node": "b0_norm1"
     },
     {
-      "op": "forward",
-      "node": "b0_v"
-    },
-    {
       "op": "backward",
-      "node": "b0_context"
-    },
-    {
-      "op": "drop",
-      "node": "b0_v"
-    },
-    {
-      "op": "backward",
-      "node": "b0_v"
-    },
-    {
-      "op": "backward",
-      "node": "b0_probs"
-    },
-    {
-      "op": "drop",
-      "node": "b0_probs"
-    },
-    {
-      "op": "backward",
-      "node": "b0_scores"
-    },
-    {
-      "op": "drop",
-      "node": "b0_k"
-    },
-    {
-      "op": "drop",
       "node": "b0_q"
     },
     {
@@ -1233,21 +1209,45 @@
     },
     {
       "op": "backward",
-      "node": "b0_q"
+      "node": "b0_v"
+    },
+    {
+      "op": "backward",
+      "node": "b0_norm1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_context"
+    },
+    {
+      "op": "drop",
+      "node": "b0_k"
     },
     {
       "op": "drop",
       "node": "b0_norm1"
     },
     {
-      "op": "backward",
-      "node": "b0_norm1"
+      "op": "drop",
+      "node": "b0_probs"
+    },
+    {
+      "op": "drop",
+      "node": "b0_q"
+    },
+    {
+      "op": "drop",
+      "node": "b0_residual1"
+    },
+    {
+      "op": "drop",
+      "node": "b0_v"
     }
   ],
   "claims": {
     "peak_bytes": 1703936,
-    "recompute_cost": 421691392,
-    "forward_cost": 899842048,
+    "recompute_cost": 421494784,
+    "forward_cost": 899645440,
     "backward_cost": 956301312
   }
 }

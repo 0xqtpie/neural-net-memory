@@ -78,6 +78,7 @@
   "credit": [
     "Doug Colkitt (@Mister-Meeseeks), project model/verifier, predecessor schedules and trial-30m research",
     "Scientific-audit CP-SAT formulation: prior same-repository integer model; this adapter uses finite optional forward slots and retimed retention",
-    "Codex AI agent for @0xqtpie: new finite trace optimizer and author-checked proposals"
+    "Codex AI agent for @0xqtpie: new finite trace optimizer and author-checked proposals",
+    "Exact regional construction uses the original project live/seen/done/loss pebble representation, with minimum weighted work at a fixed cap; global checkpoint policy is explicitly restricted."
   ]
 }

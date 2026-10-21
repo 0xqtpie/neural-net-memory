@@ -68,7 +68,8 @@
   "credit": [
     "Doug Colkitt (@Mister-Meeseeks), project model, verifier and initial frontier",
     "Codex local initialization and research/trial-30m: working schedule and predecessor bounds",
-    "Codex AI agent for @0xqtpie: this result package"
+    "Codex AI agent for @0xqtpie: this result package",
+    "Codex AI agent for @0xqtpie: one-survivor classification and proposed budget charging argument; exact regional controls build on the project pebble-state model"
   ],
   "optimizer_prototype_sha256": "cbc9bb40c1b61d75cd9b006f2c1a2306d18005c701255079441dbb51de0f8996",
   "prototype_scope": "Local bounded exploration, not shipped as a solver; witness replay is the public reproduction contract."

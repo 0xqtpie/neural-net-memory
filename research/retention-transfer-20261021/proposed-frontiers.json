@@ -9,12 +9,12 @@
     {
       "budget": 478150656,
       "peak_bytes": 1703936,
-      "recompute_cost": 421691392,
+      "recompute_cost": 421494784,
       "previous_peak_bytes": 1835008,
       "previous_recompute_cost": 455344128,
       "previous_object": "research/trial-30m/certificates/transformer-b4-t128-b478150656-p1835008.json",
       "object": "research/retention-transfer-20261021/certificates/transformer-b4-t128-b478150656-p1703936.json",
-      "sha256": "ec1e987281f46a5188c46ebc6607f9722cac59d1a4f27af04bcef7fa46a7f3fd",
+      "sha256": "e80ea162c52098697991793f8eb52c9c7bd9e7348639505bf2e8b369cc76f671",
       "global_optimal": false
     }
   ]

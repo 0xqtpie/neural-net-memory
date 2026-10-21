@@ -1,8 +1,8 @@
 {
   "schema": "research-task/v1",
   "task": "search-transformers",
-  "result_kind": "stronger-bound-proposal",
-  "scope": "One unchanged graph; three fixed-budget bound proposals; no fixed-budget witness improvement",
+  "result_kind": "stronger-bound-and-optimality-proposal",
+  "scope": "One frozen graph; three budget-sensitive bound proposals, selected-row optimality proposal, universal floor and auxiliary witness; related actual schedule improvement in retention-transfer package",
   "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
   "seed": "dafc4be0863b7654352ffb2ba4a4d2df",
   "original_draw": {
@@ -30,7 +30,7 @@
   "selected_budget": 956301312,
   "starting_peak_bytes": 1441792,
   "starting_lower_bound_bytes": 1179648,
-  "proposed_lower_bound_bytes": 1310720,
+  "proposed_lower_bound_bytes": 1441792,
   "auxiliary_budget": 1258192896,
   "auxiliary_budget_excess": 301891584,
   "favorable_best_case": {
@@ -135,5 +135,8 @@
       },
       "raw_log_sha256": "7c6bc7a37b617f14de3bee0f518b162d4fead8805d0ae8d6475d450dee890efe"
     }
-  ]
+  ],
+  "all_budget_lower_bound_bytes": 1310720,
+  "minimum_extra_work_at_ten_chunks": 985661440,
+  "budget_proof": "BUDGET-PROOF.md"
 }
