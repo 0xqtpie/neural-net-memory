@@ -1,0 +1,25 @@
+{
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "sha256": {
+    "AGENTS.md": "0f3fc2fbb3023c56e6998830c535f43efcd20f6616e66e589a84323a20a44222",
+    "CONTRIBUTOR_WORKFLOW.md": "263884571ab3b7edc0e911b178cd7d8eae3ef9a3b0f9ff9f40c6da6b41e8880c",
+    "MODEL.md": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e",
+    "benchmarks/graphs/transformer-b4-t128.json": "a1b3a93b491b729515b4deb53b90b4aa8179b218500d88ad5d4eaa2dafa7b455",
+    "records/working-frontiers.json": "88cb5c9edd9c9905ae4b24b79ce6affdac8495c7babd7c13d2ea8a83a6292cb8",
+    "research/pdb-cache-round2/EXPERIMENTS.json": "a088085b1d715688eefd3c2aa7f9cb9397cc0983394a246e03f74212dd11ed79",
+    "research/pdb-cache-round2/README.md": "80a778a5ebab12c32c6fb4e37e7d62b23ab0399fe50f9ab7db9fabf31bbc771d",
+    "research/pdb-cache-round2/TASK.json": "62af25bb16af962776eaa4e6e5f6fa10d9c94db1b98c2c83e80b91ea5094edd7",
+    "research/pdb-cache-round2/VERIFY.json": "aa07addb2a111e482445cab385fc53f12a1814af3ba4b67f953b8569afb768ea",
+    "research/pdb-cache-round2/cache_policy.py": "e981c5df8e66757ee5ee71273f8bc93303ef99d34f14ff4cd9b222b5c658475e",
+    "research/pdb-cache-round2/certificates/transformer-b4-t128-cap11.json": "4f9d91fd33e8a1271e5feffe8456365de3f63fa15b1c15ab467edbce82c4edfa",
+    "research/pdb-cache-round2/controls.py": "670f061514e7e413c84318cb02cef773ccb4969e26f14ffa0e4382b0265b22ea",
+    "research/pdb-cache-round2/output_demand_db.py": "8b80b6ce5420b51188fbfb167f87c49fa04699c7b09cb13ae3e093df570de5f5",
+    "research/pdb-cache-round2/pattern_db.py": "bb2576b557333e44511192615eea411be1daa04069dbb7422e082e74f7463acc",
+    "research/pdb-cache-round2/replay.py": "0e6c5d6c88cf65477f86eeb8b72e5f36a1c015971fc6a4fbb7b6046077617525",
+    "research/pdb-cache-round2/test_policy.py": "523c5702f4718da3041fde124e89cf9ea55de6983a128e681161caf96082805f",
+    "research/trial-30m/cache_search.py": "2c2f66be7b49fe05e7a84864e32f91d2310a7acca30dbf0b8fd669bf1be2e58e",
+    "research/trial-30m/certificates/transformer-b4-t128-b956301312-p1441792.json": "5e8a7f4babe79275c023821210a4ecd80a9ffd620c25145c7cbe93d751948a4a",
+    "search.py": "7e321741e941d239392d2cf0e646c7ea05823a8f81dd2b4379300775c660ad63",
+    "verifier.py": "104e5e63d1cdb95355153144666292125d64806ee7bf149d0af714b2a47e1015"
+  }
+}

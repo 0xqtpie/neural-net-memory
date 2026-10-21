@@ -1,0 +1,38 @@
+{
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "seed": "dafc4be0863b7654352ffb2ba4a4d2df",
+  "assignment": "Explicit user broad frontier research; parent-authorized secondary fixed-peak schedule refinement",
+  "graph": "transformer-b4-t128",
+  "graph_sha256": "7d60aaf32c25d4d000872f9d317cdb0cbc71c929307eb69faf7e974c795d5854",
+  "fixed_budget": 956301312,
+  "fixed_peak_bytes": 1441792,
+  "working_recompute_cost": 737935360,
+  "new_recompute_cost": 702349312,
+  "work_reduction": 35586048,
+  "policy": {
+    "weight": 0.0,
+    "beta": 0.85,
+    "bonus": 3.2,
+    "keepers": [
+      "b0_residual1",
+      "b1_residual2",
+      "b3_residual1"
+    ],
+    "forward_v": [
+      5,
+      3,
+      3,
+      5
+    ],
+    "backward_v": [
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "author": "Codex AI for @0xqtpie",
+  "evidence": "author-checked only",
+  "global_optimal": false,
+  "semantics_changed": false
+}

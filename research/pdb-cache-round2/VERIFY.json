@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "graph_sha256": "7d60aaf32c25d4d000872f9d317cdb0cbc71c929307eb69faf7e974c795d5854",
+  "claims": {
+    "peak_bytes": 1441792,
+    "recompute_cost": 702349312,
+    "forward_cost": 1180499968,
+    "backward_cost": 956301312
+  },
+  "action_trace_reconstructed": true,
+  "evidence": "author-checked only",
+  "global_optimal": false
+}
