@@ -1,9 +1,9 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
-  "assessed_on": "2026-10-20",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
-  "status": "Public incubation; donor launch paused. Inspect GitHub issues/PRs and the 30-minute trial candidates before research; local claims are only a cache.",
+  "status": "Open; picker uses reconciled working targets, excludes all 39 settled model cases, and requires live Discussion overlap checks.",
   "tracks": [
     {
       "id": "verification",
@@ -15,7 +15,7 @@
           "question": "Does a clean independent replay confirm every witness and exact optimum?",
           "starting_points": [
             "verifier.py",
-            "records/frontiers.json",
+            "records/working-frontiers.json",
             "MODEL.md"
           ],
           "methods": [
@@ -100,12 +100,12 @@
           "question": "Can checkpoint placement or ready-node ordering improve an open transformer row?",
           "starting_points": [
             "search.py",
-            "records/frontiers.json"
+            "records/working-frontiers.json"
           ],
           "methods": [
             "Seeded local search, beam search, checkpoint-set optimization."
           ],
-          "acceptance_gate": "A smaller verified peak at exactly the drawn graph/budget; report all attempts.",
+          "acceptance_gate": "A smaller verified peak at exactly the drawn graph/budget; report all attempts. Compare against records/working-frontiers.json, including all known trial proposals, not the historical experiment table.",
           "first_step": {
             "command": [
               "python3",
@@ -149,7 +149,7 @@
           "methods": [
             "Cost-aware checkpoint sets and regional replay."
           ],
-          "acceptance_gate": "Verified strict improvement over the frozen row and strongest baseline.",
+          "acceptance_gate": "Verified strict improvement over the frozen row and strongest baseline. Compare against records/working-frontiers.json, including all known trial proposals, not the historical experiment table.",
           "first_step": {
             "command": [
               "python3",
@@ -201,7 +201,7 @@
           "methods": [
             "Adapt Checkmate/Moccasin formulations with explicit allocation constraints."
           ],
-          "acceptance_gate": "Match all tiny optima first; certify bounds without changing the feasible set.",
+          "acceptance_gate": "Match all tiny optima first; certify bounds without changing the feasible set. Compare against records/working-frontiers.json, including all known trial proposals, not the historical experiment table.",
           "first_step": {
             "command": [
               "python3",

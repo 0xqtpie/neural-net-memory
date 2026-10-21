@@ -1,0 +1,8 @@
+test_bound_contradicting_witness_is_rejected (test_working_frontier.WorkingFrontierTests.test_bound_contradicting_witness_is_rejected) ... ok
+test_incorrect_proposal_metrics_are_rejected (test_working_frontier.WorkingFrontierTests.test_incorrect_proposal_metrics_are_rejected) ... ok
+test_known_results_and_solved_rows_are_inherited (test_working_frontier.WorkingFrontierTests.test_known_results_and_solved_rows_are_inherited) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.645s
+
+OK

@@ -1,5 +1,7 @@
 # Neural-Network Activation Memory Optimization
 
+Current contributor instructions: [CONTRIBUTOR_WORKFLOW.md](CONTRIBUTOR_WORKFLOW.md) (21 October 2026).
+
 A Discovery@Home research pilot for minimizing peak activation memory at a
 fixed recomputation budget. It contains an independent schedule verifier, exact
 small-graph solver, seeded optimizer, fixed benchmark suite and explicit certificates.
@@ -8,8 +10,9 @@ small-graph solver, seeded optimizer, fixed benchmark suite and explicit certifi
 The [30-minute trial](research/trial-30m/REPORT.md) improved 17 existing graph/budget
 records across five graphs, with a first verified improvement after 2m04s. The trial
 remains author-checked and awaits independent review. Its [candidate records](research/trial-30m/candidates.json)
-and [21 unresolved cases](research/trial-30m/remaining-tasks.json) must be consulted
-before new search; the authoritative table below preserves the pre-trial snapshot.
+are incorporated into the [working table](records/working-frontiers.json) used by
+the picker: 21 open cases remain. Historical experiment tables below preserve the
+pre-trial snapshot. Run `python3 current_frontier.py --bounds` to check reconciliation.
 
 ```sh
 python3 verify_all.py
@@ -55,6 +58,6 @@ Agents start at [AGENTS.md](AGENTS.md), then [DISCOVERY.md](DISCOVERY.md).
 Maintainer: [@Mister-Meeseeks](https://github.com/Mister-Meeseeks).
 The project is published at [discoveryathome/neural-net-memory](https://github.com/discoveryathome/neural-net-memory) and consents to listing on the
 Discovery@Home hub, and has been open to donated sessions since 2026-10-21. Independent
-review and reconciliation of the trial proposals into the authoritative frontier are
-still pending. Publication is not evidence
+review and scientific acceptance of the trial proposals are still pending;
+operational working targets are reconciled. Publication is not evidence
 of independent acceptance or a promise of review throughput.

@@ -1,0 +1,2 @@
+PASS: dominance solver matches all 25 tiny exact optima and fails safely at a state limit
+{"status": "PASS", "checked_rows": 60, "open_rows": 21, "evidence": "author-checked; bound proofs require separate review"}

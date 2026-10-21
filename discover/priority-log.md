@@ -20,3 +20,9 @@ the older table) and get an independent audit.
 
 2026-10-21: coordination moves to GitHub Discussions (Start here #2, Handoffs #3,
 Proposals #4, Feedback #5). Weights unchanged.
+
+## 2026-10-21 contributor readiness
+
+Known results are inherited before new work; see CONTRIBUTOR_WORKFLOW.md and
+research/readiness-20261021/ASSESSMENT.md. Updated task selection, bounded work
+and review gates preserve scientific evidence status and the recorded launch decisions.

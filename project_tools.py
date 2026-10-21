@@ -11,6 +11,7 @@ import subprocess
 import sys
 
 from verifier import load, require
+from current_frontier import current_rows
 
 ROOT = Path(__file__).resolve().parent
 
@@ -28,7 +29,7 @@ def pick(seed):
     result = {"seed": seed.lower(), "track": track["id"], "task": task["id"],
               "question": task["question"], "first_step": task["first_step"]}
     if "rows" in task:
-        rows = load(ROOT / "records/frontiers.json")
+        rows = current_rows()
         where = task["rows"].get("where", {})
         rows = [r for r in rows if (not task["rows"].get("open", True) or not r["optimal"])
                 and all(str(r[k]) == str(v) for k, v in where.items())]
@@ -38,7 +39,7 @@ def pick(seed):
     live = [c for c in load(ROOT / "discover/claims.json")
             if datetime.fromisoformat(c["expires"].replace("Z", "+00:00")) > now]
     result["live_claims"] = live
-    result["coordination_note"] = "Local advisory claims only; inspect overlap before starting. No claim written."
+    result["coordination_note"] = "Known trial results included; independent review pending. Inspect live Discussions /discussions/3 for overlap; local claims are only a cache. No claim written."
     print(json.dumps(result, indent=2))
 
 

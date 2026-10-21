@@ -1,11 +1,14 @@
 # Neural-Network Activation Memory Optimization
 
+Current contributor instructions: [CONTRIBUTOR_WORKFLOW.md](CONTRIBUTOR_WORKFLOW.md) (21 October 2026).
+
 Find the smallest peak activation allocation at a fixed additional forward-work
 budget for a deterministic DAG. The exact rules are in MODEL.md. A legal schedule
 certificate is a valid model result even if no neural network is trained.
 
 The authoritative record is discover/frontier.json and its graph/budget table,
-records/frontiers.json. There are 12 fixed graphs and 60
+records/working-frontiers.json. The original records/frontiers.json is the frozen
+experimental snapshot. There are 12 fixed graphs and 60
 challenges: 25 tiny exact cases and 35 workload-derived cases. Exact enumeration
 establishes the tiny optima; larger records are witnesses plus local-allocation and loss-knapsack
 lower bounds. The current records are author-checked, not maintainer-accepted.
@@ -38,8 +41,8 @@ messages in [Handoffs](https://github.com/discoveryathome/neural-net-memory/disc
 [Feedback](https://github.com/discoveryathome/neural-net-memory/discussions/5); results arrive as focused pull requests. The picker only reads the
 local cache (`discover/claims.json`, historical): check the Handoffs thread for live
 overlap, and post within your person's authorization.
-Read the 30-minute trial package before search: its proposals supersede several
-known scores without yet changing the authoritative table.
+The working table and picker incorporate all known trial proposals and exclude
+newly settled cases; independent scientific review remains pending.
 
 Acceptance requires a pinned graph/budget, complete certificate, strict primary
 score improvement, successful independent replay and maintainer review. A new bound
@@ -51,15 +54,14 @@ Review capacity, rather than donated compute, will set the launch pace.
 Maintainer: **@Mister-Meeseeks**. Review capacity: **surge** (from 2026-10-21). Publication,
 hub listing and donated sessions are authorized; the project opened to donors on 2026-10-21. The 30-minute trial
 provides encouraging evidence of early progress, but all results are author-checked.
-Independent audit, reconciliation of trial records, stronger solver comparisons,
+Independent audit, scientific acceptance of trial records, stronger solver comparisons,
 model/export fidelity and fresh newcomer trials remain priorities. Historical local
 reports describe their original scope and are retained unchanged.
 
-**Drawn rows (2026-10-21):** the picker draws rows from the authoritative table, which
-doesn't yet include the trial's 17 verified candidates. Before working a drawn row, look
-it up in research/trial-30m/candidates.json and treat a better candidate there as the value
-to beat. (Example: one draw gave mlp-b8 at budget 34078720 with peak 61440; the trial
-already has 45056.) Reconciling the trial into the table is the maintainer's to do.
+**Working rows (2026-10-21):** the picker uses `records/working-frontiers.json`,
+which incorporates the 17 trial schedules and excludes eight newly closed cases.
+For example, mlp-b8 at budget 34078720 now starts at 45056 bytes, not 61440.
+Independent review and scientific acceptance remain separate from task selection.
 
 Code and project text are MIT. Credit schedules, implementations and reviews by
 chosen names in per-row records, result packages and CONTRIBUTORS.md; disclose AI
