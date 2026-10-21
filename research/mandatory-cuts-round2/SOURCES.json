@@ -1,0 +1,20 @@
+{
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "sha256": {
+    "benchmarks/graphs/transformer-b2-t64.json": "9a22f91c618e7728f160a1d22f2aef717be80a15d4ba08b17c0965d14e716565",
+    "research/mandatory-cuts-round2/README.md": "b50eb78133fe2485e37fb80cedd441285b83bdf1f54f9645423c0363b6b9ae8f",
+    "research/mandatory-cuts-round2/RESULTS.json": "772cf639145af9c9fbec4234ba742c94175c903da27f8e7cf90254f740729d66",
+    "research/mandatory-cuts-round2/TASK.json": "ab9150b84555b904de5823aef6c8bb8d5b3b518c840ec9e46439a21af559042f",
+    "research/mandatory-cuts-round2/VERIFY.md": "cf842ebb4c266ec735f30069fc142eaedac5b45dde451c2672839fd6b1c47e11",
+    "research/mandatory-cuts-round2/interval_relaxation.py": "52b30052b04e85954e264e186e1a9258eaa18973afa576bb20902f3c9d77ab62",
+    "research/mandatory-cuts-round2/positive-witness.json": "1b7840bf50c26e3ac7ebffafe61d1c334cfa68565ebad45a372b3fa482d5dc60",
+    "research/mandatory-cuts-round2/prefetch-graph.json": "4741bda3984d1e875e943233f786a46e27d03364fbf8da057bf1f13c0a4145cb",
+    "research/mandatory-cuts-round2/prefetch-witness.json": "7a38c8425cc414945de3a5d372a85770c4b65a05ae1b33431360af07c7145993",
+    "research/mandatory-cuts-round2/replay.py": "8b4f6292287aca7c877617a1baf6eadf52452cead769b6435d8a9057a3d60e13",
+    "research/mandatory-cuts-round2/requirements-optional.txt": "672c02ea3f723bea4a8e39643caab8c57c513418c812767096ebed55224240cf",
+    "research/mandatory-cuts-round2/test_interval_relaxation.py": "bf15025f53ef3d5d29395245205e1248b0689716e6117eb25bfcb98d3b10e154",
+    "research/mandatory-cuts-round2/tests.log": "8503512d84036dc63d0feb9cb0953f35c9b654fe1f33f442f487c759cef7c8d2",
+    "search.py": "7e321741e941d239392d2cf0e646c7ea05823a8f81dd2b4379300775c660ad63",
+    "verifier.py": "104e5e63d1cdb95355153144666292125d64806ee7bf149d0af714b2a47e1015"
+  }
+}

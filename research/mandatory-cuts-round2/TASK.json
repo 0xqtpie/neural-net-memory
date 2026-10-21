@@ -1,0 +1,15 @@
+{
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "seed": "dafc4be0863b7654352ffb2ba4a4d2df",
+  "assignment": "User-authorized broad frontier research; parent-requested cheap exact secondary-work price after primary ResNet closure",
+  "graph": "transformer-b2-t64",
+  "peak_bytes": 1245184,
+  "exact_minimum_additional_work": 26869760,
+  "negative_budget": 26869759,
+  "primary_frontier_gain": false,
+  "evidence": "author-checked; same author-team AI review only",
+  "model": "activation-memory/v1, unchanged",
+  "solver": "OR-Tools9.15.6755 CP-SAT integer",
+  "bounds": {"workers": 1, "seconds_per_solve": 30, "solver_memory_mb": 300, "external_guard_mib": 350},
+  "authorization": "Separate focused research proposal; parent handles GitHub writes"
+}
