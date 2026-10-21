@@ -1,0 +1,24 @@
+{
+  "base": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "seed": "dafc4be0863b7654352ffb2ba4a4d2df",
+  "assignment": "Explicit user broad fronts; parent assigned ResNet-family retention/recomputation research",
+  "start": "2026-10-21T22:37:20Z",
+  "cutoff": "2026-10-22T01:37:20Z",
+  "graph": "resnet-b4-c32",
+  "graph_sha256": "fe120b9dbba356bf53b6042ad7174fd2506df22906c017502008405f9c0f354f",
+  "question": "Can fixed-cap minimum-work search improve or settle the three open ResNet-b4 fixed-budget cells?",
+  "method": "Forced-chain A*; eager zero-allocation backward normalization; dependency-closed mandatory regeneration lower bound",
+  "domain": "Exact activation-memory/v1 schedules on DAGs whose direct edges force serial first-forward and backward orders; arbitrary legal drops and regeneration",
+  "price": "Uniform 262144-byte allocations and immutable x imply strict cap targets 7,5,4 allocations. Every missing saved activation and each missing dependency cut must execute at least once, charging all seen operations. No work omitted.",
+  "overlap": "trial-30m solved b2 via cost/peak dominance; b4 B=75694080 exceeded500000 labels. New fixed-cap/compressed-chain state, admissible ancestor closure and forced backward reduction.",
+  "success": "Strict fixed-budget witness, or exact fixed-cap infeasibility with proof and cross-controls",
+  "first_control": "Unchanged verifier on b2 and b4 incumbent; exhaustive tiny chain/residual comparisons",
+  "resources": "Start700000 records,120seconds, one process; no job over500MB or2M states without parent coordination",
+  "evidence": "author-checked; no GPU or external SOTA claim",
+  "final_outcome": "Complete b4 minimum-work staircase; three formerly open fixed-budget cells settled; no strict primary peak improvement",
+  "final_resource_caps": {
+    "records_per_call": 250000,
+    "seconds_per_call": 30
+  },
+  "final_method": "Chain-state exact fixed-cap A* with greedy backward normalization, dead activation pruning, dependency-closed lower bound; separate original exact and unpruned controls"
+}
