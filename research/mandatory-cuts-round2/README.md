@@ -1,7 +1,7 @@
 # Exact minimum work from mandatory event cuts
 
 For the unchanged `transformer-b2-t64` graph, every legal trace with peak at
-most1,245,184 bytes requires at least26,869,760 additional forward work. The
+most 1,245,184 bytes requires at least 26,869,760 additional forward work. The
 included legal schedule attains both numbers. This is an exact secondary-work
 optimum at a fixed peak, not a strict peak-frontier improvement.
 
@@ -10,11 +10,11 @@ orders. It strengthens a separately explored restriction to first passes without
 recomputation. It does not alter the graph, cost model, verifier, historical
 records, working frontier, or accepted data.
 
-The optional solver is OR-Tools9.15.6755, one worker, random seed20261021,30s per
-solve and300MB solver memory limit. No solver is required by the existing core.
-The session used an external350MiB RSS guard; both boundary runs finished in
-about3s at about137MiB. No incomplete optimization bound is claimed. The lower
-bound follows from integer `INFEASIBLE` at budget26,869,759; a matching
+The optional solver is OR-Tools 9.15.6755, one worker, random seed 20261021, 30s per
+solve and a 300MB solver memory limit. No solver is required by the existing core.
+The session used an external 350MiB RSS guard; both boundary runs finished in
+about 3s at about 137MiB. No incomplete optimization bound is claimed. The lower
+bound follows from integer `INFEASIBLE` at budget 26,869,759; a matching
 `OPTIMAL` relaxation and unchanged verifier-accepted trace are positive controls.
 
 ## Necessary relaxation and proof
@@ -28,7 +28,7 @@ consumer-ready. After each scores backward, add the first backward of its q/k
 pair. Both depend on the preceding norm1 pivot, both feed scores, and both
 require norm1. Thus this extra cut is strictly between scores backward and norm1
 backward, with norm1 forced live. The code checks those ordering preconditions.
-There are47 cuts for this fixed graph.
+There are 47 cuts for this fixed graph.
 
 At first-forward cut t, let S_t be its ancestor closure including itself. At
 loss/backward cuts let S_t contain all nodes. These sets are ancestor-closed and
@@ -49,7 +49,7 @@ greater than real additional work.
 executed on a parallel branch before cut t. Imposing old dependency availability
 for every such node is unsound. Only impose it if the node descends from the
 preceding first-forward pivot, guaranteeing a first execution after that pivot.
-The explicit cap9/zero-work parallel-V fixture is accepted by the corrected
+The explicit cap 9 zero-work parallel-V fixture is accepted by the corrected
 model and rejected by the deliberately naive rule. This correction is essential.
 
 Finally P(i)=L_prev(i) AND L_next(i) AND NOT R(i) is continuously resident: a
@@ -85,7 +85,7 @@ memory or elapsed-training speedup is asserted.
 
 ## Credit and status
 
-Discovery@Home and the problem formulation: DougColkitt / @Mister-Meeseeks.
+Discovery@Home and the problem formulation: Doug Colkitt / @Mister-Meeseeks.
 The positive trace comes from the parallel transformer-regions round2 research,
 using the trial's certificate/verifier conventions and the prior PR6 regional
 exact solver. The present necessary-event/persistence formulation and correction

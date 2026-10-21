@@ -183,7 +183,7 @@ def solve(graph,pivots,cap,budget=None,seconds=120,naive=False,hint=None,strateg
                scope='ordered necessary-event relaxation; feasible result is not a legal schedule',
                certified_global_lower_bound=None,raw_best_bound=solver.best_objective_bound*costunit)
     if status in (cp_model.OPTIMAL,cp_model.FEASIBLE):
-        objective=round(solver.objective_value)*costunit
+        objective=sum(graph['nodes'][i]['cost']*solver.value(v) for row in regen for i,v in row.items())
         stats['relaxation_work']=objective
         stats['live']=[sum(1<<i for i,v in row.items() if solver.value(v)) for row in live]
         stats['regen']=[sum(1<<i for i,v in row.items() if solver.value(v)) for row in regen]

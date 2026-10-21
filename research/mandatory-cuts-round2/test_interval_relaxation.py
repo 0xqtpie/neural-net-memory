@@ -33,6 +33,15 @@ def prefetch_fixture():
 
 
 class Controls(unittest.TestCase):
+    def test_integer_work_above_float_exact_range(self):
+        costs=[2**53+1,2**53+3,1]
+        nodes=[dict(id=f'v{i}',deps=['x' if i==0 else f'v{i-1}'],bytes=1,cost=costs[i],backward_cost=1,backward_requires=['x' if i==0 else f'v{i-1}'],recomputable=True) for i in range(3)]
+        g=dict(model='activation-memory/v1',id='large-integer-work',inputs=[dict(id='x',bytes=1)],nodes=nodes,outputs=['v2'])
+        result=solve(g,['v0','v1','v2'],3,costs[0],seconds=5,persistent_allocations=True)
+        self.assertEqual(result['status'],'OPTIMAL')
+        self.assertEqual(result['relaxation_work'],2**53+1)
+        self.assertEqual(result['certified_global_lower_bound'],2**53+1)
+
     def test_prefetch_counterexample(self):
         g,c,pivots=prefetch_fixture();verify(g,c,0)
         self.assertEqual(c['claims']['peak_bytes'],9)
