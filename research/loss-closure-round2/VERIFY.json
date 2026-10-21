@@ -3,7 +3,7 @@
   "independent_scientific_review": false,
   "base": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
   "artifacts_sha256": {
-    "README.md": "900bda5c6bef706f9a1d34b54489573b07ec06cbddbbd3827dc66e38df3a351b",
+    "README.md": "19a9fa5e521bc9e32308f540efe3774ef2cbd7fc01181a596c735b23d00990e1",
     "SOURCES.json": "273c5b1da3ed2d08fcd61f0e8400bfeaa2c272599fdf6744dc169ff32476833b",
     "TASK.json": "5f19d47fff631f979eab85cefc3a696d4aab3f34e964e22084e2891fea79a3f4",
     "logs/all-cuts-cp-check.log": "9ed9b39706a3afda960c1a6b97fd1d051ccb4d2e55b7b22b1d703f2a2a960dc2",
@@ -11,11 +11,11 @@
     "logs/cross-loss.log": "20fb01438566b88116880ec208caa7fc7277a35b0fda2986cb6971c7272a0f82",
     "logs/event-results.log": "013207a74abb799f6bc18f5469d8fe93feb69e4c431568ad1d027b2d9780479f",
     "logs/event-tests.log": "73745e6507aa4b8a4cd4ef076dbbdb2562d62e8a090cb491b26dca84212c8ba7",
-    "loss_closure.py": "bf71d42e65077db521b93cd8b17beae837db2966600e73c5b514b071241ac93c",
+    "loss_closure.py": "1ee0050cdac9f3428b834ccc9955e278b1d08f846c8e98b9cf6164e8736deae5",
     "optional_cp_compare.py": "73f5f86ed2a232ccdf697b1ed5b9ce363be0c1fd4285db16f582d68dd9136820",
     "requirements-optional.txt": "672c02ea3f723bea4a8e39643caab8c57c513418c812767096ebed55224240cf",
     "results.json": "516da92d69532744c3b110eb69318c5f3647a0d34c2a054cd4eea56658d0b9fe",
-    "test_loss_closure.py": "7978a8512c024734ffa202fa2295955293ee7cccde77904bd5d55461bba46615",
+    "test_loss_closure.py": "7dbecc1d3b95d38d3ad6ed0212bfe12e2da3a15f9ad6fa69f04bc3f993402bb1",
     "verify_result.py": "0077eb70a6552e775cb97e0b5f226296e1ecb5001fb36b816024c5621e13346f"
   },
   "validation": {
@@ -27,7 +27,7 @@
     "original_fixed_rows": 60,
     "stronger_bounds": 11
   },
-  "review": "Trace-to-set lemmas and frontier transitions cross-reviewed by collaborating AI agents; query-budget ceiling hardening added after review",
+  "review": "Trace-to-set lemmas and frontier transitions cross-reviewed by collaborating AI agents; query-budget ceiling hardening added after review; forced-live iterables normalized after second review, with meaningful expensive-ancestor regression; existing suite row values unchanged",
   "not_checked": [
     "Independent scientific review/maintainer acceptance",
     "Proof assistant validation",

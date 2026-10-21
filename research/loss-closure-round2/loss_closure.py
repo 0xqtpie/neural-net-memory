@@ -18,6 +18,7 @@ class Limited(RuntimeError):
 
 def loss_frontier(g,budget,max_labels=1000000,seconds=60,forced_live=()):
     validate_graph(g)
+    forced_live=tuple(forced_live)
     if not integer(budget) or not integer(max_labels,1) or type(seconds) not in (int,float) or not math.isfinite(seconds) or seconds<=0:
         raise ValueError('invalid budget or resource limit')
     ns=g['nodes'];index={n['id']:i for i,n in enumerate(ns)}
@@ -62,7 +63,7 @@ def loss_frontier(g,budget,max_labels=1000000,seconds=60,forced_live=()):
 def cut_frontiers(g,budget,max_labels=1000000,seconds=60):
     """Necessary memory/work frontiers at loss and each mandatory first forward.
 
-    First-forward cut: every pivot ancestor has been seen; all backwards remain
+    Resource limits apply separately to each cut. First-forward cut: every pivot ancestor has been seen; all backwards remain
     pending. All globally backward-required values among those ancestors must
     therefore be retained or regenerated, with output and deps forced resident.
     """

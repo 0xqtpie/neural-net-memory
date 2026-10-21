@@ -41,6 +41,7 @@ class ClosureTests(unittest.TestCase):
         g=dict(model='activation-memory/v1',id='chain',inputs=[dict(id='x',bytes=1)],nodes=[dict(id='a',deps=['x'],bytes=10,cost=100,backward_cost=1,backward_requires=[],recomputable=True),dict(id='b',deps=['a'],bytes=10,cost=1,backward_cost=1,backward_requires=['b'],recomputable=True),dict(id='c',deps=['b'],bytes=1,cost=1,backward_cost=1,backward_requires=[],recomputable=True)],outputs=['c'])
         self.assertEqual(loss_frontier(g,1)['frontier'][0][0],12)
         self.assertEqual(loss_frontier(g,101)['frontier'][0][0],2)
+        self.assertEqual(loss_frontier(g,101,forced_live=(x for x in ['a'])),loss_frontier(g,101,forced_live=['a']))
 
     def test_limits_and_boolean_budget(self):
         g=dict(model='activation-memory/v1',id='one',inputs=[dict(id='x',bytes=1)],nodes=[dict(id='n',deps=['x'],bytes=1,cost=1,backward_cost=1,backward_requires=['n'],recomputable=True)],outputs=['n'])

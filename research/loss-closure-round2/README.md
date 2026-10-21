@@ -96,6 +96,7 @@ Discarding labels above the largest requested budget is also safe. These
 arguments prove the returned frontier is exact for the relaxation. They are
 author-reviewed mathematics, not proof-assistant validation. A label/time limit
 raises `Limited` and returns no bound; it cannot silently truncate the optimum.
+Resource limits are per cut, not a combined elapsed-time limit for the sweep.
 
 ## Evidence and replay
 
