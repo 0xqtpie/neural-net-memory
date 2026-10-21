@@ -1,7 +1,7 @@
 {
   "schema": "research-verification/v1",
   "status": "PASS",
-  "checked_utc": "2026-10-21T23:21:01Z",
+  "checked_utc": "2026-10-21T23:24:24Z",
   "platform": "macOS-15.5-arm64-arm-64bit-Mach-O",
   "command": "sandbox-exec -f SESSION/research.sb /opt/homebrew/bin/python3 -B research/native-transformer-proof-round2/replay.py",
   "final_core_command": "sandbox-exec -f SESSION/research.sb /opt/homebrew/bin/python3 -B verify_all.py",

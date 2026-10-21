@@ -190,8 +190,10 @@ The mathematical cut/projection/reduction lemmas remain explicit review items.
 
 The original-budget 12-unit case at budget 478,150,656 remains unresolved.
 The unrestricted critical-cut run reached its 10-million-parent-record cap
-after 68 seconds, with 7,199,339 distinct labels and minimum unresolved
-`spent + lower_bound` 457,211,904, below budget. Its initial favorable bounds
+after 68 seconds, with 7,199,339 distinct labels and minimum remaining queue
+priority (`spent + lower_bound`) 457,211,904, below budget. This priority is a
+diagnostic only: the popped state may be incompletely expanded on a record
+limit, so it is not a certified bound on all unresolved work. Its initial favorable bounds
 range from 385,187,840 to 516,718,592; a minimum seed retains b0/b1/b2 residual1
 alongside the forced up/GELU. This is a limited search, with no exclusion or
 optimality conclusion. `evidence/cap12-limited.jsonl` retains exact parameters,
