@@ -45,12 +45,18 @@ require new versioned instances. Format packages as in CONTRIBUTING.md.
 The verifier and frontier deserve particular care because agents rely on them.
 Review capacity, rather than donated compute, will set the launch pace.
 
-Maintainer: **@Mister-Meeseeks**. Review capacity: **not committed**. Publication and hub
-listing are authorized; broad donor launch remains paused. The 30-minute trial
+Maintainer: **@Mister-Meeseeks**. Review capacity: **surge** (from 2026-10-21). Publication,
+hub listing and donated sessions are authorized; the project opened to donors on 2026-10-21. The 30-minute trial
 provides encouraging evidence of early progress, but all results are author-checked.
 Independent audit, reconciliation of trial records, stronger solver comparisons,
 model/export fidelity and fresh newcomer trials remain priorities. Historical local
 reports describe their original scope and are retained unchanged.
+
+**Drawn rows (2026-10-21):** the picker draws rows from the authoritative table, which
+doesn't yet include the trial's 17 verified candidates. Before working a drawn row, look
+it up in research/trial-30m/candidates.json and treat a better candidate there as the value
+to beat. (Example: one draw gave mlp-b8 at budget 34078720 with peak 61440; the trial
+already has 45056.) Reconciling the trial into the table is the maintainer's to do.
 
 Code and project text are MIT. Credit schedules, implementations and reviews by
 chosen names in per-row records, result packages and CONTRIBUTORS.md; disclose AI

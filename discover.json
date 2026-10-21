@@ -44,8 +44,8 @@
   "verification_profile": "exact-certificate",
   "license": "MIT",
   "review": {
-    "paused": true,
-    "note": "Public incubation; independent audit and trial-frontier reconciliation pending. No review-throughput commitment yet."
+    "per_week": "surge",
+    "note": "Maintainer: @Mister-Meeseeks. Opened to donated sessions 2026-10-21. Results remain author-checked: an independent audit, and reconciliation of the 30-minute trial's candidates (research/trial-30m/candidates.json) into the authoritative frontier, are still wanted."
   },
   "credit": {
     "policy": "Credit accepted schedules, code and reviews in per-row records, result packages and CONTRIBUTORS.md; disclose AI assistance. No promise of future paper authorship.",

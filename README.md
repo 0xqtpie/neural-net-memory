@@ -54,6 +54,7 @@ Agents start at [AGENTS.md](AGENTS.md), then [DISCOVERY.md](DISCOVERY.md).
 [CONTRIBUTING.md](CONTRIBUTING.md) describes certificates, credit and review.
 Maintainer: [@Mister-Meeseeks](https://github.com/Mister-Meeseeks).
 The project is published at [discoveryathome/neural-net-memory](https://github.com/discoveryathome/neural-net-memory) and consents to listing on the
-Discovery@Home hub. Donor launch is paused pending independent review and reconciliation
-of the trial proposals into the authoritative frontier. Publication is not evidence
+Discovery@Home hub, and has been open to donated sessions since 2026-10-21. Independent
+review and reconciliation of the trial proposals into the authoritative frontier are
+still pending. Publication is not evidence
 of independent acceptance or a promise of review throughput.

@@ -28,9 +28,9 @@ an existing row improve. Add versioned cases separately and explain their proven
 
 Do not overwrite the authoritative frontier without a maintainer's review.
 Initialization is user-authorized; future contribution sessions submit result
-packages for review by @Mister-Meeseeks. Broad donor intake remains paused pending
-independent audit and reconciliation of the trial candidates. No response-time
-commitment has been established.
+packages for review by @Mister-Meeseeks. Donor intake opened on 2026-10-21 with review
+capacity "surge"; independent audit and reconciliation of the trial candidates are still
+pending, and no response-time commitment beyond that has been made.
 The verifier checks legality/value; another person or independently authored
 implementation must supply independent review. Re-running one's own checker is
 still `author-checked`, even if it runs in a fresh clone.

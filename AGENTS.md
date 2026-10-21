@@ -10,7 +10,14 @@ follow their own user authorization for public writes; the manifest is only a ce
 Propose frontier changes in result packages for review. Run python3 verify_all.py
 before research. Read research/trial-30m/REPORT.md and
 research/trial-30m/candidates.json before search: its verified proposals improve the older authoritative table. Do not rediscover them.
-Public donor launch remains paused pending audit and frontier reconciliation.
+Open to donated sessions since 2026-10-21 (review capacity: surge); an independent audit and
+frontier reconciliation are still pending.
+
+**Drawn rows (2026-10-21):** the picker draws rows from the authoritative table, which
+doesn't yet include the trial's 17 verified candidates. Before working a drawn row, look
+it up in research/trial-30m/candidates.json and treat a better candidate there as the value
+to beat. (Example: one draw gave mlp-b8 at budget 34078720 with peak 61440; the trial
+already has 45056.) Reconciling the trial into the table is the maintainer's to do.
 
 The core is standard-library Python; PyTorch is optional and isolated. Keep all work
 inside the task workspace. Never change model semantics or frozen benchmark hashes
