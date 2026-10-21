@@ -1,0 +1,63 @@
+{
+  "schema": "research-verification/v1",
+  "status": "PASS",
+  "evidence_level": "author-checked",
+  "verified_at": "2026-10-21T20:56:54.208955Z",
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "commands": [
+    {
+      "command": "python3 verify_all.py",
+      "result": "PASS: complete offline pilot verification in 2.358s; 60 rows, 418 baseline certificates and 25 exact tiny optima",
+      "log_sha256": "8450f5ac99737c502e5beeeceda4d50d726e4f0cc0fb521d7ab011da0e0c3955"
+    },
+    {
+      "command": "python3 -m unittest discover -s research/barrier-cut-20261021 -p 'test_*.py' -v",
+      "result": "9 tests pass on Python 3.13.3 and Python 3.9.6",
+      "log_sha256": "e2fe1af9410a181e8a21c3490df38a1f6ba930d4afe3f5f21cd014218e603953",
+      "python39_log_sha256": "94b1bd696d594c477e283ca005035add13b7ac7eaa15f727dad48b9861ec3404"
+    },
+    {
+      "command": "python3 research/barrier-cut-20261021/verify_result.py",
+      "result": "PASS: 3 stronger-bound proposals, all corresponding old witnesses, reconstructed cut and auxiliary witness replay"
+    }
+  ],
+  "differential_forward_pebbling": {
+    "cases": 146,
+    "applicable_cut_cases": 26,
+    "max_nodes": 7,
+    "seed": 20261021,
+    "cuts_above_exact_forward_optimum": 0
+  },
+  "negative_controls": [
+    "false bound",
+    "incomplete barriers",
+    "unknown/nonancestor barrier",
+    "stale graph hash",
+    "boolean cap",
+    "changed seed or row identity",
+    "auxiliary witness challenge-budget substitution",
+    "rebudgeted auxiliary extra-work overflow"
+  ],
+  "author_review": "Last-event argument, complete over-approximate closure, gcd step and scope reviewed by contributing author; no independent scientific review",
+  "artifacts_sha256": {
+    "README.md": "f4f5a2ead7a396df65c4d73b438d68b4eed648b3419ad8a06690990ef8fa8ccf",
+    "SOURCES.json": "c1dc5d237f96dd3db7923186a5ee9bff3761eaa02b47ce4a63353e5b49753f83",
+    "TASK.json": "e71a6bd9e9bbf8659f1e48fab0a4361c6902c5e37400716f5be03c68b02ffa38",
+    "certificates/auxiliary-budget.json": "cac339d92047bf6904ccfcb03f0cbe0859990855b8d5cb357756ac24f8576132",
+    "cut.json": "5b5633283f578fe245edb007485177ee3be2ff0aa3f48c97383587c326e27874",
+    "proposed-bounds.json": "18fcaa3422957c003e2fe226a083910ddf06c6b2de552d9d8ad2520f05ca0da6",
+    "reset_cut.py": "fba7f704e62e86308f983f700ced2623b6ebf5b07f35fac034eea88a730d0f4b",
+    "test_package.py": "807f423e3638a923e9a0865a94a4c3615c2c9f805805587339d0c288d6189608",
+    "test_reset_cut.py": "5cbc7b76c5f3e58b46a0dd218f954958940ba2675c113f0f0e90e5993be950e8",
+    "verify_result.py": "828191c46085110e18245bdfa64df3db9d129eaff6db3587c171144a1987614b"
+  },
+  "not_checked": [
+    "Independent mathematical proof/implementation review and maintainer acceptance",
+    "Existence or impossibility of a 1310720-byte witness at fixed budget 956301312",
+    "Global minimum replay cost or complete state-space search on the 56-node graph",
+    "Native Checkmate/DTR/Moccasin comparisons",
+    "Autograd saved-tensor/export fidelity, GPU or total training-memory gains",
+    "Reconstructing the unsuccessful beam-search trajectories from shipped source; local prototype archived separately"
+  ],
+  "frontier_records_changed": false
+}
