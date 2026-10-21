@@ -1,0 +1,60 @@
+{
+  "schema": "research-verification/v1",
+  "status": "PASS",
+  "evidence_level": "author-checked",
+  "verified_at": "2026-10-21T22:55:02Z",
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "independent_review": false,
+  "frozen_records_changed": false,
+  "commands": [
+    {
+      "command": "python3 research/transformer-regions-round2/verify_result.py --reconstruct",
+      "result": "PASS:2 strict fixed-budget witnesses;2 complete fixed-cap Dijkstra replays; transferred b2 universal floor655360",
+      "log_sha256": "fd5ce52cb0a4bcd79d60e0618ae46160913f76bcf069eac2154b503513c71995"
+    },
+    {
+      "command": "python3 -m unittest discover -s research/transformer-regions-round2 -p 'test_*.py' -v",
+      "result": "PASS:13 tests, including all25 tiny frontier controls and inherited PR6 b4 reproduction",
+      "log_sha256": "bd8be8c2e3ba402e1c1cdb83408ebcd716b357cd83e92479fcfd19a574af1169"
+    },
+    {
+      "command": "python3 verify_all.py",
+      "result": "PASS:23 root tests;60 rows;418 baseline certificates;25 tiny optima;8 catalogue controls",
+      "log_sha256": "50455e284c42e056253dd1b9a44445d7f4aaff978d2df661f70005a64a455f1b"
+    }
+  ],
+  "negative_controls": [
+    "Changed frozen graph",
+    "Retention cache globally charged",
+    "Malformed/duplicate/unknown retention sets",
+    "Early checkpoint drop causing missing dependency",
+    "Optimistic peak and recomputation claims",
+    "Wrong externally supplied budget",
+    "False bound and missing barrier",
+    "State limit never returns an optimum"
+  ],
+  "not_checked": [
+    "Independent code/scientific review or maintainer acceptance",
+    "Full global optimality for four-block transformer",
+    "12-chunk b4 witness at extra-work budget478150656",
+    "Native modern-solver comparison, autograd/export fidelity, GPU or total training-memory measurements"
+  ],
+  "artifacts_sha256": {
+    "README.md": "d688969f1ab92344fe1f92ccb736ae726f010fbebf5623a650b0e47b4a1075e6",
+    "SOURCES.json": "044c055b1c8b4c49d9c791498f40090e8dbc8e91a14759bd958960aaeb2441ad",
+    "TASK.json": "5f21fcd8e7e1f4ddf0151d414df2377007090c4cf6820b122666033120d6e2ee",
+    "b2-reset-cut.json": "00a3772e55799f5f8e0faa58894c1ae185f06049b2f37169b7b947a5c9281e29",
+    "certificates/transformer-b1-t32-cap327680-minwork.json": "4686769163389464eed291bd7a14fb3e5464477eedc813d7a6360429b931042a",
+    "certificates/transformer-b1-t32-cap360448-minwork.json": "1aef221be03e466b76584ed22bc89bcbc076b22c52441c3d457e79d5245fec79",
+    "certificates/transformer-b2-t64-b110821376-p655360.json": "4e04ce792f28b2451511b9781f80ffd6492ddb7e1fce92c767f5bb66465338a4",
+    "certificates/transformer-b2-t64-b27705344-p1245184.json": "1b7840bf50c26e3ac7ebffafe61d1c334cfa68565ebad45a372b3fa482d5dc60",
+    "compose_schedule.py": "c1fab376ee723d8f4fae35c600634705275da22e06fcb77183e6873b7f0cd839",
+    "experiments.jsonl": "8bb99f6b267798ac292bf4af8826c167de690661adff342de041d63ec9a3cb16",
+    "proposed-frontiers.json": "f73532c278fa63032fad344a0357461874182a1972326f9eeff39ce775de9d79",
+    "regional_exact.py": "0a6848a76242b0ad06ecda812984413fe9244f80db6456f708f3be8b7dc88109",
+    "reset_cut.py": "fba7f704e62e86308f983f700ced2623b6ebf5b07f35fac034eea88a730d0f4b",
+    "test_regions.py": "81363e20e1b11a20ec527f197e77b6af91b123ee8f8ce1f9368b3bdb4df3eea2",
+    "test_result.py": "801783640cd1c9cc274e418c8baa6377e1e165a5c0ae5013f23c2a7ec2f625ca",
+    "verify_result.py": "5241cc103e519e17df3aa978b7ade9d5e1c2d32b606826aa96ad062b603e1eab"
+  }
+}
