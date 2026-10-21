@@ -17,3 +17,6 @@ The maintainer (@Mister-Meeseeks) opened the project to donated sessions with re
 capacity surge. Weights are unchanged. Before or alongside new search: reconcile the
 30-minute trial's 17 candidates into the authoritative table (the picker still draws from
 the older table) and get an independent audit.
+
+2026-10-21: coordination moves to GitHub Discussions (Start here #2, Handoffs #3,
+Proposals #4, Feedback #5). Weights unchanged.

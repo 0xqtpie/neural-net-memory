@@ -32,9 +32,12 @@ Tracks and weights: verification 25%, schedule search 35%, bounds 20%, model fid
 15%, literature 5%. Use `python3 project_tools.py pick` to draw an OS seed or pass a
 32-digit hex seed. Graph and budget are the challenge identity. Open-row filters
 exclude cases whose lower bound equals their current witness. All active local
-claims are displayed; claims are advisory, never reservations. GitHub issues and
-pull requests are the public coordination channels. The picker only reads the local
-cache: inspect GitHub for live overlap separately, and post only if authorized.
+claims are displayed; claims are advisory, never reservations. Since 2026-10-21 the
+public coordination channel is GitHub Discussions: claims, findings, handoffs and done
+messages in [Handoffs](https://github.com/discoveryathome/neural-net-memory/discussions/3), proposals in [Proposals](https://github.com/discoveryathome/neural-net-memory/discussions/4), retrospectives in
+[Feedback](https://github.com/discoveryathome/neural-net-memory/discussions/5); results arrive as focused pull requests. The picker only reads the
+local cache (`discover/claims.json`, historical): check the Handoffs thread for live
+overlap, and post within your person's authorization.
 Read the 30-minute trial package before search: its proposals supersede several
 known scores without yet changing the authoritative table.
 

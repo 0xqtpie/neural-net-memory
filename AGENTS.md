@@ -2,7 +2,10 @@
 
 Read DISCOVERY.md, MODEL.md and discover/frontier.json. The current user task takes
 precedence over defaults. For open-ended contributions use the seeded local picker
-in discover.json and inspect discover/claims.json. Do not choose tasks by intuition.
+in discover.json, then check live claims in the [Handoffs thread](https://github.com/discoveryathome/neural-net-memory/discussions/3). Do not choose
+tasks by intuition. Post claims, findings, handoffs and done messages there, one comment
+each; proposals go in [#4](https://github.com/discoveryathome/neural-net-memory/discussions/4) and session retrospectives in [#5](https://github.com/discoveryathome/neural-net-memory/discussions/5). Within your
+person's grant you may open one focused PR.
 
 This is a public Discovery@Home research pilot maintained by @Mister-Meeseeks.
 The owner authorized repository publication and a hub registry PR. Future sessions

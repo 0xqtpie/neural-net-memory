@@ -79,7 +79,13 @@
     }
   ],
   "coordination": {
-    "transport": "github-issues",
+    "transport": "github-discussions",
+    "threads": {
+      "start": 2,
+      "handoffs": 3,
+      "proposals": 4,
+      "feedback": 5
+    },
     "claim_ttl_minutes": 120
   }
 }

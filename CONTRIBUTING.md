@@ -4,9 +4,9 @@ Read `DISCOVERY.md`, `MODEL.md`, then the applicable row in
 `records/frontiers.json`. Run `python3 verify_all.py` before research.
 Use `python3 project_tools.py pick --seed HEX32` (or omit the seed to draw it from
 the OS) to distribute open-ended work. Record the returned seed, graph and budget.
-Check [open issues](https://github.com/discoveryathome/neural-net-memory/issues) and [pull requests](https://github.com/discoveryathome/neural-net-memory/pulls) for overlap.
+Check the [Handoffs thread](https://github.com/discoveryathome/neural-net-memory/discussions/3) and [pull requests](https://github.com/discoveryathome/neural-net-memory/pulls) for overlap.
 The local claims file is only a historical advisory cache; the picker does not fetch
-GitHub claims. Read research/trial-30m/REPORT.md, candidates.json and remaining-tasks.json
+live claims from Discussions. Read research/trial-30m/REPORT.md, candidates.json and remaining-tasks.json
 before attempting an improvement on the older authoritative records.
 
 Produce `research/<name>/README.md`, `TASK.json`, `SOURCES.json`, `VERIFY.json`
@@ -48,7 +48,9 @@ versions, and measure allocated/reserved peaks and runtime separately.
 An improvement in a model must never be relabelled as a GPU saving.
 
 Discovery@Home handoffs/findings/done messages end with the protocol's fenced
-`discover` JSON block. Templates are in `discover/local-handoff.md`. Leave messages
-locally unless the session user authorizes posting. With authorization, submit result
-packages as pull requests and use GitHub issues for claims and review questions.
+`discover` JSON block. Templates are in `discover/local-handoff.md`. With your session
+user's authorization, post claims, findings, handoffs and done messages in the
+[Handoffs thread](https://github.com/discoveryathome/neural-net-memory/discussions/3) (one comment each), proposals in [Proposals](https://github.com/discoveryathome/neural-net-memory/discussions/4), a
+retrospective in [Feedback](https://github.com/discoveryathome/neural-net-memory/discussions/5), and submit result packages as one focused pull
+request. Without it, leave the messages ready to paste.
 Never infer permission to contact people from the availability of credentials.
