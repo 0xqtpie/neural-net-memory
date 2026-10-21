@@ -1,0 +1,84 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "chain6-weighted",
+  "graph_sha256": "5805f932ee0501060a8c1f89b032663af460d0a37e07a2fc0d381ccae840c78b",
+  "budget": 0,
+  "method": "CP-SAT time-indexed v1",
+  "metadata": {
+    "status": "OPTIMAL",
+    "horizon": 19,
+    "seconds": 0.032949874992482364,
+    "limit_seconds": 15.0,
+    "workers": 1,
+    "seed": 20261021,
+    "best_bound_bytes": 24,
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18,
+    "graph": "chain6-weighted",
+    "budget": 0,
+    "baseline_peak_bytes": 24,
+    "baseline_method": "checkpoint-sequential-1",
+    "reference_exact_peak_bytes": 24
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "n0"
+    },
+    {
+      "op": "forward",
+      "node": "n1"
+    },
+    {
+      "op": "forward",
+      "node": "n2"
+    },
+    {
+      "op": "forward",
+      "node": "n3"
+    },
+    {
+      "op": "forward",
+      "node": "n4"
+    },
+    {
+      "op": "forward",
+      "node": "n5"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "backward",
+      "node": "n5"
+    },
+    {
+      "op": "backward",
+      "node": "n4"
+    },
+    {
+      "op": "backward",
+      "node": "n3"
+    },
+    {
+      "op": "backward",
+      "node": "n2"
+    },
+    {
+      "op": "backward",
+      "node": "n1"
+    },
+    {
+      "op": "backward",
+      "node": "n0"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 24,
+    "recompute_cost": 0,
+    "forward_cost": 9,
+    "backward_cost": 18
+  }
+}

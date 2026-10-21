@@ -1,0 +1,7 @@
+test_horizon_cap_no_optimality_claim (test_cpsat.SolverTests.test_horizon_cap_no_optimality_claim) ... ok
+test_seeded_small_dags_against_enumeration (test_cpsat.SolverTests.test_seeded_small_dags_against_enumeration) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.675s
+
+OK

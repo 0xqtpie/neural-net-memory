@@ -1,0 +1,176 @@
+{
+  "schema": "research-evidence-manifest/v1",
+  "files": [
+    {
+      "path": "research/scientific-audit-20261021/REPORT.md",
+      "sha256": "3c20bbf765dc1af537ef0075e19fbbd0aee5a795ff7d6e12914a52f2abaac129",
+      "bytes": 5319
+    },
+    {
+      "path": "research/scientific-audit-20261021/aten-graph.txt",
+      "sha256": "8aa90a3a517c6fb5df3d09ce6120d87aef951791857a86d53eab3204347e4817",
+      "bytes": 797
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-unit-b0.json",
+      "sha256": "be4d897883f583dfe024c0165f66c425852e90f53ac00cf5c0fec31efe526a94",
+      "bytes": 1485
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-unit-b2.json",
+      "sha256": "dc5e93118a338e333f917338dc0f2d4450b00eff6d5179f3597fd0936618f6a8",
+      "bytes": 1802
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-unit-b4.json",
+      "sha256": "b8db668b9cfba696ad790bb3dc6b315777e644a5e55f7b3073d27c2751060618",
+      "bytes": 2071
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-weighted-b0.json",
+      "sha256": "4df23bdd5510c73ab55a3b1f26aa3d28f390712cf6699b0afc92e4c02ef70597",
+      "bytes": 1499
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-weighted-b2.json",
+      "sha256": "aaacdf8d69144bbc1d17017a3edda722b24aa772f5305254c62b1306864fe93c",
+      "bytes": 1922
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/chain6-weighted-b4.json",
+      "sha256": "4cc4e2c3d2fb8f8283cf2b4be9cc36e85cc20226ec807f8a8e6f7d4384813a98",
+      "bytes": 2025
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/diamond5-b0.json",
+      "sha256": "37c481cdcd462d0a8d1c8d553811cd05ef2564b7fcfa1a30c280dff39de6144a",
+      "bytes": 1465
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/diamond5-b2.json",
+      "sha256": "a3d1b8d78a4bbbfa8050bfeed4b59d1b4747b329b52243c72411a8ffd80beb53",
+      "bytes": 1675
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/diamond5-b4.json",
+      "sha256": "a7603b4721ca34d31319aa460592c815b06e6fa99f4f51d581092d429acbf830",
+      "bytes": 1884
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/exported-residual-mlp-8x64x256-v1-b0.json",
+      "sha256": "395e3142ade72ed2c54edba03b295cc9fbe1dd76ecb5817bcfbdb40935511e7f",
+      "bytes": 1501
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/exported-residual-mlp-8x64x256-v1-b2.json",
+      "sha256": "e5b1792fd9d3d2ad9bf8517f51cf7367746460ff22ca1c823c1d5f5a04908c9a",
+      "bytes": 1500
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/exported-residual-mlp-8x64x256-v1-b4.json",
+      "sha256": "5192d1e9f05eb9e6f3b63db2017fdb8d2cace21c7edb3e4ea9e64748f5deddd6",
+      "bytes": 1501
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/skip6-b0.json",
+      "sha256": "d7119943ef7cfca5c6c6e3e6c42c15613baa15a0e6d34aa0dd4729eb7b02189f",
+      "bytes": 1721
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/skip6-b2.json",
+      "sha256": "947c7036c48b318338908be80b4088582d4419e152a6333b6867f4f6fbbf7c0d",
+      "bytes": 1831
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/skip6-b4.json",
+      "sha256": "b7d40e80a5978cab9cef6f5f018971ec12117ef60cff005e1eb96a7e25b7efb1",
+      "bytes": 2091
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/stateful4-b0.json",
+      "sha256": "6d03705f116f5d3f26022ee787c6a65c4419878e87224a7f1937c8501de11f80",
+      "bytes": 1255
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/stateful4-b2.json",
+      "sha256": "4b2ddaee7a84b9dc0d5d84939957a5096893acb8e2a8ead8f84e8d37f8d1c20e",
+      "bytes": 1402
+    },
+    {
+      "path": "research/scientific-audit-20261021/certificates/stateful4-b4.json",
+      "sha256": "9bd51ec90ab5de231d0204314e17db9479c513eb9b83b127d05400617cef3a40",
+      "bytes": 1511
+    },
+    {
+      "path": "research/scientific-audit-20261021/cpsat_compare.py",
+      "sha256": "fc2a07e06628a4ad41764f66ee490670b9e8dfad3dd650645159ac0a6dfd62e4",
+      "bytes": 5828
+    },
+    {
+      "path": "research/scientific-audit-20261021/evidence-check.log",
+      "sha256": "e7d7a461a9cd830ef37eafb47b560508183fbfa8168e782656de4d4e3f4cca7d",
+      "bytes": 169
+    },
+    {
+      "path": "research/scientific-audit-20261021/export-audit.json",
+      "sha256": "246c4f7d1f94ece34fd139fb237387c1957655d351c36b82f788d768722d4ce4",
+      "bytes": 4050
+    },
+    {
+      "path": "research/scientific-audit-20261021/export.log",
+      "sha256": "246c4f7d1f94ece34fd139fb237387c1957655d351c36b82f788d768722d4ce4",
+      "bytes": 4050
+    },
+    {
+      "path": "research/scientific-audit-20261021/export_workload.py",
+      "sha256": "fce674e6c701ca79272cabd1abe5e69e4b81a0dcb35fc6de3678f24f419cdf3a",
+      "bytes": 5547
+    },
+    {
+      "path": "research/scientific-audit-20261021/fx-graph.txt",
+      "sha256": "2e4a94aa0863e5e6267c50e6fc8f5a590548fdd226fc5098ec37e6fb50da9370",
+      "bytes": 486
+    },
+    {
+      "path": "research/scientific-audit-20261021/graph.json",
+      "sha256": "985ff7c4cd064fbe27f534d7ce966661c2e6ccdc2db735fa420b2c3710f9de6f",
+      "bytes": 1868
+    },
+    {
+      "path": "research/scientific-audit-20261021/project-checks.log",
+      "sha256": "fe06a28e689e7c98cd455cd22d6b4e9564b6457647a9125d6f56d96aa22d438d",
+      "bytes": 3084
+    },
+    {
+      "path": "research/scientific-audit-20261021/solver-requirements.lock",
+      "sha256": "55ab8b6b96e311f08191d6dc94872c6b1e62b3af36c45d1f09512e3bf0ec82af",
+      "bytes": 166
+    },
+    {
+      "path": "research/scientific-audit-20261021/solver-results.json",
+      "sha256": "94fc711348925e1a34e5619071463d5050bfd850277e3322ad9ea0602556a309",
+      "bytes": 10600
+    },
+    {
+      "path": "research/scientific-audit-20261021/solver-tests.log",
+      "sha256": "4b2d5c686f0d20cbea19d24428c791717331192df92c98ef0d2d3af129a11c96",
+      "bytes": 322
+    },
+    {
+      "path": "research/scientific-audit-20261021/solver.log",
+      "sha256": "82d5ea801a27bca3ad7e5ca2a97cda0acc2cb0a0bca340fb57c16b3a279d8209",
+      "bytes": 8628
+    },
+    {
+      "path": "research/scientific-audit-20261021/test_cpsat.py",
+      "sha256": "5850ca8251eaa7d3271bea95f55c3d313b070a58668d81c515a296ef7076c52b",
+      "bytes": 1597
+    },
+    {
+      "path": "research/scientific-audit-20261021/verify_evidence.py",
+      "sha256": "a53f3c5f101ef8bb137b88db2120315391ed400678d598504cbe104a116d156e",
+      "bytes": 1286
+    }
+  ],
+  "scope": "Local evidence package; software/hash checks do not establish independent scientific review."
+}

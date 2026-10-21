@@ -1,0 +1,8 @@
+graph():
+    %x : [num_users=2] = placeholder[target=x]
+    %up : [num_users=1] = call_module[target=up](args = (%x,), kwargs = {})
+    %relu : [num_users=1] = call_module[target=relu](args = (%up,), kwargs = {})
+    %down : [num_users=1] = call_module[target=down](args = (%relu,), kwargs = {})
+    %add : [num_users=1] = call_function[target=operator.add](args = (%down, %x), kwargs = {})
+    %out : [num_users=1] = call_module[target=out](args = (%add,), kwargs = {})
+    return out

@@ -55,3 +55,12 @@ For the next monitored cohort, record cold-start orientation time, first useful
 artifact, reviewer minutes, acceptance latency, duplicate work and unsuccessful
 sessions. Later sessions inherit every known valid result. A lack of improvements
 is evidence to revise the task pool, not a reason to reset it to weaker baselines.
+
+## Executed-workload control and solver audit
+
+[The 21 October scientific audit](research/scientific-audit-20261021/REPORT.md)
+adds an audited PyTorch residual-block export and a compatible CP-SAT comparison.
+All 18 cases match the exact reference solver. The exported block is already
+solved at 18,432 modeled bytes and is a validation control, not a new search target.
+Use its exporter and saved-storage checks as a starting point for larger workloads;
+keep native-system and hardware-memory claims separate.

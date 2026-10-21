@@ -1,0 +1,80 @@
+{
+  "model": "activation-memory/v1",
+  "graph_id": "stateful4",
+  "graph_sha256": "3442e6f43be3aa28e057a99bc5d672bd98f16af5fe5602b7432d50f8c3becfe1",
+  "budget": 2,
+  "method": "CP-SAT time-indexed v1",
+  "metadata": {
+    "status": "OPTIMAL",
+    "horizon": 17,
+    "seconds": 0.02708100003656,
+    "limit_seconds": 15.0,
+    "workers": 1,
+    "seed": 20261021,
+    "best_bound_bytes": 9,
+    "peak_bytes": 9,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8,
+    "graph": "stateful4",
+    "budget": 2,
+    "baseline_peak_bytes": 9,
+    "baseline_method": "checkpoint-sequential-3",
+    "reference_exact_peak_bytes": 9
+  },
+  "actions": [
+    {
+      "op": "forward",
+      "node": "a"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "c"
+    },
+    {
+      "op": "drop",
+      "node": "b"
+    },
+    {
+      "op": "forward",
+      "node": "d"
+    },
+    {
+      "op": "loss"
+    },
+    {
+      "op": "drop",
+      "node": "d"
+    },
+    {
+      "op": "forward",
+      "node": "b"
+    },
+    {
+      "op": "backward",
+      "node": "d"
+    },
+    {
+      "op": "backward",
+      "node": "c"
+    },
+    {
+      "op": "backward",
+      "node": "b"
+    },
+    {
+      "op": "backward",
+      "node": "a"
+    }
+  ],
+  "claims": {
+    "peak_bytes": 9,
+    "recompute_cost": 1,
+    "forward_cost": 5,
+    "backward_cost": 8
+  }
+}
