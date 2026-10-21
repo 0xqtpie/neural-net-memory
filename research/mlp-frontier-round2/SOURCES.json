@@ -1,0 +1,140 @@
+{
+  "schema": "research-sources/v1",
+  "base_commit": "a95cc1588fc57a07cfcf5a350206825e6f5b4b52",
+  "files": [
+    {
+      "path": "MODEL.md",
+      "sha256": "356237ec6ce9efa5a99a87043ff556d7128eb0abacf8420dd003189d99cc596e"
+    },
+    {
+      "path": "benchmarks/graphs/chain6-unit.json",
+      "sha256": "c2f063aea1002714556075059680d24905d124c8f120af5f19f5400631240ec7"
+    },
+    {
+      "path": "benchmarks/graphs/chain6-weighted.json",
+      "sha256": "de9bdda2b63eaa4568e7b98a72a530253e976cfac5c2e90efcf378f160b91391"
+    },
+    {
+      "path": "benchmarks/graphs/mlp-b4.json",
+      "sha256": "a79ef876bcf903d9fadf5c6847cf265f923d344876a212065e42cba5d58865a5"
+    },
+    {
+      "path": "benchmarks/graphs/mlp-b8.json",
+      "sha256": "1e8cfa7109c20ca446365c6f72f12a8b7acd303da24c0ddd3a83ce922b5b5f08"
+    },
+    {
+      "path": "records/working-frontiers.json",
+      "sha256": "88cb5c9edd9c9905ae4b24b79ce6affdac8495c7babd7c13d2ea8a83a6292cb8"
+    },
+    {
+      "path": "research/mlp-frontier-round2/README.md",
+      "sha256": "cbcafe04c5eff85dd7b8d53b2c72b3a9d81674e5e3810db92f3366ed3e25cd17"
+    },
+    {
+      "path": "research/mlp-frontier-round2/TASK.json",
+      "sha256": "f1c98a15541604ad8e1e224dfc11c631d3e31c62ff7fe0e926fe15527cc3a3be"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/diagnostic-mlp-b4-cap36864.json",
+      "sha256": "e66f493c795b6a9702820f973f4d7b1b295e12e7ca8777d98b2162ae96a1134a"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/diagnostic-mlp-b8-cap36864.json",
+      "sha256": "1ec6eb12fb96e035b81bc60d9acd4e07b9a9a01a08e9c63bbf17841e72c3ee61"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b4-b0-p151552.json",
+      "sha256": "6543c471a5c04d1c25e07a5f49b84337d6f4ee40fbfc0abdb6dba9495f41b78d"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b4-b17039360-p40960.json",
+      "sha256": "ce5daec58164e117f0b2a81231209fa05e70274fe50a127955c5f7b51c7edc67"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b4-b2129920-p86016.json",
+      "sha256": "8c403619b521b040e6b50cb830125b41af2e42af7b1a52575b6c3bd4d57630b6"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b4-b4259840-p53248.json",
+      "sha256": "0ea55f520b61302c13bf26fdf1171e775d886ab32e46a33345a56793732ba3f1"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b4-b8519680-p45056.json",
+      "sha256": "a07cb0b485cf781a56464309baa316112fa5d13dd8c306cc1efe337ca51ccfaf"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b8-b0-p299008.json",
+      "sha256": "6deca90563b0b8ff496661c6f3e045634202837ac9e43d04bdb1ec9689ad012b"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b8-b17039360-p53248.json",
+      "sha256": "463e0b6c50ca141179b2f9856d915650f882c99f19705878fef02c2d23490402"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b8-b34078720-p40960.json",
+      "sha256": "2d2372df3565912c3297fa4a3904d15d6f56688efffc9e341737edf454c87539"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b8-b4259840-p135168.json",
+      "sha256": "fab2de89eb3bf3dbfa7f42db010655642fbaabdca47bc40ccc0edd46690c411f"
+    },
+    {
+      "path": "research/mlp-frontier-round2/certificates/mlp-b8-b8519680-p69632.json",
+      "sha256": "9602693ed26161b0728ae19626db9f663d7386f19c8866b5fe8d3c25a64b1c42"
+    },
+    {
+      "path": "research/mlp-frontier-round2/chain_exact.py",
+      "sha256": "3684feac3e66b40fe16a3e62c8316ac67fdc04bf7b9ebccd2661d262e3858eac"
+    },
+    {
+      "path": "research/mlp-frontier-round2/proposed-frontiers.json",
+      "sha256": "bece7d04d209d0929113554257798e48d055367fb735e0a3951c64f1a7d1f832"
+    },
+    {
+      "path": "research/mlp-frontier-round2/reference_fixed_cap.py",
+      "sha256": "ed985824363ea8a3db9dccea306d88acfe8935685e1874907df9b58d87faefde"
+    },
+    {
+      "path": "research/mlp-frontier-round2/replay.py",
+      "sha256": "d46e09642947b697301487b293b60c5c8733352867f756928d212f2b51a2decb"
+    },
+    {
+      "path": "research/mlp-frontier-round2/results.json",
+      "sha256": "4e32d0661bfd65b99d8e6348fe91322c42545f5d7ce920ea0a59d8e4df3ee99c"
+    },
+    {
+      "path": "research/mlp-frontier-round2/test_chain_exact.py",
+      "sha256": "daee2a4587d29ef610604d97944c1efebe3bb0fa06a99682b1dfcabafd0ab41b"
+    },
+    {
+      "path": "research/trial-30m/REPORT.md",
+      "sha256": "94a03ce8608d96b3adfb11fbd721b74bd94ed05c8d71cc2e3e9ddc4c8f114615"
+    },
+    {
+      "path": "research/trial-30m/candidates.json",
+      "sha256": "b19afbf27211cdfa6ecda1cdfba75bdc97c5b88a7d23e1623de8fbc8496d5974"
+    },
+    {
+      "path": "search.py",
+      "sha256": "7e321741e941d239392d2cf0e646c7ea05823a8f81dd2b4379300775c660ad63"
+    },
+    {
+      "path": "verifier.py",
+      "sha256": "104e5e63d1cdb95355153144666292125d64806ee7bf149d0af714b2a47e1015"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Prior PR 6 retention-transfer exact regional solver",
+      "url": "https://github.com/discoveryathome/neural-net-memory/pull/6",
+      "source_file": "shared/retention-transfer-20261021/regional_exact.py",
+      "sha256": "0a6848a76242b0ad06ecda812984413fe9244f80db6456f708f3be8b7dc88109",
+      "scope": "Read and executed as initial positive control; code not imported by final package."
+    }
+  ],
+  "credit": [
+    "Doug Colkitt / @Mister-Meeseeks: frozen model, workload graphs, verifier, original solver, and trial-30m mechanisms/results",
+    "Prior PR 6 retention-transfer package: fixed-cap minimum-work regional exact formulation and positive controls",
+    "Codex AI agent for @0xqtpie: chain exact compression, full-state cross-check implementation, proposed witness, package, author-team review"
+  ]
+}
