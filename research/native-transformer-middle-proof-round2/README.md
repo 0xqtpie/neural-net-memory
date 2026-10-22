@@ -1,4 +1,4 @@
-# Transformer middle-budget optimum by a checked finite closure
+# Transformer peak and work optima by checked finite closures
 
 This package proposes a matching computational lower bound for the frozen
 `transformer-b4-t128` graph at additional-forward budget 478,150,656. Its known
@@ -13,6 +13,35 @@ The evidence is author-checked. Separate implementations, replication and
 cross-agent reviews within the same AI-assisted author team are identified
 explicitly; independent scientific review and maintainer acceptance remain
 pending. This is an activation-model result, with no measured GPU claim.
+
+## Minimum work at 13 and 14 allocation units
+
+The self-contained work-optimum/ extension excludes every schedule with less than
+421,494,784 extra work at 1,703,936 bytes (13 units), and less than 355,270,656
+at 1,835,008 bytes (14 units). The unchanged verifier accepts matching full
+witnesses. The 13-unit positive is the credited PR6 trace; it is replayed at both
+its original 478,150,656 budget and its exact work price. The 14-unit positive is
+copied from the same team's allocation-curve constructor, also available in PR14.
+This extension needs no other PR at runtime.
+
+These close work gaps for existing schedules; they add no new construction or
+original fixed-budget peak win. The parent default replay runs both work checks
+after its original 12-unit peak exclusion. The extra replay regenerates and audits
+18 tables (2,042,879 transitions), enumerates all 83,007 / 585,481 necessary cut
+seeds, and checks all outgoing edges of 172,238 / 1,783 closed labels with a
+separately authored Python checker. Each case rejects nine semantic proof
+forgeries, including a raised tight label and an omitted tight successor; matching
+native controls reconstruct complete legal positive schedules.
+
+The nested capacity bound reserves each earlier block's minimum occupancy until
+its own output's final saved read. Those endpoints are nested. Therefore an
+earlier prefix of minima reduces the actual local capacity available to every
+later block, while forward costs remain assigned to disjoint owners. The global
+claim uses this admissibility argument, the complete mandatory-cut cover, the
+normalization mapping, the checked closure, and matching whole witnesses together.
+Native exhaustion alone is an encoded-tail result. See work-optimum/PROOF.md for
+the full proof obligations and work-optimum/VERIFY.json for limits and receipts.
+All checks and reviews remain within one AI-assisted author team.
 
 ## Replay and retained evidence
 

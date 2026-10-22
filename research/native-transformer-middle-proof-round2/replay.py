@@ -1,4 +1,4 @@
-"""Regenerate the unrestricted 12-unit exclusion and independently check closure."""
+"""Check the 12-unit peak exclusion and the 13/14-unit work optima."""
 import argparse
 import hashlib
 import itertools
@@ -22,6 +22,11 @@ def main():
     parser.add_argument('--out',type=Path,default=P/'generated')
     parser.add_argument('--prepare-only',action='store_true',help='generate the artifacts and controls but omit closure checking; this is not a completed proof replay')
     args=parser.parse_args()
+    pins=load(P/'SOURCE.json')
+    for name,wanted in pins['core_files'].items():
+        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==wanted,name
+    for name,wanted in pins['package_files'].items():
+        assert hashlib.sha256((P/name).read_bytes()).hexdigest()==wanted,name
     out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
     tmp=out/'tmp';tmp.mkdir(exist_ok=True)
     env=dict(os.environ,TMPDIR=str(tmp),NATIVE_PROOF_OUT=str(out))
@@ -93,7 +98,16 @@ def main():
         receipt=check(inp,labels,back,demand,terminal,tables)
         (out/'closure-check.json').write_text(json.dumps(receipt,indent=2)+'\n')
         call([sys.executable,'-B',P/'negative_controls.py','--out',out],'proof-negatives')
-    result=dict(status='PREPARED_NOT_CLOSURE_CHECKED' if args.prepare_only else 'PASS',evidence='author-checked; separately authored implementation checks within one AI-assisted author team; scientific acceptance pending',
+    work_command=[sys.executable,'-B',P/'work-optimum/replay.py','--out',out/'work-optimum']
+    if args.prepare_only:work_command.append('--prepare-only')
+    call(work_command,'work-optima',timeout=300)
+    work=load(out/'work-optimum/RESULTS.json')
+    assert work['status']==('PREPARED_NOT_CLOSURE_CHECKED' if args.prepare_only else 'PASS')
+    result=dict(work_optima=dict(status=work['status'],
+                cases=[{key:c[key] for key in ('cap_units','peak_bytes','minimum_work','strict_excluded_budget','seed_count','dump_sha256')} for c in work['cases']],
+                table_audited_edges=work['total_audited_table_edges'],
+                result_file=str(out/'work-optimum/RESULTS.json')),
+                status='PREPARED_NOT_CLOSURE_CHECKED' if args.prepare_only else 'PASS',evidence='author-checked; separately authored implementation checks within one AI-assisted author team; scientific acceptance pending',
                 graph_sha256=GRAPH_SHA,budget=478150656,excluded_peak_bytes=1572864,
                 matching_upper_peak_bytes=1703936,upper_recompute_cost=421494784,
                 compiler=compiler,flags=flags,python=sys.version,seconds=time.monotonic()-began,native=native,closure=receipt,
