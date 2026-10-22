@@ -21,6 +21,11 @@
       "command": "python3 verify_all.py",
       "result": "PASS:23 root tests;60 rows;418 baseline certificates;25 tiny optima;8 catalogue controls",
       "log_sha256": "50455e284c42e056253dd1b9a44445d7f4aaff978d2df661f70005a64a455f1b"
+    },
+    {
+      "command": "python3 research/transformer-regions-round2/work-curve/replay.py --out SCRATCH",
+      "result": "PASS eleven exact Pareto points",
+      "log_sha256": "5c945c8735b2889abcd2156dc06570d35b0e6e57025aef1bccf3c06d86c22737"
     }
   ],
   "negative_controls": [
@@ -40,7 +45,7 @@
     "Native modern-solver comparison, autograd/export fidelity, GPU or total training-memory measurements"
   ],
   "artifacts_sha256": {
-    "README.md": "045845e441a09b3cab3287f2b2305fde90ba133bd838bd8e09a9560ab815ed82",
+    "README.md": "65458ea9dcb098c94e1083bbb01fcd0b82f29bc556834227d1a31c38eb04f55c",
     "SOURCES.json": "044c055b1c8b4c49d9c791498f40090e8dbc8e91a14759bd958960aaeb2441ad",
     "TASK.json": "00bc8b425a8e19be019d00fefeb4ade247b1ab240c6b70b1012db0e822934a82",
     "b1-author-review.json": "97749a6eede968fadeafc6c3a5daaaff567c295006357e5b6173bbd1f11362cf",
@@ -61,7 +66,13 @@
     "reset_cut.py": "fba7f704e62e86308f983f700ced2623b6ebf5b07f35fac034eea88a730d0f4b",
     "test_regions.py": "81363e20e1b11a20ec527f197e77b6af91b123ee8f8ce1f9368b3bdb4df3eea2",
     "test_result.py": "a002fabc67ed9f3c39cb4f0950509c1909aa14f1e89a2811d7a9f9f957f77ecc",
-    "verify_result.py": "b0b6eed1b283d49439f200e008e57a01d7a7b991da6665bb5654b5e2e0f7db65"
+    "verify_result.py": "de9a4060dc15f78fbf22739203d589fea2776ee02097a87a82a0cd41cadd7b01",
+    "work-curve/.gitignore": "f5c10da83055c0c3e72f3167971d1916e443dc90390e32b42844552cc37b81e0",
+    "work-curve/EXPECTED.json": "a28b24a11cf3249e9e073daf51ed1ea0dab0f5ed7ea2af1b2e113c00935377f4",
+    "work-curve/README.md": "71da2bee4ada9061c5aa137efeeadbfaea28b4947ad316e796c0addc391689c8",
+    "work-curve/author-review.json": "13c15b796ec92a48a00bc478f08f5c289a4849c59fd49199680c74e1bcf5c4b5",
+    "work-curve/parent-replay.log": "5c945c8735b2889abcd2156dc06570d35b0e6e57025aef1bccf3c06d86c22737",
+    "work-curve/replay.py": "5051d4e18581180317d86e5b1452be5ea961e727ef9900bedccaaa5c3c7edae7"
   },
   "secondary_work_result": {
     "peak_bytes": 294912,
@@ -69,5 +80,11 @@
     "new_work": 23281664,
     "negative_budget": 23281663,
     "evidence": "full fixed-cap Dijkstra; same author team"
+  },
+  "one_block_curve": {
+    "points": 11,
+    "positive": "full verifier PASS",
+    "negative": "10 exhausted work-minus-one calls",
+    "evidence": "same author team; outside review pending"
   }
 }

@@ -1,5 +1,5 @@
 """Replay proposed witnesses and fixed-cap results with the frozen verifier."""
-import argparse, hashlib, json, sys
+import argparse, hashlib, json, sys, subprocess, tempfile
 from pathlib import Path
 HERE=Path(__file__).resolve().parent; ROOT=HERE.parents[1]
 sys.path[:0]=[str(ROOT),str(HERE)]
@@ -57,7 +57,14 @@ def main(reconstruct=False):
  graph=load(ROOT/'benchmarks/graphs/transformer-b2-t64.json');cut=load(HERE/'b2-reset-cut.json');bound=check_cut(graph,cut)
  if reconstruct and find_cut(graph)!=cut:raise ValueError('cut classifier replay mismatch')
  if bound!=655360:raise ValueError('unexpected structural floor')
- print(json.dumps(dict(status='PASS',evidence_level='author-checked',reconstructed=reconstruct,results=result,b2_universal_floor=bound),sort_keys=True))
+ curve=None
+ if reconstruct:
+  with tempfile.TemporaryDirectory(prefix='work-curve-',dir=HERE) as temporary:
+   call=subprocess.run([sys.executable,'-B',str(HERE/'work-curve/replay.py'),'--out',temporary],capture_output=True,text=True,timeout=300)
+   if call.returncode:raise RuntimeError(call.stderr)
+   curve=json.loads(call.stdout)
+  if curve['status']!='PASS' or len(curve['rows'])!=11:raise ValueError('work curve replay failed')
+ print(json.dumps(dict(status='PASS',evidence_level='author-checked',reconstructed=reconstruct,results=result,b2_universal_floor=bound,one_block_work_curve=curve),sort_keys=True))
  return result
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--reconstruct',action='store_true');args=parser.parse_args();main(args.reconstruct)

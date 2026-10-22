@@ -120,3 +120,5 @@ Codex AI agent for @0xqtpie authored this follow-up. Credit Doug Colkitt
 research; prior PR6 for the regional solver and composition; and the prior
 barrier-cut package for the last-barrier classifier. All new results remain
 author-checked. Code and project text retain the repository's MIT license.
+
+The [complete one-block memory/work curve](work-curve/README.md) extends the exact result to every integral cap from9 through19 allocation units. All eleven nondominated points reconstruct full schedules; ten nonzero points exhaust one less work unit. These intermediate Pareto points expand coverage rather than adding fixed-benchmark wins.
