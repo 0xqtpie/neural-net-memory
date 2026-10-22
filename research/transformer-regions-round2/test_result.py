@@ -4,8 +4,16 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1];sys.path[:0]=[str(ROOT
 from verifier import load,verify,simulate,Invalid
 from compose_schedule import compose
 from reset_cut import check_cut
-from verify_result import WITNESSES
+from verify_result import WITNESSES,WORK_WITNESS
+from regional_exact import solve
 class ResultTests(unittest.TestCase):
+ def test_one_block_secondary_work_boundary(self):
+  gid,budget,cap,oldwork,work=WORK_WITNESS
+  graph=load(ROOT/f'benchmarks/graphs/{gid}.json')
+  saved=load(HERE/'certificates/transformer-b1-t32-b26615808-p294912-minwork.json')
+  self.assertEqual((verify(graph,saved,budget)['peak_bytes'],saved['claims']['recompute_cost']),(cap,work))
+  self.assertLess(work,oldwork)
+  self.assertIsNone(solve(graph,cap,work-1,states=220000,seconds=15))
  def test_two_complete_fixed_budget_constructions(self):
   for gid,budget,before,peak,cost,retained in WITNESSES:
    g=load(ROOT/f'benchmarks/graphs/{gid}.json');actions,stats=compose(g,peak,budget,retained=retained);m=simulate(g,actions,budget)

@@ -32,5 +32,22 @@
       "author-checked"
     ],
     "acceptance": "proposal; independent review pending"
+  },
+  {
+    "graph": "transformer-b1-t32",
+    "budget": 26615808,
+    "peak_bytes": 294912,
+    "recompute_cost": 23281664,
+    "starting_peak_bytes": 294912,
+    "starting_recompute_cost": 24854528,
+    "objective": "secondary work at unchanged peak",
+    "exact_minimum_work_at_peak": true,
+    "object": "research/transformer-regions-round2/certificates/transformer-b1-t32-b26615808-p294912-minwork.json",
+    "sha256": "86bbc795e6fd723cf1e961fb72cdb6de96b9e276bd6991c9284e590cf038a988",
+    "source": "research/transformer-regions-round2/README.md",
+    "evidence_level": [
+      "author-checked"
+    ],
+    "acceptance": "proposal; independent review pending"
   }
 ]

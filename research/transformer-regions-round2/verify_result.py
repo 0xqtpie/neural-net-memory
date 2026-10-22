@@ -13,6 +13,7 @@ WITNESSES=[
  ('transformer-b2-t64',110821376,720896,655360,106725376,None),
 ]
 EXACT=[(6653952,393216,360448,7725056),(13307904,360448,327680,15851520)]
+WORK_WITNESS=('transformer-b1-t32',26615808,294912,24854528,23281664)
 
 def main(reconstruct=False):
  manifest=load(HERE/'VERIFY.json')
@@ -34,6 +35,16 @@ def main(reconstruct=False):
    actions,_=compose(graph,peak,budget,retained=retained)
    if actions!=cert['actions']:raise ValueError('constructor action replay mismatch')
   result.append(dict(graph=gid,budget=budget,before_peak=before,**actual))
+ gid,budget,cap,oldwork,work=WORK_WITNESS
+ graph=load(ROOT/f'benchmarks/graphs/{gid}.json')
+ cert=load(HERE/'certificates/transformer-b1-t32-b26615808-p294912-minwork.json')
+ actual=verify(graph,cert,budget)
+ if actual['peak_bytes']!=cap or actual['recompute_cost']!=work or work>=oldwork:raise ValueError('work improvement mismatch')
+ if reconstruct:
+  solved=solve(graph,cap,budget,states=220000,seconds=15)
+  if solved is None or solved['actions']!=cert['actions']:raise ValueError('work construction replay mismatch')
+  if solve(graph,cap,work-1,states=220000,seconds=15) is not None:raise ValueError('smaller work unexpectedly feasible')
+ result.append(dict(graph=gid,budget=budget,objective='recompute at fixed peak',before_work=oldwork,exact_minimum_work=work,**actual))
  graph=load(ROOT/'benchmarks/graphs/transformer-b1-t32.json')
  for budget,peak,cap,minwork in EXACT:
   name=f'transformer-b1-t32-cap{cap}-minwork.json';cert=load(HERE/'certificates'/name)
