@@ -1,11 +1,23 @@
-# Less replay work at the existing b4 transformer peak
+# Less recomputation and an exact high-memory transformer frontier
 
 For the frozen `transformer-b4-t128` case with additional-forward budget
 956,301,312, a new full schedule reduces additional forward work from
 **737,935,360 to 702,349,312** at the existing **1,441,792-byte peak**.
-The reduction is 35,586,048 work units, or **4.82%**. This is a secondary
-work improvement at a fixed peak, not a new peak result or a global work optimum.
+Two further full schedules improve work at higher existing peaks:
+
+| Peak bytes | Original budget | Strongest previous work | New work | Reduction |
+|---:|---:|---:|---:|---:|
+|1,441,792|956,301,312|737,935,360|702,349,312|4.82%|
+|2,883,584|239,075,328|234,717,184|234,618,880|0.0419%|
+|4,718,592|119,537,664|117,211,136|117,178,368|0.0280%|
+
+The latter two now have matching global minimum-work bounds. A broader source-only
+replay reconstructs69 full schedules and gives matching bounds at every cap from
+15 through82 allocation units: **68 exact work optima**. These intermediate
+Pareto points expand coverage; they are not additional original benchmark wins.
 The unchanged full verifier checks every allocation and every repeated forward.
+The1,441,792-byte point remains a constructive work gain with no global
+minimum-work claim. None of these results reduces an original peak further.
 
 ## Constructor and replay
 
@@ -20,6 +32,8 @@ python3 verify_all.py
 
 The replay checks pinned sources, verifies the saved complete certificate, builds
 the tiny local tables, reconstructs the exact action list and verifies it again.
+It also replays the joint cache-allocation constructor and the complete high-memory
+curve with all local Bellman/tight-path audits and positive/negative controls.
 No optional solver, precomputed binary table, omitted-prefix initialization or
 external package is needed. The certificate can also be passed directly to
 `verifier.py` with budget 956301312.
@@ -61,6 +75,36 @@ domains could not improve that trace. Those finite-domain negatives are not glob
 and outcomes; the full raw session logs remain in the session research scratch.
 The portable contract here is exact reconstruction of the winning schedule.
 
+## Joint allocation and necessary regional prices
+
+The [allocation extension](allocation/NOTES.md) prices all4096 useful earlier
+cache masks and allocates their bytes jointly across three earlier blocks. Each
+full schedule charges every external checkpoint while an exact local region
+trains. It produces the two higher-memory gains above. The
+[generalized constructor](curve-construction/NOTES.md) reconstructs every full
+trace at caps14 through82, checks its exact work budget, and additionally checks
+the original22/36-unit challenge budgets. No action lists or generated binary
+tables for the entire curve are committed.
+
+The [factored mandatory-cut proof](factored-bound/README.md) starts at first
+final GELU, gives all earlier work free, and prices disjoint block-owned future
+work. A region's minimum occupancy persists until a required downstream output
+read, reserving that many bytes while later regions train. Exact local
+output-demand and terminal databases supply favorable prices; a small integer
+DP minimizes over every necessary current-size/minimum-size tuple. A separately
+authored direct enumeration checks the factoring. The
+[nested endpoint extension](curve-bound/NESTED-PROOF.md) uses each region's own
+output-read endpoint and closes one additional cap. It preserves arbitrary
+first-forward, recomputation and backward orders.
+
+The [joint curve replay](curve-bound/README.md) audits all consumed local tables
+and verifies every generated full schedule. Caps15 through82 match; at14 units
+the remaining lower/upper gap is819,200 work units. The first zero-work peak is
+82 units (10,747,904 bytes), with a positive lower bound at81. All graph sizes
+are integral131,072-byte units, so these prices cover the intermediate byte
+allowances too. The fully audited unreachable terminal problem at9 units also
+gives a universal10-unit peak floor at any work budget.
+
 ## Controls and limits
 
 Five tests cover reconstruction, full verification, charged work limits, frozen
@@ -71,7 +115,7 @@ parameters fixed. Ancestor recovery and zero marginal prices produce
 budget. These are untuned mechanism controls, not a fair comparison between
 retuned solvers, and not evidence of external state of the art.
 
-The minimum work at this fixed peak remains open. Other keeper policies,
+The minimum work at the1,441,792-byte peak remains open. Other keeper policies,
 lookahead and joint retention transfers may improve it. This proposal does not
 measure GPU memory, runtime, exporter fidelity or external solver performance.
 Core code, graph/model semantics, original and working frontier records remain
