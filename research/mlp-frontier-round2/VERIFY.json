@@ -78,7 +78,7 @@
     "scope": "94 positive caps,92 work-minus-one exclusions,34 nondominated steps,10 original-budget replays",
     "entrypoint": "research/mlp-frontier-round2/replay.py invokes work-curve/replay.py in a temporary directory",
     "evidence": "Author-checked; separately authored same-team review, not independent scientific acceptance",
-    "recorded_child_evidence": "research/mlp-frontier-round2/work-curve/evidence.json",
+    "recorded_child_evidence": "research/mlp-frontier-round2/work-curve/evidence/results.json",
     "parent_fresh_replay": {
       "status": "PASS",
       "python": "3.9.6",
