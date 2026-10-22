@@ -82,6 +82,22 @@ record and 120-second limits. Every layer closed and the queue was empty.
 The dump-only replay reproduced those counts. Verification receipts report
 the additional checker and database-audit costs separately.
 
+## Auxiliary 12-unit construction
+
+At an explicitly auxiliary allowance of 540,246,016, a complete schedule peaks at
+1,572,864 bytes (12 units). The source trace in controls/traces/ allows
+600,000,000 work and actually spends 540,246,016. The exact-budget copy in
+controls/auxiliary12-exact-work-budget.json preserves every action and claim.
+check_auxiliary12.py verifies both copies, checks their action identity, and
+retags a negative control to the original 478,150,656 allowance, which rejects
+on actual recomputation work. The default replay runs these checks.
+
+The strongest applicable pre-round trace at at most 12 units uses 737,935,360
+work; the auxiliary schedule reduces that by 26.79%. Its minimum possible work
+remains open. This is an intermediate work-curve improvement; it is not a
+12-unit witness at the original middle budget and is not an extra fixed-budget
+benchmark win. Credit and the unchanged source trace are preserved.
+
 ## Every global 12-unit schedule has a suffix in this search
 
 At the first `b3_gelu` allocation, every one of its 54 ancestors, including

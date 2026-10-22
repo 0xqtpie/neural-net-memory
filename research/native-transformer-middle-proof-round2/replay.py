@@ -92,6 +92,7 @@ def main():
     call([sys.executable,'-B',P/'test_generic_region_bounds.py','--repo',ROOT,'--out',out/'generic-region-results.json'],'generic-region-controls')
     call([sys.executable,'-B',P/'check_recursive_actual.py','--repo',ROOT,'--pdb-dir',tables,'--cert-dir',P/'controls/traces'],'recursive-actual-controls')
     call([sys.executable,'-B',P/'native_driver.py','--cap','1572864','--budget','540246016','--states','1000000','--seconds','30','--demand-mode','1','--prefix-from',P/'controls/traces/auxiliary-12u-retimed.json','--pdb',back,'--demand-pdb',demand,'--terminal-pdb',terminal,'--region-bound'],'positive12-control',timeout=45)
+    auxiliary12=json.loads(call([sys.executable,'-B',P/'check_auxiliary12.py'],'auxiliary12-exact-budget'))
     receipt=None
     if not args.prepare_only:
         from check_closed import check
@@ -103,7 +104,7 @@ def main():
     call(work_command,'work-optima',timeout=300)
     work=load(out/'work-optimum/RESULTS.json')
     assert work['status']==('PREPARED_NOT_CLOSURE_CHECKED' if args.prepare_only else 'PASS')
-    result=dict(work_optima=dict(status=work['status'],
+    result=dict(auxiliary12=auxiliary12,work_optima=dict(status=work['status'],
                 cases=[{key:c[key] for key in ('cap_units','peak_bytes','minimum_work','strict_excluded_budget','seed_count','dump_sha256')} for c in work['cases']],
                 table_audited_edges=work['total_audited_table_edges'],
                 result_file=str(out/'work-optimum/RESULTS.json')),

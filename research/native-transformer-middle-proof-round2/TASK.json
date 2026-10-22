@@ -42,5 +42,14 @@
     "scope": "Global necessary-cut work lower bounds and existing matching whole witnesses, no additional original benchmark win",
     "method": "Nested per-owner minimum occupancy capacities plus separately authored closed-label checker",
     "evidence": "author-checked; same-author-team reviews; external scientific review pending"
+  },
+  "auxiliary12_exact_budget": {
+    "cap_bytes": 1572864,
+    "source_allowance": 600000000,
+    "exact_allowance": 540246016,
+    "original_middle_allowance": 478150656,
+    "fits_original_middle_allowance": false,
+    "extra_original_benchmark_wins": 0,
+    "source_actions_unchanged": true
   }
 }
