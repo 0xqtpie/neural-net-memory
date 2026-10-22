@@ -6,6 +6,8 @@ import hashlib
 import json
 import platform
 import resource
+import subprocess
+import tempfile
 import sys
 import time
 from pathlib import Path
@@ -97,7 +99,14 @@ def run(record=False):
   diagnostics.append(dict(graph=graph,cap=36864,diagnostic_budget=budget,
                           minimum_work=expected,stats=stats,
                           object=str(path.relative_to(R)),sha256=sha(path)))
+ with tempfile.TemporaryDirectory(prefix='mlp-work-curve-') as directory:
+  subprocess.run([sys.executable,'-B',str(P/'work-curve/replay.py'),
+                  '--repo',str(R),'--out',directory],check=True,cwd=R)
+  curve=load(Path(directory)/'RESULTS.json')
+  curve_summary={key:curve[key] for key in ('status','verified_cap_points',
+    'nondominated_steps','work_minus_one_exclusions','original_budget_replays')}
  result=dict(base_commit=BASE,evidence_level='author-checked',
+             complete_work_curves=curve_summary,
              status='PASS',rows=results,diagnostics=diagnostics,
              improved_positive_generic=dict(minimum_work=cost,**oracle),
              seconds=time.monotonic()-started,
@@ -109,7 +118,7 @@ def run(record=False):
  if record:
   dump(P/'results.json',result);dump(P/'proposed-frontiers.json',proposed)
  print(json.dumps(dict(status='PASS',rows=len(results),improvements=1,
-                       newly_closed_rows=8,seconds=result['seconds'],
+                       newly_closed_rows=8,complete_work_curves=curve_summary,seconds=result['seconds'],
                        maxrss_bytes=result['maxrss_bytes'])),flush=True)
  return result
 

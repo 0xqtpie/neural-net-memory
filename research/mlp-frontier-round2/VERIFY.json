@@ -73,5 +73,23 @@
     "GPU memory/runtime",
     "General branching DAG optimality",
     "Machine-checked proof"
-  ]
+  ],
+  "complete_work_curves": {
+    "scope": "94 positive caps,92 work-minus-one exclusions,34 nondominated steps,10 original-budget replays",
+    "entrypoint": "research/mlp-frontier-round2/replay.py invokes work-curve/replay.py in a temporary directory",
+    "evidence": "Author-checked; separately authored same-team review, not independent scientific acceptance",
+    "recorded_child_evidence": "research/mlp-frontier-round2/work-curve/evidence.json",
+    "parent_fresh_replay": {
+      "status": "PASS",
+      "python": "3.9.6",
+      "command": "python3 -B research/mlp-frontier-round2/replay.py",
+      "exit_code": 0,
+      "log": "research/mlp-frontier-round2/logs/full-curve-integration-py39.log",
+      "log_sha256": "3a9965a42500b9e20c72ac4efbdb5fdd82dd994c1db2772796696ecdb38416b7",
+      "seconds": 53.422144208,
+      "child_seconds": 48.542267458,
+      "maxrss_bytes": 118030336,
+      "scope": "Original fixed-row checks plus94cap points,92work-minus-one exclusions,34steps,10original-budget replays"
+    }
+  }
 }

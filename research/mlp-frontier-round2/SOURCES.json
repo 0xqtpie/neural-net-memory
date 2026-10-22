@@ -28,11 +28,15 @@
     },
     {
       "path": "research/mlp-frontier-round2/README.md",
-      "sha256": "cbcafe04c5eff85dd7b8d53b2c72b3a9d81674e5e3810db92f3366ed3e25cd17"
+      "sha256": "2f75d58dfc1afc992f153717fa0f591599bda72685a6e35b59c524c5302c8e2d"
     },
     {
       "path": "research/mlp-frontier-round2/TASK.json",
-      "sha256": "f1c98a15541604ad8e1e224dfc11c631d3e31c62ff7fe0e926fe15527cc3a3be"
+      "sha256": "062716a6a50524c6ce6a2c4385a3f78a63fbf031a7b0224c46c1c93ce34920ba"
+    },
+    {
+      "path": "research/mlp-frontier-round2/VERIFY.json",
+      "sha256": "c778c3f6a7d6a1670700b66f64f4b217bbd1119ace9aa7899e85c901927e167f"
     },
     {
       "path": "research/mlp-frontier-round2/certificates/diagnostic-mlp-b4-cap36864.json",
@@ -87,6 +91,10 @@
       "sha256": "3684feac3e66b40fe16a3e62c8316ac67fdc04bf7b9ebccd2661d262e3858eac"
     },
     {
+      "path": "research/mlp-frontier-round2/logs/full-curve-integration-py39.log",
+      "sha256": "3a9965a42500b9e20c72ac4efbdb5fdd82dd994c1db2772796696ecdb38416b7"
+    },
+    {
       "path": "research/mlp-frontier-round2/proposed-frontiers.json",
       "sha256": "bece7d04d209d0929113554257798e48d055367fb735e0a3951c64f1a7d1f832"
     },
@@ -96,7 +104,7 @@
     },
     {
       "path": "research/mlp-frontier-round2/replay.py",
-      "sha256": "d46e09642947b697301487b293b60c5c8733352867f756928d212f2b51a2decb"
+      "sha256": "668c49c3502b0a775833c838955a534a6deb0fad10516e86851d793093fdc5c4"
     },
     {
       "path": "research/mlp-frontier-round2/results.json",
@@ -105,6 +113,54 @@
     {
       "path": "research/mlp-frontier-round2/test_chain_exact.py",
       "sha256": "daee2a4587d29ef610604d97944c1efebe3bb0fa06a99682b1dfcabafd0ab41b"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/.gitignore",
+      "sha256": "bdda27b07dc184f105e5309dd7680f3bf05d33d3d982184c36c83e89123f2cd6"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/COMPARISON.json",
+      "sha256": "9e2b2aa561cf4f9622dde8c84b0066dbde00b40c029d3bd9bb37dfa7eaa482e0"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/EXPECTED.json",
+      "sha256": "d8f8ee07a47702c1f6ee7243c1240c56cbc86be64ab619d95b24132cb4e920b7"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/README.md",
+      "sha256": "b1a08426bd5448af4c789061b016cad380c7e015184a8ea5e37aafd0f34c17da"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/SOURCES.json",
+      "sha256": "23deab07b0d0093d38a983d9ea4ed2925b7a2761ae4cf1353e0a6b18184f6d3e"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/VERIFY.json",
+      "sha256": "04daf62347a4ae5e8184fc5d9a69cc45d7e00a053839e0a8486dd8e7ad44dafd"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/evidence/core-verify.log",
+      "sha256": "48c9395f9e9b79cb966cc44b9571e365afe7d078141e2ca9f5b383612b9f7284"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/evidence/measurements.jsonl",
+      "sha256": "68c2e26de13847ad50cfddbf12e1a90568e02bd25e3ad80fd32a45879bab9120"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/evidence/parent-author-review.json",
+      "sha256": "0a45e1801121790b8700bc6c205a0e1b0fa8be8bb0e3a0905229caf096ba2fb6"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/evidence/replay.log",
+      "sha256": "d841856b4c8e4e6fabf56672a743299322a153ca06213cc4753b0cdd891aa222"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/evidence/results.json",
+      "sha256": "509b7d34d949a654bebd6d0473f5d3cf206792b5575c985045e1e56e28428767"
+    },
+    {
+      "path": "research/mlp-frontier-round2/work-curve/replay.py",
+      "sha256": "9b078f849f0519be4eeea3f73a59638da20a3c395f1d86afd527043fee563e9d"
     },
     {
       "path": "research/trial-30m/REPORT.md",

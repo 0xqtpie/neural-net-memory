@@ -1,4 +1,4 @@
-# Exact original-budget MLP frontiers
+# Exact MLP peak frontiers and complete work curves
 
 **One strict peak improvement and exact computational closure of all eight open
 MLP rows.** At the unchanged mlp-b8 budget 34,078,720, the peak decreases from
@@ -51,6 +51,31 @@ certificates use explicitly labeled diagnostic budgets; they are not new frozen
 challenge rows or frontier proposals. Below 36,864 bytes is impossible even with
 unlimited recomputation: immutable x (4,096), UP input (16,384), and GELU output
 (16,384) must coexist during every UP→GELU allocation.
+
+## Complete fixed-memory work curves
+
+The work-curve/ extension reconstructs the minimum extra forward work at every
+integer memory cap from the universal nine-unit floor to zero work: 29 caps for
+mlp-b4 (9..37) and 65 for mlp-b8 (9..73), in units of 4,096 bytes. The compact
+representation has 34 nondominated steps. Each of the 94 positive schedules is
+checked by the unchanged verifier; all 92 positive-work caps have exhaustive
+work-minus-one exclusions. Ten replays use the original benchmark budgets.
+The default replay below runs this extension too, using a temporary directory.
+
+This adds schedules between the original benchmark points, including mlp-b4
+at 12 units (4,325,376 to 4,292,608 work) and mlp-b8 at 11 units
+(31,981,568 to 21,364,736) and 14 units (12,877,824 to 11,829,248).
+These comparisons use the strongest applicable pre-round certificates, as
+recorded in work-curve/COMPARISON.json; they are auxiliary curve improvements,
+not additional original fixed-budget peak wins. The parent cap-nine diagnostic
+prices already existed earlier in this round and are not counted again.
+
+The chain normalization proof below applies to all these finite caps. The
+mandatory UP/GELU allocation proves the floor at every budget. With zero extra
+work, every positive-cost saved value must survive its first forward evaluation
+until the relevant backward; hence all values coexist at the final first forward.
+The zero-work tails begin at 37 and 73 units. See work-curve/README.md for the
+full scope, compact step tables, limits, evidence, and same-author-team review.
 
 ## Exactness argument
 
@@ -133,7 +158,7 @@ implementation on both fixed tiny chains, output-before-input-free accounting,
 explicit resource-limit behavior, unsupported backward semantics, and six mutated
 certificates rejected by the unchanged checker.
 
-The recorded full search replay took about 3.2 seconds and peaked at about
+The original fixed-row search replay took about 3.2 seconds and peaked at about
 91 MB process RSS on this session's host. These are local observations on a
 concurrently used machine, not controlled performance claims.
 
