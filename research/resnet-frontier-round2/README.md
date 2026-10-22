@@ -6,6 +6,20 @@ that fixed graph in `activation-memory/v1`. It finds **no strict peak improvemen
 at an original fixed budget. Every claim is **author-checked**; independent code and
 proof review, and maintainer acceptance, remain open.
 
+Two schedules also reduce work at unchanged original peaks:
+
+| Original budget | Peak bytes | Strongest previous work | New exact work | Reduction |
+|---:|---:|---:|---:|---:|
+|605,552,640|1,048,576|605,421,568|378,339,328|37.51%|
+|302,776,320|1,310,720|302,645,248|189,136,896|37.51%|
+
+The full cap4/cap5 traces are explicitly retagged to these original budgets
+and replayed. An audit of every matching certificate in the pinned base and
+prior PR6 trees found no cheaper predecessor at either peak. The exact
+staircase supplies matching minimum-work bounds. These are secondary gains;
+the peak remains unchanged. See `SECONDARY-WORK.json` and the scoped baseline
+audit for exact sources and hashes.
+
 Base: `a95cc1588fc57a07cfcf5a350206825e6f5b4b52`. Graph hash:
 `fe120b9dbba356bf53b6042ad7174fd2506df22906c017502008405f9c0f354f`.
 All tensor allocations, including immutable `x`, are 262,144 bytes. Costs below are
@@ -33,9 +47,9 @@ At original budgets 75,694,080; 151,388,160; and 302,776,320, the optimum peaks 
 respectively 2,097,152; 1,572,864; and 1,310,720 bytes. These equal the working
 witnesses. The old lower bound of 1,048,576 bytes is therefore strengthened to each
 witness for all three previously open cells. No accepted or working record is edited.
-The four- and five-allocation points also expose smaller recomputation costs at unchanged
-peaks than some incumbent certificates; those are secondary improvements, not
-fixed-budget primary wins.
+The four- and five-allocation points reduce work against the strongest known
+pre-round certificates at those unchanged peaks; the two secondary gains above
+are not fixed-budget primary wins.
 
 ## Why this finite search is exact
 

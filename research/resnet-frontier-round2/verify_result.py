@@ -76,6 +76,21 @@ def replay(write=False):
                                  previously_open=not row['optimal'],
                                  conclusion='unchanged witness meets exact computational optimum'))
     # Known smaller ResNet is a falsification control for the domain reductions.
+    secondary = load(HERE/'SECONDARY-WORK.json')
+    for row in secondary:
+        prior = next(v for v in load(ROOT/'records/working-frontiers.json')
+                     if v['graph']==graph['id'] and v['budget']==row['budget'])
+        assert prior['peak_bytes']==row['peak_bytes']
+        assert prior['recompute_cost']==row['prior_work']
+        path = ROOT/row['object']
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256']
+        witness = load(path)
+        metrics = verify(graph,witness,row['budget'])
+        cap = row['peak_bytes']//UNIT
+        assert metrics['recompute_cost']==dict(TABLE)[cap]==row['new_work']<row['prior_work']
+        assert metrics['peak_bytes']==row['peak_bytes']
+        assert witness['actions']==load(HERE/'certificates'/f'resnet-b4-c32-cap{cap}.json')['actions']
+    assert len(secondary)==2
     small = load(ROOT/'benchmarks/graphs/resnet-b2-c32.json')
     small_cases = []
     for cap, budget, expected in [(4*UNIT, 37847040, None), (4*UNIT, 75694080, 75628544)]:
@@ -89,6 +104,7 @@ def replay(write=False):
     result = dict(model=graph['model'], graph=graph['id'], graph_sha256=GRAPH_HASH,
                   evidence_level='author-checked', local_allocation_lower_bound=4*UNIT,
                   staircase=cases, fixed_budget_consequences=consequences,
+                  secondary_work_gains=secondary,
                   smaller_resnet_controls=small_cases,
                   resource_caps=dict(states_per_call=250000, seconds_per_call=30),
                   environment=dict(python=platform.python_version(), platform=platform.platform()))
@@ -102,6 +118,7 @@ def replay(write=False):
     print(json.dumps(dict(status='PASS', staircase_points=len(cases),
                           formerly_open_cells_settled=sum(v['previously_open'] for v in consequences),
                           fixed_budget_peak_improvements=0,
+                          fixed_peak_work_improvements=len(secondary),
                           max_records=max(v['search']['states'] for v in cases),
                           all_witnesses_verified=True), sort_keys=True))
     return result
