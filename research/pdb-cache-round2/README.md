@@ -134,3 +134,11 @@ proof/PDB work for `pattern_db.py` and `output_demand_db.py`, copied here with
 only their repository import path adapted. Results are author-checked only;
 same-author-team checks do not constitute independent scientific review.
 Code and project text retain the repository's MIT license.
+
+The separate same-author-team proof in [PR #13](https://github.com/discoveryathome/neural-net-memory/pull/13)
+closes the work minima at 13 and 14 units using checked finite cut closures.
+Together, the two packages propose 70 exact work prices at caps 13 through 82.
+This package's own factor bound at 14 remains 819,200 below its upper witness;
+its 68 matching prices and generated RESULTS are unchanged. The remaining global
+work-minimum questions are caps 10, 11 and 12. This cross-reference adds no runtime
+dependency and supplies no independent scientific review.
