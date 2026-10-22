@@ -22,7 +22,7 @@
         "cap": 1245184,
         "budget": 26869760,
         "events": 47,
-        "seconds": 3.1657769170124084,
+        "seconds": 2.9366730420151725,
         "solver": "OR-Tools 9.15.6755",
         "workers": 1,
         "time_limit_seconds": 30,
@@ -138,7 +138,7 @@
         "cap": 1245184,
         "budget": 26869759,
         "events": 47,
-        "seconds": 3.1475651250220835,
+        "seconds": 2.995567541976925,
         "solver": "OR-Tools 9.15.6755",
         "workers": 1,
         "time_limit_seconds": 30,
@@ -173,7 +173,7 @@
         "cap": 851968,
         "budget": 52035584,
         "events": 47,
-        "seconds": 1.5543063749792054,
+        "seconds": 1.4416866659885272,
         "solver": "OR-Tools 9.15.6755",
         "workers": 1,
         "time_limit_seconds": 30,
@@ -289,7 +289,7 @@
         "cap": 851968,
         "budget": 52035583,
         "events": 47,
-        "seconds": 1.5247848330182023,
+        "seconds": 1.4477078330237418,
         "solver": "OR-Tools 9.15.6755",
         "workers": 1,
         "time_limit_seconds": 30,
@@ -304,7 +304,190 @@
       },
       "exact_minimum_additional_work": 52035584,
       "scope": "fixed transformer-b2-t64 at peak851968; arbitrary earlier recomputation included"
+    },
+    {
+      "witness": "ten-unit-proof/positive-witness.json",
+      "metrics": {
+        "backward_cost": 221642752,
+        "forward_cost": 217546752,
+        "peak_bytes": 655360,
+        "recompute_cost": 106725376
+      },
+      "exact_minimum_additional_work": 106725376,
+      "positive": {
+        "status": "VERIFIED_FULL_SCHEDULE"
+      },
+      "negative": {
+        "status": "EXHAUSTED",
+        "budget": 106725375,
+        "states": 2463
+      },
+      "scope": "fixed peak655360; necessary first-GELU cut, all individual preloss drops and forwards"
     }
   ],
+  "ten_unit_proof": {
+    "actual_owned_controls": {
+      "first_gelu_prefix_work": 0,
+      "metrics": {
+        "backward_cost": 221642752,
+        "forward_cost": 217546752,
+        "peak_bytes": 655360,
+        "recompute_cost": 106725376
+      },
+      "per_block_checks": 46,
+      "states": 23
+    },
+    "audits": {
+      "backward": {
+        "edges": 276119,
+        "valid_states": 38262
+      },
+      "demand": {
+        "edges": 40857,
+        "valid_states": 5610
+      },
+      "terminal": {
+        "edges": 34724,
+        "tight_goal_states": 416,
+        "valid_states": 5034
+      }
+    },
+    "binary_sha256": {
+      "backward": "e46ce6bcb25889424f9e82368d01c3fe6af5ec1168a2033ae59c9c20c3e13f27",
+      "demand": "1bfd1c3408b670e1067f477f57c0e9eaffda3198a4d57a52e5c114f6a89378b5",
+      "terminal": "c5c62b1704c6a596d73c4dc3827b0334dba37a4fa31196bcee772b70ad00648b"
+    },
+    "cap_bytes": 655360,
+    "closures": [
+      {
+        "budget": 106725376,
+        "cap_bytes": 655360,
+        "expanded": 795,
+        "generated": 5236,
+        "graph_sha256": "49253c00a0941d94630e5323343af6e2d19e7317f26864fc19e01bc782bc638b",
+        "loss_boundaries": 1,
+        "minimum_boundary_total": 106725376,
+        "open_boundary": {
+          "cost": 21315584,
+          "live": 239214592,
+          "lower": 85409792,
+          "phase": 1
+        },
+        "pruned": 1858,
+        "scope": "All one-node drops and legal old forwards; favorable critical-cut initial states; charged old work and free first terminal forwards; exact local distances supply disjoint continuation lower bounds.",
+        "seconds": 0.00815754197537899,
+        "seeds": 19,
+        "source_sha256": "1ed163b1839ab684894996e4d374ddbc8a2b7d66446a1ea5532887a3d0bec966",
+        "states": 1009,
+        "status": "OPEN_LOSS_BOUNDARY",
+        "table_sha256": {
+          "backward": "e46ce6bcb25889424f9e82368d01c3fe6af5ec1168a2033ae59c9c20c3e13f27",
+          "demand": "1bfd1c3408b670e1067f477f57c0e9eaffda3198a4d57a52e5c114f6a89378b5",
+          "terminal": "c5c62b1704c6a596d73c4dc3827b0334dba37a4fa31196bcee772b70ad00648b"
+        }
+      },
+      {
+        "budget": 106725375,
+        "cap_bytes": 655360,
+        "expanded": 2463,
+        "generated": 16754,
+        "graph_sha256": "49253c00a0941d94630e5323343af6e2d19e7317f26864fc19e01bc782bc638b",
+        "loss_boundaries": 0,
+        "minimum_boundary_total": null,
+        "open_boundary": null,
+        "pruned": 5999,
+        "scope": "All one-node drops and legal old forwards; favorable critical-cut initial states; charged old work and free first terminal forwards; exact local distances supply disjoint continuation lower bounds.",
+        "seconds": 0.027820040995720774,
+        "seeds": 19,
+        "source_sha256": "1ed163b1839ab684894996e4d374ddbc8a2b7d66446a1ea5532887a3d0bec966",
+        "states": 2463,
+        "status": "EXHAUSTED",
+        "table_sha256": {
+          "backward": "e46ce6bcb25889424f9e82368d01c3fe6af5ec1168a2033ae59c9c20c3e13f27",
+          "demand": "1bfd1c3408b670e1067f477f57c0e9eaffda3198a4d57a52e5c114f6a89378b5",
+          "terminal": "c5c62b1704c6a596d73c4dc3827b0334dba37a4fa31196bcee772b70ad00648b"
+        }
+      }
+    ],
+    "evidence": "author-checked only; same-author-team review does not constitute independent scientific validation",
+    "exact_minimum_additional_work": 106725376,
+    "graph_sha256": "49253c00a0941d94630e5323343af6e2d19e7317f26864fc19e01bc782bc638b",
+    "negative_tables": [
+      {
+        "change": "overclaim_goal",
+        "status": "REJECTED",
+        "table": "backward"
+      },
+      {
+        "change": "underclaim",
+        "status": "REJECTED",
+        "table": "backward"
+      },
+      {
+        "change": "foreign_local_cost",
+        "status": "REJECTED",
+        "table": "backward"
+      },
+      {
+        "change": "foreign_full_hash",
+        "status": "REJECTED",
+        "table": "demand"
+      },
+      {
+        "change": "underclaim",
+        "status": "REJECTED",
+        "table": "demand"
+      },
+      {
+        "change": "wrong_cost_unit",
+        "status": "REJECTED",
+        "table": "demand"
+      },
+      {
+        "change": "overclaim",
+        "status": "REJECTED",
+        "table": "terminal"
+      },
+      {
+        "change": "phase0_down_live",
+        "status": "REJECTED",
+        "table": "terminal"
+      },
+      {
+        "change": "mismatched_cap",
+        "status": "REJECTED",
+        "table": "terminal"
+      }
+    ],
+    "negative_witnesses": [
+      {
+        "change": "foreign_graph_cost",
+        "reason": "graph hash mismatch",
+        "status": "REJECTED"
+      },
+      {
+        "change": "underclaimed_work",
+        "reason": "incorrect claims: claimed {'peak_bytes': 655360, 'recompute_cost': 106725375, 'forward_cost': 217546752, 'backward_cost': 221642752}, actual {'peak_bytes': 655360, 'recompute_cost': 106725376, 'forward_cost': 217546752, 'backward_cost': 221642752}",
+        "status": "REJECTED"
+      },
+      {
+        "change": "one_below_budget",
+        "reason": "step 145: recomputation budget exceeded",
+        "status": "REJECTED"
+      },
+      {
+        "change": "omitted_regeneration",
+        "reason": "step 50: missing forward dependency",
+        "status": "REJECTED"
+      }
+    ],
+    "positive_metrics": {
+      "backward_cost": 221642752,
+      "forward_cost": 217546752,
+      "peak_bytes": 655360,
+      "recompute_cost": 106725376
+    },
+    "status": "PASS"
+  },
   "evidence": "author-checked only"
 }

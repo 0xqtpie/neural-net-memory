@@ -4,6 +4,8 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import subprocess
+import tempfile
 import time
 import ortools
 
@@ -43,7 +45,19 @@ def main():
         assert negative['status']=='INFEASIBLE',negative
         cases.append(dict(witness=filename,metrics=metrics,mapping=mapped,positive=positive,negative=negative,
                           exact_minimum_additional_work=work,scope=f'fixed transformer-b2-t64 at peak{cap}; arbitrary earlier recomputation included'))
-    result=dict(status='PASS',solver=ortools.__version__,graph_sha256=digest(graph),cases=cases,evidence='author-checked only')
+    with tempfile.TemporaryDirectory(prefix='ten-unit-replay-',dir=P) as temporary:
+        call=subprocess.run([sys.executable,'-B',str(P/'ten-unit-proof/replay.py'),'--out',temporary],
+                            capture_output=True,text=True,timeout=120)
+        if call.returncode:raise RuntimeError(call.stderr)
+        ten=json.loads(call.stdout)
+    assert ten['status']=='PASS' and ten['exact_minimum_additional_work']==106725376
+    cases.append(dict(witness='ten-unit-proof/positive-witness.json',metrics=ten['positive_metrics'],
+                      exact_minimum_additional_work=106725376,
+                      positive=dict(status='VERIFIED_FULL_SCHEDULE'),
+                      negative=dict(status='EXHAUSTED',budget=106725375,states=2463),
+                      scope='fixed peak655360; necessary first-GELU cut, all individual preloss drops and forwards'))
+    result=dict(status='PASS',solver=ortools.__version__,graph_sha256=digest(graph),cases=cases,
+                ten_unit_proof=ten,evidence='author-checked only')
     if args.record:
         (P/'RESULTS.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(dict(status='PASS',solver=ortools.__version__,cases=[dict(peak=c['metrics']['peak_bytes'],minimum_work=c['exact_minimum_additional_work'],positive=c['positive']['status'],negative=c['negative']['status']) for c in cases])),flush=True)

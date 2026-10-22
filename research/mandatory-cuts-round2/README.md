@@ -6,13 +6,14 @@ bytes** reduces additional forward work from **54,198,272 to 52,035,584
 that checkpoint for block0 backward. The full certificate passes the unchanged
 verifier at the original 55,410,688 budget.
 
-Both this schedule and the previous 1,245,184-byte construction have matching
-minimum-recomputation bounds:
+All three nonzero fixed peak levels now have matching minimum-recomputation
+bounds:
 
 | Peak bytes | Exact minimum extra work | Excluded work budget | Schedule source |
 |---:|---:|---:|---|
 |1,245,184|26,869,760|26,869,759|PR10 regional construction|
 |851,968|52,035,584|52,035,583|new retained-residual1 construction|
+|655,360|106,725,376|106,725,375|PR10 ten-unit construction|
 
 These are exact secondary-work optima at fixed peaks. The new result improves
 recomputation; it adds no peak reduction. The construction was priced against
@@ -26,12 +27,14 @@ orders. Frozen graphs, model, verifier, and accepted/working records are unchang
 Evidence is author-checked within one AI-assisted author team; outside scientific
 review and acceptance are pending.
 
-The optional solver is OR-Tools 9.15.6755, one worker, random seed 20261021,
+The first two exclusions use OR-Tools 9.15.6755, one worker, random seed 20261021,
 30 seconds and 300MB per solve. The original session used an external 350MiB
 RSS guard. Exact integer INFEASIBLE statuses one work unit below each
 construction supply the exclusions; matching OPTIMAL relaxations, full
 verifier replay, and actual-trace mappings are positive controls. No incomplete
-optimization bound is used as an exclusion.
+optimization bound is used as an exclusion. The third exclusion is a small
+explicit preloss closure with audited local pattern databases; it requires only
+the standard library and no optimizer.
 
 ## Necessary relaxation and proof
 
@@ -82,6 +85,21 @@ trace there. A feasible L/R policy alone is not a schedule.
 
 ## Replay and controls
 
+For the ten-unit point, the first final GELU forces UP and GELU beside the
+immutable input, leaving at most one allocation unit among eighteen small seen
+values. The nineteen favorable initial states receive all previous work free.
+Every legal individual drop and repeat forward is enumerated until first final
+RESIDUAL2; its two outstanding first forwards remain free. Disjoint block-owned
+output-demand and backward bounds price the remainder. At work106,725,375 the
+closure exhausts2,463 states and16,754 edges with no surviving loss boundary.
+The matching full PR10 trace establishes attainability. See
+[the complete cut argument](ten-unit-proof/README.md).
+
+The local generators and separately authored Bellman/tight-path auditors check
+351,700 edges, nine rehashed table forgeries, four full-witness mutations and
+46 actual-state owned-work comparisons. Every second-block local node field
+is checked against the first-block template before using its prices.
+
 Use Python3.12 with the pinned optional dependency already available:
 
 ```sh
@@ -90,7 +108,9 @@ python3.12 -B -m unittest discover -s research/mandatory-cuts-round2 -p 'test_*.
 ```
 
 The replay checks source/input hashes, the unchanged full schedule verifier,
-actual-trace mapping, exact positive and exact negative boundary statuses.
+actual-trace mappings and all three exact positive/negative boundaries. It runs
+the standard-library ten-unit subtree in a separate process. That subtree can
+also be replayed alone without OR-Tools.
 The tests compare the relaxation and mappings against120 tiny exact optimum
 traces, with branches, self/ancestor/empty saved reads, nonuniform sizes/costs,
 non-recomputable nodes, and the explicit prefetch falsifier.
@@ -110,4 +130,10 @@ the parallel ResNet package. Codex AI authored this package and the author team
 checked it. Same-team code/mapping checks are not independent scientific review,
 maintainer acceptance, or accepted frontier records.
 
-The new 851,968-byte trace was constructed by the parent Codex agent using the same regional machinery, with block0 residual1 retained. Credit PR11 for the local backward-pattern implementation used during cache pricing. Open next question: can similarly compact cuts settle the remaining transformer recomputation optima? No unresolved larger-graph claim is included here.
+The new 851,968-byte trace was constructed by the parent Codex agent using the
+same regional machinery, with block0 residual1 retained. Credit PR11 for the
+local backward-pattern implementation used during cache pricing, PR10 for the
+ten-unit positive trace, and the same-session PDB work for its generators and
+separately authored auditors. The ten-unit exclusion was reviewed by another
+agent on this author team; that is not outside scientific review. Larger-graph
+work optima remain a separate research question.
