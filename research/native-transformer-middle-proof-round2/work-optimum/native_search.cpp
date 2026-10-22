@@ -1,7 +1,7 @@
-// Private C13 construction only: v20 + nested projected-cap D/E; no exclusion claim.
-// Private construction experiment: cap12 recursive minimum bound generalized to caps11..36. No global-proof claim.
-// Constructive fixed-first-forward-order dynamic rematerialization search.
-// No exhaustion result is a global impossibility claim.
+// Native exhaustion alone concerns the encoded rematerialization tail.
+// For public cap13/14 work optima, the necessary cut cover, admissible nested
+// bounds, independent closure checker and complete upper witnesses are required.
+// At that cut only first DOWN/RES2 remain; their order is forced by ancestry.
 // All resident inputs count; outputs allocate before evictions after execution.
 #include <algorithm>
 #include <chrono>

@@ -171,7 +171,8 @@ trial contributors, PR6 retention transfer, the original transformer and
 exact PDB work, and the parent PR13 normalization/closure machinery. Codex
 generated and checked this extension. All reviews are within the same
 author team; independent human or scientific validation is not claimed.
-The source's original construction-only comment records its provenance:
-queue exhaustion alone is still not trusted as a scientific result. The
-separately authored semantic checker and the necessary-cut/normalization
-mapping supply the exclusion argument.
+Native queue exhaustion alone is still not trusted as a scientific result.
+The separately authored semantic checker and necessary-cut/normalization
+mapping supply the exclusion argument. Public header comments clarify that
+scope; EXPECTED records the previously replayed source hash and a hash of
+the byte-identical program body after that comment-only cleanup.
