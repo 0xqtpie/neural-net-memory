@@ -105,6 +105,12 @@ budget byte-for-byte. Replay also verifies the same actions with the tighter
 106,725,376 budget. Across 23 actual preloss boundaries, both local prices are
 checked against actual future charged work of their own block (46 comparisons).
 
+`high-budget-reuse.json` contains those same actions with the original highest
+challenge budget221,642,752. At its unchanged655,360-byte peak this reduces
+work from the strongest pre-round213,614,592 certificate to106,725,376,
+or50.04%. Replay checks the action equality and this budget explicitly. This
+is reuse of the PR10 construction, not another independent schedule discovery.
+
 Nine rehashed table forgeries test goal overclaim, underclaim, frozen local
 costs, full graph identity, cost units, phase legality and cap consistency.
 Separate full-witness mutations test a changed graph cost, underclaimed work,

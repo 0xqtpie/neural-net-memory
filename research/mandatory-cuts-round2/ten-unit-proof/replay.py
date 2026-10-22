@@ -112,6 +112,9 @@ def run(repo,out):
     assert metrics['peak_bytes']==655360 and metrics['recompute_cost']==106725376
     tighter=copy.deepcopy(witness);tighter['budget']=106725376
     assert verify(graph,tighter,106725376)==metrics
+    reuse=load(HERE/'high-budget-reuse.json')
+    assert reuse['actions']==witness['actions'] and reuse['budget']==221642752
+    assert verify(graph,reuse,221642752)==metrics
     local=dict(graph,id='transformer-b2-t64-local-backward-pattern',nodes=graph['nodes'][:14],outputs=['b0_residual2'])
     back=PatternDB(local,655360).build(seconds=30,states=1000000)
     bp=out/'b2-backward-pdb-cap10.json';bm=back.write(bp,digest(graph))
@@ -149,7 +152,7 @@ def run(repo,out):
         result=json.loads(proc.stdout)
         for field,value in expected[key].items():assert result[field]==value,(field,result[field],value)
         results.append(result)
-    answer=dict(status='PASS',graph_sha256=digest(graph),cap_bytes=655360,exact_minimum_additional_work=106725376,positive_metrics=metrics,binary_sha256=hashes,audits=audits,actual_owned_controls=actual,negative_tables=forged,negative_witnesses=witness_negatives,closures=results,evidence='author-checked only; same-author-team review does not constitute independent scientific validation')
+    answer=dict(status='PASS',graph_sha256=digest(graph),cap_bytes=655360,exact_minimum_additional_work=106725376,positive_metrics=metrics,highest_budget_reuse=dict(budget=221642752,old_work=213614592,new_work=106725376,verified=True,separate_construction=False),binary_sha256=hashes,audits=audits,actual_owned_controls=actual,negative_tables=forged,negative_witnesses=witness_negatives,closures=results,evidence='author-checked only; same-author-team review does not constitute independent scientific validation')
     (out/'RESULTS.json').write_text(json.dumps(answer,indent=2)+'\n')
     return answer
 

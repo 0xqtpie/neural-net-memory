@@ -51,15 +51,20 @@ def main():
         if call.returncode:raise RuntimeError(call.stderr)
         ten=json.loads(call.stdout)
     assert ten['status']=='PASS' and ten['exact_minimum_additional_work']==106725376
+    with tempfile.TemporaryDirectory(prefix='full-work-curve-',dir=P) as temporary:
+        call=subprocess.run([sys.executable,'-B',str(P/'work-curve-bound/joint_replay.py'),'--repo',str(ROOT),'--out',temporary],capture_output=True,text=True,timeout=300)
+        if call.returncode:raise RuntimeError(call.stderr)
+        curve=load(Path(temporary)/'RESULTS.json')
+    assert curve['status']=='PASS' and curve['exact_caps']==list(range(10,39))
     cases.append(dict(witness='ten-unit-proof/positive-witness.json',metrics=ten['positive_metrics'],
                       exact_minimum_additional_work=106725376,
                       positive=dict(status='VERIFIED_FULL_SCHEDULE'),
                       negative=dict(status='EXHAUSTED',budget=106725375,states=2463),
                       scope='fixed peak655360; necessary first-GELU cut, all individual preloss drops and forwards'))
     result=dict(status='PASS',solver=ortools.__version__,graph_sha256=digest(graph),cases=cases,
-                ten_unit_proof=ten,evidence='author-checked only')
+                ten_unit_proof=ten,complete_work_curve=curve,evidence='author-checked only')
     if args.record:
         (P/'RESULTS.json').write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps(dict(status='PASS',solver=ortools.__version__,cases=[dict(peak=c['metrics']['peak_bytes'],minimum_work=c['exact_minimum_additional_work'],positive=c['positive']['status'],negative=c['negative']['status']) for c in cases])),flush=True)
+    print(json.dumps(dict(status='PASS',solver=ortools.__version__,complete_curve_points=len(curve['rows']),universal_peak_floor=curve['universal_peak_floor'],cases=[dict(peak=c['metrics']['peak_bytes'],minimum_work=c['exact_minimum_additional_work'],positive=c['positive']['status'],negative=c['negative']['status']) for c in cases])),flush=True)
 
 if __name__=='__main__':main()

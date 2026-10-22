@@ -1,4 +1,4 @@
-# Exact minimum work from mandatory event cuts
+# Less recomputation and the complete two-block transformer frontier
 
 For the unchanged `transformer-b2-t64` graph, a new schedule at **851,968
 bytes** reduces additional forward work from **54,198,272 to 52,035,584
@@ -15,12 +15,33 @@ bounds:
 |851,968|52,035,584|52,035,583|new retained-residual1 construction|
 |655,360|106,725,376|106,725,375|PR10 ten-unit construction|
 
+At the already known655,360-byte minimum peak, the ten-unit trace also fits the original highest budget221,642,752 and cuts the strongest pre-round work213,614,592 by50.04%. That is reuse of the PR10 witness, explicitly retagged and replayed; it is not counted as another independent construction.
+
 These are exact secondary-work optima at fixed peaks. The new result improves
 recomputation; it adds no peak reduction. The construction was priced against
 the necessary event relaxation first, then 111 feasible cache sets were scored
 using exact local pattern costs. The winning full trace matches the global
 relaxation. Its regional method comes from PR10; the certificate is
 self-contained and no other PR is required for replay.
+
+The [complete work-curve extension](work-curve-bound/README.md) now supplies
+matching global bounds and full legal schedules at every integral cap from
+10 through38 allocation units: **29 exact Pareto points**. Its first zero-work
+peak is2,490,368 bytes (38 units). A copied, credited PR10 structural classifier
+excludes every cap below10 units at any work budget. Every tensor size is an
+integral65,536-byte unit, so the curve also covers intermediate byte allowances.
+The new [constructor](work-curve-construction/NOTES.md) regenerates all29 full
+traces at their exact work budgets and additionally checks the four original
+nonzero challenge budgets. The intermediate points expand coverage rather than
+adding original benchmark wins.
+
+The necessary curve proof gives all work before first final GELU free. Its
+earlier region owns a current-size/future-minimum pair(r,m); the minimum persists
+until the downstream output read and reserves those bytes from the final local
+region. Exact audited output-demand and terminal prices minimize over every
+such pair. Matching full schedules prove attainability. All45 local tables
+are regenerated and audited over12,856,059 transitions, with semantic table
+forgeries, direct algebra checks and actual per-owner trace controls.
 
 The results include arbitrary recomputation before loss and arbitrary backward
 orders. Frozen graphs, model, verifier, and accepted/working records are unchanged.

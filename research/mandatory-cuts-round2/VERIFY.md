@@ -39,3 +39,16 @@ attainability. A separate author-team agent reviewed the cut and replay.
 The final combined replay reports all three exact work levels. No native binary
 or generated binary table is committed. Source pins include the complete new
 subtree; generated scratch output is removed after each combined replay.
+
+The complete work-curve extension regenerates45 local tables, audits12,856,059
+forward transitions, checks semantic forgeries, and reconstructs29 full traces
+at exact work budgets. Its copied PR10 last-barrier classifier supplies the
+universal10-unit peak floor; the positive zero-work38-unit trace and positive
+37-unit lower price complete the upper endpoint. Four original nonzero
+challenge budgets are additionally replayed. The original highest-budget
+ten-unit reuse reduces213,614,592 to106,725,376 work (50.04%) with identical
+PR10 actions, explicitly checked in `ten-unit-proof/high-budget-reuse.json`.
+
+One parent combined-record invocation omitted the already installed optional
+solver directory from PYTHONPATH and failed at import before executing research.
+It was corrected and rerun; that setup failure supplies no scientific result.
